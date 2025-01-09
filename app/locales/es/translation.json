@@ -1,0 +1,790 @@
+{
+  "navigation": {
+    "navigate": "Navegar",
+    "choose_page": "Elija una página para navegar:",
+    "menu_items": {
+      "home": "Inicio",
+      "about_us": "Sobre Nosotros",
+      "health": "Salud",
+      "dental_vision": "Dental y Visión",
+      "life": "Vida",
+      "medicare": "Medicare",
+      "mission": "Misión",
+      "contact": "Contacto",
+      "products": "Productos",
+      "contact_us": "Contáctanos"
+    },
+    "close": "Cerrar"
+  },
+
+  "slides": [
+    {
+      "imageUrl": "/images/slider/african.jpeg",
+      "title": "Juntos, Estamos Construyendo un Haití Más Fuerte y Saludable, Una Póliza a la Vez.",
+      "url": "/health",
+      "buttonText": "Más Información"
+    },
+    {
+      "imageUrl": "/images/slider/african3.jpeg",
+      "title": "Planes de Salud Integrales para Individuos, Familias y Opciones de Medicare.",
+      "url": "/health",
+      "buttonText": "Compara Planes"
+    },
+    {
+      "imageUrl": "/images/slider/african2.jpg",
+      "title": "Encuentra un Plan de Dental y Visión Asequible para Tu Familia.",
+      "url": "/dental",
+      "buttonText": "Descubre Más"
+    },
+    {
+      "imageUrl": "/images/slider/african3.jpg",
+      "title": "Protege el Futuro Financiero de Tu Familia con un Seguro de Vida.",
+      "url": "/appointment",
+      "buttonText": "Contacta a un Agente"
+    }
+  ],
+
+  "contact_form": {
+    "insurance_types": {
+      "health": "Salud",
+      "dental": "Dental",
+      "vision": "Visión",
+      "medicare": "Medicare",
+      "life": "Vida"
+    },
+    "title": "¡Obtén Cobertura Hoy!",
+    "subtitle": "Elige tu Tipo de Seguro",
+    "fields": {
+      "full_name": "Nombre Completo",
+      "first_name": "Primer Nombre",
+      "last_name": "Apellido",
+      "date_of_birth": "Fecha de Nacimiento",
+      "zip_code": "Código Postal",
+      "email": "Correo Electrónico",
+      "mobile_phone": "Número de Teléfono Móvil (Solo EE.UU.)",
+      "text_consent": "Envíame mensajes con noticias y ofertas"
+    },
+    "consent_notice": "Al hacer clic en el botón a continuación, aceptas recibir correos electrónicos y mensajes de texto de marketing. Además, das tu consentimiento para ser contactado por llamada telefónica, un sistema de marcación automática, mensajes de texto al número que proporcionaste anteriormente o por correo electrónico. Entiendes que esto no es una condición de compra y también puedes obtener una cotización contactándonos por teléfono. Puedes revocar este consentimiento en cualquier momento contactándonos al 844-544-0663 o a info@h4hinsurance.com. Entiendes que pueden aplicarse las tarifas de mensajes y datos de tu proveedor. Consulta nuestra Política de Privacidad y los Términos de Servicio de SMS.",
+    "links": {
+      "privacy_policy": "Política de Privacidad",
+      "terms_and_conditions": "Términos y Condiciones"
+    }
+  },
+
+  "terms_and_conditions": {
+    "title": "Términos y Condiciones",
+    "welcome": "Bienvenido al sitio web de H4HInsurance (“nosotros,” “nuestro” o “nos”). Al acceder o usar nuestro sitio web (h4hinsurance.com, el “Sitio”), aceptas estos Términos y Condiciones. Si no estás de acuerdo con estos Términos, por favor no uses el Sitio.",
+    "acceptance_of_terms": {
+      "title": "1. Aceptación de Términos",
+      "content": [
+        "Estos Términos rigen tu uso del Sitio. Al acceder o usar el Sitio, declaras que:",
+        "Tienes al menos 18 años.",
+        "Eres residente de los Estados Unidos.",
+        "Aceptas cumplir con estos Términos."
+      ]
+    },
+    "use_of_the_site": {
+      "title": "2. Uso del Sitio",
+      "license_to_use": {
+        "title": "a. Licencia para Usar el Sitio:",
+        "content": "H4HInsurance te otorga una licencia limitada, no exclusiva, no transferible y revocable para usar el Sitio únicamente con fines personales y no comerciales relacionados con los servicios de seguros."
+      },
+      "prohibited_activities": {
+        "title": "b. Actividades Prohibidas:",
+        "content": [
+          "Aceptas no:",
+          "Copiar, distribuir o reproducir contenido del Sitio sin autorización.",
+          "Usar el Sitio para cargar o distribuir software dañino.",
+          "Intentar descompilar, desensamblar o realizar ingeniería inversa del Sitio.",
+          "Usar el Sitio con fines ilegales o fraudulentos."
+        ]
+      },
+      "site_modifications": {
+        "title": "c. Modificaciones del Sitio:",
+        "content": "H4HInsurance se reserva el derecho de modificar, suspender o descontinuar el Sitio o cualquiera de sus características en cualquier momento sin previo aviso."
+      }
+    },
+    "information_you_provide": {
+      "title": "3. Información Proporcionada por Ti",
+      "content": [
+        "Para usar ciertas funciones del Sitio, podrías necesitar proporcionar información personal. Al hacerlo, aceptas que:",
+        "La información es precisa, actual y completa.",
+        "Actualizarás la información según sea necesario.",
+        "Consientes el uso de tu información como se describe en nuestra Política de Privacidad."
+      ]
+    },
+    "privacy": {
+      "title": "4. Privacidad",
+      "content": "Tu uso del Sitio está sujeto a nuestra Política de Privacidad, que explica cómo recopilamos, usamos y protegemos tu información personal. Al usar el Sitio, consientes las prácticas descritas en la Política de Privacidad."
+    },
+    "sms_terms_of_service": {
+      "title": "5. Términos de Servicio de SMS",
+      "program_name_and_description": {
+        "title": "a. Nombre del Programa y Descripción:",
+        "content": "Los Servicios SMS de H4HInsurance pueden enviarte mensajes de marketing y no marketing, incluyendo actualizaciones transaccionales, promociones, ofertas especiales e información relevante sobre seguros. Los mensajes pueden ser enviados utilizando tecnologías automatizadas, como marcadores automáticos o sistemas automáticos de marcación telefónica."
+      },
+      "message_frequency_and_cadence": {
+        "title": "b. Frecuencia de Mensajes:",
+        "content": "La frecuencia de mensajes variará según tu interacción y preferencias. Podrías recibir hasta 9 mensajes por mes."
+      },
+      "message_and_data_rates": {
+        "title": "c. Tarifas de Mensajes y Datos:",
+        "content": "No cobramos por los mensajes enviados a través de los Servicios SMS. Sin embargo, tu proveedor de telefonía móvil puede aplicar tarifas estándar de mensajes y datos."
+      },
+      "eligibility": {
+        "title": "d. Elegibilidad:",
+        "content": [
+          "Para recibir los Servicios SMS, debes:",
+          "Ser residente de los Estados Unidos.",
+          "Tener al menos 18 años."
+        ]
+      },
+      "opt_in_agreement": {
+        "title": "e. Acuerdo de Opt-In:",
+        "content": "Al proporcionar tu número móvil, aceptas voluntariamente recibir mensajes recurrentes. No es obligatorio para comprar productos o servicios."
+      },
+      "opt_out_instructions": {
+        "title": "f. Instrucciones para Opt-Out:",
+        "content": "Para dejar de recibir mensajes, responde STOP, QUIT, CANCEL, OPT-OUT o UNSUBSCRIBE a cualquier mensaje. Puedes seguir recibiendo mensajes por un corto período mientras procesamos tu solicitud. Para reanudar la recepción de mensajes, responde START a un mensaje anterior."
+      },
+      "customer_care_contact_information": {
+        "title": "g. Información de Atención al Cliente:",
+        "content": "Para asistencia, responde HELP a cualquier mensaje o contáctanos en:",
+        "Email": "info@h4hinsurance.com",
+        "Phone": "1.844.544.0663"
+      },
+      "privacy_and_data_sharing": {
+        "title": "h. Privacidad y Compartir Datos:",
+        "content": "Tu información personal solo será compartida con terceros que ayuden a entregar los Servicios SMS. Consulta nuestra Política de Privacidad para más detalles."
+      },
+      "disclaimer_and_liability": {
+        "title": "i. Exención de Responsabilidad:",
+        "content": "Los Servicios SMS se proporcionan \"tal como están\" y pueden no estar siempre disponibles. H4HInsurance.com y sus proveedores de servicios no son responsables por mensajes fallidos o retrasados."
+      }
+    },
+    "intellectual_property": {
+      "title": "6. Propiedad Intelectual",
+      "content": "Todo el contenido, marcas y materiales en el Sitio son propiedad de H4HInsurance o sus licenciantes. No puedes usar nuestra propiedad intelectual sin previo consentimiento escrito."
+    },
+    "disclaimers": {
+      "title": "7. Exenciones de Responsabilidad",
+      "no_professional_advice": {
+        "title": "a. Sin Asesoramiento Profesional:",
+        "content": "El contenido del Sitio es solo para fines informativos y no constituye asesoramiento profesional, financiero o legal."
+      },
+      "no_guarantee_of_results": {
+        "title": "b. Sin Garantía de Resultados:",
+        "content": "No garantizamos que las cotizaciones o recomendaciones satisfagan tus requisitos. Siempre consulta directamente con las aseguradoras o agentes."
+      }
+    },
+    "limitation_of_liability": {
+      "title": "8. Limitación de Responsabilidad",
+      "content": [
+        "En la máxima medida permitida por la ley:",
+        "H4HInsurance no es responsable de daños derivados de tu uso del Sitio.",
+        "Nuestra responsabilidad se limita al monto que pagaste por los servicios del Sitio."
+      ]
+    },
+    "arbitration_and_dispute_resolution": {
+      "title": "9. Arbitraje y Resolución de Disputas",
+      "content": "Cualquier disputa se resolverá mediante arbitraje vinculante conforme a la Ley Federal de Arbitraje. Renuncias al derecho de participar en demandas colectivas."
+    },
+    "termination": {
+      "title": "10. Terminación",
+      "content": "H4HInsurance se reserva el derecho de terminar tu acceso al Sitio por cualquier violación de estos Términos."
+    },
+    "changes_to_these_terms": {
+      "title": "11. Cambios en los Términos",
+      "content": "Podemos actualizar estos Términos periódicamente. Los cambios se publicarán en esta página con la fecha actualizada. El uso continuo del Sitio indica tu aceptación de los Términos revisados."
+    },
+    "contact_us": {
+      "title": "12. Contáctanos",
+      "content": [
+        "Si tienes preguntas sobre estos Términos, contáctanos:",
+        "H4HInsurance",
+        "1000 NW 65th St, Suite 110",
+        "Fort Lauderdale, FL 33309",
+        "Correo electrónico: info@h4hinsurance.com"
+      ]
+    }
+  },
+
+  "privacy_policy": {
+    "title": "Política de Privacidad",
+    "commitment": "H4HInsurance se compromete a proteger tu privacidad. Esta Política de Privacidad explica cómo recopilamos, utilizamos y protegemos tu información cuando usas nuestro sitio web (h4hinsurance.com) e interactúas con nuestros servicios.",
+    "information_we_collect": {
+      "title": "1. Información que Recopilamos",
+      "pii": {
+        "title": "a. Información Personalmente Identificable (PII)",
+        "content": "Recopilamos información como tu nombre, dirección, número de teléfono, correo electrónico, fecha de nacimiento y otros datos personales necesarios para proporcionar servicios de seguros. Esto también puede incluir información sobre miembros de la familia si es necesario para los servicios."
+      },
+      "npii": {
+        "title": "b. Información No Personalmente Identificable (NPII)",
+        "content": "Podemos recopilar información no identificable, como datos demográficos, tipo de navegador, detalles del dispositivo y actividad de navegación en nuestro sitio web."
+      }
+    },
+    "how_we_collect_information": {
+      "title": "2. Cómo Recopilamos Información",
+      "from_you": {
+        "title": "a. Información Proporcionada por Ti",
+        "content": "Recopilamos información directamente cuando llenas formularios en nuestro sitio web, nos contactas por teléfono o correo electrónico, o proporcionas detalles durante una consulta de seguros."
+      },
+      "from_cookies": {
+        "title": "b. Información de Cookies",
+        "content": "Usamos cookies y tecnologías similares para mejorar tu experiencia de navegación. Estas herramientas pueden recopilar datos como dirección IP, tipo de navegador y páginas visitadas. Las cookies nos ayudan a personalizar contenido, analizar uso y mejorar la funcionalidad del sitio web."
+      }
+    },
+    "how_we_use_your_information": {
+      "title": "3. Cómo Usamos Tu Información",
+      "content": [
+        "Proporcionar cotizaciones de seguros, pólizas y servicios relacionados.",
+        "Mejorar el servicio al cliente y la funcionalidad del sitio web.",
+        "Comunicarnos contigo respecto a tus consultas, pólizas y actualizaciones.",
+        "Personalizar tu experiencia en nuestro sitio web.",
+        "Garantizar el cumplimiento con leyes y regulaciones aplicables."
+      ]
+    },
+    "information_sharing": {
+      "title": "4. Compartición de Información",
+      "content": [
+        {
+          "title": "a. Proveedores y Socios de Seguros",
+          "content": "Compartimos tu información con aseguradoras, agentes y otros proveedores necesarios para procesar cotizaciones o reclamos."
+        },
+        {
+          "title": "b. Proveedores de Servicios de Terceros",
+          "content": "Podemos compartir información con proveedores que nos asisten en operaciones como soporte de TI, análisis o marketing. Estos proveedores deben proteger tu información de acuerdo con esta política."
+        },
+        {
+          "title": "c. Datos de Consentimiento Opt-In para SMS",
+          "content": "La información de consentimiento opt-in para SMS no se compartirá con terceros para fines no relacionados con la campaña de SMS."
+        },
+        {
+          "title": "d. Requisitos Legales",
+          "content": "Podemos divulgar tu información si es requerido por ley, como en respuesta a una citación o solicitud gubernamental."
+        }
+      ]
+    },
+    "cookies_and_tracking_technologies": {
+      "title": "5. Cookies y Tecnologías de Rastreo",
+      "content": [
+        "Cookies Esenciales: Necesarias para el funcionamiento del sitio web.",
+        "Cookies de Análisis: Ayudan a entender el comportamiento de los usuarios para mejorar el sitio web.",
+        "Cookies Funcionales: Recuerdan tus preferencias, como configuraciones de idioma o ubicación.",
+        "Puedes gestionar las preferencias de cookies en la configuración de tu navegador, pero esto podría afectar la funcionalidad del sitio."
+      ]
+    },
+    "how_we_protect_your_information": {
+      "title": "6. Cómo Protegemos Tu Información",
+      "content": [
+        "Encriptación de datos transmitidos entre tu dispositivo y nuestros sistemas.",
+        "Firewalls y servidores seguros para proteger los datos almacenados.",
+        "Auditorías regulares y capacitación del personal para garantizar el cumplimiento de las regulaciones de privacidad.",
+        "Aunque nos esforzamos por proteger tu información, ningún sistema es completamente seguro. Por favor, contáctanos de inmediato si sospechas acceso no autorizado a tu información."
+      ]
+    },
+    "your_privacy_rights": {
+      "title": "7. Tus Derechos de Privacidad",
+      "content": [
+        "Acceder, corregir o eliminar tu información personal.",
+        "Optar por no recibir comunicaciones de marketing.",
+        "Limitar el intercambio de datos con terceros.",
+        "Para ejercer estos derechos, por favor contáctanos usando los detalles a continuación."
+      ]
+    },
+    "childrens_privacy": {
+      "title": "8. Privacidad de los Niños",
+      "content": "H4HInsurance no recopila intencionalmente información de personas menores de 13 años. Si descubrimos que hemos recopilado dicha información, la eliminaremos de inmediato."
+    },
+    "changes_to_this_policy": {
+      "title": "9. Cambios a Esta Política",
+      "content": "Podemos actualizar esta Política de Privacidad periódicamente. Los cambios se publicarán en esta página con la fecha de vigencia actualizada. Te animamos a revisar esta política regularmente."
+    },
+    "contact_us": {
+      "title": "10. Contáctanos",
+      "content": {
+        "address": "H4HInsurance, 1000 NW 65th St, Suite 110, Fort Lauderdale, FL 33309",
+        "email": "info@h4hinsurance.com",
+        "phone": "1.844.544.0663"
+      }
+    }
+  },
+
+  "home": {
+    "hero": {
+      "title": "Health 4 Haitians",
+      "subtitle": "Reúnete con un Agente Licenciado",
+      "cta_button": "Contáctanos"
+    },
+    "main_section": {
+      "title": "Estamos Aquí para Atender tus Necesidades de Seguro",
+      "description": "El seguro puede dejarte con muchas preguntas; déjanos ayudarte a tomar la mejor decisión informada.",
+      "cta_button": "Comienza Ahora"
+    },
+    "services": [
+      {
+        "title": "Seguro de Salud",
+        "description": "La Ley del Cuidado de Salud Asequible ofrece recursos para ayudar a reducir los obstáculos y proporcionar acceso a la atención médica para quienes lo necesiten.",
+        "imageUrl": "/images/health.jpeg",
+        "url": "/health",
+        "icon": "💉"
+      },
+      {
+        "title": "Seguro de Vida",
+        "description": "Permítenos ayudarte a abrir el camino hacia la seguridad financiera.",
+        "imageUrl": "/images/life.jpeg",
+        "url": "/life",
+        "icon": "👨‍👩‍👧"
+      },
+      {
+        "title": "Dental y Visión",
+        "description": "Ofrecemos pólizas asequibles de dental y visión para tu salud integral.",
+        "imageUrl": "/images/dental.jpeg",
+        "url": "/dental",
+        "icon": "🦷"
+      },
+      {
+        "title": "Medicare",
+        "description": "Encontrar el suplemento adecuado de Medicare puede ser un desafío; estamos aquí para ayudarte.",
+        "imageUrl": "/images/medicare.jpeg",
+        "url": "/medicare",
+        "icon": "⚕️"
+      }
+    ],
+    "enrollment_section": {
+      "title": "¡Inscríbete Ahora! El Período de Inscripción Abierta Termina el 15 de enero.",
+      "time_labels": {
+        "days": "Días",
+        "hours": "Horas",
+        "minutes": "Minutos",
+        "seconds": "Segundos"
+      }
+    },
+    "partner_section": {
+      "text": "Orgulloso Socio de",
+      "logo_alt": "Logo de la Empresa"
+    }
+  },
+
+  "growBusiness": {
+    "title": "¡Obtén Cobertura para Tu Familia Hoy!",
+    "button": "Habla con un Agente"
+  },
+
+  "about_us": {
+    "title": "Sobre Nosotros",
+    "description": "Descubra nuestra misión, visión y el viaje que impulsa nuestra pasión por el acceso a la atención médica.",
+    "sections": [
+      {
+        "heading": "Una Misión Personal: De la Experiencia como Inmigrante al Empoderamiento",
+        "paragraph": "Fundada por un inmigrante haitiano con experiencia directa en los desafíos únicos que enfrentan los haitianos al tratar de alcanzar el Sueño Americano, nuestra misión es profundamente personal.",
+        "button": "Obtén una Cotización"
+      },
+      {
+        "heading": "Una Visión de Empoderamiento Integral",
+        "paragraph": "Como todos, él sueña con ayudar a la comunidad haitiana a acceder a oportunidades esenciales como atención médica, educación, empleo, redes, vivienda, nutrición, inversiones y crecimiento personal. Su esposa, también de ascendencia caribeña, comparte esta visión y sueña con expandir estos esfuerzos a todas las islas del Caribe. Aunque nuestro objetivo es apoyar a todas las comunidades desatendidas, nuestro equipo está particularmente enfocado en los haitianos, quienes se encuentran entre los más necesitados. La salud es la base de la vida, por eso comenzamos nuestro trabajo aquí.",
+        "button": null
+      },
+      {
+        "heading": "Cerrando la Brecha en Atención Médica para los Haitianos",
+        "paragraph": "El acceso a atención médica de calidad es vital para el bienestar de las personas y las familias, pero muchos en la comunidad haitiana enfrentan barreras significativas para obtener una cobertura de salud adecuada. Las diferencias de idioma, la falta de información y las limitaciones económicas son solo algunos de los obstáculos que les impiden acceder a la atención que necesitan. Nuestra misión es cerrar esta brecha proporcionando recursos en criollo que ayuden a los individuos y familias haitianas a navegar el complejo sistema de salud y asegurar la cobertura necesaria para un futuro más saludable.",
+        "button": null
+      },
+      {
+        "heading": "Ampliando el Acceso a Servicios de Atención Médica de Calidad",
+        "paragraph": "Ya sea que necesiten Medicaid, seguro de salud, Medicare o seguro de vida, creemos que todos merecen acceso a servicios y apoyo de alta calidad. Mirando hacia el futuro, nuestro objetivo es expandir nuestro alcance, asegurando que cada miembro de la comunidad haitiana tenga el conocimiento y los recursos necesarios para proteger su salud y bienestar.",
+        "button": null
+      }
+    ]
+  },
+
+  "appointment": {
+    "title": "Programación de Citas",
+    "subtitle": "Programa tu cita fácilmente con opciones flexibles y recibe confirmación instantánea por correo electrónico.",
+    "services": [
+      {
+        "id": 1,
+        "title": "Llámanos Ahora",
+        "description": "Habla con un agente llamándonos al 1.844.544.0663. Programa tu cita cómodamente por teléfono."
+      },
+      {
+        "id": 2,
+        "title": "Programa una Cita Telefónica",
+        "description": "Reserva cómodamente tu cita para una reunión por teléfono en la fecha y hora que prefieras."
+      },
+      {
+        "id": 3,
+        "title": "Reunión Presencial",
+        "description": "Reúnete con nuestros expertos en persona para una consulta integral. Garantizamos una experiencia personalizada."
+      },
+      {
+        "id": 4,
+        "title": "Consulta Virtual",
+        "description": "Conéctate con nosotros en línea a través de una reunión virtual. Recibe el mismo asesoramiento experto desde la comodidad de tu hogar."
+      }
+    ],
+    "form": {
+      "date_select": "Por favor selecciona tanto la fecha como la hora",
+      "success_message": "Cita programada para el {{date}} a las {{time}}"
+    }
+  },
+
+  "medicare": {
+    "breadcrumb": {
+      "title": "Medicare",
+      "image": "/images/medi/medi5.jpg"
+    },
+    "hero_section": {
+      "title": "Medicare",
+      "home": "Inicio"
+    },
+    "main_section": {
+      "title": "Cobertura de Medicare Hecha Simple, Asequible y Adaptada a Tus Necesidades.",
+      "description": "Cumplir 65 años y navegar por Medicare puede ser abrumador, pero estamos aquí para ayudarte. Ya sea que te estés inscribiendo por primera vez, explorando opciones de cobertura adicional o cambiando de plan, te guiaremos en cada paso del camino.",
+      "button": "Obtén una Cotización",
+      "image": "/images/medi/medi2.jpg"
+    },
+    "plans_section": {
+      "title": "¿Qué Plan de Medicare es el Adecuado para Ti?",
+      "image": "/images/medi/medi3.jpg",
+      "plans": [
+        {
+          "title": "Medicare Advantage (Parte C)",
+          "description": "Los planes de Medicare Advantage combinan el seguro hospitalario (Parte A) y el seguro médico (Parte B) en un solo plan. Muchos de estos planes también ofrecen cobertura para medicamentos recetados (Parte D), junto con beneficios adicionales como visión, dental y audición."
+        },
+        {
+          "title": "Medicare Supplement (Medigap)",
+          "description": "Los planes de suplemento de Medicare ayudan a cubrir los costos de bolsillo que Medicare tradicional no cubre, como copagos, coseguros y deducibles. Elige entre una variedad de planes diseñados para ahorrarte dinero y protegerte de facturas médicas elevadas."
+        },
+        {
+          "title": "Planes de Medicamentos Recetados (Parte D)",
+          "description": "Obtén cobertura para medicamentos recetados con un plan Parte D. Tendrás acceso a una amplia red de farmacias y cobertura para los medicamentos que necesitas."
+        }
+      ]
+    },
+    "compare_section": {
+      "title": "¡Compara Planes de Medicare Ahora!",
+      "description": "No dejes tu atención médica al azar. Explora nuestros planes de Medicare hoy y encuentra una cobertura que te mantenga saludable, protegido y sin preocupaciones. Con nuestra guía experta y herramientas simples, puedes elegir con confianza el mejor plan para tus necesidades.",
+      "call_text": "Llama ahora",
+      "expert_text": "y habla con un experto licenciado en Medicare!",
+      "image": "/images/medi/medi4.jpg"
+    }
+  },
+
+  "life_insurance": {
+    "breadcrumb": {
+      "title": "Seguro de Vida",
+      "image": "/images/life/life.jpg"
+    },
+    "main_section": {
+      "title": "Protege a Tus Seres Queridos con un Seguro de Vida",
+      "description": "La vida es impredecible, pero el futuro de tu familia no tiene por qué serlo. El seguro de vida brinda tranquilidad al saber que tu familia o dependientes estarán protegidos financieramente si ocurre algo inesperado. Esto puede ser especialmente importante si:",
+      "key_points": [
+        "Tienes dependientes, como hijos o un cónyuge, que dependen de tus ingresos.",
+        "Llevas una deuda significativa, como una hipoteca, préstamos o deudas de tarjetas de crédito.",
+        "Quieres asegurarte de que tu familia tenga apoyo financiero para la educación, los gastos diarios o la estabilidad financiera a largo plazo."
+      ],
+      "image": "/images/life/Life1.jpg"
+    },
+    "types_section": {
+      "title": "Tipos de Seguro de Vida",
+      "types": [
+        {
+          "title": "Seguro de Vida a Término",
+          "description": "Cobertura asequible por un período determinado (10, 20, 30 años). Ideal para necesidades a corto plazo, como reemplazo de ingresos o protección de hipoteca."
+        },
+        {
+          "title": "Seguro de Vida Entera",
+          "description": "Cobertura de por vida que incluye un componente de valor en efectivo, acumulando ahorros con el tiempo."
+        },
+        {
+          "title": "Seguro de Vida Universal",
+          "description": "Póliza flexible con potencial de crecimiento en el valor en efectivo, que te permite ajustar las primas y la cobertura a medida que cambian tus necesidades."
+        }
+      ],
+      "image": "/images/life/Life2.jpg"
+    },
+    "quote_section": {
+      "title": "Obtén una Cotización Personalizada... ¡Da el Primer Paso Hoy!",
+      "description": "El futuro de tu familia es demasiado importante para dejarlo al azar. Comienza a asegurar tu legado financiero hoy mismo explorando nuestras opciones de seguro de vida. Obtén tu cotización gratuita y da el primer paso hacia la tranquilidad.",
+      "button_text": "Obtén Tu Cotización Gratis Hoy",
+      "image": "/images/life/Life3.jpg"
+    }
+  },
+
+  "health": {
+    "title": "Seguro de Salud",
+    "sections": [
+      {
+        "title": "Seguro de Salud",
+        "button_text": "Descubre Más",
+        "button_link": "/appointment"
+      },
+      {
+        "title": "Planes para las Necesidades de Tu Familia",
+        "description": "¡Encontrar el plan de salud adecuado para tu familia es más fácil que nunca! Nuestras opciones de seguro de salud ofrecen una amplia variedad de planes diseñados para ajustarse a tus necesidades y presupuesto. Desde cobertura integral hasta opciones asequibles, tenemos todo lo que necesitas.",
+        "button_text": "Obtener una Cotización",
+        "button_link": "/appointment"
+      },
+      {
+        "title": "El Seguro de Salud Te Ayuda a Ahorrar",
+        "description": "Sin cobertura, incluso una sola visita al hospital puede resultar en miles de dólares en facturas médicas. El seguro de salud te ayuda a manejar estos costos al compartir la carga y garantizar que pagues solo una fracción de lo que pagarías de otra manera.",
+        "call_to_action": "¿Listo para proteger lo que más importa?",
+        "link_text": "Habla con un agente",
+        "link": "/appointment"
+      },
+      {
+        "title": "¿Qué Incluye la Cobertura de Salud?",
+        "description": "Estos son algunos de los beneficios esenciales que incluye el plan de la Ley de Cuidado de Salud Asequible (ACA):",
+        "list": [
+          {
+            "text": "Visitas al Médico y Atención de Especialistas"
+          },
+          {
+            "text": "Servicios de Emergencia y Hospitalización"
+          },
+          {
+            "text": "Medicamentos Recetados"
+          },
+          {
+            "text": "Servicios Preventivos (por ejemplo, chequeos anuales)"
+          },
+          {
+            "text": "Atención de Maternidad y Recién Nacidos"
+          },
+          {
+            "text": "Servicios de Salud Mental"
+          }
+        ]
+      },
+      {
+        "title": "¿Qué Son los Gastos de Bolsillo?",
+        "description": "Los gastos de bolsillo son los costos que pagas directamente por servicios de atención médica que no están cubiertos por tu plan de seguro de salud. Comprender estos costos es crucial para planificar tu presupuesto de atención médica y evitar tensiones financieras inesperadas."
+      },
+      {
+        "title": "Los Costos de Bolsillo Incluyen:",
+        "list": [
+          {
+            "item": "Prima",
+            "description": "El pago mensual fijo que realizas para mantener activo tu seguro de salud."
+          },
+          {
+            "item": "Deducibles",
+            "description": "La cantidad que debes pagar por servicios médicos cubiertos antes de que tu seguro comience a pagar."
+          },
+          {
+            "item": "Copagos",
+            "description": "Una cantidad fija que pagas por servicios específicos como visitas al médico o medicamentos recetados."
+          },
+          {
+            "item": "Coseguro",
+            "description": "Un porcentaje de los costos que compartes con tu compañía de seguros después de cumplir con tu deducible."
+          },
+          {
+            "item": "Comparar Planes de Seguro",
+            "description": "Al comparar planes de seguro, es crucial revisar todos los costos. Explora el mejor plan que se ajuste a tus necesidades de atención médica y presupuesto. ¡Conéctate con nuestro agente licenciado hoy!"
+          }
+        ]
+      }
+    ]
+  },
+
+  "dental_vision": {
+    "title": "Dental y Visión",
+    "description": "Planes Asequibles de Seguro Dental y de Visión para Tu Familia",
+    "main_sections": {
+      "first_section": {
+        "title": "Planes Asequibles de Seguro Dental y de Visión para Tu Familia",
+        "description": "Encontrar el seguro dental adecuado no tiene que ser complicado ni costoso. Ofrecemos una variedad de planes asequibles que facilitan el acceso a la atención dental que necesitas. Además, puedes combinar tu plan con cobertura de visión y audición para un cuidado completo, todo en un solo paquete."
+      },
+      "benefits_section": {
+        "title": "Beneficios del Seguro Dental:",
+        "benefits": [
+          {
+            "title": "Inscríbete en Cualquier Momento",
+            "description": "No necesitas esperar al período de inscripción abierta; ¡puedes inscribirte durante todo el año!"
+          },
+          {
+            "title": "Activación Rápida",
+            "description": "Inscríbete hoy, y tu cobertura podría comenzar tan pronto como el próximo mes."
+          },
+          {
+            "title": "Cobertura en Cualquier Lugar",
+            "description": "Nuestros planes están disponibles en todo el país, lo que facilita que casi cualquier persona obtenga cobertura."
+          }
+        ]
+      },
+      "need_insurance_section": {
+        "title": "¿Por Qué Necesitas un Seguro Dental?",
+        "description": "Las revisiones dentales regulares ayudan a detectar problemas antes de que se vuelvan costosos, asegurando que mantengas una sonrisa saludable. Desde limpiezas rutinarias hasta procedimientos más serios, el seguro dental hace que el cuidado sea más asequible, brindándote tranquilidad y protegiendo tu bolsillo.",
+        "call_to_action": "¡Comienza Hoy! Explora nuestros planes y descubre lo fácil que es proteger tu sonrisa."
+      }
+    },
+    "images": {
+      "main_images": [
+        "/images/dental/dental1.jpg",
+        "/images/dental/dental2.jpg",
+        "/images/dental/dental3.jpg"
+      ]
+    },
+    "cta_button": "Explora Planes"
+  },
+
+  "mission": {
+    "breadcrumb": {
+      "title": "Misión",
+      "image": "/images/mission/mission.jpg"
+    },
+    "make_difference": {
+      "title": "Cómo Marcamos la Diferencia",
+      "description": "Nuestra misión es mejorar la vida de las poblaciones desatendidas de Haití proporcionando acceso a seguros de salud asequibles e integrales. Creemos que todos, independientemente de su situación financiera, merecen atención médica de calidad. Al eliminar las barreras económicas y promover la concienciación sobre los servicios de salud disponibles, estamos trabajando para garantizar que más familias haitianas puedan llevar vidas más saludables y seguras.",
+      "button": "Descubre Más",
+      "image": "/images/mission/mission1.jpg"
+    },
+    "stronger_haiti": {
+      "title": "Juntos, Estamos Construyendo un Haití Más Fuerte y Saludable, Una Póliza a la Vez.",
+      "description": "Invertir en las comunidades haitianas no es solo un imperativo moral; es un catalizador para el crecimiento sostenible y el cambio positivo.",
+      "image": "/images/mission/missionPic.jpg"
+    },
+    "breaking_barriers": {
+      "title": "Derribando Barreras para la Equidad y el Crecimiento",
+      "description": "La comunidad haitiana a menudo enfrenta barreras sistémicas que limitan el acceso a recursos esenciales, como la educación, la atención médica y las oportunidades económicas. Al dirigir inversiones hacia estas áreas, podemos fomentar la equidad, crear caminos hacia el éxito y fortalecer la economía en general.",
+      "image": "/images/mission/mission2.jpg"
+    },
+    "unlocking_potential": {
+      "title": "Desbloqueando el Potencial para un Futuro Próspero",
+      "description": "Empoderar a los haitianos libera todo su potencial, generando innovación, diversidad cultural y una sociedad más inclusiva. Cuando elevamos a los nuestros, construimos un futuro donde todos prosperan",
+      "image": "/images/mission/mission3.jpg"
+    }
+  },
+
+  "company": {
+    "title": "Compañía",
+    "services": [
+      "Política de Privacidad",
+      "Términos de Servicio",
+      "Términos y Condiciones de SMS"
+    ],
+    "useful_links": {
+      "title": "Enlaces Útiles"
+    },
+    "useful_links_data": [
+      {
+        "name": "Inicio",
+        "href": "/"
+      },
+      {
+        "name": "Sobre Nosotros",
+        "href": "/about-us"
+      },
+      {
+        "name": "Productos",
+        "href": "/#products"
+      },
+      {
+        "name": "Misión",
+        "href": "/mission"
+      },
+      {
+        "name": "Contáctanos",
+        "href": "/#contact"
+      }
+    ],
+    "copyright": "© 2024 Health for Haitians. Todos los Derechos Reservados."
+  },
+
+  "contact": {
+    "title": "¡Contáctanos!",
+    "call": "Llama",
+    "phone_number": "1.844.544.0663",
+    "email": "Correo Electrónico",
+    "email_address": "info@h4hinsurance.com",
+    "chat": "Charlar",
+    "chat_hours": "Lunes a Viernes (9am-6pm EST)"
+  },
+
+  "misc": {
+    "schedule": "Programa tu cita",
+    "submit": "entregar",
+    "afford": "Planes de Seguro de Salud Asequibles para Ti y Tu Familia",
+    "protect": "Protege a tus seres queridos con un plan que se ajuste a tu vida. ¡Obtén tu cotización gratis ahora!",
+    "quote": "OBTÉN UNA COTIZACIÓN",
+    "free_quote": "Obtén una Cotización Gratis",
+    "book": "Programa tu Cita Hoy"
+  },
+
+  "form": {
+    "completed": "Completado",
+    "label": {
+      "enterZipCode": "Ingresa el Código Postal",
+      "householdIncome": "¿Cuál es el ingreso de tu hogar?",
+      "firstName": "Nombre",
+      "lastName": "Apellido",
+      "dateOfBirth": "¿Cuál es tu fecha de nacimiento?",
+      "homeAddress": "¿Cuál es tu dirección de domicilio?",
+      "addressOptional": "Dirección ",
+      "cityOptional": "Ciudad ",
+      "stateOptional": "Estado ",
+      "email": "Correo Electrónico",
+      "phoneOptional": "Teléfono ",
+      "optional": "(Opcional)"
+    },
+    "inputField": {
+      "enterZipCode": "Ingresa el Código Postal",
+      "selectHouseholdIncome": "Selecciona el Ingreso del Hogar",
+      "firstName": "Nombre",
+      "lastName": "Apellido",
+      "dateOfBirth": "mm/dd/aaaa",
+      "addressOptional": "Dirección ",
+      "cityOptional": "Ciudad ",
+      "stateOptional": "Estado ",
+      "email": "Ingresa tu correo electrónico",
+      "phoneOptional": "Ingresa tu número de teléfono de 10 dígitos"
+    },
+    "button": {
+      "continue": "Continuar",
+      "back": "Regresar",
+      "ok": "¡Perfecto!",
+      "submit": "Enviar solicitud de cotización"
+    },
+    "questions": {
+      "individualOrFamilyCoverage": "¿Estás buscando cobertura individual o familiar?",
+      "typeOfCoverage": "¿Qué tipo de cobertura estás buscando?",
+      "householdIncome": "¿Cuál es el ingreso de tu hogar?",
+      "fullName": "¿Cuál es tu nombre completo?",
+      "dateOfBirth": "¿Cuál es tu fecha de nacimiento?",
+      "homeAddress": "¿Cuál es tu dirección de domicilio?",
+      "secure": "¡Asegura tu Cotización Gratis Ahora!",
+      "stayConnected": "Mantente Conectado"
+    },
+    "options": {
+      "individual": "Individual",
+      "family": "Familiar",
+      "life": "Vida",
+      "health": "Salud",
+      "dental": "Dental",
+      "vision": "Visión"
+    },
+    "finalPopUpBox": {
+      "formSubmitted": "Formulario Enviado",
+      "successMessage": "Tu formulario ha sido enviado exitosamente.",
+      "successMessage2": " Un agente se pondrá en contacto contigo en las próximas 24 horas."
+    },
+
+    "errors": {
+      "zipRequired": "Se requiere código postal",
+      "firstNameRequired": "El nombre es obligatorio",
+      "lastNameRequired": "el apellido es requerido",
+      "dobRequired": "se requiere fecha de nacimiento",
+      "addressRequired": "Se requiere dirección",
+      "cityRequired": "Se requiere ciudad",
+      "stateRequired": "Se requiere estado",
+      "emailRequired": "Se requiere correo electrónico"
+    },
+
+    "footer": {
+      "agree": "Aceptas recibir mensajes automatizados promocionales recurrentes por texto y correo electrónico de H4H Insurance: El consentimiento no es una condición de compra. Responde HELP para obtener ayuda o STOP para cancelar. Pueden aplicarse tarifas de mensajes y datos.",
+      "submit": "Al enviar este formulario, aceptas recibir correos electrónicos de marketing de H4H Insurance. Puedes revocar tu consentimiento en cualquier momento cancelando la suscripción enviando un correo a"
+    }
+  }
+}

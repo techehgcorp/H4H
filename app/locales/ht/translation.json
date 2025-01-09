@@ -1,0 +1,816 @@
+{
+  "navigation": {
+    "navigate": "Navige",
+    "choose_page": "Chwazi yon paj pou navige:",
+    "menu_items": {
+      "home": "Akèy",
+      "about_us": "Sou nou",
+      "health": "Sante",
+      "dental_vision": "Dantè & Vizyon",
+      "life": "Lavi",
+      "medicare": "Medicare",
+      "mission": "Misyon",
+      "contact": "Kontak",
+      "products": "Pwodwi yo",
+      "contact_us": "Kontakte nou"
+    },
+    "close": "Fèmen"
+  },
+
+  "slides": [
+    {
+      "imageUrl": "/images/slider/african.jpeg",
+      "title": "Ansanm N’ap Bati yon Ayiti pi An Sante (pi djanm), Yon Fanmi alafwa.",
+      "url": "/health",
+      "buttonText": "Plis enfòmasyon"
+    },
+    {
+      "imageUrl": "/images/slider/african3.jpeg",
+      "title": "Plan Sante Konplè pou moun endividyèl, Fanmi avèk Opsyon Medicare.",
+      "url": "/health",
+      "buttonText": "Konpare Plan yo"
+    },
+    {
+      "imageUrl": "/images/slider/african2.jpg",
+      "title": "Jwenn yon Plan Dantè ak Vizyon Abòdab (ki pa chè) pou Fanmi ou.",
+      "url": "/dental",
+      "buttonText": "Dekouvri Plis"
+    },
+    {
+      "imageUrl": "/images/slider/african3.jpg",
+      "title": "Pwoteje Fiti Finansye Fanmi ou ak Asirans Lavi (Asirans de vi).",
+      "url": "/appointment",
+      "buttonText": "Kontakte yon Ajan"
+    }
+  ],
+
+  "contact_form": {
+    "insurance_types": {
+      "health": "Sante",
+      "dental": "Dantè",
+      "vision": "Vizyon",
+      "medicare": "Medicare",
+      "life": "Lavi"
+    },
+    "title": "Jwenn Kouvèti Jodi a!",
+    "subtitle": "Chwazi Kalite Asirans ou",
+    "fields": {
+      "full_name": "non komplè",
+      "first_name": "prenon",
+      "last_name": "siyati",
+      "date_of_birth": "date ou fèt",
+      "zip_code": "Kòd postal",
+      "email": "email",
+      "mobile_phone": "Nimewo telefòn mobil (Etazini sèlman)",
+      "text_consent": "Voye mesaj ak nouvèl & òf pou mwen"
+    },
+    "consent_notice": "Lè w klike sou bouton ki anba a, w ap bay konsantman’w pou resevwa e-mail ak mesajmarketing, anplis w ap dakò pou resevwa apèl telefòn, yon sistèm otomatik pou voye mesaj ak apèl telefòn, mesaj tèks nan nimewo telefòn ou bay la oswa pa e-mail. Ou konprann sa a pa yon kondisyon pou achte nan men nou, epi ou ka resevwa yon estimasyon asirans mlè w kontakte nou pa telefòn. Ou ka anile konsantman sa a nenpòt lè lè w kontakte nou nan 844-544-0663 oswa info@h4hinsurance.com. Ou konprann ke tarif mesaj ak done operatè ou ka aplike. Verifye Règleman Konfidansyalite ak Tèm Sèvis SMS sou telefòn ou .",
+    "links": {
+      "privacy_policy": "Règleman Konfidansyalite",
+      "terms_and_conditions": "Tèm ak Kondisyon yo"
+    }
+  },
+
+  "sms_terms": {
+    "please_read": "Tanpri li epi revize tèm sèvis SMS nou yo anba a.",
+    "description": {
+      "title": "Deskripsyon Sèvis SMS:",
+      "content": "Itilizasyon sèvis Health For Haitians pou resevwa sèvis mesaj kout ak/oswa sèvis multimédia pou rezon maketing ak non-maketing se subject a tèm sèvis SMS sa yo. Sèvis SMS yo ak koleksyon ak itilizasyon enfòmasyon pèsonèl ou se subject a politik konfidansyalite SMS nou an. Lè ou enskri pou itilize, itilize oswa aksè sèvis SMS yo, ou aksepte e ou dakò ak tèm SMS sa yo ak politik konfidansyalite SMS nou an."
+    },
+    "services_description": {
+      "title": "Deskripsyon Sèvis SMS:",
+      "content": "Nou ka voye mesaj maketing ak non-maketing atravè sèvis SMS yo ki ka enkli mesaj tranzaksyonèl. Mesaj maketing yo piblisite ak ankouraje pwodwi ak sèvis nou yo e yo ka enkli pwomosyon, espesyal, lòt òf maketing, rapèl abandone pou tèt ou ak lòt enfòmasyon ki enpòtan. Mesaj tranzaksyonèl yo gen rapò ak yon tranzaksyon ki egziste oswa ki ap fèt e yo ka enkli ajou ak lòt enfòmasyon ki gen rapò ak tranzaksyon an. Mesaj yo ka voye ak teknoloji otomatik, ki gen ladan yon autodialer, sistèm otomatik, oswa sistèm apèl otomatik. Frekans mesaj yo ap varye."
+    },
+    "eligibility": {
+      "title": "Elijibilite:",
+      "content": "Pou resevwa sèvis SMS, ou dwe yon rezidan Etazini e ou dwe 18 ane oswa plis."
+    },
+    "user_opt_in": {
+      "title": "Opt-In Itilizatè:",
+      "content": "Lè ou bay nou nimewo telefòn mobil ou, ou ap volontèman opte pou sèvis SMS yo e ou dakò pou resevwa mesaj repete soti nan nou nan nimewo telefòn mobil ki asosye ak opte ou, menm si nimewo sa a anrejistre sou nenpòt lis eta oswa federal."
+    },
+    "opt_in_success": {
+      "title": "Opt-Out Itilizatè ak Sipò:",
+      "content": "Ou ka opte soti nan sèvis SMS yo nenpòt ki lè."
+    },
+    "warranty": {
+      "title": "Avètisman sou Garanti ak Responsablite:",
+      "content": "Sèvis SMS yo ofri sou yon baz 'jan li ye a' e yo ka pa disponib nan tout zòn, nan tout tan, oswa sou tout founisè mobil."
+    },
+    "modification": {
+      "title": "Modifikasyon:",
+      "content": "Si ou gen nenpòt kesyon sou tèm sèvis sa a, kontakte nou nan: Health For Haitians, 1000 NW 65th St. Suite 103, Fort Lauderdale, FL 33309. email: info@H4Hinsurance.com. Telefòn: 1-844-544-0663"
+    }
+  },
+
+  "company": {
+    "title": "Konpayi",
+    "useful_links": {
+      "title": "Lyen Itil"
+    },
+    "services": [
+      "Règleman Konfidansyalite",
+      "Tèm Sèvis",
+      "Tèm & Kondisyon SMS"
+    ],
+    "useful_links_data": [
+      {
+        "name": "Akèy",
+        "href": "/"
+      },
+      {
+        "name": "Sou Nou",
+        "href": "/about-us"
+      },
+      {
+        "name": "Pwodwi",
+        "href": "/#products"
+      },
+      {
+        "name": "Misyon",
+        "href": "/mission"
+      },
+      {
+        "name": "Kontakte Nou",
+        "href": "/#contact"
+      }
+    ],
+    "copyright": "© 2024 Sante pou Ayisyen. Tout Dwa Rezève."
+  },
+
+  "terms_and_conditions": {
+    "title": "Tèm ak Kondisyon yo",
+    "welcome": "Byenveni sou sit entènèt H4HInsurance (“nou,” “nou an,” oswa “nou”). Lè w gen aksè ak itilize sit entènèt nou an (h4hinsurance.com, “Sit la”), ou dakò ak Tèm ak Kondisyon sa yo. Si w pa dakò ak tèm sa yo, tanpri pa itilize Sit la.",
+    "acceptance_of_terms": {
+      "title": "1. Akseptasyon Tèm yo",
+      "content": [
+        "Tèm sa yo gouvène itilizasyon Sit la. Lè w itilize Sit la, ou deklare ke:",
+        "Ou gen omwen 18 lane.",
+        "Ou se yon rezidan Etazini.",
+        "Ou dakò pou w konfòme w ak tèm sa yo."
+      ]
+    },
+    "use_of_the_site": {
+      "title": "2. Itilizasyon Sit la",
+      "license_to_use": {
+        "title": "a. Lisans pou Itilize Sit la:",
+        "content": "H4HInsurance ba ou yon lisans limite, ki pa eksklizif, ki pa transfere, epi ki ka revoke pou itilize Sit la sèlman pou rezon pèsonèl ak ki pa komèsyal ki gen rapò ak sèvis asirans."
+      },
+      "prohibited_activities": {
+        "title": "b. Aktivite Entèdi:",
+        "content": [
+          "Ou dakò pou pa:",
+          "Kopi, distribye, oswa repwodui kontni Sit la san otorizasyon.",
+          "Itilize Sit la pou telechaje oswa distribye lojisyèl ki danjere.",
+          "Eseye analize, dekonpile, oswa demonte Sit la.",
+          "Itilize Sit la pou aktivite ilegal oswa fwod."
+        ]
+      },
+      "site_modifications": {
+        "title": "c. Modifikasyon Sit la:",
+        "content": "H4HInsurance rezève dwa pou modifye, sispann, oswa sispann operasyon Sit la oswa nenpòt karakteristik li yo nenpòt ki lè san avètisman alavans."
+      }
+    },
+    "information_you_provide": {
+      "title": "3. Enfòmasyon Ou Bay",
+      "content": [
+        "Pou itilize sèten karakteristik sou Sit la, ou ka oblije bay enfòmasyon pèsonèl. Lè w fè sa, ou dakò ke:",
+        "Enfòmasyon an egzat, aktyèl, ak konplè.",
+        "Ou pral mete enfòmasyon yo ajou jan sa nesesè.",
+        "Ou bay konsantman pou itilize enfòmasyon ou jan sa dekri nan Règleman sou Konfidansyalite nou an."
+      ]
+    },
+    "privacy": {
+      "title": "4. Konfidansyalite",
+      "content": "Itilizasyon ou sou Sit la sibi Règleman sou Konfidansyalite nou an, ki eksplike kijan nou kolekte, itilize, ak pwoteje enfòmasyon pèsonèl ou yo. Lè w itilize Sit la, ou konsanti ak pratik ki dekri nan Règleman sou Konfidansyalite nou an."
+    },
+    "sms_terms_of_service": {
+      "title": "5. Tèm ak Kondisyon SMS",
+      "program_name_and_description": {
+        "title": "a. Non Pwogram ak Deskripsyon:",
+        "content": "Sèvis SMS H4HInsurance ka voye mesaj maketing ak mesaj ki pa maketing, ki gen ladan mizajou tranzaksyonèl, pwomosyon, ofri espesyal, ak lòt enfòmasyon ki gen rapò ak asirans. Mesaj yo ka voye itilize teknoloji otomatize, tankou sistèm otodyalè oswa sistèm apèl otomatik."
+      },
+      "message_frequency_and_cadence": {
+        "title": "b. Frekans ak Kaden Mesaj:",
+        "content": "Frekans mesaj yo ap varye selon angajman ou ak preferans ou. Pa egzanp, ou ka resevwa jiska 9 mesaj pa mwa."
+      },
+      "message_and_data_rates": {
+        "title": "c. Frè Mesaj ak Done:",
+        "content": "Nou pa chaje pou mesaj yo voye atravè Sèvis SMS yo. Sepandan, frè mesaj ak done ki enpoze pa founisè mobil ou a ka aplike."
+      },
+      "eligibility": {
+        "title": "d. Kalifikasyon:",
+        "content": [
+          "Pou resevwa Sèvis SMS, ou dwe:",
+          "Yon rezidan Etazini.",
+          "18 lane oswa plis."
+        ]
+      },
+      "opt_in_agreement": {
+        "title": "e. Akò pou Opt-In:",
+        "content": "Lè ou bay nimewo mobil ou, ou opt-in volontè pou Sèvis SMS yo epi dakò pou resevwa mesaj repete nan nimewo mobil ou bay la. Opt-in sa a pa obligatwa pou achte nenpòt pwodwi oswa sèvis."
+      },
+      "opt_out_instructions": {
+        "title": "f. Enstriksyon Opt-Out:",
+        "content": "Pou sispann resevwa mesaj, reponn STOP, QUIT, CANCEL, OPT-OUT, oswa UNSUBSCRIBE nan nenpòt mesaj. Ou ka kontinye resevwa mesaj pandan kèk tan pandan nap trete demann ou an. Pou reprann resevwa mesaj yo, reponn START nan yon mesaj anvan."
+      },
+      "customer_care_contact_information": {
+        "title": "g. Enfòmasyon Kontak Sèvis Kliyantèl:",
+        "content": "Pou asistans, reponn HELP nan nenpòt mesaj oswa kontakte nou nan",
+        "Email": "h4hinsurance.com",
+        "Phone": "1.844.544.0663"
+      }
+    },
+    "privacy_and_data_sharing": {
+      "title": "h. Konfidansyalite ak Pataje Done:",
+      "content": "Done pèsonèl ou yo, enkli estati opt-in SMS ou, pral sèlman pataje ak founisè sèvis twazyèm pati oswa vandè ki ede nan livrezon Sèvis SMS yo. Gade Règleman sou Konfidansyalite nou an pou plis detay."
+    },
+    "disclaimer_and_liability": {
+      "title": "i. Renon ak Responsabilite:",
+      "content": "Sèvis SMS yo bay 'jan yo ye' epi yo ka pa toujou disponib. H4HInsurance.com ak founisè sèvis li yo pa responsab pou echèk oswa reta nan mesaj."
+    },
+    "intellectual_property": {
+      "title": "6. Pwopriyete Entèlektyèl",
+      "content": "Tout kontni, mak komèsyal, ak materyèl sou Sit la se pwopriyete H4HInsurance oswa lisansye li yo. Ou pa ka itilize okenn nan pwopriyete entèlektyèl nou yo san konsantman ekri."
+    },
+    "disclaimers": {
+      "title": "7. Renon",
+      "no_professional_advice": {
+        "title": "a. Pa gen Konsèy Pwofesyonèl:",
+        "content": "Kontni sou Sit la bay sèlman pou rezon enfòmasyon epi li pa konstitiye konsèy pwofesyonèl, finansye, oswa legal."
+      },
+      "no_guarantee_of_results": {
+        "title": "b. Pa gen Garanti Rezilta:",
+        "content": "Nou pa garanti ke sitasyon oswa rekòmandasyon asirans yo bay ap satisfè kondisyon ou. Toujou konsilte dirèkteman ak konpayi asirans oswa ajan."
+      }
+    },
+    "limitation_of_liability": {
+      "title": "8. Limitasyon Responsabilite",
+      "content": [
+        "Nan tout limit lalwa pèmèt:",
+        "H4HInsurance pa responsab pou nenpòt domaj ki sòti nan itilizasyon Sit la.",
+        "Responsabilite nou limite a montan ou peye nou pou sèvis yo aksede atravè Sit la."
+      ]
+    },
+    "arbitration_and_dispute_resolution": {
+      "title": "9. Arbitraj ak Rezolisyon Konfli",
+      "content": "Nenpòt konfli ki sòti nan itilizasyon ou nan Sit la pral rezoud atravè arbitraj obligatwa dapre Lwa Federal sou Arbitraj. Ou renonse dwa pou patisipe nan aksyon klas."
+    },
+    "termination": {
+      "title": "10. Terminasyon",
+      "content": "H4HInsurance rezève dwa pou rezilye aksè ou a Sit la pou nenpòt vyolasyon Tèm sa yo oswa itilizasyon move Sit la."
+    },
+    "changes_to_these_terms": {
+      "title": "11. Chanjman nan Tèm sa yo",
+      "content": "Nou ka mete ajou Tèm sa yo peryodikman. Chanjman yo ap pibliye sou paj sa a ak dat efektif mete ajou. Kontinye itilize Sit la endike akseptasyon ou nan Tèm yo revize."
+    },
+    "contact_us": {
+      "title": "12. Kontakte Nou",
+      "content": [
+        "Si ou gen nenpòt kesyon sou Tèm sa yo, tanpri kontakte nou nan:",
+        "Email: h4hinsurance.com",
+        "Phone: 1.844.544.0663"
+      ]
+    }
+  },
+
+  "privacy_policy": {
+    "title": "Règleman sou Konfidansyalite",
+    "commitment": "H4HInsurance angaje nan pwoteje vi prive ou. Règleman sou Konfidansyalite sa a eksplike kijan nou kolekte, itilize, ak pwoteje enfòmasyon ou lè w itilize sit entènèt nou an (h4hinsurance.com) epi entèaji ak sèvis nou yo.",
+    "information_we_collect": {
+      "title": "1. Enfòmasyon Nou Kolekte",
+      "pii": {
+        "title": "a. Enfòmasyon Idantifyab Pèsonèl (PII)",
+        "content": "Nou kolekte enfòmasyon tankou non ou, adrès, nimewo telefòn, email, dat nesans, ak lòt detay pèsonèl ki nesesè pou bay sèvis asirans. Sa ka gen ladan tou enfòmasyon sou manm fanmi ou si sa nesesè pou sèvis yo."
+      },
+      "npii": {
+        "title": "b. Enfòmasyon Ki Pa Idantifyab Pèsonèlman (NPII)",
+        "content": "Nou ka kolekte enfòmasyon ki pa idantifyab pèsonèlman tankou done demografik, tip navigatè, detay sou aparèy, ak aktivite navigasyon sou sit entènèt nou an."
+      }
+    },
+    "how_we_collect_information": {
+      "title": "2. Kijan Nou Kolekte Enfòmasyon",
+      "from_you": {
+        "title": "a. Enfòmasyon Ou Bay",
+        "content": "Nou kolekte enfòmasyon dirèkteman nan men ou lè w ranpli fòm sou sit entènèt nou an, kontakte nou pa telefòn oswa email, oswa bay detay pandan yon konsiltasyon asirans."
+      },
+      "from_cookies": {
+        "title": "b. Enfòmasyon ki Soti nan Cookies",
+        "content": "Nou itilize cookies ak teknoloji menm jan an pou amelyore eksperyans navigasyon ou. Zouti sa yo ka kolekte done tankou adrès IP, tip navigatè, ak paj wè. Cookies ede nou pèsonalize kontni, analize itilizasyon, ak amelyore fonksyonalite sit entènèt."
+      }
+    },
+    "how_we_use_your_information": {
+      "title": "3. Kijan Nou Itilize Enfòmasyon Ou",
+      "content": [
+        "Bay quotes asirans, politik, ak sèvis ki gen rapò.",
+        "Amelyore sèvis kliyan ak fonksyonalite sit entènèt.",
+        "Kominike avèk ou konsènan demann ou yo, politik, ak mizajou.",
+        "Pèsonalize eksperyans ou sou sit entènèt nou an.",
+        "Asire konfòmite ak lwa ak regilasyon aplikab."
+      ]
+    },
+    "information_sharing": {
+      "title": "4. Pataje Enfòmasyon",
+      "content": [
+        {
+          "title": "a. Founisè Asirans ak Patnè",
+          "content": "Pou delivre sèvis ou mande yo, nou ka pataje enfòmasyon ou avèk konpayi asirans, ajan, ak lòt founisè sèvis ki nesesè pou trete quotes oswa reklamasyon."
+        },
+        {
+          "title": "b. Founisè Sèvis Twazyèm Pati",
+          "content": "Nou ka pataje enfòmasyon ou avèk vandè ki ede ak operasyon biznis tankou sipò IT, analiz, oswa maketing. Pati sa yo oblije pwoteje enfòmasyon ou an konfòmite avèk règleman sa a."
+        },
+        {
+          "title": "c. Done Opt-In Mesaj Tèks",
+          "content": "Tout kategori pi wo yo ekskli done opt-in ak konsantman pou mesaje tèks; enfòmasyon sa a p ap pataje ak okenn twazyèm pati pou objektif ki pa gen rapò ak sèvis kanpay SMS. Nou ka pataje Done Pèsonèl ou, ki gen ladan estati opt-in oswa konsantman SMS ou, ak twazyèm pati ki ede nou bay sèvis mesaj nou yo. Sa enkli, men pa limite a, founisè platfòm, konpayi telefòn, ak vandè ki ede nan livrezon mesaj tèks."
+        },
+        {
+          "title": "d. Egzijans Legal",
+          "content": "Nou ka divilge enfòmasyon ou si lalwa mande sa, tankou an repons a yon konvokasyon oswa demann gouvènman an."
+        }
+      ]
+    },
+    "cookies_and_tracking_technologies": {
+      "title": "5. Cookies ak Teknoloji Swivi",
+      "content": [
+        "Cookies Esansyèl: Ki nesesè pou sit entènèt la fonksyone kòmsadwa.",
+        "Cookies Analitik: Ede nou konprann konpòtman itilizatè pou amelyore sit entènèt la.",
+        "Cookies Fonksyonèl: Sonje preferans ou, tankou anviwònman lang oswa kote.",
+        "Ou ka jere preferans cookies nan anviwònman navigatè ou, men sa ka afekte fonksyonalite sit entènèt la."
+      ]
+    },
+    "how_we_protect_your_information": {
+      "title": "6. Kijan Nou Pwoteje Enfòmasyon Ou",
+      "content": [
+        "Chifreman pou done ki transmèt ant aparèy ou a ak sistèm nou yo.",
+        "Firewall ak sèvè sekirize pou pwoteje done ki estoke yo.",
+        "Revizyon regilye ak fòmasyon anplwaye pou asire konfòmite ak regilasyon vi prive.",
+        "Pandan n ap fè efò pou pwoteje enfòmasyon ou, pa gen okenn sistèm ki konplètman sekirize. Tanpri kontakte nou imedyatman si w sispèk aksè san otorizasyon a enfòmasyon ou."
+      ]
+    },
+    "your_privacy_rights": {
+      "title": "7. Dwa Konfidansyalite Ou",
+      "content": [
+        "Aksè, korije, oswa efase enfòmasyon pèsonèl ou.",
+        "Dekonekte nan kominikasyon maketing.",
+        "Limite pataje done ak twazyèm pati.",
+        "Pou egzèse dwa sa yo, tanpri kontakte nou lè w ap itilize detay ki anba la a."
+      ]
+    },
+    "childrens_privacy": {
+      "title": "8. Konfidansyalite Timoun",
+      "content": "H4HInsurance pa kolekte enfòmasyon konsyaman nan men moun ki poko gen 13 zan. Si nou vin okouran ke nou kolekte enfòmasyon sa a san atansyon, nou pral efase l imedyatman."
+    },
+    "changes_to_this_policy": {
+      "title": "9. Chanjman nan Règleman sa a",
+      "content": "Nou ka mete ajou Règleman sou Konfidansyalite sa a periodyikman. Chanjman yo ap afiche sou paj sa a ak dat efikasite ajou. Nou ankouraje w revize règleman sa a regilyèman."
+    },
+    "contact_us": {
+      "title": "10. Kontakte Nou",
+      "content": {
+        "address": "H4HInsurance, 1000 NW 65th St, Suite 110, Fort Lauderdale, FL 33309",
+        "email": "info@h4hinsurance.com",
+        "phone": "1.844.544.0663"
+      }
+    }
+  },
+
+  "home": {
+    "hero": {
+      "title": "Sante pou Ayisyen",
+      "subtitle": "pale ak yon Ajan ki gen Lisans",
+      "cta_button": "Kontakte nou"
+    },
+    "main_section": {
+      "title": "Nou La pou Satisfè tout Bezwen Asirans ou",
+      "description": "Asirans ka kite ou ak anpil kesyon, kite nou ede w pran pi bon desizyon ki nan bon enterè’w.",
+      "cta_button": "Ann Kòmanse"
+    },
+    "services": [
+      {
+        "title": "Asirans Sante",
+        "description": "Affordable Care Act (ACC) ofri resous pou ede diminye obstak ak bay aksè swen sante poumoun ki nan bezwen.",
+        "imageUrl": "/images/health.jpeg",
+        "url": "/health",
+        "icon": "💉"
+      },
+      {
+        "title": "Asirans Vi",
+        "description": "Kite nou ede w jwenn kle sekirite finansye pou ou menm ak fanmi’w .",
+        "imageUrl": "/images/life.jpeg",
+        "url": "/life",
+        "icon": "👨‍👩‍👧"
+      },
+      {
+        "title": "Dantè & Vizyon",
+        "description": "Nou ofri plan dantè ak vizyon abòdab (a bon pri) (ki pa chè) pou sante jeneral ou.",
+        "imageUrl": "/images/dental.jpeg",
+        "url": "/dental",
+        "icon": "🦷"
+      },
+      {
+        "title": "Medicare",
+        "description": "Jwenn konplemantè Medicare ki apwopriye a ka difisil, nou la pou’n ede’w .",
+        "imageUrl": "/images/medicare.jpeg",
+        "url": "/medicare",
+        "icon": "⚕️"
+      }
+    ],
+    "enrollment_section": {
+      "title": "Enskri Kounya ! Peryòd Enskripsyon an (open enrollment) ap Fini 15 janvye.",
+      "time_labels": {
+        "days": "Jou",
+        "hours": "Èdtan",
+        "minutes": "Minit",
+        "seconds": "Segond"
+      }
+    },
+    "partner_section": {
+      "text": "Patnè Fyè de",
+      "logo_alt": "Logo Konpayi a"
+    }
+  },
+  "growBusiness": {
+    "title": "Kouvri fanmi’w jodi a",
+    "button": "Pale ak yon Ajan"
+  },
+
+  "about_us": {
+    "title": "Sou nou",
+    "description": "Dekouvri misyon nou, vizyon nou, ak vwayaj ki kondwi pasyon nou pou aksè a swen sante.",
+    "sections": [
+      {
+        "heading": "Yon Misyon Pèsonèl: Sòti nan Eksperyans Imigran pou Rive nan Emansipasyon",
+        "paragraph": "Fonde pa yon imigran ayisyen ki te fè eksperyans pèsonèlman defi espesyal Ayisyen yo rankontre lè yo ap eseye rive jwenn Rèv Ameriken an, misyon nou an gen yon sans pèsonèl pwofon",
+        "button": "Kontakte nou pou yon Estimasyon (Quote)"
+      },
+      {
+        "heading": "Yon Vizyon pou Emansipasyon Total",
+        "paragraph": "Tankou tout lòt moun, li anvizyone ede kominote ayisyen an jwenn aksè nan opòtinite esansyèl tankou swen sante, edikasyon, travay, rezo, lojman, nitrisyon, envestisman, ak devlopman pèsonèl. Madanm li, ki tou se desandan Karayib, pataje vizyon sa a epi li rèv pou elaji efò sa yo nan tout Zile Karayib yo. Pandan ke objektif nou se sipòte tout kominote ki pa gen ase sèvis, ekip nou an konsantre sitou sou Ayisyen yo, ki se youn nan gwoup ki pi defavorize yo. Sante se fondasyon lavi, se poutèt sa nou kòmanse travay nou isit la."
+      },
+      {
+        "heading": "Kreye yon Pon pou rann Asirans Sante disponib pou tout Ayisyen",
+        "paragraph": "Aksè a swen sante de kalite se esansyèl pou byennèt tout moun ak fanmi yo, men anpil moun nan kominote ayisyen an ap fè fas ak gwo baryè pou jwenn kouvèti sante ki nesesè. Diferans langaj, mank enfòmasyon, ak limit finansye yo se kèk nan obstak ki anpeche yo jwenn swen yo bezwen. Misyon nou se ranpli diferans sa a lè nou bay resous ki pale Kreyòl pou ede Ayisyen yo navige nan sistèm swen sante konplèks la epi jwenn kouvèti ki nesesè pou yon lavni pi an sante."
+      },
+      {
+        "heading": "Elaji Aksè pou Sèvis Swen Sante de Kalite",
+        "paragraph": "Kit yo bezwen Medicaid, asirans sante, Medicare, oswa asirans lavi, nou kwè ke tout moun merite gen aksè nan sèvis ak sipò kalite. Nan lavni, nou planifye elaji pwojè nou yo, asire ke chak manm kominote ayisyen an gen konesans ak resous pou pwoteje sante ak byennèt yo."
+      }
+    ]
+  },
+
+  "dental_vision": {
+    "title": "Kouvèti Dantè & Vizyon",
+    "description": "Asirans Dantè & Vizyon Abòdab pou Fanmi Ou",
+    "main_sections": {
+      "first_section": {
+        "title": "Asirans Dantè & Vizyon Abòdab pou Fanmi Ou",
+        "description": "Jwenn bon asirans dantè a pa bezwen konplike—ni chè. Nou ofri yon varyete plan abòdab ki rann li fasil pou jwenn swen dantè ou bezwen an. Anplis, ou ka menm konbine plan ou a ak kouvèti pou vizyon ak tande pou yon swen konplè, tout nan yon sèl paket (bwat ; pakèt)."
+      },
+      "benefits_section": {
+        "title": "Avantaj Asirans Dantè:",
+        "benefits": [
+          {
+            "title": "Enskri Nenpòt Lè",
+            "description": "Pa bezwen tann pou enskripsyon ouvè (open enrollment) —ou ka enskri pou kouvèti nenpòt lè pandan tout ane a!"
+          },
+          {
+            "title": "Aktivasyon Rapid",
+            "description": "Enskri jodi a, epi kouvèti ak benefis ou ka kòmanse nan mwa kap vini an."
+          },
+          {
+            "title": "Kouvèti Kèlkeswa Kote’ w ye an",
+            "description": "NPlan nou yo disponib atravè tout peyi a, sa fè li fasil pou prèske nenpòt moun jwenn kouvèti."
+          }
+        ]
+      },
+      "need_insurance_section": {
+        "title": "Poukisa ou bezwen Asirans Dantè?",
+        "description": "Vizit dantis regilye ede dekouvri pwoblèm anvan yo vin koute chè, li asire tout ke ou kenbe yon souri an sante. Soti nan netwayaj woutin rive nan pwosedi ki pi serye, asirans dantè fè swen plis abòdab, ba ou lapè mantal, ak pwoteksyon pou bous ou.",
+        "call_to_action": "Kòmanse Jodi a! Eksplore plan nou yo epi wè kijan li fasil pou pwoteje souri ou."
+      }
+    },
+    "images": {
+      "main_images": [
+        "/images/dental/dental1.jpg",
+        "/images/dental/dental2.jpg",
+        "/images/dental/dental3.jpg"
+      ]
+    },
+    "cta_button": "Eksplore plan yo"
+  },
+
+  "health": {
+    "title": "Asirans Sante",
+    "sections": [
+      {
+        "title": "Asirans Sante",
+        "button_text": "Jwenn Plis Enfòmasyon",
+        "button_link": "/appointment"
+      },
+      {
+        "title": "Plan pou Bezwen Fanmi ou ",
+        "description": "Jwenn yon bon plan sante pou fanmi ‘w pi fasil kounya! Opsyon Asirans Sante nou yo ofri’w yon varyete plan ki adapte pou bezwen ak bidjè ou. Soti nan kouvèti konplè rive nan opsyon abòdab, nou la pou ede w jwenn sa ou bezwen an.",
+        "button_text": "Jwenn Yon Pri",
+        "button_link": "/appointment"
+      },
+      {
+        "title": "Asirans Sante Ede’w Ekonomize",
+        "description": "San kouvèti, menm yon sèl vizit lopital ka kòz dè milye de dola nan bill medikal. Asirans sante ede w jere depans sa yo, li pataje chay la epi asire w peye sèlman yon pati nan sa ou t ap peye otreman.",
+        "call_to_action": "Ou Pare pou pwoteje sa ki pi esansyèl lan? ",
+        "link_text": "Pale ak yon ajan jodi a",
+        "link": "/appointment"
+      },
+      {
+        "title": "Ki Sa Kouvèti Sante Gen Ladann?",
+        "description": "Men kèk nan Avantaj Esansyèl kin nan plan ACA an:",
+        "list": [
+          {
+            "text": "Vizit Doktè ak Espesyalis"
+          },
+          {
+            "text": "Sèvis Ijans ak Lopital"
+          },
+          {
+            "text": "Preskripsyon Medikaman"
+          },
+          {
+            "text": "Sèvis Prevansyon (egzanp: chèk anyèl)"
+          },
+          {
+            "text": "Swen Matènite ak Nouvo Nèf"
+          },
+          {
+            "text": "Sèvis Sante Mantal"
+          }
+        ]
+      },
+      {
+        "title": "Kisa Depans Pòch yo Ye?",
+        "description": "Depans pòch yo se depans ou peye dirèkteman pou sèvis swen sante ki pa kouvri pa plan asirans sante ou. Konprann depans sa yo enpòtan pou bidjè swen sante ou epi pou evite strès finansye inatandi."
+      },
+      {
+        "title": "Depans Pòch yo ka inkli:",
+        "list": [
+          {
+            "item": "Bill/Premium",
+            "description": "Peman fiks chak mwa ou fè pou kenbe asirans sante ou aktif."
+          },
+          {
+            "item": "Dediktib",
+            "description": "Kantite lajan ou dwe peye pou sèvis swen sante kouvri yo anvan asirans ou kòmanse peye."
+          },
+          {
+            "item": "Kopeman",
+            "description": "Kantite fiks ou peye pou sèten sèvis tankou vizit doktè oswa preskripsyon."
+          },
+          {
+            "item": "Koasirans",
+            "description": "Yon pousantaj nan depans ou pataje ak konpayi asirans ou apre ou fin satisfè dediktib ou."
+          },
+          {
+            "item": "Konpare Plan Asirans",
+            "description": "Lè w ap konpare plan asirans yo, li enpòtan pou revize tout depans yo. Eksplore pi bon plan ki adapte ak bezwen swen sante ou ak bidjè ou. Konekte ak yon ajan ki gen lisans jodi a!"
+          }
+        ]
+      }
+    ]
+  },
+
+  "life_insurance": {
+    "breadcrumb": {
+      "title": "Asirans Lavi",
+      "image": "/images/life/life.jpg"
+    },
+    "main_section": {
+      "title": "Pwoteje Moun Ou Renmen yo ak Asirans Lavi",
+      "description": "Lavi enprevizib, men avni fanmi ou pa bezwen menm jan. Asirans lavi ba ou lapè mantal, ke fanmi ou oswa moun ki depann sou ou yo ap gen pwoteksyon finansye si yon bagay inatandi rive. Sa ka enpòtan espesyalman si ou:",
+      "key_points": [
+        "Gen moun ki depann sou ou, tankou timoun oswa mari/madanm ki konte sou revni ou",
+        "Gen anpil dèt, tankou dèt mobilye (mortgage) , prè , oswa dèt kat kredi.",
+        "Vle asire fanmi ou gen sipò finansye pou edikasyon, depans chak jou, oswa estabilite finansye alontèm."
+      ],
+      "image": "/images/life/Life1.jpg"
+    },
+    "types_section": {
+      "title": "Tip Asirans Lavi;",
+      "types": [
+        {
+          "title": "Asirans Lavi ak Tèm",
+          "description": "Kouvèti abòdab pou yon peryòd espesifik (10, 20, 30 lane). Kalite sa Bon si w’ap bezwen kouvèti pou bezwen rapid tankou ranplasman revni oswa pwoteksyon plan kay (mortgage)."
+        },
+        {
+          "title": "Asirans Vi Pou Tout Lavi",
+          "description": "Kouvèti a vi ki gen yon konpozan valè lajan kach, ki fè ekonomi ak tan."
+        },
+        {
+          "title": "Asirans Lavi Inivèsèl",
+          "description": "Plan fleksib ak potansyèl pou kwasans valè lajan kach, pèmèt ou ajiste prim ak kouvèti yo lè’w vle chanje yo."
+        }
+      ],
+      "image": "/images/life/Life2.jpg"
+    },
+    "quote_section": {
+      "title": "Kontakte pou ’w jwenn yon Estimasyon gratis … pran premye pa sa jodi a!",
+      "description": "Avni fanmi'w trò enpòtn pou kite'l depann sou chans san pyès asirans. Kòmanse pwoteje eritaj finansye ou jodi a lè ou eksplore opsyon asirans lavi nou yo. Jwenn yon estimasyon gratis epi pran premye pa a pou lapè mental ou.",
+      "button_text": "Pran Estimasyon gratis ou jodi a!",
+      "image": "/images/life/Life3.jpg"
+    }
+  },
+
+  "medicare": {
+    "breadcrumb": {
+      "title": "Medicare",
+      "image": "/images/medi/medi5.jpg"
+    },
+    "hero_section": {
+      "title": "Medicare",
+      "home": "Akèy"
+    },
+    "main_section": {
+      "title": "Nou rann Kouvèti Medicare Senp, Abòdab (pa chè), epi Adapte ak Bezwen Ou.",
+      "description": "Lè ou ap rive nan laj 65 an epi w ap chèche konprann Medicare, sa ka trouble’w, men nou la pou ede w. Kit se premye fwa w ’ap enskri, w ap eksplore opsyon kouvèti , oubyen w ap chanje plan, kite nou gide’ w nan chak etap.",
+      "button": "Pran yon Estimasyon",
+      "image": "/images/medi/medi2.jpg"
+    },
+    "plans_section": {
+      "title": "Ki Plan Medicare Ki Pi Bon Pou Ou?",
+      "image": "/images/medi/medi3.jpg",
+      "plans": [
+        {
+          "title": "Medicare Advantage (Pati C)",
+          "description": "Plan Medicare Advantage konbine asirans lopital (Pati A) ak asirans medikal (Pati B) nan yon sèl plan. Anpil nan plan sa yo ofri tou kouvèti medikaman sou preskripsyon (Pati D), ansanm ak avantaj siplemantè tankou vizyon, dantè, ak tande."
+        },
+        {
+          "title": "Medicare Supplement (Medigap)",
+          "description": "Plan Medicare Supplement ede kouvri depans ki soti nan pòch ou ke Medicare tradisyonèl pa kouvri, tankou copayments, coinsurance, and deductibles. Chwazi nan plizyè plan ki pi bon pou an ap ede w ekonomize lajan epi pwoteje ou kont gwo bòdwo medikal."
+        },
+        {
+          "title": "Plan Medikaman sou Preskripsyon (Pati D)",
+          "description": "Plan sa bay kouvèti pou medikaman preskripsyon ak yon plan Pati D. W’ap aksè a yon rezo laj farmasi ak kouvèti pou medikaman ou bezwen yo."
+        }
+      ]
+    },
+    "compare_section": {
+      "title": "Konpare Plan Medicare yo Kounye a!",
+      "description": "Pa kite swen sante ' w sou chans, Eksplore plan Medicare nou yo jodi a epi jwenn kouvèti ki kenbe w an sante, pwoteje, epi san enkyetid. Avèk gid eksperyans ak zouti senp nou yo, ou ka chwazi pi bon plan pou bezwen ou yo avèk konfyans.",
+      "call_text": "Rele pou pale",
+      "expert_text": "ak yon ekspè Medicare ki gen lisans jodi a!",
+      "image": "/images/medi/medi4.jpg"
+    }
+  },
+
+  "mission": {
+    "breadcrumb": {
+      "title": "Misyon",
+      "image": "/images/mission/mission.jpg"
+    },
+    "make_difference": {
+      "title": "Kijan Nou Fè Yon Diferans",
+      "description": "Misyon nou se amelyore lavi popilasyon defavorize Ayiti yo, lè nou bay aksè a asirans sante ki abòdab (pa chè) epi konplè. Nou kwè ke chak moun, Kèlkeswa sitiyasyon finansyè yo, merite bon jan swen sante. Lè nou elimine baryè finansyè yo epi ede komunote an komprann enpòtans sèvis sante ki disponib yo, nou ap travay pou asire ke plis Fanmi Ayisyen kapab mennen yon lavi ki pi an sante ak plis sekirite.",
+      "button": "Dekouvri Plis",
+      "image": "/images/mission/mission1.jpg"
+    },
+    "stronger_haiti": {
+      "title": "Ansanm, Nou Ap Bati Yon Ayiti Ki Pi Fò, Ki Pi an Sante, Yon Plan a La Fwa.",
+      "description": "Envesti nan kominote ayisyèn yo se pa sèlman yon obligasyon moral; se yon katalizè pou kwasans dirab ak chanjman pozitif.",
+      "image": "/images/mission/missionPic.jpg"
+    },
+    "breaking_barriers": {
+      "title": "Kraze Baryè ki devan Egalite ak kwasans",
+      "description": "Kominote Ayisyen an souvan rankontre baryè sistemik ki limite aksè’ l nan resous esansyèl yo, tankou edikasyon, swen sante, ak opòtinite ekonomik. Lè nou dirije envestisman nan zòn sa yo, nou kapab kreye chemen pa nou pou siksè epi ranfòse ekonomi an.",
+      "image": "/images/mission/mission2.jpg"
+    },
+    "unlocking_potential": {
+      "title": "Deklanche Potansyèl pou Yon bèl Avni",
+      "description": "Bay Ayisyen pouvwa (Kapasite) se debloke potansyèl yo, jenere inovasyon, divèsite kiltirèl, ak yon sosyete ki pi enklizif. Lè nou leve pwòp nou yo, nou bati yon avni kote tout moun ap fleri.",
+      "image": "/images/mission/mission3.jpg"
+    }
+  },
+
+  "appointment": {
+    "title": "Planifye Yon Randevou",
+    "subtitle": "Pran youn randevou facilman avèk opsyon fleksib epi resevwa yon konfimasyon pa email imedyatman.",
+    "services": [
+      {
+        "id": 1,
+        "title": "Rele nou kounya",
+        "description": "Ou ka pran randevou fasilman pa telefòn lè ou rele nou nan 1.844.544.0663."
+      },
+      {
+        "id": 2,
+        "title": "Randevou Telefòn",
+        "description": "Fè randevou ou pou yon reyinyon pa telefòn nan yon dat ak lè ou prefere."
+      },
+      {
+        "id": 3,
+        "title": "Reyinyon Fas-a-Fas",
+        "description": "Rankontre avèk ekspè nou yo an pèsòn pou yon konsiltasyon konplè. Nou asire yon eksperyans pèsonalize."
+      },
+      {
+        "id": 4,
+        "title": "Konsiltasyon Vityèl",
+        "description": "Konekte avèk nou sou entènèt atravè yon reyinyon vityèl. Resevwa menm konsèy ekspè a san ou pa deplase kite lakay ou."
+      }
+    ],
+    "form": {
+      "date_select": "Tanpri chwazi dat ak lè",
+      "success_message": "Randevou pwograme pou {{date}} a {{time}}"
+    }
+  },
+
+  "contact": {
+    "title": "Kontakte nou !",
+    "call": "Rele nou nan",
+    "phone_number": "1.844.544.0663",
+    "email": "email",
+    "email_address": "info@h4hinsurance.com",
+    "chat": "Ekri nou",
+    "chat_hours": "Lundi Au Vendredi (9am – 6pm EST)"
+  },
+
+  "misc": {
+    "schedule": "Pwograme randevou ou",
+    "submit": "soumèt",
+    "afford": "Plan Asirans Sante Abòdab pou Ou ak Fanmi’w",
+    "protect": "Pwoteje moun ou renmen yo ak yon plan ki adapte ak lavi ou—jwenn yon estimasyon gratis kounye a!",
+    "quote": "PRAN YON ESTIMASYON Gratis",
+    "free_quote": "Pran YON ESTIMASYON Gratis",
+    "book": "Rezève yon Randevou Jodi a"
+  },
+
+  "form": {
+    "completed": "Fòm nan Voye",
+    "label": {
+      "enterZipCode": "Antre Kòd Postal ou",
+      "householdIncome": "Ki revni finansyè kay ou?",
+      "firstName": "Prenon",
+      "lastName": "Non fanmi",
+      "dateOfBirth": "Ki dat nesans ou?",
+      "homeAddress": "Ki adrès lakay ou?",
+      "addressOptional": "Adrès ",
+      "cityOptional": "Vil ",
+      "stateOptional": "Eta ",
+      "email": "Email",
+      "phoneOptional": "Telefòn "
+    },
+    "inputField": {
+      "enterZipCode": "Antre Kòd Postal ou",
+      "selectHouseholdIncome": "Chwazi Revni Kay la",
+      "firstName": "Prenon",
+      "lastName": "Non fanmi",
+      "dateOfBirth": "mm/jj/aaaa",
+      "addressOptional": "Adrès ",
+      "cityOptional": "Vil ",
+      "stateOptional": "Eta ",
+      "email": "Antre Email ou",
+      "phoneOptional": "Antre nimewo telefòn ou ak 10 chif yo",
+      "optional": "(Opsyonèl)"
+    },
+    "button": {
+      "continue": "Kontinye",
+      "back": "Retounen",
+      "ok": "OK",
+      "submit": "Voye Demann Estimasyon an ale"
+    },
+    "questions": {
+      "individualOrFamilyCoverage": "Èske w ap chèche asirans pou ou menm oswa pou fanmi ou?",
+      "typeOfCoverage": "Ki tip asirans ou ap chèche?",
+      "householdIncome": "Ki revni finansyè kay ou?",
+      "fullName": "Ki non konplè ou?",
+      "dateOfBirth": "Ki dat nesans ou?",
+      "homeAddress": "Ki adrès lakay ou?",
+      "secure": "Sekirize Estimasyon Gratis ou Kounya!",
+      "stayConnected": "Rete Konekte"
+    },
+    "options": {
+      "individual": "Endividyèl",
+      "family": "Fanmi",
+      "life": "Vi",
+      "health": "Sante",
+      "dental": "Dantè",
+      "vision": "Je"
+    },
+    "finalPopUpBox": {
+      "formSubmitted": "Fòm nan Voye",
+      "successMessage": "Nou resevwa Fòm ou an avèk siksè.",
+      "successMessage2": "Yon ajan ap kontakte ou 24 èdtan."
+    },
+
+    "errors": {
+      "zipRequired": "Kòd Postal la obligatwa",
+      "firstNameRequired": "Prenon ou obligatwa",
+      "lastNameRequired": "Non fanmi ou obligatwa",
+      "dobRequired": "Dat nesans obligatwa",
+      "addressRequired": "Adrès ou obligatwa",
+      "cityRequired": "Vil kote ou abite a obligatwa",
+      "stateRequired": "Eta kote ou abite a obligatwa",
+      "emailRequired": "Email ou obligatwa"
+    },
+
+    "footer": {
+      "agree": "Ou dakò pou resevwa mesaj tèks ak imèl pwomosyonèl otomatik repete ki sòti nan H4H Insurance: Konsantman pa yon kondisyon pou achte. Reponn HELP pou èd oswa STOP pou anile. Frè mesaj ak done yo ka aplike.",
+      "submit": "Lè w soumèt fòm sa a, ou ap bay konsantman pou resevwa imèl maketing nan men H4HInsurance. Ou ka revoke konsantman sa a nenpòt ki lè lè w koupe abònman nan imèl pou"
+    }
+  }
+}
