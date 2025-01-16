@@ -3,9 +3,9 @@ import { Card, Statistic } from 'antd';
 
 const TotalCustomersCard = ({ total }) => {
   return (
-    <Card>
+    <Card title="Total Registered Customers"
+    >
       <Statistic
-        title="Total de Clientes"
         value={total}
         valueStyle={{ color: '#3f8600' }}
       />

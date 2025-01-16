@@ -15,13 +15,13 @@ const CustomersAddedChart = ({ data }) => {
       },
     },
     meta: {
-      period: { alias: 'Período' },
-      count: { alias: 'Clientes Adicionados' },
+      period: { alias: 'Period' },
+      count: { alias: 'Clients Added' },
     },
   };
 
   return (
-    <Card title="Clientes Adicionados">
+    <Card title="Added Clients">
       <Column {...config} />
     </Card>
   );

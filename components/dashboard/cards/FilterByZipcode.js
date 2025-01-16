@@ -18,7 +18,7 @@ const ZipCodeDistributionChart = ({ data }) => {
   };
 
   return (
-    <Card title="Distribuição por ZIP Code">
+    <Card title="Registered Clients ZIP Codes">
       <Pie {...config} />
     </Card>
   );

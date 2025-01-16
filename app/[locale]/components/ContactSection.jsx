@@ -102,9 +102,9 @@ const ContactSection = () => {
             width='100%'
             height='100%'
             className='rounded-lg border border-gray-300 min-h-96'
-            allowfullscreen=''
+            allowFullScreen=''
             loading='lazy'
-            referrerpolicy='no-referrer-when-downgrade'
+            referrerPolicy='no-referrer-when-downgrade'
           ></iframe>
         </div>
       </div>

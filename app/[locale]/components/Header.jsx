@@ -550,7 +550,7 @@ const Header = () => {
                 <h2 className="text-base ml-0 sm:ml-10 md:text-2xl max-w-2xl py-5 font-bold leading-normal">
                 {t("misc.protect")}
                 </h2>
-                <div class="inline-block bg-black bg-opacity-50 p-3 rounded">
+                <div className="inline-block bg-black bg-opacity-50 p-3 rounded">
                   <button
                     onClick={() => {
                       router.push("/quote");

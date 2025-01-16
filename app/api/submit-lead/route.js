@@ -2,37 +2,47 @@ import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
 export async function POST(req) {
-  const { firstName, email } = await req.json(); // Capture form data
-
-  if (!firstName || !email) {
-    return NextResponse.json(
-      { message: 'Name and email are required' },
-      { status: 400 }
-    );
-  }
-
-  // Set up Nodemailer transport
-  const transporter = nodemailer.createTransport({
-    service: 'Gmail', // Or another email provider
-    host: 'smtp.gmail.com',
-    auth: {
-      user: process.env.NEXT_PUBLIC_EMAIL_USER, // Your email
-      pass: process.env.NEXT_PUBLIC_EMAIL_PASS, // Your email password or app password
-    },
-  });
-
-  // Email content
-  const mailOptions = {
-    from: '"H4H Insurance" <info@h4hinsurance.com>',
-    to: email, // Send email to the customer
-    subject: 'Thank you for contacting H4H!',
-    // text: `Hello ${firstName},\n\nThank you for opting in to receive updates from us.\n\nBest regards,\nYour Company`,
-    html: `<p>Hello <strong>${firstName}</strong>,</p><p>Thank you for opting in to receive updates from us.<br>One of our agents will be contacting you soon.</p><b><i>Best regards,</i><br>H4H Insurance</b><p>1.844.544.0663</p>`,
-  };
-
-  // Send the email
   try {
+    // Parse JSON do corpo da requisição
+    const { firstName, email } = await req.json();
+
+    // Validação básica
+    if (!firstName || !email) {
+      return NextResponse.json(
+        { message: 'Name and email are required' },
+        { status: 400 }
+      );
+    }
+
+    // Configuração do transporte do Nodemailer
+    const transporter = nodemailer.createTransport({
+      host: 'smtp.gmail.com',
+      port: 465, // Porta SSL para Gmail
+      secure: true, // Usa SSL
+      auth: {
+        user: process.env.EMAIL_USER, // Usuário do e-mail (não exposto ao cliente)
+        pass: process.env.EMAIL_PASS, // Senha do e-mail ou senha de app
+      },
+    });
+
+    // Configuração do e-mail
+    const mailOptions = {
+      from: '"H4H Insurance" <info@h4hinsurance.com>', // Remetente
+      to: email, // Destinatário (e-mail do cliente)
+      subject: 'Thank you for contacting H4H!',
+      html: `
+        <p>Hello <strong>${firstName}</strong>,</p>
+        <p>Thank you for opting in to receive updates from us.<br>
+        One of our agents will be contacting you soon.</p>
+        <p><b><i>Best regards,</i></b><br>H4H Insurance</p>
+        <p>1.844.544.0663</p>
+      `,
+    };
+
+    // Envio do e-mail
     await transporter.sendMail(mailOptions);
+
+    // Retorno de sucesso
     return NextResponse.json(
       { message: 'Opt-in confirmed, email sent' },
       { status: 200 }
@@ -40,7 +50,7 @@ export async function POST(req) {
   } catch (error) {
     console.error('Error sending email:', error);
     return NextResponse.json(
-      { message: 'Failed to send confirmation email' },
+      { message: 'Failed to send confirmation email', error: error.message },
       { status: 500 }
     );
   }
