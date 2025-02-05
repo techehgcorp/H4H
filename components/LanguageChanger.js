@@ -1,13 +1,10 @@
 'use client';
 
-import { useRouter } from 'next/navigation';
-import { usePathname } from 'next/navigation';
+import { useRouter, usePathname } from 'next/navigation';
 import { useTranslation } from 'react-i18next';
-// import i18nConfig from '@/i18nConfig';
-import { ChangeEvent } from 'react';
 import i18nConfig from '@/i18nConfig';
 
-export default function r() {
+export default function LanguageChanger() {
   const { i18n } = useTranslation();
   const currentLocale = i18n.language;
   const router = useRouter();
@@ -16,28 +13,21 @@ export default function r() {
   const handleChange = (e) => {
     const newLocale = e.target.value;
 
-    console.log('here');
-
-    // set cookie for next-i18n-router
+    // Define o cookie do idioma para persistência
     const days = 30;
     const date = new Date();
     date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
     document.cookie = `NEXT_LOCALE=${newLocale};expires=${date.toUTCString()};path=/`;
 
-    // redirect to the new locale path
-    // if (
-    //   currentLocale === i18nConfig.defaultLocale &&
-    //   !i18nConfig.prefixDefault &&
-    // ) {
-    //   console.log({ newLocale123: newLocale });
-    //   router.push('/' + newLocale + currentPathname);
-    // } else {
-    console.log({ newLocaleqweqweqwe: newLocale });
-    router.push(currentPathname.replace(`/${currentLocale}`, `/${newLocale}`));
-    // }
+    // Garante que o prefixo do idioma seja tratado corretamente
+    let newPath = currentPathname;
+    if (i18nConfig.locales.includes(currentLocale)) {
+      newPath = currentPathname.replace(`/${currentLocale}`, `/${newLocale}`);
+    } else {
+      newPath = `/${newLocale}${currentPathname}`;
+    }
 
-    console.log({ currentLocale });
-
+    router.push(newPath);
     router.refresh();
   };
 
