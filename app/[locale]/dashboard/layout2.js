@@ -16,7 +16,7 @@ const DashboardLayout = () => {
 
   const handleLogout = () => {
     localStorage.removeItem('google_token');
-    window.location.href = '/';
+    window.location.href = '/dashboard';
   };
 
   return (
