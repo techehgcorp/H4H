@@ -23,17 +23,17 @@ const BreadcrumbComp = ({img, video, videoSrc, pos, route}) => {
         height={1000}
         src={img}
         alt="img"
-        className="w-full h-full md:h-[49rem] rounded-md object-cover"
-      />
+        className="w-full h-[400px] sm:h-[500px] md:h-[600px] object-cover rounded-md"
+        />
     )}
     
     <div className={`flex absolute inset-0 flex-col items-${pos} justify-center p-4 sm:p-10`}>
-      <div className="text-center ml-7 md:mr-[10rem]">
-        <h1 className="text-sm text-primary-darkAqua md:text-4xl lg:text-6xl font-bold mb-4">
+      <div className="text-center ml-7 md:mr-[10rem] -">
+        <h1 className="text-sm text-primary-darkAqua md:text-4xl lg:text-6xl font-bold mb-4 mt-30" >
           {route}
         </h1>
         <Breadcrumb
-          className="text-xs md:text-xl text-white font-semibold py-2 px-4"
+          className="text-xs md:text-xl text-white font-semibold py-2 px-4 -mt-5"
           items={[
             {
               title: <Link href="/"> {t("navigation.menu_items.home")}</Link>,

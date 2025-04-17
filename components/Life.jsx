@@ -20,7 +20,7 @@ const Life = () => {
   return (
     <>
       <Header />
-      <div className=''>
+      <div className="">
         <BreadcrumbComp
             img={'/images/product/lifeinsuranceHERO.jpg'}
           pos={'start'} 

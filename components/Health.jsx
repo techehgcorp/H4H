@@ -33,7 +33,7 @@ const Health = () => {
       <div className="">
         <BreadcrumbComp
           img={"/images/product/healthheroimage.jpg"}
-          pos={"end"}
+          pos={"start"}
           route={t("health.title")}
         />
 
@@ -200,12 +200,12 @@ const Health = () => {
                   {item.description}
                 </li>
               ))}
-              <li className="mb-1">
+              {/* <li className="mb-1">
                 <strong className="text-lg pr-1">
                   {healthSections[5].list[4].item}:
                 </strong>
                 {healthSections[5].list[4].description}
-              </li>
+              </li> */}
             </ul>
           </motion.div>
 
