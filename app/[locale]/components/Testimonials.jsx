@@ -5,25 +5,25 @@ import { useDotButton } from './EmblaCarouselDotButton';
 
 const review = [
   {
-    name: 'MaxWell',
-    role: 'Developer',
-    imageUrl: 'https://randomuser.me/api/portraits/men/32.jpg',
+    name: 'Maxwell Johnson',
+    role: 'Small Business Owner',
+    imageUrl: 'https://randomuser.me/api/portraits/men/37.jpg',
     review:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Temporibus nostrum itaque maxime sit fugiat gravida tempus...',
+      "Thanks to Health 4 Haitians, I was able to get affordable coverage for my whole family. They always explain things clearly and treat me with respect. Highly recommended!",
   },
   {
     name: 'Sarah Lee',
-    role: 'Designer',
-    imageUrl: 'https://randomuser.me/api/portraits/women/44.jpg',
+    role: 'Freelancer',
+    imageUrl: 'https://randomuser.me/api/portraits/women/30.jpg',
     review:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Temporibus nostrum itaque maxime sit fugiat gravida tempus...',
+      "I was overwhelmed with so many insurance options, but they helped me find the perfect plan. The customer service is truly outstanding and caring!",
   },
   {
     name: 'John Doe',
-    role: 'Product Manager',
-    imageUrl: 'https://randomuser.me/api/portraits/men/45.jpg',
+    role: 'Truck Driver',
+    imageUrl: 'https://randomuser.me/api/portraits/men/48.jpg',
     review:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Temporibus nostrum itaque maxime sit fugiat gravida tempus...',
+      "Since joining Health 4 Haitians, insurance is no longer a headache. They handle everything and are always there when I need support.",
   },
 ];
 

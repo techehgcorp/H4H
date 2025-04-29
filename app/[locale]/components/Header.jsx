@@ -283,7 +283,7 @@ const Header = () => {
                 <div className="flex items-center">
                   <FaPhoneVolume className="w-8 h-8 text-[#B92031]" />
                   <span className="text-white font-bold  px-2 text-xl">
-                    786-397-7167                  
+                    (786) 397-7167                  
                   </span>
                 </div>
                 <div className="flex items-center">
@@ -293,14 +293,14 @@ const Header = () => {
                   </span>
                 </div>
               </div>
-              <div className=" lg:flex space-x-4 mt-4 sm:mt-0">
-                <a href="https://www.facebook.com/people/Health-4-Haitians/61567682720657/#" className="hidden lg:flex hover:text-gray-400">
+              <div className=" flex space-x-4 mt-4 sm:mt-0">
+                <a href="https://www.facebook.com/people/Health-4-Haitians/61567682720657/#" className="lg:flex hover:text-gray-400">
                   <FaFacebook className="w-6 h-6 text-white hover:text-blue-800" />
                 </a>
-                <a href="https://www.instagram.com/health4haitians/" className="hidden lg:flex hover:text-gray-400">
+                <a href="https://www.instagram.com/health4haitians/" className="lg:flex hover:text-gray-400">
                   <FaInstagram className="w-6 h-6 text-white hover:text-pink-800" />
                 </a>
-                <a href="http://wa.me/17863977167" className="hidden lg:flex hover:text-gray-400">
+                <a href="http://wa.me/17863977167" className="lg:flex hover:text-gray-400">
                   <FaWhatsapp className="w-6 h-6 text-white hover:text-green-800" />
                 </a>
                 <div className="text-black">
@@ -576,3 +576,6 @@ const Header = () => {
 };
 
 export default Header;
+
+
+

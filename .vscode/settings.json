@@ -3,5 +3,5 @@
     "workbench.list.mouseWheelScrollSensitivity": 1,
     "terminal.integrated.mouseWheelScrollSensitivity": 6,
     "editor.mouseWheelZoom": true,
-    "editor.columnSelection": true
+    "editor.columnSelection": false
 }
