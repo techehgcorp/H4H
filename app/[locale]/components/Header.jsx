@@ -289,7 +289,7 @@ const Header = () => {
                 <div className="flex items-center">
                   <MdOutlineMailOutline className="w-8 h-8 text-[#B92031]" />
                   <span className="text-white font-bold px-2 text-xl">
-                  info@ehgcorp.com
+                  info@h4hinsurance.com
                   </span>
                 </div>
               </div>
