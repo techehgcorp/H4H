@@ -10,6 +10,7 @@
       "life": "Lavi",
       "medicare": "Medicare",
       "mission": "Misyon",
+      "referafriend": "refere yon zanmi",
       "contact": "Kontak",
       "products": "Pwodwi yo",
       "contact_us": "Kontakte nou"
@@ -218,7 +219,7 @@
         "title": "g. Enfòmasyon Kontak Sèvis Kliyantèl:",
         "content": "Pou asistans, reponn HELP nan nenpòt mesaj oswa kontakte nou nan",
         "Email": "h4hinsurance.com",
-        "Phone": "1.844.544.0663"
+        "Phone": "(786) 397-7167"
       }
     },
     "privacy_and_data_sharing": {
@@ -269,7 +270,7 @@
       "content": [
         "Si ou gen nenpòt kesyon sou Tèm sa yo, tanpri kontakte nou nan:",
         "Email: h4hinsurance.com",
-        "Phone: 1.844.544.0663"
+        "Phone: (786) 397-7167"
       ]
     }
   },
@@ -370,7 +371,7 @@
       "content": {
         "address": "H4HInsurance, 1000 NW 65th St, Suite 110, Fort Lauderdale, FL 33309",
         "email": "info@h4hinsurance.com",
-        "phone": "1.844.544.0663"
+        "phone": "(786) 397-7167"
       }
     }
   },
@@ -695,7 +696,7 @@
       {
         "id": 1,
         "title": "Rele nou kounya",
-        "description": "Ou ka pran randevou fasilman pa telefòn lè ou rele nou nan 1.844.544.0663."
+        "description": "Ou ka pran randevou fasilman pa telefòn lè ou rele nou nan (786) 397-7167."
       },
       {
         "id": 2,
@@ -722,7 +723,7 @@
   "contact": {
     "title": "Kontakte nou !",
     "call": "Rele nou nan",
-    "phone_number": "1.844.544.0663",
+    "phone_number": "(786) 397-7167",
     "email": "email",
     "email_address": "info@h4hinsurance.com",
     "chat": "Ekri nou",

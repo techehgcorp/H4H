@@ -10,6 +10,7 @@
       "life": "Life",
       "medicare": "Medicare",
       "mission": "Mission",
+      "referafriend": "Refer a friend",
       "contact": "Contact",
       "products": "Products",
       "contact_us": "Contact Us"
@@ -151,7 +152,7 @@
         "title": "g. Customer Care Contact Information:",
         "content": "For assistance, reply HELP to any Message or contact us at",
         "Email": "h4hinsurance.com",
-        "Phone": "1.844.544.0663"
+        "Phone": "(786) 397-7167"
       }
     },
     "privacy_and_data_sharing": {
@@ -305,7 +306,7 @@
       "content": {
         "address": "H4HInsurance, 1000 NW 65th St, Suite 110, Fort Lauderdale, FL 33309",
         "email": "info@h4hinsurance.com",
-        "phone": "1.844.544.0663"
+        "phone": "(786) 397-7167"
       }
     }
   },
@@ -662,7 +663,7 @@
       {
         "id": 1,
         "title": "Call us now",
-        "description": "Speak to an agent by calling us at 1.844.544.0663. Conveniently book your appointment over the phone"
+        "description": "Speak to an agent by calling us at (786) 397-7167. Conveniently book your appointment over the phone"
       },
       {
         "id": 2,
@@ -688,7 +689,7 @@
 
   "contact": {
     "call": "Call",
-    "phone_number": "1.844.544.0663",
+    "phone_number": "(786) 397-7167",
     "email": "Email",
     "email_address": "info@h4hinsurance.com",
     "chat": "Chat",

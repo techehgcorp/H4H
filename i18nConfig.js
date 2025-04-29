@@ -1,6 +1,6 @@
 const i18nConfig = {
-locales: ['en', 'ht', 'ja', 'es'],
-  defaultLocale: 'en',
+locales: ['ht','en', 'ja', 'es'],
+  defaultLocale: 'ht',
   noPrefix: true,
   //   prefixDefault: false,
 };

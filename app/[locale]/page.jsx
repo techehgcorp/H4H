@@ -38,7 +38,8 @@ async function page({ params: { locale } }) {
         {/* <section id='mission'>
         <InsurancePolicy />
       </section> */}
-        <GrowBusiness />
+        <GrowBusiness /><br/><br/>
+        <Testimonials />
         <section id="contact">
           <ContactSection />
         </section>

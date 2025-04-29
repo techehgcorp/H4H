@@ -50,11 +50,10 @@ const Testimonials = (props) => {
         {/* Left Section with Heading and Arrows */}
         <div className='text-white px-8 w-full md:w-1/2 mb-8 md:mb-0'>
           <h2 className='text-2xl md:text-4xl font-bold'>
-            What Our Customers Say?
+            Testimonials of our clients
           </h2>
           <p className='mt-2 mb-4 text-sm md:text-base'>
-            Lorem ipsum dolor sit amet consectetur adipiscing elit libero
-            facilisis etiam ridiculus.
+            Click below to See What Our Customers Sayied about our services.
           </p>
           <div className='flex space-x-4'>
             <button

@@ -1,5 +1,7 @@
 {
-    "editor.mouseWheelScrollSensitivity": 0.1,
-    "workbench.list.mouseWheelScrollSensitivity": 0,
-    "terminal.integrated.mouseWheelScrollSensitivity": 6
+    "editor.mouseWheelScrollSensitivity": 1,
+    "workbench.list.mouseWheelScrollSensitivity": 1,
+    "terminal.integrated.mouseWheelScrollSensitivity": 6,
+    "editor.mouseWheelZoom": true,
+    "editor.columnSelection": true
 }

@@ -10,6 +10,7 @@
       "life": "Vida",
       "medicare": "Medicare",
       "mission": "Misión",
+      "referafriend": "Recomendar a un amigo",
       "contact": "Contacto",
       "products": "Productos",
       "contact_us": "Contáctanos"
@@ -151,7 +152,7 @@
         "title": "g. Información de Atención al Cliente:",
         "content": "Para asistencia, responde HELP a cualquier mensaje o contáctanos en:",
         "Email": "info@h4hinsurance.com",
-        "Phone": "1.844.544.0663"
+        "Phone": "(786) 397-7167"
       },
       "privacy_and_data_sharing": {
         "title": "h. Privacidad y Compartir Datos:",
@@ -305,7 +306,7 @@
       "content": {
         "address": "H4HInsurance, 1000 NW 65th St, Suite 110, Fort Lauderdale, FL 33309",
         "email": "info@h4hinsurance.com",
-        "phone": "1.844.544.0663"
+        "phone": "(786) 397-7167"
       }
     }
   },
@@ -405,7 +406,7 @@
       {
         "id": 1,
         "title": "Llámanos Ahora",
-        "description": "Habla con un agente llamándonos al 1.844.544.0663. Programa tu cita cómodamente por teléfono."
+        "description": "Habla con un agente llamándonos al (786) 397-7167. Programa tu cita cómodamente por teléfono."
       },
       {
         "id": 2,
@@ -696,7 +697,7 @@
   "contact": {
     "title": "¡Contáctanos!",
     "call": "Llama",
-    "phone_number": "1.844.544.0663",
+    "phone_number": "(786) 397-7167",
     "email": "Correo Electrónico",
     "email_address": "info@h4hinsurance.com",
     "chat": "Charlar",

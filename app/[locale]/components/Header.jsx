@@ -283,24 +283,24 @@ const Header = () => {
                 <div className="flex items-center">
                   <FaPhoneVolume className="w-8 h-8 text-[#B92031]" />
                   <span className="text-white font-bold  px-2 text-xl">
-                    1.844.544.0663
+                    786-397-7167                  
                   </span>
                 </div>
                 <div className="flex items-center">
                   <MdOutlineMailOutline className="w-8 h-8 text-[#B92031]" />
                   <span className="text-white font-bold px-2 text-xl">
-                    info@h4hinsurance.com
+                  info@ehgcorp.com
                   </span>
                 </div>
               </div>
               <div className=" lg:flex space-x-4 mt-4 sm:mt-0">
-                <a href="#" className="hidden lg:flex hover:text-gray-400">
+                <a href="https://www.facebook.com/people/Health-4-Haitians/61567682720657/#" className="hidden lg:flex hover:text-gray-400">
                   <FaFacebook className="w-6 h-6 text-white hover:text-blue-800" />
                 </a>
-                <a href="#" className="hidden lg:flex hover:text-gray-400">
+                <a href="https://www.instagram.com/health4haitians/" className="hidden lg:flex hover:text-gray-400">
                   <FaInstagram className="w-6 h-6 text-white hover:text-pink-800" />
                 </a>
-                <a href="#" className="hidden lg:flex hover:text-gray-400">
+                <a href="http://wa.me/17863977167" className="hidden lg:flex hover:text-gray-400">
                   <FaWhatsapp className="w-6 h-6 text-white hover:text-green-800" />
                 </a>
                 <div className="text-black">
@@ -429,13 +429,13 @@ const Header = () => {
         </div>
         {/* Main Navigation */}
       </header>
-      <header className="bg-white sticky top-0 z-50">
+      <header className="bg-white sticky top-0 z-50" >
         <div className="bg-white shadow-md  flex justify-center lg:justify-start items-center w-full mx-auto">
           <div className="flex lg:pl-[5rem] justify-center items-center text-[#0A4958] my-5 xl:w-5/12 w-[20%]">
             <Image
               alt="logo"
               src="/images/HHlogo.png"
-              width={100}
+              width={120}
               height={50}
               // style={{ width: '300px', height: '300px' }}
             />
@@ -443,7 +443,7 @@ const Header = () => {
           <div className="hidden lg:flex justify-center items-center md:w-[60%]">
             {/* Navbar */}
             <nav className="text-black">
-              <div className="xl:text-xl text-base flex space-x-16 font-bold">
+              <div className="text-[1.1875rem] text-base flex space-x-16 ">
                 <Link
                   href="/"
                   className="hover:text-primary-darkAqua text-[#8d8d8d] py-2"
@@ -452,7 +452,7 @@ const Header = () => {
                 </Link>
                 <Link
                   href="/about-us"
-                  className="hover:text-primary-darkAqua text-[#8d8d8d] py-2"
+                  className="whitespace-nowrap hover:text-primary-darkAqua text-[#8d8d8d] py-2"
                 >
                   {t("navigation.menu_items.about_us")}
                 </Link>
@@ -460,7 +460,7 @@ const Header = () => {
                 <NavigationMenu>
                   <NavigationMenuList className="flex">
                     <NavigationMenuItem>
-                      <NavigationMenuTrigger className="hover:text-primary-darkAqua text-xl font-semibold text-[#8d8d8d] py-2">
+                      <NavigationMenuTrigger className="hover:text-primary-darkAqua text-[1.0rem]  text-[#8d8d8d] py-2">
                         {t("navigation.menu_items.products")}
                       </NavigationMenuTrigger>
                       <NavigationMenuContent className="bg-white  w-[400px] shadow-lg rounded-md">
@@ -508,6 +508,12 @@ const Header = () => {
                   className="hover:text-primary-darkAqua text-[#8d8d8d] py-2"
                 >
                   {t("navigation.menu_items.mission")}
+                </Link>
+                <Link
+                  href="/referafriend"
+                  className="whitespace-nowrap hover:text-primary-darkAqua text-[#8d8d8d] py-2"
+                >
+                  {t("navigation.menu_items.referafriend")}
                 </Link>
                 {/* <Link
                   href='/#contact'

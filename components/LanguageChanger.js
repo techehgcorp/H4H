@@ -34,8 +34,8 @@ export default function LanguageChanger() {
   return (
     <div className='flex items-center justify-center mt-1'>
       <select onChange={handleChange} value={currentLocale}>
-        <option value='en'>English</option>
         <option value='ht'>Creole</option>
+        <option value='en'>English</option>
         <option value='es'>Spanish</option>
       </select>
     </div>
