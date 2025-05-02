@@ -689,6 +689,35 @@
     }
   },
 
+
+  "referafriend": {
+    "breadcrumb": {
+      "title": "Rekomande yon Zanmi",
+      "image": "/images/mission/mission.jpg"
+    },
+    "make_difference": {
+      "title": "Envite Zanmi ou, Fè yon Diferans",
+      "description": "Ede kominote ou jwenn aksè a swen sante bon kalite lè ou envite zanmi ou yo pou yo rantre nan plan sante nou an. Chak referans ranfòse misyon nou pou nou kreye yon Ayiti ki pi an sante ak pi konekte.",
+      "button": "Envite Koulye a",
+      "image": "/images/mission/mission1.jpg"
+    },
+    "stronger_haiti": {
+      "title": "Pi Fò Ansanm: Yon Referans Chak Fwa",
+      "description": "Chak zanmi ou rekòmande se yon pa anplis pou yon Ayiti ki pi an sante. Vwa ou konte—sèvi avè l pou gaye swen ak aksè.",
+      "image": "/images/mission/missionPic.jpg"
+    },
+    "breaking_barriers": {
+      "title": "Kase Baryè Gras a Kominote a",
+      "description": "Referans ede zanmi ak fanmi simonte baryè pou jwenn swen sante abòdab. Rekòmandasyon ou ka chanje lavi yo.",
+      "image": "/images/mission/mission2.jpg"
+    },
+    "unlocking_potential": {
+      "title": "Louvri Nouvo Oportunite ak Referans",
+      "description": "Lè ou rekòmande lòt moun, ou louvri pòt pou pi bon sante ak yon avni ki pi klere. Ansanm, nou ka leve tout kominote yo.",
+      "image": "/images/mission/mission3.jpg"
+    }
+  },  
+
   "appointment": {
     "title": "Planifye Yon Randevou",
     "subtitle": "Pran youn randevou facilman avèk opsyon fleksib epi resevwa yon konfimasyon pa email imedyatman.",

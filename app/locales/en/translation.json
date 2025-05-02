@@ -335,6 +335,10 @@
         "href": "/mission"
       },
       {
+        "name": "ReferaFriend",
+        "href": "/referafriend"
+      },
+      {
         "name": "Contact Us",
         "href": "/#contact"
       }
@@ -655,6 +659,35 @@
       "image": "/images/mission/mission3.jpg"
     }
   },
+
+  "referafriend": {
+    "breadcrumb": {
+      "title": "Refer a Friend",
+      "image": "/images/mission/mission.jpg"
+    },
+    "make_difference": {
+      "title": "Invite Friends, Make a Difference",
+      "description": "Help your community gain access to quality healthcare by inviting your friends to join our health plan. Every referral strengthens our mission to create a healthier, more connected Haiti.",
+      "button": "Invite Now",
+      "image": "/images/mission/mission1.jpg"
+    },
+    "stronger_haiti": {
+      "title": "Stronger Together: One Referral at a Time",
+      "description": "Each friend you refer is a step toward a healthier Haiti. Your voice matters—use it to spread access and care.",
+      "image": "/images/mission/missionPic.jpg"
+    },
+    "breaking_barriers": {
+      "title": "Remove Barriers Through Community",
+      "description": "Referrals empower friends and family to overcome obstacles to affordable healthcare. Your recommendation can change lives.",
+      "image": "/images/mission/mission2.jpg"
+    },
+    "unlocking_potential": {
+      "title": "Unlock New Opportunities Through Referrals",
+      "description": "By referring others, you open doors to better health and a brighter future. Together, we can uplift entire communities.",
+      "image": "/images/mission/mission3.jpg"
+    }
+  },
+  
 
   "appointment": {
     "title": "Appointment Scheduling",

@@ -659,6 +659,35 @@
     }
   },
 
+  "referafriend": {
+    "breadcrumb": {
+      "title": "Recomienda a un Amigo",
+      "image": "/images/mission/mission.jpg"
+    },
+    "make_difference": {
+      "title": "Invita a tus Amigos, Marca la Diferencia",
+      "description": "Ayuda a tu comunidad a obtener acceso a atención médica de calidad invitando a tus amigos a unirse a nuestro plan de salud. Cada recomendación fortalece nuestra misión de crear un Haití más saludable y conectado.",
+      "button": "Invitar Ahora",
+      "image": "/images/mission/mission1.jpg"
+    },
+    "stronger_haiti": {
+      "title": "Más Fuertes Juntos: Una Recomendación a la Vez",
+      "description": "Cada amigo que recomiendas es un paso hacia un Haití más saludable. Tu voz importa: úsala para expandir el acceso y el cuidado.",
+      "image": "/images/mission/missionPic.jpg"
+    },
+    "breaking_barriers": {
+      "title": "Eliminar Barreras a Través de la Comunidad",
+      "description": "Las recomendaciones permiten a amigos y familiares superar obstáculos para acceder a atención médica asequible. Tu recomendación puede cambiar vidas.",
+      "image": "/images/mission/mission2.jpg"
+    },
+    "unlocking_potential": {
+      "title": "Desbloquea Nuevas Oportunidades a Través de Recomendaciones",
+      "description": "Al recomendar a otros, abres puertas a una mejor salud y un futuro más brillante. Juntos podemos elevar a comunidades enteras.",
+      "image": "/images/mission/mission3.jpg"
+    }
+  }
+,  
+
   "company": {
     "title": "Compañía",
     "services": [

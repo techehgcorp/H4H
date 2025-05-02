@@ -282,15 +282,20 @@ const Header = () => {
               <div className="flex flex-col sm:flex-row justify-between space-y-4 sm:space-y-0 sm:space-x-10">
                 <div className="flex items-center">
                   <FaPhoneVolume className="w-8 h-8 text-[#B92031]" />
+                  <Link href='http://wa.me/17863977167'>
                   <span className="text-white font-bold  px-2 text-xl">
                     (786) 397-7167                  
-                  </span>
+                  </span>                  
+                  </Link>
                 </div>
                 <div className="flex items-center">
                   <MdOutlineMailOutline className="w-8 h-8 text-[#B92031]" />
-                  <span className="text-white font-bold px-2 text-xl">
-                  info@h4hinsurance.com
-                  </span>
+                  <Link href="mailto:info@h4hinsurance.com">
+                    <span className="text-white font-bold px-2 text-xl">
+                    info@h4hinsurance.com
+                    </span>                  
+                  </Link>
+
                 </div>
               </div>
               <div className=" flex space-x-4 mt-4 sm:mt-0">
