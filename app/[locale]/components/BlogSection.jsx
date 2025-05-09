@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 const blogPosts = [
@@ -39,7 +40,7 @@ const BlogSection = () => {
       <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8'>
         {blogPosts.map((post, index) => (
           <div key={index} className='relative overflow-hidden shadow-lg'>
-            <img
+            <Image
               src={post.image}
               alt={post.title}
               className='w-full h-60 object-cover'

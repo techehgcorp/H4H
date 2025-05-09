@@ -31,12 +31,14 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Logo and Description */}
           <div className="flex flex-col items-center md:items-start mb-6 md:mb-0">
+            <Link href='/'>
             <Image
               src="/images/H4HLogo.svg"
               width={175}
               height={150}
               alt="Health for Haitians Logo"
             />
+            </Link>
           </div>
 
           {/* Services */}

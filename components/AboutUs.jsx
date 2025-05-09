@@ -13,6 +13,7 @@ import Footer from '@/app/[locale]/components/Footer';
 import Header from '@/app/[locale]/components/Header';
 import CTA from '@/app/[locale]/components/CTA';
 import { useTranslation } from 'react-i18next';
+import ContactSection from '@/app/[locale]/components/ContactSection';
 
 const AboutUs = () => {
   const { t } = useTranslation();
@@ -26,7 +27,7 @@ const AboutUs = () => {
             "/images/product/4k-3d-haiti-fla.mp4"
           }
           video={true}
-          pos={"center"}
+          pos={"bottom"}
           route={t("About Us")}
         />
         {/* <div className='text-center text-6xl mb-10 font-bold'>
@@ -289,6 +290,7 @@ const AboutUs = () => {
         </div> */}
         <div className='mt-5'>
           <CTA />
+          {/* <ContactSection /> */}
         </div>
       </div>
       <Footer />

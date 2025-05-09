@@ -1,9 +1,11 @@
 
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
+import { useTranslation } from 'react-i18next';
 
 
 export async function POST(req) {
+  const {t} = useTranslation();
   try {
     const { date, time, method, email, username } = await req.json();
 
@@ -46,31 +48,28 @@ export async function POST(req) {
     const mailOptions = {
       from: '"H4H Insurance" <info@h4hinsurance.com>',
       to: email,
-      subject: 'Appointment Confirmation',
-      text: `Hello ${username},
-        Thank you so much for reaching out to us. We’re happy to let you know that your appointment is confirmed for ${date} at ${time} via ${appointmentMethodText}.
-        Take good care,
-        Your H4H Partners`,
-      html: `
-        <p>Hello ${username},<br/>
-        Thank you so much for reaching out to us. We’re happy to let you know that your appointment is confirmed for <strong>${date}</strong> at <strong>${time}</strong> via <strong>${appointmentMethodText}</strong>.
-        It’s truly our privilege to serve you, and ensuring you feel fully supported every step of the way is our highest priority. We can’t wait to connect with you soon.<br/>
-        In the meantime, feel free to text or call us anytime — and don’t forget to follow us on social media to stay up-to-date with the latest from our team.<br/><br/>
-        Take good care,<br/>
-        Your H4H Partners</p>
-    
-        
-        <br/><br/>
-        <img src="cid:h4hlogo"/>
-      `,
+      subject: t('email.subject'),
+      text: t('email.text', {
+        username,
+        date,
+        time,
+        method: appointmentMethodText
+      }),
+      html: t('email.html', {
+        username,
+        date,
+        time,
+        method: appointmentMethodText
+      }),
       attachments: [
         {
           filename: 'logoemail.png',
-          path: './public/images/logoemail.png', // Caminho relativo ao projeto
-          cid: 'h4hlogo' // Referência usada no src acima
+          path: './public/images/logoemail.png',
+          cid: 'h4hlogo'
         }
       ]
     };
+    
     // Send email
     await transporter.sendMail(mailOptions);
     return NextResponse.json(

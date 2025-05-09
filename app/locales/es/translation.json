@@ -406,7 +406,7 @@
       {
         "id": 1,
         "title": "Llámanos Ahora",
-        "description": "Habla con un agente llamándonos al (786) 397-7167. Programa tu cita cómodamente por teléfono."
+        "description": "Habla con un agente llamándonos al (786) 397-7167 o (844) 544-0663. Programa tu cita cómodamente por teléfono."
       },
       {
         "id": 2,
@@ -427,6 +427,17 @@
     "form": {
       "date_select": "Por favor selecciona tanto la fecha como la hora",
       "success_message": "Cita programada para el {{date}} a las {{time}}"
+    },
+    "email_confirmation": {
+      "subject": "Confirmación de la Cita",
+      "greeting": "Hola {{username}},",
+      "success-message": "¡Gracias por contactarnos! Su cita está confirmada para el {{date}} a las {{time}} mediante {{method}}. Es un honor atenderle. No dude en llamarnos o enviarnos un mensaje, y síganos en redes sociales para mantenerse informado.",
+      "closing": "Cuídese mucho,\nSus socios de H4H",
+      "methods": {
+        "face-to-face": "Reunión Presencial",
+        "phone": "Llamada Telefónica",
+        "virtual": "Reunión Virtual vía Google Meet"
+      }
     }
   },
 
@@ -726,8 +737,7 @@
   "contact": {
     "title": "¡Contáctanos!",
     "call": "Llama",
-    "phone_number": "(786) 397-7167",
-    "email": "Correo Electrónico",
+    "phone_number": "(786) 397-7167\n(844) 544-0663",    "email": "Correo Electrónico",
     "email_address": "info@h4hinsurance.com",
     "chat": "Charlar",
     "chat_hours": "Lunes a Viernes (9am-6pm EST)"
@@ -741,6 +751,56 @@
     "quote": "OBTÉN UNA COTIZACIÓN",
     "free_quote": "Obtén una Cotización Gratis",
     "book": "Programa tu Cita Hoy"
+  },
+
+  "calendar": {
+    "back": "Atrás",
+    "title": "Programar Entrevista",
+    "duration": "30 min",
+    "description": "Por favor, selecciona una hora para tu entrevista inicial con nuestro equipo de reclutamiento. Esta reunión puede realizarse por teléfono, videollamada o en persona, según tu preferencia.",
+    "homeLink": "Puedes revisar más detalles sobre trabajar en H4H visitando nuestra página principal aquí",
+    "select": "Selecciona una Fecha y Hora",
+    "submit": "Enviar",
+    "timePlaceholder": "Seleccionar Hora",
+    "errors": {
+      "selectDate": "Por favor, selecciona una fecha.",
+      "selectTime": "Por favor, selecciona una hora."
+    },
+    "success": "¡Fecha y hora agregadas con éxito!"
+  },
+
+  "schedulestep2": {
+    "title": "Detalle personal",
+    "date": "Fecha",
+    "time": "Hora",
+    "description": "Por favor, proporcione sus datos y el método de contacto preferido para la entrevista. Esta información nos ayudará a garantizar un proceso de entrevista fluido y eficiente.",
+    "link_text": "Puede revisar más detalles sobre trabajar en H4H visitando nuestra página de inicio aquí"
+  },
+
+  "schedulestep2right": {
+    "title": "Detalles de la entrevista",
+    "firstname": "Nombre",
+    "lastname": "Apellido",
+    "email": "Correo electrónico",
+    "preferred_contact": "Método de contacto preferido",
+    "face_to_face": "Reunión presencial en la oficina",
+    "phone_appointment": "Cita por teléfono",
+    "virtual_meeting": "Reunión virtual por Google Meet",
+    "suggestion": "Comentarios adicionales (opcional)",
+    "submit_button": "Enviar"
+  },
+  
+
+  "email": {
+    "subject": "Confirmación de la cita",
+    "text": "Hola {{username}},\nGracias por contactarnos. Su cita ha sido confirmada para el {{date}} a las {{time}} vía {{method}}.\nCuídese,\nSu equipo de H4H",
+    "html": "<p>Hola {{username}},<br/>Gracias por contactarnos. Su cita ha sido confirmada para el <strong>{{date}}</strong> a las <strong>{{time}}</strong> vía <strong>{{method}}</strong>.<br/>Es un placer servirle...<br/>Cuídese,<br/>Su equipo de H4H</p>",
+    "methods": {
+      "face-to-face": "Reunión presencial en la oficina",
+      "phone": "Llamada telefónica",
+      "virtual": "Reunión virtual por Google Meet",
+      "unknown": "Desconocido"
+    }
   },
 
   "form": {

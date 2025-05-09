@@ -38,6 +38,17 @@ module.exports = {
           DEFAULT: 'hsl(var(--secondary))',
           foreground: 'hsl(var(--secondary-foreground))',
         },
+        thirdy: {
+          DEFAULT: '#1E3A8A',
+          foreground: '#ffffff',
+          gradient: 'linear-gradient(135deg, #1E3A8A, #3B82F6)', // Optional gradient
+          aqua: '#17f0ff',
+          darkAqua: '#3685b4',
+        },
+        fourth: {
+          DEFAULT: '#D1D5DB',
+          foreground: '#111827',
+        },
         destructive: {
           DEFAULT: 'hsl(var(--destructive))',
           foreground: 'hsl(var(--destructive-foreground))',

@@ -35,7 +35,7 @@ export async function POST(req) {
         <p>Thank you for opting in to receive updates from us.<br>
         One of our agents will be contacting you soon.</p>
         <p><b><i>Best regards,</i></b><br>H4H Insurance</p>
-        <p>1.844.544.0663</p>
+        <p>(786) 397-7167 or (844) 544-0663</p>
       `,
     };
 

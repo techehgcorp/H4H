@@ -725,7 +725,7 @@
       {
         "id": 1,
         "title": "Rele nou kounya",
-        "description": "Ou ka pran randevou fasilman pa telefòn lè ou rele nou nan (786) 397-7167."
+        "description": "Ou ka pran randevou fasilman pa telefòn lè ou rele nou nan (786) 397-7167 oubyen (844)544-663."
       },
       {
         "id": 2,
@@ -746,14 +746,25 @@
     "form": {
       "date_select": "Tanpri chwazi dat ak lè",
       "success_message": "Randevou pwograme pou {{date}} a {{time}}"
+    },
+
+    "email_confirmation": {
+      "subject": "Konfimasyon Randevou",
+      "greeting": "Bonjou {{username}},",
+      "success-message": "Mèsi paske ou kontakte nou! Randevou ou konfime pou {{date}} a {{time}} atravè {{method}}. Se onè nou pou sèvi ou. Ou ka rele oswa voye mesaj nenpòt lè, epi swiv nou sou rezo sosyal pou rete enfòme.",
+      "closing": "Pran swen ou,\nPatnè ou yo nan H4H",
+      "methods": {
+        "face-to-face": "Reyinyon an Pèsonèl",
+        "phone": "Rele pa Telefòn",
+        "virtual": "Reyinyon Vityèl sou Google Meet"
+      }
     }
   },
 
   "contact": {
     "title": "Kontakte nou !",
     "call": "Rele nou nan",
-    "phone_number": "(786) 397-7167",
-    "email": "email",
+    "phone_number": "(786) 397-7167\n(844) 544-0663",    "email": "email",
     "email_address": "info@h4hinsurance.com",
     "chat": "Ekri nou",
     "chat_hours": "Lundi Au Vendredi (9am – 6pm EST)"
@@ -768,6 +779,58 @@
     "free_quote": "Pran YON ESTIMASYON Gratis",
     "book": "Rezève yon Randevou Jodi a"
   },
+
+
+  "calendar": {
+    "back": "Retounen",
+    "title": "Orè Entèvyou",
+    "duration": "30 minit",
+    "description": "Tanpri chwazi yon lè pou premye entèvyou ou ak ekip rekritman nou an. Rankont sa a ka fèt pa telefòn, videyo, oswa an pèsòn selon preferans ou.",
+    "homeLink": "Ou ka revize plis detay sou travay ak H4H lè ou vizite Paj Dakèy nou an isit la",
+    "select": "Chwazi yon Dat ak Lè",
+    "submit": "Voye",
+    "timePlaceholder": "Chwazi Lè",
+    "errors": {
+      "selectDate": "Tanpri chwazi yon dat.",
+      "selectTime": "Tanpri chwazi yon lè."
+    },
+    "success": "Dat ak Lè te ajoute avèk siksè!"
+  },
+ 
+"email": {
+  "subject": "Konfimasyon Randevou",
+  "text": "Bonjou {{username}},\nMèsi paske ou kontakte nou. Randevou ou konfime pou {{date}} a {{time}} atravè {{method}}.\nPran swen tèt ou,\nEkip H4H ou",
+  "html": "<p>Bonjou {{username}},<br/>Mèsi paske ou kontakte nou. Randevou ou konfime pou <strong>{{date}}</strong> a <strong>{{time}}</strong> atravè <strong>{{method}}</strong>.<br/>Li se yon privilèj pou nou sèvi ou...<br/>Pran swen tèt ou,<br/>Ekip H4H ou</p>",
+  "methods": {
+    "face-to-face": "Randevou fas-a-fas nan biwo",
+    "phone": "Apèl telefòn",
+    "virtual": "Randevou vityèl atravè Google Meet",
+    "unknown": "Enkoni"
+  }
+},
+
+"schedulestep2": {
+  "backbutton": "pou retounen",
+  "title": "Enfòmasyon pèsonèl",
+  "date": "Dat",
+  "time": "Lè",
+  "description": "Tanpri bay detay ou yo ak metòd kontak ou prefere pou entèvyou a. Enfòmasyon sa yo ap ede nou asire yon pwosesis entèvyou ki fèt san pwoblèm epi efikas.",
+  "link_text": "Ou ka revize plis detay sou travay ak H4H lè ou vizite paj dakèy nou an isit la"
+},
+
+"schedulestep2right": {
+  "title": "Detay Entèvyou a",
+  "firstname": "Non",
+  "lastname": "Siyati",
+  "email": "Imèl",
+  "preferred_contact": "Metòd kontak ou prefere",
+  "face_to_face": "Randevou an pèsòn nan biwo a",
+  "phone_appointment": "Randevou pa telefòn",
+  "virtual_meeting": "Reyinyon vityèl atravè Google Meet",
+  "suggestion": "Kòmantè adisyonèl (opsyonèl)",
+  "submit_button": "Voye"
+},
+
 
   "form": {
     "completed": "Fòm nan Voye",

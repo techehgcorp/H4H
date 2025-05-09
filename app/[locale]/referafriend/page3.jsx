@@ -8,48 +8,19 @@ export default function ReferAFriend() {
   const [referredName, setReferredName] = useState('');
   const [referredEmail, setReferredEmail] = useState('');
   const [consent, setConsent] = useState(false);
-  const [loading, setLoading] = useState(false);
-  const [message, setMessage] = useState('');
 
-  const submitReferral = async () => {
-    if (!referrerName || !referrerEmail || !referredName || !referredEmail || !consent) {
+  const submitReferral = () => {
+    if (referrerName && referrerEmail && referredName && referredEmail && consent) {
+      alert(`Thank you! Your referral has been submitted. We’ll contact ${referredName} soon.`);
+      // Reset form
+      setReferrerName('');
+      setReferrerEmail('');
+      setReferredName('');
+      setReferredEmail('');
+      setConsent(false);
+    } else {
       alert('Please fill out all fields and confirm consent.');
-      return;
     }
-
-    setLoading(true);
-    setMessage('');
-
-    const payload = {
-      yourName: referrerName,
-      yourEmail: referrerEmail,
-      friendName: referredName,
-      friendEmail: referredEmail,
-    };
-
-    try {
-      const response = await fetch('/api/saveToReferalSheet', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload),
-      });
-
-      if (response.ok) {
-        setMessage(`✅ Thank you! Your referral has been submitted. We’ll contact ${referredName} soon.`);
-        setReferrerName('');
-        setReferrerEmail('');
-        setReferredName('');
-        setReferredEmail('');
-        setConsent(false);
-      } else {
-        setMessage('❌ Failed to submit referral. Please try again.');
-      }
-    } catch (error) {
-      console.error(error);
-      setMessage('❌ An unexpected error occurred.');
-    }
-
-    setLoading(false);
   };
 
   return (
@@ -81,7 +52,7 @@ export default function ReferAFriend() {
                 value={referrerName}
                 onChange={(e) => setReferrerName(e.target.value)}
                 placeholder="Your Name"
-                className="w-full p-3 border border-gray-300 rounded-md"
+                className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
                 required
               />
               <input
@@ -89,7 +60,7 @@ export default function ReferAFriend() {
                 value={referrerEmail}
                 onChange={(e) => setReferrerEmail(e.target.value)}
                 placeholder="Your Email"
-                className="w-full p-3 border border-gray-300 rounded-md"
+                className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
                 required
               />
               <input
@@ -97,7 +68,7 @@ export default function ReferAFriend() {
                 value={referredName}
                 onChange={(e) => setReferredName(e.target.value)}
                 placeholder="Referred Person's Name"
-                className="w-full p-3 border border-gray-300 rounded-md"
+                className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
                 required
               />
               <input
@@ -105,7 +76,7 @@ export default function ReferAFriend() {
                 value={referredEmail}
                 onChange={(e) => setReferredEmail(e.target.value)}
                 placeholder="Referred Person's Email"
-                className="w-full p-3 border border-gray-300 rounded-md"
+                className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
                 required
               />
               <div className="flex items-center">
@@ -122,14 +93,22 @@ export default function ReferAFriend() {
               </div>
               <button
                 onClick={submitReferral}
-                disabled={loading}
                 className="w-full bg-thirdy text-white p-3 rounded-md hover:bg-blue-900 transition"
               >
-                {loading ? 'Submitting...' : 'Refer Now'}
+                Refer Now
               </button>
-              {message && <p className="text-sm text-center mt-4">{message}</p>}
             </div>
           </div>
+          <p className="text-sm text-gray-600 mt-6">
+            <strong>Why Refer?</strong> Your referral connects loved ones to ACA Marketplace, commercial health, life, or dental plans tailored to their needs. Our team ensures a simple, no-pressure process. For non-Medicare enrollments, earn a $10 coffee gift card per successful referral (one per household).
+          </p>
+          <p className="text-sm text-gray-600 mt-4">
+            <strong>How It Works:</strong> Complete the form in under 5 minutes. We’ll contact your loved one to discuss their insurance options. You’ll be updated on their enrollment, and if eligible, your gift card will be sent!
+We use referral data only to contact your loved one with their consent, per our Privacy Policy. H4H Insurance partners with multiple carriers for health, life, and dental plans. 
+          </p>
+          {/* <p className="text-sm text-gray-600 mt-4">
+            We use referral data only to contact your loved one... <a href="https://www.h4hinsurance.com/privacy" className="underline text-primary">Privacy Policy</a>.
+          </p> */}
         </div>
       </section>
 
@@ -138,15 +117,11 @@ export default function ReferAFriend() {
         <div className="container mx-auto px-4 text-center">
           <p className="text-gray-700">H4H Insurance | Your Trusted Insurance Partner</p>
           <p className="text-gray-700 mt-2">
-            Contact us: (786) 397-7167 <br/>
-                        (844) 544-0663   |{' '}
-            <a href="mailto:info@h4hinsurance.com" className="underline text-primary">
-              info@h4hinsurance.com
-            </a>
+          Contact us: (786) 397-7167 <br/>
+                      (844) 544-0663  || info@h4hinsurance.com <a href="mailto:info@h4hinsurance.com" className="underline text-primary">info@h4hinsurance.com</a>
           </p>
           <p className="text-sm text-gray-600 mt-4">
-            H4H Insurance collaborates with multiple carriers to offer ACA Marketplace, commercial health, life, and dental plans. For Marketplace questions, visit http://HealthCare.gov. Your information is used only for enrollment purposes with your consent, per federal guidelines.
-          </p>
+          H4H Insurance collaborates with multiple carriers to offer ACA Marketplace, commercial health, life, and dental plans. For Marketplace questions, visit http://HealthCare.gov . Your information is used only for enrollment purposes with your consent, per federal guidelines.          </p>
         </div>
       </footer>
     </div>

@@ -1,38 +1,26 @@
 'use client';
 import React from 'react';
-import { FaBuilding, FaMoneyBillWave, FaCogs, FaPhone } from 'react-icons/fa';
-import {
-  MdOutlineChat,
-  MdOutlineMail,
-  MdOutlineMailOutline,
-} from 'react-icons/md';
-import { SiGooglemaps } from 'react-icons/si';
-import { Button } from '@/components/ui/button';
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogFooter,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from '@/components/ui/dialog';
+import { FaPhone } from 'react-icons/fa';
+import { MdOutlineChat, MdOutlineMailOutline } from 'react-icons/md';
 import { useTranslation } from 'react-i18next';
 
 const ContactSection = () => {
   const { t } = useTranslation();
+
   const services = [
     {
       id: 1,
       title: t('contact.call'),
       description: t('contact.phone_number'),
-      icon: FaPhone
+      icon: FaPhone,
+      link: `tel:${t('contact.phone_number')}`
     },
     {
       id: 2,
       title: t('contact.email'),
       description: t('contact.email_address'),
-      icon: MdOutlineMailOutline
+      icon: MdOutlineMailOutline,
+      link: `mailto:${t('contact.email_address')}`
     },
     {
       id: 3,
@@ -42,21 +30,11 @@ const ContactSection = () => {
     }
   ];
 
-  const formFields = [
-    { label: 'Your name', type: 'text', placeholder: 'Your name' },
-    { label: 'Your email', type: 'email', placeholder: 'Your email' },
-    { label: 'Subject', type: 'text', placeholder: 'Subject' },
-    {
-      label: 'Your message (optional)',
-      type: 'textarea',
-      placeholder: 'Your message',
-    },
-  ];
-
   return (
     <div className='mb-12'>
+      {/* Contact Cards */}
       <div
-        className='bg-map py-16 '
+        className='bg-map py-16'
         style={{
           backgroundImage:
             "url('https://demo.sparklewpthemes.com/constructionlight/insurance-lite/wp-content/themes/insurance-lite/assets/map-bg.png')",
@@ -68,11 +46,13 @@ const ContactSection = () => {
             {t('navigation.menu_items.contact_us')}!
           </h2>
         </div>
+
         <div className='max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8'>
-          {services.map((service, index) => {
+          {services.map((service) => {
             const Icon = service.icon;
-            return (
-              <div key={service.id} className='bg-white p-8 shadow-lg '>
+
+            const content = (
+              <div className='bg-white p-8 shadow-lg h-full'>
                 <div className='flex justify-center items-center mb-4 py-2'>
                   <Icon className='h-14 w-14 text-[#B92031]' />
                 </div>
@@ -80,13 +60,34 @@ const ContactSection = () => {
                   {service.title}
                 </h3>
                 <p className='text-gray-600 text-center mt-2'>
-                  {service.description}
+                  {service.description.split('\n').map((line, idx) => (
+                    <span key={idx}>
+                      {line}
+                      <br />
+                    </span>
+                  ))}
                 </p>
               </div>
+            );
+
+            return service.link ? (
+              <a
+                key={service.id}
+                href={service.link}
+                target='_blank'
+                rel='noopener noreferrer'
+                className='hover:shadow-xl transition-shadow duration-300'
+              >
+                {content}
+              </a>
+            ) : (
+              <div key={service.id}>{content}</div>
             );
           })}
         </div>
       </div>
+
+      {/* Google Map */}
       <div
         className='bg-map'
         style={{
@@ -96,7 +97,6 @@ const ContactSection = () => {
         }}
       >
         <div className='max-w-6xl mx-auto shadow-lg rounded-lg'>
-          {/* Map */}
           <iframe
             src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.6965285964066!2d-80.16006712390586!3d26.206548477075174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d903bbc80c6051%3A0xd716d64cc168483e!2s1000%20NW%2065th%20St%2C%20Fort%20Lauderdale%2C%20FL%2033309%2C%20USA!5e0!3m2!1sen!2s!4v1728073940467!5m2!1sen!2s'
             width='100%'

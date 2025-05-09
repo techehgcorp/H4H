@@ -274,7 +274,7 @@ const Header = () => {
 
   return (
     <>
-        <header className="bg-white fixed top-0 left-0 w-full z-50 shadow-md">
+      <header id="home" className="bg-white ">
         {/* Top Bar */}
         <div className="bg-primary-darkAqua ">
           <div className="container mx-auto text-white py-4 px-0 lg:px-6 md:px-4 flex justify-end items-center text-sm">
@@ -437,8 +437,8 @@ const Header = () => {
         </div>
         {/* Main Navigation */}
       </header>
-      <header className="bg-white sticky top-0 z-40 shadow-md">
-        <div className="bg-white shadow-md  flex justify-center lg:justify-start items-center w-full mx-auto pt-[60px] pb-[2px]">
+      <header className="bg-white sticky top-0 z-50" >
+        <div className="bg-white shadow-md  flex justify-center lg:justify-start items-center w-full mx-auto">
           <div className="flex lg:pl-[5rem] justify-center items-center text-[#0A4958] my-5 xl:w-5/12 w-[20%]">
             <Link href='/'>
               <Image
