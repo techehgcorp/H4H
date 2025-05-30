@@ -24,6 +24,7 @@ const Life = () => {
         <BreadcrumbComp
             img={'/images/product/lifeinsuranceHERO.jpg'}
           pos={'start'} 
+          horizontalAlign="left" // horizontal: direita da imagem
           route={t('life_insurance.breadcrumb.title')}
         />
 

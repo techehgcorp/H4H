@@ -10,10 +10,11 @@
       "life": "Lavi",
       "medicare": "Medicare",
       "mission": "Misyon",
-      "referafriend": "refere yon zanmi",
+      "referafriend": "Refere yon zanmi",
       "contact": "Kontak",
       "products": "Pwodwi yo",
-      "contact_us": "Kontakte nou"
+      "contact_us": "Kontakte nou",
+      "community": "Kominote"
     },
     "close": "Fèmen"
   },
@@ -442,23 +443,56 @@
     "sections": [
       {
         "heading": "Yon Misyon Pèsonèl: Sòti nan Eksperyans Imigran pou Rive nan Emansipasyon",
-        "paragraph": "Fonde pa yon imigran ayisyen ki te fè eksperyans pèsonèlman defi espesyal Ayisyen yo rankontre lè yo ap eseye rive jwenn Rèv Ameriken an, misyon nou an gen yon sans pèsonèl pwofon",
+        "paragraph": "Misyon nou an gen yon sans pèsonèl pwofon. Li fonde pa yon imigran ayisyen ki te fè fas ak anpil defi, sitou nan eksperyans pèsonèl sou kous lavi a, pou eseye rive jwenn Rèv Ameriken an.",
         "button": "Kontakte nou pou yon Estimasyon (Quote)"
       },
       {
         "heading": "Yon Vizyon pou Emansipasyon Total",
-        "paragraph": "Tankou tout lòt moun, li anvizyone ede kominote ayisyen an jwenn aksè nan opòtinite esansyèl tankou swen sante, edikasyon, travay, rezo, lojman, nitrisyon, envestisman, ak devlopman pèsonèl. Madanm li, ki tou se desandan Karayib, pataje vizyon sa a epi li rèv pou elaji efò sa yo nan tout Zile Karayib yo. Pandan ke objektif nou se sipòte tout kominote ki pa gen ase sèvis, ekip nou an konsantre sitou sou Ayisyen yo, ki se youn nan gwoup ki pi defavorize yo. Sante se fondasyon lavi, se poutèt sa nou kòmanse travay nou isit la."
-      },
+        "paragraph": "Vizyon nou pa limite sèlman a swen sante. Li enspire pa yon rèv pi laj pou leve kominote Ayisyen an ak lòt ki defavorize yo, atravè aksè ak opòtinite, devlopman ak solidarite.",
+        "bullets": [
+          {
+            "text": "Vizyon H4H se pou wè kominote ayisyen an jwenn aksè ak tout opòtinite esansyèl yo."
+          },
+          {
+            "text": "Vizyonè yo se Mari ak Madanm. Nou tou de se desandan Karayib, et nou pataje menm rèv, pou yo elaji efò sa yo nan tout Zile Karayib yo."
+          },
+          {
+            "text": "Priyorite nou baze sou domèn sa yo: swen sante, edikasyon, travay, rezo, lojman, nitrisyon, envestisman, ak devlopman pèsonèl."
+          },
+          {
+            "text": "Objektif kle nou se sipòte tout kominote ki pa gen ase sèvis, e nou konsantre sitou sou kominote Ayisyen an ki se youn nan gwoup ki defavorize."
+          },
+          {
+            "text": "Lasante se fondasyon lavi a, se poutèt sa nou kòmanse travay nou isit la."
+          }
+        ]
+      },      
       {
         "heading": "Kreye yon Pon pou rann Asirans Sante disponib pou tout Ayisyen",
-        "paragraph": "Aksè a swen sante de kalite se esansyèl pou byennèt tout moun ak fanmi yo, men anpil moun nan kominote ayisyen an ap fè fas ak gwo baryè pou jwenn kouvèti sante ki nesesè. Diferans langaj, mank enfòmasyon, ak limit finansye yo se kèk nan obstak ki anpeche yo jwenn swen yo bezwen. Misyon nou se ranpli diferans sa a lè nou bay resous ki pale Kreyòl pou ede Ayisyen yo navige nan sistèm swen sante konplèks la epi jwenn kouvèti ki nesesè pou yon lavni pi an sante."
+        "paragraph": "Genyen aksè a swen sante de kalite esansyèl anpil pou byennèt tout moun ak fanmi yo, men anpil moun nan kominote Ayisyen an ap fè fas ak gwo baryè ki anpeche yo jwenn kouvèti sante ki nesesè.",
+        "bullets": [
+          {
+            "text": "Men kèk nan obstak kominote Ayisyen an konfronte, sa ki ka fè yo pa ka jwenn swen yo bezwen:",
+            "subBullets": [
+              "Diferans langaj, mank enfòmasyon ak limit finansye"
+            ]
+          },
+          {
+            "text": "Misyon nou:",
+            "subBullets": [
+              " Ede kominote Ayisyen an jwenn oswa konekte ak resous ki disponib yo e fè klas fòmasyon an Kreyòl",
+              " Ede kominote Ayisyen an navige sistèm swen sante ki konplèks",
+              " Ede kominote Ayisyen jwenn kouvèti ki nesesè pou yon lavni pi an sante."
+            ]
+          }
+        ]
       },
       {
         "heading": "Elaji Aksè pou Sèvis Swen Sante de Kalite",
-        "paragraph": "Kit yo bezwen Medicaid, asirans sante, Medicare, oswa asirans lavi, nou kwè ke tout moun merite gen aksè nan sèvis ak sipò kalite. Nan lavni, nou planifye elaji pwojè nou yo, asire ke chak manm kominote ayisyen an gen konesans ak resous pou pwoteje sante ak byennèt yo."
+        "paragraph": "Kit kominote a bezwen Medicaid, asirans sante, Medicare, oswa asirans lavi, nou kwè ke tout moun merite gen aksè ak sèvis e ak sipò ki gen kalite. Nan lavni, nou planifye elaji pwojè nou yo, pou asire ke chak manm kominote ayisyen an gen konesans ak resous pou pwoteje sante ak byennèt yo."
       }
     ]
-  },
+  },  
 
   "dental_vision": {
     "title": "Kouvèti Dantè & Vizyon",
@@ -689,6 +723,49 @@
     }
   },
 
+  "accordion": {
+    "title1": "Sante Kominotè",
+    "description1": "Nou bay sipò pou zòn ki pa jwenn ase sèvis sante, ofri sèvis esansyèl. Nou vize amelyore aksè ak ankouraje byennèt pou moun ki plis vilnerab yo. Nou travay ak travayè sante lokal yo pou garanti swen ki dire lontan. Ansanm, nou konstwi kominote ki pi an sante.",
+    
+    "title2": "Aksè Edikasyon",
+    "description2": "Pwogram nou yo fèt pou bay opòtinite aprantisaj pou moun tout laj ak orijin. Nou retire baryè nan edikasyon atravè resous ak sipò. Ak yon konsantre sou enklizyon ak anpouvwèman, nou ankouraje aprantisaj pou tout lavi. Edikasyon se kle pou libere potansyèl ak kwasans.",
+    
+    "title3": "Patènarya Lokal",
+    "description3": "Nou kolabore sere sere ak òganizasyon lokal yo pou ogmante enpak ak rive. Patènarya sa yo bati konfyans, pataje resous, ak konprann kilti. Ansanm, nou devlope pwojè ki adrese bezwen kominote yo efektivman. Kreye rezo fò se esansyèl pou pwogrè dirab."
+  },
+  
+
+  "referpage": {
+    "nav": {
+      "home": "Akèy",
+      "services": "Sèvis",
+      "contact": "Kontak"
+    },
+    "refer": {
+      "title": "Rekòmande yon moun ou renmen pou bon kouvèti",
+      "description": "Envite zanmi ak fanmi pou dekouvri asirans sante, vi, oswa dantè ou ka fè konfyans ak H4H Insurance..."
+    },
+    "form": {
+      "title": "Voye yon rekòmandasyon",
+      "namePlaceholder": "Non ou",
+      "emailPlaceholder": "Imèl ou",
+      "referredNamePlaceholder": "Non moun ou rekòmande a",
+      "referredEmailPlaceholder": "Imèl moun ou rekòmande a",
+      "consent": "Mwen konfime moun ou rekòmande a dakò pou kontakte l.",
+      "button": "Rekòmande kounye a",
+      "loading": "Ap voye...",
+      "fillAllFields": "Tanpri ranpli tout chan yo epi konfime konsantman an.",
+      "successMessage": "✅ Mèsi! Rekòmandasyon ou an voye. Nou pral kontakte {{name}} byento.",
+      "errorMessage": "❌ Echè pandan voye rekòmandasyon an. Tanpri eseye ankò.",
+      "unexpectedError": "❌ Yon erè inatandi fèt."
+    },
+    "footer": {
+      "tagline": "H4H Insurance | Patnè asirans ou ka fè konfyans",
+      "phone": "Kontakte nou: (786) 397-7167",
+      "altPhone": "(844) 544-0663",
+      "disclaimer": "H4H Insurance kolabore ak plizyè konpayi asirans pou ofri plan ACA Marketplace, sante, lavi, ak dantè. Pou kesyon sou Marketplace, vizite http://HealthCare.gov. Nou itilize enfòmasyon ou sèlman pou enskripsyon ak konsantman ou, selon direktiv federal yo."
+    }
+  },
 
   "referafriend": {
     "breadcrumb": {
@@ -717,6 +794,45 @@
       "image": "/images/mission/mission3.jpg"
     }
   },  
+
+  "community": {
+    "title": "Kominite a",
+    "description": "Nou sipòte fanmi ayisyen yo ak solisyon asirans ki fasil pou jwenn.",
+    "cta_button": "Jwenn yon estimasyon gratis",
+    "events_section": {
+      "title": "Prezans nou nan kominote a",
+      "description": "Nan H4H Asirans, nou angaje nou pou nou bati kominote ki pi solid ak an sante lè nou rete prezan kote li pi enpòtan — pami pèp la. Nou patisipe aktivman nan evènman lokal ki konsantre sou konsyantizasyon sou lasante, edikasyon dantè, asirans vi, ak Medicare. Efò nou yo sipòte espesyalman kominote ayisyen an, pou ede yo jwenn resous enpòtan ak enfòmasyon klè pou pran bon desizyon sou lasante ak finans yo. Soti nan salon sante rive nan atelye enskripsyon, nou vize edike, bay pouvwa, epi gide moun nan lang yo ak kilti yo. Pou nou, se pa sèlman ofri asirans — se pou nou vin yon patnè ki fyab ak yon defansè pou byennèt kominote a."
+    },
+    "main_sections": {
+      "resources_section": {
+        "title": "Angajman Kominotè",
+        "resources": [
+          {
+            "title": "Salon Sante Lokal",
+            "description": "Nou patisipe aktivman nan salon sante atravè kominote a pou bay enfòmasyon, reponn kesyon, epi ede moun konprann opsyon asirans yo."
+          },
+          {
+            "title": "Evènman Kiltirèl ak Kominotè",
+            "description": "Soti nan selebrasyon kiltirèl ayisyen rive nan rankont katye, nou patisipe nan divès kalite evènman pou konekte ak kominote a epi pataje resous ki gen valè."
+          },
+          {
+            "title": "Atelye Enskripsyon Medicare",
+            "description": "Pandan peryòd enskripsyon yo, nou òganize atelye pou ede granmoun aje konprann plan Medicare yo epi pran bon desizyon sou swen sante yo."
+          },
+          {
+            "title": "Konsiltasyon Endividyèl",
+            "description": "Nan estand nou yo ak evènman pop-up, nou ofri konsiltasyon pèsonalize nan lang moun yo pou asire tout moun jwenn èd yo bezwen nan yon anviwònman konfòtab."
+          }
+        ]
+      },
+      "support_section": {
+        "title": "Rete Konekte",
+        "description": "Swiv nou sou rezo sosyal nou yo pou w rete enfòme sou evènman nou patisipe yo.",
+        "call_to_action": "Kontakte nou"
+      }
+    }
+  },
+  
 
   "appointment": {
     "title": "Planifye Yon Randevou",
@@ -764,7 +880,8 @@
   "contact": {
     "title": "Kontakte nou !",
     "call": "Rele nou nan",
-    "phone_number": "(786) 397-7167\n(844) 544-0663",    "email": "email",
+    "phone_number": "(786) 397-7167\n(844) 544-0663",
+    "email": "email",
     "email_address": "info@h4hinsurance.com",
     "chat": "Ekri nou",
     "chat_hours": "Lundi Au Vendredi (9am – 6pm EST)"

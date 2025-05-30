@@ -11,14 +11,39 @@ import Link from 'next/link';
 import BreadcrumbComp from '@/app/components/BreadcrumbComp';
 import { useTranslation } from 'react-i18next';
 
-const ReferaFriend = () => {
+const data = [
+  {
+    icon: <FaBusinessTime className='text-blue-600 w-8 h-8' />,
+    title: 'Business Service',
+    description: 'Quickly productive just in time strategic theme.',
+  },
+  {
+    icon: <FaChartBar className='text-blue-600 w-8 h-8' />,
+    title: 'Marketing Plan',
+    description: 'Quickly productive just in time strategic theme.',
+  },
+  {
+    icon: <FaUsers className='text-blue-600 w-8 h-8' />,
+    title: 'Team Management',
+    description: 'Quickly productive just in time strategic theme.',
+  },
+  {
+    icon: <FaTrophy className='text-blue-600 w-8 h-8' />,
+    title: 'Award Won',
+    description: 'Quickly productive just in time strategic theme.',
+  },
+];
+
+const InsurancePolicy = () => {
   const { t } = useTranslation();
   return (
     <div className=''>
       <BreadcrumbComp
-        img={t('referafriend.breadcrumb.image')}
+        img={t('mission.breadcrumb.image')}
         pos={'end'}
-        route={t('referafriend.breadcrumb.title')}
+        horizontalAlign="center" // horizontal: direita da imagem
+        route={t('mission.breadcrumb.title')}
+
       />
 
       <div className='flex flex-col mt-8 md:flex-row justify-between items-center'>
@@ -29,15 +54,15 @@ const ReferaFriend = () => {
           transition={{ duration: 0.5 }}
         >
           <h2 className='text-3xl lg:text-5xl text-primary-darkAqua font-bold mb-8'>
-            {t('referafriend.make_difference.title')}
+            {t('mission.make_difference.title')}
           </h2>
           <p className='text-lg'>
-            {t('referafriend.make_difference.description')}
+            {t('mission.make_difference.description')}
           </p>
           <div className='flex justify-center items-center'>
             <Link href='/appointment'>
               <button className='bg-primary-darkAqua text-white font-semibold py-2 px-4 rounded-md mt-8'>
-                {t('referafriend.make_difference.button')}
+                {t('mission.make_difference.button')}
               </button>
             </Link>
           </div>
@@ -50,8 +75,8 @@ const ReferaFriend = () => {
           transition={{ duration: 0.5 }}
         >
           <img
-            src={t('referafriend.make_difference.image')}
-            alt='Refer a Friend'
+            src={t('mission.make_difference.image')}
+            alt='Health Plans'
             className='w-full h-auto rounded-md'
           />
         </motion.div>
@@ -65,8 +90,8 @@ const ReferaFriend = () => {
           transition={{ duration: 0.5 }}
         >
           <img
-            src={t('referafriend.stronger_haiti.image')}
-            alt='Stronger Haiti'
+            src={t('mission.stronger_haiti.image')}
+            alt='Health Plans'
             className='w-full h-auto rounded-md'
           />
         </motion.div>
@@ -78,10 +103,10 @@ const ReferaFriend = () => {
           transition={{ duration: 0.5 }}
         >
           <h2 className='text-3xl lg:text-5xl text-primary-darkAqua font-bold mb-8'>
-            {t('referafriend.stronger_haiti.title')}
+            {t('mission.stronger_haiti.title')}
           </h2>
           <p className='text-lg'>
-            {t('referafriend.stronger_haiti.description')}
+            {t('mission.stronger_haiti.description')}
           </p>
         </motion.div>
       </div>
@@ -94,10 +119,10 @@ const ReferaFriend = () => {
           transition={{ duration: 0.5 }}
         >
           <h2 className='text-3xl lg:text-5xl text-primary-darkAqua font-bold mb-8'>
-            {t('referafriend.breaking_barriers.title')}
+            {t('mission.breaking_barriers.title')}
           </h2>
           <p className='text-lg'>
-            {t('referafriend.breaking_barriers.description')}
+            {t('mission.breaking_barriers.description')}
           </p>
         </motion.div>
 
@@ -108,8 +133,8 @@ const ReferaFriend = () => {
           transition={{ duration: 0.5 }}
         >
           <img
-            src={t('referafriend.breaking_barriers.image')}
-            alt='Breaking Barriers'
+            src={t('mission.breaking_barriers.image')}
+            alt='Health Plans'
             className='w-full h-auto rounded-md'
           />
         </motion.div>
@@ -123,8 +148,8 @@ const ReferaFriend = () => {
           transition={{ duration: 0.5 }}
         >
           <img
-            src={t('referafriend.unlocking_potential.image')}
-            alt='Unlocking Potential'
+            src={t('mission.unlocking_potential.image')}
+            alt='Health Plans'
             className='w-full h-auto rounded-md'
           />
         </motion.div>
@@ -136,10 +161,10 @@ const ReferaFriend = () => {
           transition={{ duration: 0.5 }}
         >
           <h2 className='text-3xl lg:text-5xl text-primary-darkAqua font-bold mb-8'>
-            {t('referafriend.unlocking_potential.title')}
+            {t('mission.unlocking_potential.title')}
           </h2>
           <p className='text-lg'>
-            {t('referafriend.unlocking_potential.description')}
+            {t('mission.unlocking_potential.description')}
           </p>
         </motion.div>
       </div>
@@ -151,4 +176,4 @@ const ReferaFriend = () => {
   );
 };
 
-export default ReferaFriend;
+export default InsurancePolicy;

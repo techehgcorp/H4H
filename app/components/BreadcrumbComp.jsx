@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
 
-const BreadcrumbComp = ({ img, video, videoSrc, pos = 'center', route }) => {
+const BreadcrumbComp = ({ img, video, videoSrc, pos = 'center', horizontalAlign = 'center', route }) => {
   const { t } = useTranslation();
 
   // Mapeamento de posições válidas
@@ -14,8 +14,20 @@ const BreadcrumbComp = ({ img, video, videoSrc, pos = 'center', route }) => {
     bottom: 'justify-end'
   };
 
+  const verticalAlignMap = {
+    top: 'justify-start',
+    center: 'justify-center',
+    bottom: 'justify-end'
+  };
+
+  const horizontalAlignMap = {
+    left: 'items-start',
+    center: 'items-center',
+    right: 'items-end'
+  };
+
   return (
-    <div className="relative w-full mt-10 rounded-md">
+    <div className="relative w-full mt-0 rounded-md">
       {/* Background: video ou imagem */}
       {video ? (
         <video
@@ -33,16 +45,16 @@ const BreadcrumbComp = ({ img, video, videoSrc, pos = 'center', route }) => {
           src={img}
           alt="img"
           className="w-full h-[400px] sm:h-[500px] md:h-[600px] object-cover rounded-md"
-        />
+          style={{ objectPosition: 'center 40%' }}        />
       )}
 
       {/* Conteúdo sobreposto */}
       <div
-        className={`absolute inset-0 flex flex-col items-center ${
-          justifyPosition[pos] || 'justify-center'
-        } p-4 sm:p-20`}
+        className={`absolute inset-0 flex flex-col ${
+          verticalAlignMap[pos] || 'justify-center'
+        } ${horizontalAlignMap[horizontalAlign] || 'items-center'} p-4 sm:p-20`}
       >
-        <div className="text-center">
+        <div className="text-left">
           <h1 className="text-sm text-primary-darkAqua md:text-4xl lg:text-6xl font-bold mb-2">
             {route}
           </h1>
@@ -62,5 +74,4 @@ const BreadcrumbComp = ({ img, video, videoSrc, pos = 'center', route }) => {
     </div>
   );
 };
-
 export default BreadcrumbComp;

@@ -3,6 +3,7 @@ import React, { useRef, useState, useEffect } from "react";
 import {
   FaCalendar,
   FaFacebook,
+  FaTiktok,
   FaInstagram,
   FaPhone,
   FaPhoneVolume,
@@ -287,7 +288,7 @@ const Header = () => {
                     (786) 397-7167
                     </Link> 
                     <br/>
-                    (844) 544-0663              
+                    <span className="block mt-2">(844) 544-0663</span>
                   </span>                  
 
                 </div>
@@ -302,6 +303,9 @@ const Header = () => {
                 </div>
               </div>
               <div className=" flex space-x-4 mt-4 sm:mt-0">
+              <a href="https://www.tiktok.com/@h4h.insurance" className="lg:flex hover:text-gray-400">
+                  <FaTiktok className="w-6 h-6 text-white hover:text-blue-800" />
+                </a>
                 <a href="https://www.facebook.com/people/Health-4-Haitians/61567682720657/#" className="lg:flex hover:text-gray-400">
                   <FaFacebook className="w-6 h-6 text-white hover:text-blue-800" />
                 </a>
@@ -397,13 +401,31 @@ const Header = () => {
                           </li>
                           <li>
                             <Link
-                              href="/#contact"
-                              onClick={() => handleLinkClick("#contact")}
+                              href="/referafriend"
+                              onClick={() => handleLinkClick("#referafriend")}
+                              className="hover:text-[#13287B] py-2 px-2"
+                            >
+                              {t("navigation.menu_items.referafriend")}
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              href="/community"
+                              onClick={() => handleLinkClick("#community")}
+                              className="hover:text-[#13287B] py-2 px-2"
+                            >
+                              {t("navigation.menu_items.community")}
+                            </Link>
+                          </li>
+                          {/* <li>
+                            <Link
+                              href="/contact"
+                              onClick={() => handleLinkClick("contact")}
                               className="hover:text-[#13287B] py-2 px-2"
                             >
                               {t("navigation.menu_items.contact")}
                             </Link>
-                          </li>
+                          </li> */}
                           <li className="">
                             <div className="flex justify-center items-center w-[80%]">
                               <button
@@ -438,72 +460,54 @@ const Header = () => {
         {/* Main Navigation */}
       </header>
       <header className="bg-white sticky top-0 z-40 shadow-md">
-        <div className="bg-white shadow-md  flex justify-center lg:justify-start items-center w-full mx-auto pt-[60px] pb-[2px]">
-          <div className="flex lg:pl-[5rem] justify-center items-center text-[#0A4958] my-5 xl:w-5/12 w-[20%]">
+        <div className="bg-white shadow-md flex justify-center lg:justify-start items-center w-full mx-auto pt-[60px] pb-[2px]">
+          <div className="flex lg:pl-[5rem] justify-center items-center text-[#0A4958] my-5 xl:w-5/12 w-[20%] mt-8 mr-20">
             <Link href='/'>
               <Image
                 alt="logo"
                 src="/images/HHlogo.png"
-                width={120}
+                width={130}
                 height={50}
-                // style={{ width: '300px', height: '300px' }}        
               />
             </Link>
           </div>
+
           <div className="hidden lg:flex justify-center items-center md:w-[60%]">
-            {/* Navbar */}
             <nav className="text-black">
-              <div className="text-[1.35rem] flex space-x-16 ">
-                <Link
-                  href="/"
-                  className="hover:text-primary-darkAqua text-[#8d8d8d] py-2"
-                >
+              <div className="text-[1.35rem] flex space-x-8"> {/* ⬅️ Espaçamento reduzido aqui */}
+                <Link href="/" className="hover:text-primary-darkAqua text-[#8d8d8d] py-2">
                   {t("navigation.menu_items.home")}
                 </Link>
-                <Link
-                  href="/about-us"
-                  className="whitespace-nowrap hover:text-primary-darkAqua text-[#8d8d8d] py-2"
-                >
+
+                <Link href="/about-us" className="whitespace-nowrap hover:text-primary-darkAqua text-[#8d8d8d] py-2">
                   {t("navigation.menu_items.about_us")}
                 </Link>
 
                 <NavigationMenu>
                   <NavigationMenuList className="flex">
                     <NavigationMenuItem>
-                      <NavigationMenuTrigger className="hover:text-primary-darkAqua text-[1.28rem]  text-[#8d8d8d] py-2">
+                      <NavigationMenuTrigger className="hover:text-primary-darkAqua text-[1.28rem] text-[#8d8d8d] py-2">
                         {t("navigation.menu_items.products")}
                       </NavigationMenuTrigger>
-                      <NavigationMenuContent className="bg-white  w-[400px] shadow-lg rounded-md">
+                      <NavigationMenuContent className="bg-white w-[400px] shadow-lg rounded-md">
                         <div className="p-4">
                           <NavigationMenuLink asChild>
-                            <Link
-                              href="/health"
-                              className="block px-4 py-2 hover:bg-gray-100 text-[#8d8d8d]"
-                            >
+                            <Link href="/health" className="block px-4 py-2 hover:bg-gray-100 text-[#8d8d8d]">
                               {t("navigation.menu_items.health")}
                             </Link>
                           </NavigationMenuLink>
                           <NavigationMenuLink asChild>
-                            <Link
-                              href="/dental"
-                              className="block px-4 py-2 hover:bg-gray-100 text-[#8d8d8d]"
-                            >
+                            <Link href="/dental" className="block px-4 py-2 hover:bg-gray-100 text-[#8d8d8d]">
                               {t("navigation.menu_items.dental_vision")}
                             </Link>
                           </NavigationMenuLink>
                           <NavigationMenuLink asChild>
-                            <Link
-                              href="/life"
-                              className="block px-4 py-2 hover:bg-gray-100 text-[#8d8d8d]"
-                            >
+                            <Link href="/life" className="block px-4 py-2 hover:bg-gray-100 text-[#8d8d8d]">
                               {t("navigation.menu_items.life")}
                             </Link>
                           </NavigationMenuLink>
                           <NavigationMenuLink asChild>
-                            <Link
-                              href="/medicare"
-                              className="block px-4 py-2 hover:bg-gray-100 text-[#8d8d8d]"
-                            >
+                            <Link href="/medicare" className="block px-4 py-2 hover:bg-gray-100 text-[#8d8d8d]">
                               {t("navigation.menu_items.medicare")}
                             </Link>
                           </NavigationMenuLink>
@@ -513,32 +517,24 @@ const Header = () => {
                   </NavigationMenuList>
                 </NavigationMenu>
 
-                <Link
-                  href="/mission"
-                  className="hover:text-primary-darkAqua text-[#8d8d8d] py-2"
-                >
+                <Link href="/mission" className="hover:text-primary-darkAqua text-[#8d8d8d] py-2">
                   {t("navigation.menu_items.mission")}
                 </Link>
-                <Link
-                  href="/referafriend"
-                  className="whitespace-nowrap hover:text-primary-darkAqua text-[#8d8d8d] py-2"
-                >
+
+                <Link href="/referafriend" className="whitespace-nowrap hover:text-primary-darkAqua text-[#8d8d8d] py-2">
                   {t("navigation.menu_items.referafriend")}
                 </Link>
-                {/* <Link
-                  href='/#contact'
-                  className='hover:text-primary-darkAqua text-[#8d8d8d] py-2'
-                >
-                  Contact Us
-                </Link> */}
+
+                {/* ✅ Novo Link */}
+                <Link href="/community" className="whitespace-nowrap hover:text-primary-darkAqua text-[#8d8d8d] py-2">
+                  {t("navigation.menu_items.community")}
+                </Link>
               </div>
             </nav>
           </div>
+
           <div className="hidden lg:flex lg:flex-col justify-center items-center w-[20%]">
-            <button
-              onClick={() => handleLinkClick("appointment")}
-              // className="bg-primary-darkAqua p-4 rounded-full hover:bg-[#0A4958] text-white hover:text-white animate-shadow-pulse"
-            >
+            <button onClick={() => handleLinkClick("appointment")}>
               <img src="images/calendar3D.png" className="h-12 w-12" />
             </button>
             <span className="hover:text-primary-darkAqua text-xs text-gray-800 py-1">
@@ -547,6 +543,7 @@ const Header = () => {
           </div>
         </div>
       </header>
+
       <header>
         {/* Hero Section */}
         {isHomePage ? (

@@ -1,11 +1,13 @@
 import TranslationsProvider from '@/lib/TranslationProvider';
-import initTranslations from '@/app/[locale]/i18n';
-import ReferAFriend from '@/app/[locale]/components/ReferAFriend';
+import initTranslations from '../i18n';
+import Community from '@/components/Community';
 
 const i18nNamespaces = ['translation'];
 
-export default async function ReferAFriendPage({ params: { locale } }) {
+async function community({ params: { locale } }) {
   const { t, resources } = await initTranslations(locale, i18nNamespaces);
+
+  console.log({ locale });
 
   return (
     <TranslationsProvider
@@ -14,8 +16,10 @@ export default async function ReferAFriendPage({ params: { locale } }) {
       resources={resources}
     >
       <main>
-        <ReferAFriend />
+        <Community />
       </main>
     </TranslationsProvider>
   );
 }
+
+export default community;

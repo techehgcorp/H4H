@@ -13,7 +13,8 @@
       "referafriend": "Recomendar a un amigo",
       "contact": "Contacto",
       "products": "Productos",
-      "contact_us": "Contáctanos"
+      "contact_us": "Contáctanos",
+      "community": "Comunidad"
     },
     "close": "Cerrar"
   },
@@ -383,22 +384,55 @@
       },
       {
         "heading": "Una Visión de Empoderamiento Integral",
-        "paragraph": "Como todos, él sueña con ayudar a la comunidad haitiana a acceder a oportunidades esenciales como atención médica, educación, empleo, redes, vivienda, nutrición, inversiones y crecimiento personal. Su esposa, también de ascendencia caribeña, comparte esta visión y sueña con expandir estos esfuerzos a todas las islas del Caribe. Aunque nuestro objetivo es apoyar a todas las comunidades desatendidas, nuestro equipo está particularmente enfocado en los haitianos, quienes se encuentran entre los más necesitados. La salud es la base de la vida, por eso comenzamos nuestro trabajo aquí.",
-        "button": null
+        "paragraph": "Nuestra visión no se limita solo a la salud. Está inspirada en un sueño más amplio de elevar a la comunidad haitiana y otras comunidades marginadas a través del acceso, el desarrollo y la solidaridad.",
+        "bullets": [
+          {
+            "text": "La visión de H4H es ver a la comunidad haitiana con acceso a todas las oportunidades esenciales."
+          },
+          {
+            "text": "Los visionarios son un matrimonio, ambos descendientes del Caribe, que comparten el sueño de expandir estos esfuerzos a todas las islas del Caribe."
+          },
+          {
+            "text": "Nuestras prioridades se centran en: atención médica, educación, empleo, redes, vivienda, nutrición, inversión y desarrollo personal."
+          },
+          {
+            "text": "Nuestro objetivo principal es apoyar a todas las comunidades desatendidas, con un enfoque especial en los haitianos, uno de los grupos más marginados."
+          },
+          {
+            "text": "La salud es la base de la vida; por eso comenzamos nuestro trabajo aquí."
+          }
+        ]
       },
       {
         "heading": "Cerrando la Brecha en Atención Médica para los Haitianos",
-        "paragraph": "El acceso a atención médica de calidad es vital para el bienestar de las personas y las familias, pero muchos en la comunidad haitiana enfrentan barreras significativas para obtener una cobertura de salud adecuada. Las diferencias de idioma, la falta de información y las limitaciones económicas son solo algunos de los obstáculos que les impiden acceder a la atención que necesitan. Nuestra misión es cerrar esta brecha proporcionando recursos en criollo que ayuden a los individuos y familias haitianas a navegar el complejo sistema de salud y asegurar la cobertura necesaria para un futuro más saludable.",
-        "button": null
+        "paragraph": "",
+        "bullets": [
+          {
+            "text": "El acceso a atención médica de calidad es vital para el bienestar de las personas y las familias, pero muchos en la comunidad haitiana enfrentan barreras significativas para obtener una cobertura de salud adecuada."
+          },
+          {
+            "text": "Algunos de los desafíos que enfrenta la comunidad haitiana, que les impiden acceder a la atención que necesitan, incluyen:",
+            "subBullets": [
+              "Barreras lingüísticas, falta de información y limitaciones económicas"
+            ]
+          },
+          {
+            "text": "Nuestra Misión:",
+            "subBullets": [
+              "Ayudar a la comunidad haitiana a acceder o conectarse con los recursos disponibles y ofrecer clases de capacitación en criollo",
+              "Guiar a la comunidad haitiana en el complejo sistema de salud",
+              "Asegurar que los haitianos obtengan la cobertura necesaria para un futuro más saludable"
+            ]
+          }
+        ]
       },
       {
         "heading": "Ampliando el Acceso a Servicios de Atención Médica de Calidad",
-        "paragraph": "Ya sea que necesiten Medicaid, seguro de salud, Medicare o seguro de vida, creemos que todos merecen acceso a servicios y apoyo de alta calidad. Mirando hacia el futuro, nuestro objetivo es expandir nuestro alcance, asegurando que cada miembro de la comunidad haitiana tenga el conocimiento y los recursos necesarios para proteger su salud y bienestar.",
-        "button": null
+        "paragraph": "Ya sea que necesiten Medicaid, seguro de salud, Medicare o seguro de vida, creemos que todos merecen acceso a servicios y apoyo de alta calidad. En el futuro, planeamos ampliar nuestros proyectos para garantizar que cada miembro de la comunidad haitiana tenga el conocimiento y los recursos necesarios para proteger su salud y bienestar."
       }
     ]
   },
-
+  
   "appointment": {
     "title": "Programación de Citas",
     "subtitle": "Programa tu cita fácilmente con opciones flexibles y recibe confirmación instantánea por correo electrónico.",
@@ -670,6 +704,50 @@
     }
   },
 
+  "accordion": {
+    "title1": "Salud Comunitaria",
+    "description1": "Ofrecemos apoyo a áreas desatendidas proporcionando servicios esenciales de salud. Nuestro enfoque es mejorar el acceso y promover el bienestar entre las poblaciones vulnerables. Colaboramos con trabajadores locales para garantizar un cuidado sostenible. Juntos, construimos comunidades más saludables.",
+    
+    "title2": "Acceso a la Educación",
+    "description2": "Nuestros programas están diseñados para brindar oportunidades de aprendizaje a personas de todas las edades y orígenes. Eliminamos barreras educativas proporcionando recursos y apoyo. Con un enfoque en inclusión y empoderamiento, fomentamos el aprendizaje permanente. La educación es clave para desbloquear el potencial y el crecimiento.",
+    
+    "title3": "Alianzas Locales",
+    "description3": "Colaboramos estrechamente con organizaciones locales para amplificar nuestro impacto y alcance. Estas alianzas fomentan la confianza, el intercambio de recursos y el entendimiento cultural. Juntos, desarrollamos proyectos que abordan efectivamente las necesidades comunitarias. Construir redes fuertes es esencial para el progreso sostenible."
+  },
+  
+
+  "referpage": {
+    "nav": {
+      "home": "Inicio",
+      "services": "Servicios",
+      "contact": "Contacto"
+    },
+    "refer": {
+      "title": "Recomienda a un ser querido para una cobertura de calidad",
+      "description": "Invita a amigos y familiares a explorar seguros confiables de salud, vida o dental con H4H Insurance..."
+    },
+    "form": {
+      "title": "Enviar una recomendación",
+      "namePlaceholder": "Tu nombre",
+      "emailPlaceholder": "Tu correo electrónico",
+      "referredNamePlaceholder": "Nombre de la persona recomendada",
+      "referredEmailPlaceholder": "Correo de la persona recomendada",
+      "consent": "Confirmo que la persona recomendada aceptó ser contactada.",
+      "button": "Recomendar ahora",
+      "loading": "Enviando...",
+      "fillAllFields": "Por favor completa todos los campos y confirma el consentimiento.",
+      "successMessage": "✅ ¡Gracias! Tu recomendación ha sido enviada. Contactaremos a {{name}} pronto.",
+      "errorMessage": "❌ No se pudo enviar la recomendación. Inténtalo de nuevo.",
+      "unexpectedError": "❌ Ocurrió un error inesperado."
+    },
+    "footer": {
+      "tagline": "H4H Insurance | Tu socio confiable de seguros",
+      "phone": "Contáctanos: (786) 397-7167",
+      "altPhone": "(844) 544-0663",
+      "disclaimer": "H4H Insurance colabora con múltiples aseguradoras para ofrecer planes del mercado ACA, salud comercial, vida y dental. Para preguntas del mercado, visita http://HealthCare.gov. Tu información se usa solo para inscripciones con tu consentimiento, según las normas federales."
+    }
+  },
+
   "referafriend": {
     "breadcrumb": {
       "title": "Recomienda a un Amigo",
@@ -696,8 +774,45 @@
       "description": "Al recomendar a otros, abres puertas a una mejor salud y un futuro más brillante. Juntos podemos elevar a comunidades enteras.",
       "image": "/images/mission/mission3.jpg"
     }
-  }
-,  
+  },
+
+  "community": {
+    "title": "Comunidad",
+    "description": "Apoyando a las familias haitianas con soluciones de seguros accesibles.",
+    "cta_button": "Obtén una cotización gratuita",
+    "events_section": {
+      "title": "Nuestra Presencia en la Comunidad",
+      "description": "En H4H Insurance, estamos comprometidos con construir comunidades más fuertes y saludables estando presentes donde más importa: entre la gente. Participamos activamente en eventos locales enfocados en la concienciación sobre la salud, educación dental, seguros de vida y Medicare. Nuestros esfuerzos apoyan especialmente a la comunidad haitiana, ayudándoles a acceder a recursos vitales e información clara para tomar decisiones informadas sobre salud y finanzas. Desde ferias de salud hasta talleres de inscripción, buscamos educar, empoderar y guiar a las personas en su propio idioma y contexto cultural. Para nosotros, no se trata solo de ofrecer seguros — se trata de ser un socio confiable y defensor del bienestar comunitario."
+    },
+    "main_sections": {
+      "resources_section": {
+        "title": "Participación Comunitaria",
+        "resources": [
+          {
+            "title": "Ferias de Salud Locales",
+            "description": "Participamos activamente en ferias de salud en toda la comunidad para brindar información, responder preguntas y ayudar a las personas a entender sus opciones de seguro."
+          },
+          {
+            "title": "Eventos Culturales y Comunitarios",
+            "description": "Desde celebraciones culturales haitianas hasta reuniones vecinales, asistimos a una amplia variedad de eventos para conectarnos con la comunidad y compartir recursos valiosos."
+          },
+          {
+            "title": "Talleres de Inscripción en Medicare",
+            "description": "Durante los períodos clave de inscripción, organizamos talleres para ayudar a los adultos mayores a entender los planes de Medicare y tomar decisiones informadas sobre su atención médica."
+          },
+          {
+            "title": "Consultas Personalizadas",
+            "description": "En nuestros puestos y eventos emergentes, ofrecemos consultas personalizadas en su idioma para asegurar que todos reciban la orientación que necesitan en un entorno cómodo."
+          }
+        ]
+      },
+      "support_section": {
+        "title": "Mantente Informado",
+        "description": "Síguenos en nuestras redes sociales para mantenerte al tanto de los eventos en los que participamos.",
+        "call_to_action": "Contáctanos"
+      }
+    }
+  },  
 
   "company": {
     "title": "Compañía",

@@ -14,7 +14,7 @@ const InterviewForm = ({
   goBackToCalendar,
   setShowInterview,
 }) => {
-  const {t} = useTranslation();
+  const {t, i18n } = useTranslation();
   const [appointmentMethod, setAppointmentMethod] = useState('');
   const [formData, setFormData] = useState({
     firstName: '',
@@ -54,7 +54,7 @@ const InterviewForm = ({
       username,
       contactMethod: formData.contactMethod,
       suggestions: formData.suggestions,
-      locale: navigator.language || 'en',
+      locale: i18n.language || 'en',
     };
 
     try {

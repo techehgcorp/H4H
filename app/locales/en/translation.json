@@ -13,7 +13,8 @@
       "referafriend": "Refer a friend",
       "contact": "Contact",
       "products": "Products",
-      "contact_us": "Contact Us"
+      "contact_us": "Contact Us",
+      "community": "Community"
     },
     "close": "Close"
   },
@@ -418,19 +419,52 @@
       },
       {
         "heading": "A Vision for Holistic Empowerment",
-        "paragraph": "Like everyone else, he envisions helping the Haitian community gain access to essential opportunities such as healthcare, education, jobs, networks, housing, nutrition, investing, and personal growth. His wife, also of Caribbean descent, shares this vision and dreams of expanding these efforts to all Caribbean Islands. While our goal is to support all underserved communities, our team is particularly focused on Haitians, who are among the most underserved. Health is the foundation of life, which is why we begin our work here."
+        "paragraph": "Our vision goes beyond healthcare. It is inspired by a broader dream to uplift the Haitian and other underserved communities through access, development, and solidarity.",
+        "bullets": [
+          {
+            "text": "H4H’s vision is to see the Haitian community gain access to all essential opportunities."
+          },
+          {
+            "text": "The visionaries are a husband and wife duo, both of Caribbean descent, who share a common dream of expanding these efforts to all Caribbean islands."
+          },
+          {
+            "text": "Our priorities are rooted in these areas: healthcare, education, employment, networking, housing, nutrition, investment, and personal development."
+          },
+          {
+            "text": "Our key objective is to support all underserved communities, with a particular focus on Haitians who are among the most disadvantaged."
+          },
+          {
+            "text": "Health is the foundation of life, which is why we begin our mission here."
+          }
+        ]
       },
       {
         "heading": "Bridging the Healthcare Gap for Haitians",
-        "paragraph": "Access to quality healthcare is vital for the well-being of individuals and families, yet many in the Haitian community face significant barriers to obtaining proper health coverage. Language differences, lack of information, and financial constraints are just a few of the obstacles that prevent them from accessing the care they need. Our mission is to bridge this gap by providing Creole-speaking resources to help Haitian individuals and families navigate the complex healthcare system and secure the coverage necessary for a healthier future."
+        "paragraph": "Access to quality healthcare is essential for the well-being of all individuals and their families, but many in the Haitian community face significant barriers to obtaining the health coverage they need.",
+        "bullets": [
+          {
+            "text": "Some of the challenges the Haitian community faces, preventing access to care, include:",
+            "subBullets": [
+              "Language barriers, lack of information, and financial limitations"
+            ]
+          },
+          {
+            "text": "Our Mission:",
+            "subBullets": [
+              "Help the Haitian community access or connect with available resources and offer Creole-language training classes",
+              "Guide the Haitian community through the complex healthcare system",
+              "Ensure Haitians obtain the necessary coverage for a healthier future"
+            ]
+          }
+        ]
       },
       {
         "heading": "Expanding Access to Quality Healthcare Services",
-        "paragraph": "Whether they need Medicaid, health insurance, Medicare, or life insurance, we believe that everyone deserves access to high-quality service and support. Looking ahead, we aim to expand our outreach, ensuring that every member of the Haitian community has the knowledge and resources to protect their health and well-being."
+        "paragraph": "Whether the community needs Medicaid, health insurance, Medicare, or life insurance, we believe that everyone deserves access to quality services and support. In the future, we aim to expand our programs to ensure that every member of the Haitian community has the knowledge and resources to protect their health and well-being."
       }
     ]
   },
-
+  
   "dental_vision": {
     "title": "Dental & Vision",
     "description": "Affordable Dental & Vision Insurance Plans for Your Family",
@@ -647,7 +681,7 @@
       "title": "Together, We are Building a Stronger, Healthier Haiti, One Policy at a Time.",
       "description": "Investing in Haitian communities is not just a moral imperative; it's a catalyst for sustainable growth and positive change.",
       "image": "/images/mission/missionPic.jpg"
-    },
+   },
     "breaking_barriers": {
       "title": "Breaking Down Barriers for Equity and Growth",
       "description": "The Haitian community often faces systemic barriers that limit access to essential resources, such as education, healthcare, and economic opportunities. By directing investments into these areas, we can foster equity, create pathways for success, and strengthen the broader economy.",
@@ -659,6 +693,58 @@
       "image": "/images/mission/mission3.jpg"
     }
   },
+
+"accordion": {
+  "title1": "Community Health",
+  "description1": "We provide support for underserved areas by delivering essential healthcare services. Our focus is on improving access and promoting well-being among vulnerable populations. We collaborate with local health workers to ensure sustainable care. Together, we build healthier communities.",
+  
+  "title2": "Education Access",
+  "description2": "Our programs are designed to enable learning opportunities for people of all ages and backgrounds. We remove barriers to education by providing resources and support. With a focus on inclusion and empowerment, we foster lifelong learning. Education is a key to unlocking potential and growth.",
+  
+  "title3": "Local Partnerships",
+  "description3": "We collaborate closely with local organizations to amplify our impact and reach. These partnerships foster trust, resource sharing, and cultural understanding. Together, we develop projects that address community needs effectively. Building strong networks is essential for sustainable progress."
+},
+
+"community": {
+  "title": "Community",
+  "description": "Supporting Haitian families with accessible insurance solutions.",
+  "cta_button": "Get a Free Quote",
+  "events_section": {
+    "title": "Our Presence in the Community",
+    "description": "At H4H Insurance, we are committed to building stronger, healthier communities by staying present where it matters most — among the people. We actively take part in local events that focus on health awareness, dental education, life insurance, and Medicare. Our efforts especially support the Haitian community, helping them access vital resources and clear information to make informed health and financial decisions. From health fairs to enrollment workshops, we aim to educate, empower, and guide individuals in their own language and cultural context. For us, it’s not just about offering insurance — it’s about being a reliable partner and advocate for community well-being."  
+  },
+  "main_sections": {
+    "resources_section": {
+      "title": "Community Engagement",
+      "resources": [
+        {
+          "title": "Local Health Fairs",
+          "description": "We actively participate in health fairs across the community to provide information, answer questions, and help individuals navigate their insurance options."
+        },
+        {
+          "title": "Cultural and Community Events",
+          "description": "From Haitian cultural celebrations to neighborhood gatherings, we attend a wide variety of events to connect with the community and share valuable resources."
+        },
+        {
+          "title": "Medicare Enrollment Workshops",
+          "description": "During key enrollment periods, we host workshops to assist seniors in understanding Medicare plans and making informed decisions about their healthcare."
+        },
+        {
+          "title": "One-on-One Consultations",
+          "description": "At our booths and pop-up events, we offer personalized, in-language consultations to ensure everyone receives the guidance they need in a comfortable setting."
+        }
+      ]
+    },
+    
+    "support_section": {
+      "title": "Stay Tuned",
+      "description": "Follow us on our social Networks to stay updated on the events we participated.",
+      "call_to_action": "Contact us"
+    }
+  }
+}
+,
+
 
   "referafriend": {
     "breadcrumb": {
@@ -685,6 +771,38 @@
       "title": "Unlock New Opportunities Through Referrals",
       "description": "By referring others, you open doors to better health and a brighter future. Together, we can uplift entire communities.",
       "image": "/images/mission/mission3.jpg"
+    }
+  },
+
+  "referpage": {
+    "nav": {
+      "home": "Home",
+      "services": "Services",
+      "contact": "Contact"
+    },
+    "refer": {
+      "title": "Refer a Loved One for Quality Coverage",
+      "description": "Invite friends and family to explore trusted health, life, or dental insurance with H4H Insurance..."
+    },
+    "form": {
+      "title": "Submit a Referral",
+      "namePlaceholder": "Your Name",
+      "emailPlaceholder": "Your Email",
+      "referredNamePlaceholder": "Referred Person's Name",
+      "referredEmailPlaceholder": "Referred Person's Email",
+      "consent": "I confirm the referred person has agreed to be contacted.",
+      "button": "Refer Now",
+      "loading": "Submitting...",
+      "fillAllFields": "Please fill out all fields and confirm consent.",
+      "successMessage": "✅ Thank you! Your referral has been submitted. We’ll contact {{name}} soon.",
+      "errorMessage": "❌ Failed to submit referral. Please try again.",
+      "unexpectedError": "❌ An unexpected error occurred."
+    },
+    "footer": {
+      "tagline": "H4H Insurance | Your Trusted Insurance Partner",
+      "phone": "Contact us: (786) 397-7167",
+      "altPhone": "(844) 544-0663",
+      "disclaimer": "H4H Insurance collaborates with multiple carriers to offer ACA Marketplace, commercial health, life, and dental plans. For Marketplace questions, visit http://HealthCare.gov. Your information is used only for enrollment purposes with your consent, per federal guidelines."
     }
   },
   
@@ -863,6 +981,8 @@
       "submit": "By submitting this form, you are consenting to receive marketing emails from H4H Insurance. You can revoke your consent to receive emails at any time by unsubscribing to emails at"
     }
   }
+
+  
   
   
 }

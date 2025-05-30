@@ -13,6 +13,7 @@ import Header from "@/app/[locale]/components/Header";
 import CTA from "@/app/[locale]/components/CTA";
 import Footer from "@/app/[locale]/components/Footer";
 import { useTranslation } from "react-i18next";
+import Accordion from "@/app/components/Accordion";
 
 const Medicare = () => {
   const { t } = useTranslation();
@@ -20,15 +21,15 @@ const Medicare = () => {
     <>
       <Header />
       <div className="">
-        <div className="relative w-full mt-10 p-10 rounded-md">
+      <div className="relative w-full mt-0 p-0">
           <Image
             priority={true}
             width={1000}
             height={1000}
             src="/images/product/medicareheroimage.jpg"
             alt="img"
-            className="w-full h-full md:h-[34rem] rounded-md object-cover"
-          />
+            className="w-full h-full md:h-[34rem] object-cover"
+            />
 
           <div className="flex absolute inset-0 flex-col items-end justify-center p-4 sm:p-10">
             <div className="text-center ml-7 md:mr-[1rem]">
@@ -106,20 +107,20 @@ const Medicare = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="text-3xl lg:text-5xl text-primary-darkAqua mt-4 font-semibold mb-4">
+            <h2 className="text-3xl lg:text-5xl text-primary-darkAqua mt-4 font-semibold mb-6">
               {t("medicare.plans_section.title")}
             </h2>
-            <ul className="list-none list-inside mb-6 text-lg">
-              {t("medicare.plans_section.plans", { returnObjects: true }).map(
-                (plan, index) => (
-                  <li key={index} className="mb-1">
-                    <strong className="text-lg pr-1">{plan.title}:</strong>
-                    {plan.description}
-                  </li>
-                )
+
+            <Accordion
+              items={t("medicare.plans_section.plans", { returnObjects: true }).map(
+                (plan, index) => ({
+                  title: plan.title || `Plano ${index + 1}`,
+                  description: plan.description || "",
+                })
               )}
-            </ul>
+            />
           </motion.div>
+
         </div>
 
         <div className="flex flex-col md:flex-row justify-between items-center mt-14">

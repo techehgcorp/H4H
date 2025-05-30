@@ -1,8 +1,11 @@
 'use client';
 
+import Link from 'next/link';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 export default function ReferAFriend() {
+  const { t } = useTranslation();
   const [referrerName, setReferrerName] = useState('');
   const [referrerEmail, setReferrerEmail] = useState('');
   const [referredName, setReferredName] = useState('');
@@ -13,7 +16,7 @@ export default function ReferAFriend() {
 
   const submitReferral = async () => {
     if (!referrerName || !referrerEmail || !referredName || !referredEmail || !consent) {
-      alert('Please fill out all fields and confirm consent.');
+      alert(t('referpage.form.fillAllFields'));
       return;
     }
 
@@ -35,18 +38,18 @@ export default function ReferAFriend() {
       });
 
       if (response.ok) {
-        setMessage(`✅ Thank you! Your referral has been submitted. We’ll contact ${referredName} soon.`);
+        setMessage(t('referpage.form.successMessage', { name: referredName }));
         setReferrerName('');
         setReferrerEmail('');
         setReferredName('');
         setReferredEmail('');
         setConsent(false);
       } else {
-        setMessage('❌ Failed to submit referral. Please try again.');
+        setMessage(t('referpage.form.errorMessage'));
       }
     } catch (error) {
       console.error(error);
-      setMessage('❌ An unexpected error occurred.');
+      setMessage(t('referpage.form.unexpectedError'));
     }
 
     setLoading(false);
@@ -54,33 +57,44 @@ export default function ReferAFriend() {
 
   return (
     <div className="bg-gray-100 min-h-screen">
-      {/* Header */}
-      <header className="bg-thirdy text-white py-6">
+      <header className="bg-primary-darkAqua  text-white py-6">
         <div className="container mx-auto px-4 flex justify-between items-center">
-          <h1 className="text-2xl font-bold">H4H Insurance</h1>
+          <Link href='/'><h1 className="text-2xl font-bold">H4H Insurance</h1></Link>          
           <nav>
-            <a href="/" className="text-white hover:text-gray-200 mx-4">Home</a>
-            <a href="/#services" className="text-white hover:text-gray-200 mx-4">Services</a>
-            <a href="/#contact" className="text-white hover:text-gray-200 mx-4">Contact</a>
+            <a href="/" className="text-white hover:text-gray-200 mx-4">{t('referpage.nav.home')}</a>
+            <a href="/#services" className="text-white hover:text-gray-200 mx-4">{t('referpage.nav.services')}</a>
+            <a href="/#contact" className="text-white hover:text-gray-200 mx-4">{t('referpage.nav.contact')}</a>
           </nav>
         </div>
       </header>
 
-      {/* Main Section */}
       <section className="py-12">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-thirdy mb-4">Refer a Loved One for Quality Coverage</h2>
-          <p className="text-lg text-gray-700 mb-8">
-            Invite friends and family to explore trusted health, life, or dental insurance with H4H Insurance...
-          </p>
-          <div className="bg-white shadow-lg rounded-lg p-8 max-w-lg mx-auto">
-            <h3 className="text-xl font-semibold text-thirdy mb-6">Submit a Referral</h3>
+        <h2 className="text-3xl font-bold text-primary-darkAqua  mb-4">{t('referpage.refer.title')}</h2>
+
+        <div className="mb-6 max-w-3xl mx-auto">
+          <div className="relative" style={{ paddingBottom: '56.25%', height: 0 }}>
+            <iframe
+              className="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
+              src="https://www.youtube.com/embed/QyjxGdw_LjM"
+              title="YouTube video"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+</div>
+
+
+        <p className="text-lg text-gray-700 mb-8">{t('referpage.refer.description')}</p>
+        <div className="bg-white shadow-lg rounded-lg p-8 max-w-lg mx-auto">
+            <h3 className="text-xl font-semibold text-primary-darkAqua  mb-6">{t('referpage.form.title')}</h3>
             <div className="space-y-4">
               <input
                 type="text"
                 value={referrerName}
                 onChange={(e) => setReferrerName(e.target.value)}
-                placeholder="Your Name"
+                placeholder={t('referpage.form.namePlaceholder')}
                 className="w-full p-3 border border-gray-300 rounded-md"
                 required
               />
@@ -88,7 +102,7 @@ export default function ReferAFriend() {
                 type="email"
                 value={referrerEmail}
                 onChange={(e) => setReferrerEmail(e.target.value)}
-                placeholder="Your Email"
+                placeholder={t('referpage.form.emailPlaceholder')}
                 className="w-full p-3 border border-gray-300 rounded-md"
                 required
               />
@@ -96,7 +110,7 @@ export default function ReferAFriend() {
                 type="text"
                 value={referredName}
                 onChange={(e) => setReferredName(e.target.value)}
-                placeholder="Referred Person's Name"
+                placeholder={t('referpage.form.referredNamePlaceholder')}
                 className="w-full p-3 border border-gray-300 rounded-md"
                 required
               />
@@ -104,7 +118,7 @@ export default function ReferAFriend() {
                 type="email"
                 value={referredEmail}
                 onChange={(e) => setReferredEmail(e.target.value)}
-                placeholder="Referred Person's Email"
+                placeholder={t('referpage.form.referredEmailPlaceholder')}
                 className="w-full p-3 border border-gray-300 rounded-md"
                 required
               />
@@ -116,16 +130,14 @@ export default function ReferAFriend() {
                   className="mr-2"
                   required
                 />
-                <label className="text-sm text-gray-600">
-                  I confirm the referred person has agreed to be contacted.
-                </label>
+                <label className="text-sm text-gray-600">{t('referpage.form.consent')}</label>
               </div>
               <button
                 onClick={submitReferral}
                 disabled={loading}
-                className="w-full bg-thirdy text-white p-3 rounded-md hover:bg-blue-900 transition"
+                className="w-full bg-primary-darkAqua  text-white p-3 rounded-md hover:bg-blue-900 transition"
               >
-                {loading ? 'Submitting...' : 'Refer Now'}
+                {loading ? t('referpage.form.loading') : t('referpage.form.button')}
               </button>
               {message && <p className="text-sm text-center mt-4">{message}</p>}
             </div>
@@ -133,19 +145,18 @@ export default function ReferAFriend() {
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="bg-fourth py-6">
         <div className="container mx-auto px-4 text-center">
-          <p className="text-gray-700">H4H Insurance | Your Trusted Insurance Partner</p>
+          <p className="text-gray-700">{t('referpage.footer.tagline')}</p>
           <p className="text-gray-700 mt-2">
-            Contact us: (786) 397-7167 <br/>
-                        (844) 544-0663   |{' '}
+            {t('referpage.footer.phone')} <br />
+            {t('referpage.footer.altPhone')} |{' '}
             <a href="mailto:info@h4hinsurance.com" className="underline text-primary">
               info@h4hinsurance.com
             </a>
           </p>
           <p className="text-sm text-gray-600 mt-4">
-            H4H Insurance collaborates with multiple carriers to offer ACA Marketplace, commercial health, life, and dental plans. For Marketplace questions, visit http://HealthCare.gov. Your information is used only for enrollment purposes with your consent, per federal guidelines.
+            {t('referpage.footer.disclaimer')}
           </p>
         </div>
       </footer>

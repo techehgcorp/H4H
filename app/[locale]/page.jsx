@@ -16,6 +16,7 @@ import initTranslations from "./i18n";
 import TranslationsProvider from "@/lib/TranslationProvider";
 import GetQuoteRibbon from "@/components/GetQuoteRibbon";
 import ResponsiveFooter from "@/components/MobileFooter";
+import HomeVideo from "./components/HomeVideo";
 
 const i18nNamespaces = ["translation"];
 
@@ -33,11 +34,10 @@ async function page({ params: { locale } }) {
         <Header />
         <section id="products">
           <InsuranceService />
+          <HomeVideo />
+
         </section>
         <MovingIcons />
-        {/* <section id='mission'>
-        <InsurancePolicy />
-      </section> */}
         <GrowBusiness /><br/><br/>
         {/* <Testimonials /> */}
         <section id="contact">

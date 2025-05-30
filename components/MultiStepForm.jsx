@@ -18,6 +18,8 @@ import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
 import { TiTick, TiTickOutline } from "react-icons/ti";
 
+
+
 // US States list for dropdown
 const US_STATES = [
   "Alabama",
@@ -136,6 +138,8 @@ const MultiStepForm = () => {
     }),
   ];
 
+  const { i18n } = useTranslation();
+
   const formik = useFormik({
     initialValues: {
       zipCode: "",
@@ -175,6 +179,8 @@ const MultiStepForm = () => {
               state: values.state,
               email: values.email,
               phone: values.phone,
+              locale: i18n.language, // ✅ Adicione aqui também
+
             })
           });
     
@@ -200,7 +206,9 @@ const MultiStepForm = () => {
               dob: values.dob,
               address: values.address,
               city: values.city,
-              state: values.state
+              state: values.state,
+              locale: i18n.language, // <- idioma do site (ex: 'en', 'es', 'ht')
+
             })
           });
     

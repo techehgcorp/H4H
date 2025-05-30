@@ -9,6 +9,7 @@ import CTA from '../components/CTA';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import BreadcrumbComp from '@/app/components/BreadcrumbComp';
+import Accordion from '@/app/components/Accordion';  // <-- import Accordion
 import { useTranslation } from 'react-i18next';
 
 const data = [
@@ -36,11 +37,29 @@ const data = [
 
 const InsurancePolicy = () => {
   const { t } = useTranslation();
+
+  // Monta os itens do accordion com tradução
+  const accordionItems = [
+    {
+      title: t('accordion.title1'),
+      description: t('accordion.description1'),
+    },
+    {
+      title: t('accordion.title2'),
+      description: t('accordion.description2'),
+    },
+    {
+      title: t('accordion.title3'),
+      description: t('accordion.description3'),
+    },
+  ];
+
   return (
     <div className=''>
       <BreadcrumbComp
         img={t('mission.breadcrumb.image')}
         pos={'end'}
+        horizontalAlign="center" // horizontal: direita da imagem
         route={t('mission.breadcrumb.title')}
       />
 
@@ -101,11 +120,14 @@ const InsurancePolicy = () => {
           transition={{ duration: 0.5 }}
         >
           <h2 className='text-3xl lg:text-5xl text-primary-darkAqua font-bold mb-8'>
-            {t('mission.stronger_haiti.title')}
+            {/* {t('mission.stronger_haiti.title')} */}
           </h2>
-          <p className='text-lg'>
-            {t('mission.stronger_haiti.description')}
+          <p className='text-lg mb-8'>
+            {/* {t('mission.stronger_haiti.description')} */}
           </p>
+
+          {/* Aqui entra o Accordion */}
+          <Accordion items={accordionItems} />
         </motion.div>
       </div>
 

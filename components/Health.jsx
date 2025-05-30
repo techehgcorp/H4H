@@ -13,6 +13,7 @@ import Footer from "@/app/[locale]/components/Footer";
 import CTA from "@/app/[locale]/components/CTA";
 import Header from "@/app/[locale]/components/Header";
 import { useTranslation } from "react-i18next";
+import Accordion from "@/app/components/Accordion";
 
 const Health = () => {
   const healthPoints = [
@@ -33,8 +34,10 @@ const Health = () => {
       <div className="">
         <BreadcrumbComp
           img={"/images/product/healthheroimage.jpg"}
-          pos={"start"}
+          pos={"middle"}
+          horizontalAlign="left" // horizontal: direita da imagem
           route={t("health.title")}
+          
         />
 
         <div className="flex flex-col mt-8 md:flex-row justify-between items-center ">
@@ -182,32 +185,26 @@ const Health = () => {
           </motion.div>
         </div>
 
-        <div className="flex flex-col md:flex-row justify-between items-center mt-14">
+        <div className="flex flex-col md:flex-row justify-between items-center mt-5">
           {/* Left Side */}
           <motion.div
-            className="w-full md:w-1/2 p-4"
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            <h2 className="text-3xl lg:text-5xl text-primary-darkAqua mt-4 font-semibold mb-4">
-              {healthSections[5].title}
-            </h2>
-            <ul className="list-none list-inside mb-6 text-lg">
-              {healthSections[5].list.map((item, index) => (
-                <li key={index} className="mb-1">
-                  <strong className="text-lg pr-1">{item.item}:</strong>
-                  {item.description}
-                </li>
-              ))}
-              {/* <li className="mb-1">
-                <strong className="text-lg pr-1">
-                  {healthSections[5].list[4].item}:
-                </strong>
-                {healthSections[5].list[4].description}
-              </li> */}
-            </ul>
-          </motion.div>
+              className="w-full md:w-1/2 p-4"
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+            >
+              <h2 className="text-3xl lg:text-5xl text-primary-darkAqua mt-4 font-semibold mb-6">
+                {healthSections[5].title}
+              </h2>
+
+              <Accordion
+                items={healthSections[5].list.map((item, index) => ({
+                  title: item.item || `Item ${index + 1}`,
+                  description: item.description || "",
+                }))}
+              />
+            </motion.div>
+
 
           {/* Right Side */}
           <motion.div

@@ -10,6 +10,7 @@ import BreadcrumbComp from "@/app/components/BreadcrumbComp";
 import Header from "@/app/[locale]/components/Header";
 import CTA from "@/app/[locale]/components/CTA";
 import Footer from "@/app/[locale]/components/Footer";
+import Accordion from "@/app/components/Accordion";
 
 const Dental = () => {
   const { t } = useTranslation();
@@ -72,28 +73,28 @@ const Dental = () => {
         </div>
 
         <div className="flex flex-col md:flex-row justify-between items-center mt-14">
-          <motion.div
-            className="w-full md:w-1/2 p-4"
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            <h2 className="text-3xl lg:text-5xl text-primary-darkAqua mt-4 font-semibold mb-4">
-              {t("dental_vision.main_sections.benefits_section.title")}
-            </h2>
-            <ul className="list-none list-inside mb-6 text-lg">
-              {Object.values(
-                t("dental_vision.main_sections.benefits_section.benefits", {
-                  returnObjects: true,
-                })
-              ).map((benefit, index) => (
-                <li key={index} className="mb-1">
-                  <strong className="text-lg pr-1">{benefit.title}:</strong>
-                  {benefit.description}
-                </li>
-              ))}
-            </ul>
-          </motion.div>
+        <motion.div
+          className="w-full md:w-1/2 p-4"
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          <h2 className="text-3xl lg:text-5xl text-primary-darkAqua mt-4 font-semibold mb-6">
+            {t("dental_vision.main_sections.benefits_section.title")}
+          </h2>
+
+          <Accordion
+            items={Object.values(
+              t("dental_vision.main_sections.benefits_section.benefits", {
+                returnObjects: true,
+              })
+            ).map((benefit, index) => ({
+              title: benefit.title || `Benefício ${index + 1}`,
+              description: benefit.description || "",
+            }))}
+          />
+        </motion.div>
+
 
           <motion.div
             className="w-full md:w-1/2 p-4"

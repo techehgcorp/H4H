@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { FaFacebookF, FaWhatsapp, FaInstagram, FaTiktok } from "react-icons/fa";
+import { FaFacebookF, FaWhatsapp, FaInstagram } from "react-icons/fa";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 import {
   Dialog,
@@ -596,18 +596,9 @@ const Footer = () => {
             {t("company.copyright")}
           </p>
           <div className="flex space-x-4">
-          <a href="https://www.tiktok.com/@h4h.insurance"> 
-            <FaTiktok className="text-white hover:text-blue-500 cursor-pointer" />
-          </a>
-          <a href="https://www.facebook.com/people/Health-4-Haitians/61567682720657/#"> 
             <FaFacebookF className="text-white hover:text-blue-500 cursor-pointer" />
-          </a>
-          <a href="https://www.instagram.com/health4haitians/">
             <FaWhatsapp className="text-white hover:text-green-500 cursor-pointer" />
-          </a>  
-          <a href="http://wa.me/17863977167">
             <FaInstagram className="text-white hover:text-red-500 cursor-pointer" />
-          </a>
           </div>
         </div>
       </div>
