@@ -10,11 +10,12 @@
       "life": "Life",
       "medicare": "Medicare",
       "mission": "Mission",
-      "referafriend": "Refer a friend",
+      "referafriend": "Refer a Friend",
       "contact": "Contact",
       "products": "Products",
       "contact_us": "Contact Us",
-      "community": "Community"
+      "community": "Community",
+      "testimonials": "Testimonials"
     },
     "close": "Close"
   },
@@ -744,8 +745,12 @@
   }
 }
 ,
+  "testimonials" : {
+    "title": "Testimonials",
+    "image": "/images/testimonial/TestimonialHero.jpg"
 
-
+  }
+,
   "referafriend": {
     "breadcrumb": {
       "title": "Refer a Friend",

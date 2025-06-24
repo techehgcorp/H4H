@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "./components/Header";
+import Header from "./components/Headeroriginal";
 import ServicesSection from "./components/ServicesSection";
 import MovingIcons from "./components/MovingIcons";
 import ContactSection from "./components/ContactSection";
@@ -11,7 +11,7 @@ import Achievements from "./components/Achievements";
 import BlogSection from "./components/BlogSection";
 import Team from "./components/Team";
 import Footer from "./components/Footer";
-import Testimonials from "./components/Testimonials";
+import Testimonials from "./components/Testimonialsoriginal";
 import initTranslations from "./i18n";
 import TranslationsProvider from "@/lib/TranslationProvider";
 import GetQuoteRibbon from "@/components/GetQuoteRibbon";
@@ -39,7 +39,7 @@ async function page({ params: { locale } }) {
         </section>
         <MovingIcons />
         <GrowBusiness /><br/><br/>
-        <Testimonials /> 
+        {/* <Testimonials /> */}
         <section id="contact">
           <ContactSection />
         </section>

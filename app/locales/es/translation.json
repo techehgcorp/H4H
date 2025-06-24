@@ -10,11 +10,12 @@
       "life": "Vida",
       "medicare": "Medicare",
       "mission": "Misión",
-      "referafriend": "Recomendar a un amigo",
+      "referafriend": "Recomendar",
       "contact": "Contacto",
       "products": "Productos",
       "contact_us": "Contáctanos",
-      "community": "Comunidad"
+      "community": "Comunidad",
+      "testimonials": "Testimonios"
     },
     "close": "Cerrar"
   },
@@ -812,7 +813,13 @@
         "call_to_action": "Contáctanos"
       }
     }
-  },  
+  },
+
+    "testimonials" : {
+      "title": "Testimonios",
+      "image": "/images/testimonial/TestimonialHero.jpg"
+
+  },
 
   "company": {
     "title": "Compañía",

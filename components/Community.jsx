@@ -7,12 +7,13 @@ import Footer from "@/app/[locale]/components/Footer";
 import CTA from "@/app/[locale]/components/CTA";
 import BreadcrumbComp from "@/app/components/BreadcrumbComp";
 import Accordion from "@/app/components/Accordion";
+import EventPhotosSlider from "@/app/components/EventPhotosSlider";
 
 const Community = () => {
   const { t } = useTranslation();
   const [modalImage, setModalImage] = useState(null);
 
-  // Gerar lista de imagens a partir da imagem 8
+  // Lista de fotos dos eventos
   const eventPhotos = Array.from({ length: 18 }, (_, i) => ({
     src: `/images/community/image${i + 10}.jpg`,
     title: `Event ${i + 10}`,
@@ -23,16 +24,15 @@ const Community = () => {
       <Header />
 
       <BreadcrumbComp
-        // videoSrc="https://video.wixstatic.com/video/ac2815_e69d7b305b0e477c8a7127b5e4a56992/1080p/mp4/file.mp4"
-        img="/images/community/image15.jpg" // ou .png
+        img="/images/community/image15.jpg"
         video={false}
         pos="right"
         route={t("community.title")}
       />
 
-      {/* Seção com mosaico de imagens à esquerda */}
+      {/* Seção com slide de imagens à esquerda */}
       <div className="flex flex-col mt-5 md:flex-row justify-between items-center ml-8">
-        {/* Mosaico à esquerda */}
+        {/* Slide à esquerda */}
         <motion.div
           className="w-full md:w-1/2 relative h-[600px] p-4"
           initial={{ opacity: 0, x: -50 }}
@@ -45,32 +45,9 @@ const Community = () => {
             style={{ filter: "blur(4px)" }}
           ></div>
 
-          {/* Mosaico de imagens (z-index maior) */}
-          {eventPhotos.map((photo, index) => (
-            <div
-              key={index}
-              className="absolute group overflow-hidden rounded-md cursor-pointer shadow-md z-10"
-              onClick={() => setModalImage(photo)}
-              style={{
-                top: `${Math.random() * 80}%`,
-                left: `${Math.random() * 60}%`,
-                width: `${100 + Math.random() * 80}px`,
-                height: `${80 + Math.random() * 60}px`,
-                zIndex: index + 10,
-              }}
-            >
-              <img
-                src={photo.src}
-                alt={photo.title}
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-[10px] p-1 text-center">
-                {photo.title}
-              </div>
-            </div>
-          ))}
+          {/* Slide de fotos */}
+          <EventPhotosSlider photos={eventPhotos} onSelect={setModalImage} />
         </motion.div>
-
 
         {/* Texto à direita */}
         <motion.div
@@ -88,7 +65,7 @@ const Community = () => {
         </motion.div>
       </div>
 
-      {/* Modal de imagem grande */}
+      {/* Modal para imagem clicada */}
       {modalImage && (
         <div
           className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50"
@@ -177,9 +154,6 @@ const Community = () => {
           </h2>
           <p className="text-lg">
             {t("community.main_sections.support_section.description")}
-            {/* <a href="/contact" className="underline text-blue-600 pl-1">
-              {t("community.main_sections.support_section.call_to_action")}
-            </a> */}
           </p>
         </motion.div>
       </div>

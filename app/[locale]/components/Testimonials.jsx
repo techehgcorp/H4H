@@ -5,100 +5,111 @@ import { useDotButton } from './EmblaCarouselDotButton';
 
 const review = [
   {
-    name: 'Maxwell Johnson',
-    role: 'Small Business Owner',
-    imageUrl: 'https://randomuser.me/api/portraits/men/37.jpg',
+    name: 'Francene Mitial',
+    // role: 'Cliente',
+    rating: 5,
     review:
-      "Thanks to Health 4 Haitians, I was able to get affordable coverage for my whole family. They always explain things clearly and treat me with respect. Highly recommended!",
+      "Everything was beautifully done and the enrollment process ended well. Formidable experience, it was a very nice exchange between the agent and I to achieve this, this help was so needed; I must say necessary. Anyway, we're waiting for the follow‑up so I can have the chance to go see the doctor. Thank you very much for sharing the information with me. Hats off!",
   },
   {
-    name: 'Sarah Lee',
-    role: 'Freelancer',
-    imageUrl: 'https://randomuser.me/api/portraits/women/30.jpg',
+    name: 'Christele Saint Jean',
+    // role: 'Cliente',
+    rating: 5,
     review:
-      "I was overwhelmed with so many insurance options, but they helped me find the perfect plan. The customer service is truly outstanding and caring!",
-  },
-  {
-    name: 'John Doe',
-    role: 'Truck Driver',
-    imageUrl: 'https://randomuser.me/api/portraits/men/48.jpg',
-    review:
-      "Since joining Health 4 Haitians, insurance is no longer a headache. They handle everything and are always there when I need support.",
+      "I’m thrilled I chose H4H to assist with my health insurance process. It was a joy to see how warmly the team welcomed and guided me. Everything was resolved quickly, and I especially value that even if you only speak Creole, they understand and guide you throughout. They never left me alone, always checking to ensure everything goes smoothly, confirming I received my card, and explained every detail I didn’t understand. I have no complaints, only gratitude for the amazing initiative to help every Haitian in our community access these services fully. More people should know about this exceptional service. Thank you, H4H team, for supporting our community!",
   },
 ];
 
-const Testimonials = (props) => {
-  const { options } = props;
+const Testimonials = ({ options }) => {
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
+  const { selectedIndex, scrollSnaps, onDotButtonClick } = useDotButton(emblaApi);
 
-  const { selectedIndex, scrollSnaps, onDotButtonClick } =
-    useDotButton(emblaApi);
-
-  const scrollPrev = () => emblaApi && emblaApi.scrollPrev();
-  const scrollNext = () => emblaApi && emblaApi.scrollNext();
+  const scrollPrev = () => emblaApi?.scrollPrev();
+  const scrollNext = () => emblaApi?.scrollNext();
 
   return (
     <section
-      className='relative w-full bg-cover bg-center bg-no-repeat py-16'
+      className="relative w-full bg-cover bg-center bg-no-repeat py-16"
       style={{
         backgroundImage:
           "url('http://demo.sparklewpthemes.com/constructionlight/insurance-lite/wp-content/uploads/sites/48/2022/07/landscape-grass-architecture-wood-farm-lawn-792610-pxhere.com-1.jpg')",
       }}
     >
-      <div className='absolute inset-0 bg-black opacity-80'></div>
-      <div className='relative z-10 max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between'>
-        {/* Left Section with Heading and Arrows */}
-        <div className='text-white px-8 w-full md:w-1/2 mb-8 md:mb-0'>
-          <h2 className='text-2xl md:text-4xl font-bold'>
+      <div className="absolute inset-0 bg-black opacity-80" />
+      <div className="relative z-10 max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
+        {/* Left Section */}
+        <div className="text-white px-8 w-full md:w-1/2 mb-8 md:mb-0">
+          <h2 className="text-2xl md:text-4xl font-bold">
             Testimonials of our clients
           </h2>
-          <p className='mt-2 mb-4 text-sm md:text-base'>
-            Click below to See What Our Customers Sayied about our services.
+          <p className="mt-2 mb-4 text-sm md:text-base">
+            Click below to see what our customers said about our services.
           </p>
-          <div className='flex space-x-4'>
+          <div className="flex space-x-4">
             <button
               onClick={scrollPrev}
-              className='bg-primary-gradient hover:bg-blue-700 text-white p-2 w-10 h-10 '
+              className="bg-primary-gradient hover:bg-blue-700 text-white p-2 w-10 h-10"
             >
               &lt;
             </button>
             <button
               onClick={scrollNext}
-              className='bg-primary-gradient hover:bg-blue-700 text-white p-2 w-10 h-10 '
+              className="bg-primary-gradient hover:bg-blue-700 text-white p-2 w-10 h-10"
             >
               &gt;
             </button>
           </div>
         </div>
 
-        {/* Right Section with Carousel */}
-        <div className='embla w-full md:w-1/2'>
-          <div className='embla__viewport overflow-hidden' ref={emblaRef}>
-            <div className='embla__container flex'>
+        {/* Right Section */}
+        <div className="embla w-full md:w-1/2">
+          <div className="embla__viewport overflow-hidden" ref={emblaRef}>
+            <div className="embla__container flex items-center">
               {review.map((testimonial, index) => (
-                <div className='embla__slide flex-[0_0_100%] p-4' key={index}>
-                  <div className='bg-white rounded-lg p-6 shadow-lg flex flex-col items-center justify-between h-full'>
-                    <div className='relative w-[90px] h-[90px] mb-4'>
-                      <img
-                        src={testimonial.imageUrl}
-                        alt={testimonial.name}
-                        className='w-full h-full rounded-full border-4 border-blue-500 object-cover'
-                      />
-                      {/* <div className='absolute top-0 left-0 w-[40px] h-[40px] bg-blue-500 rounded-br-full rounded-tl-lg transform -translate-x-5 -translate-y-5'></div> */}
-                    </div>
-                    <p className='text-gray-700 text-center mb-6 flex-grow'>
+                <div
+                  className="embla__slide flex-[0_0_100%] p-4 flex justify-center"
+                  key={index}
+                >
+                  <div
+                    className="bg-white rounded-lg p-6 shadow-lg flex flex-col justify-start w-full max-w-xl"
+                    /* se quiser um mínimo:  min-h-[200px] */
+                  >
+                    {/* Nome */}
+                    <h3 className="text-xl font-bold text-center mb-2">
+                      {testimonial.name}
+                    </h3>
+
+                    {/* Texto */}
+                    <p className="text-gray-700 text-center flex-grow">
                       {testimonial.review}
                     </p>
-                    <div className='text-center'>
-                      <h3 className='text-xl font-bold'>{testimonial.name}</h3>
-                      <p className='text-blue-500'>{testimonial.role}</p>
+
+                    {/* Estrelas */}
+                    <div className="mt-6 flex justify-center space-x-1">
+                      {[1, 2, 3, 4, 5].map((star) => (
+                        <span
+                          key={star}
+                          className={`text-5xl transition-transform duration-300 ${
+                            star <= testimonial.rating
+                              ? 'text-yellow-400 animate-pulse scale-110'
+                              : 'text-gray-300'
+                          }`}
+                        >
+                          ★
+                        </span>
+                      ))}
                     </div>
+
+                    {/* Role comentado */}
+                    {/* <p className="text-blue-500 text-center mt-2">{testimonial.role}</p> */}
                   </div>
                 </div>
               ))}
             </div>
           </div>
-          <div className='embla__dots mt-4 flex justify-center space-x-2'>
+
+          {/* Dots */}
+          <div className="embla__dots mt-4 flex justify-center space-x-2">
             {scrollSnaps.map((_, index) => (
               <button
                 key={index}
@@ -106,7 +117,7 @@ const Testimonials = (props) => {
                 className={`w-4 h-4 bg-white rounded-full cursor-pointer ${
                   index === selectedIndex ? 'bg-blue-500' : ''
                 }`}
-              ></button>
+              />
             ))}
           </div>
         </div>

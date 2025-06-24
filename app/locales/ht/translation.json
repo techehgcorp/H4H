@@ -10,11 +10,13 @@
       "life": "Lavi",
       "medicare": "Medicare",
       "mission": "Misyon",
-      "referafriend": "Refere yon zanmi",
+      "referafriend": "Refere yon Zanmi",
       "contact": "Kontak",
       "products": "Pwodwi yo",
       "contact_us": "Kontakte nou",
-      "community": "Kominote"
+      "community": "Kominote",
+      "testimonials": "Temwayaj"
+
     },
     "close": "Fèmen"
   },
@@ -832,6 +834,13 @@
       }
     }
   },
+
+    "testimonials" : {
+      "title": "Temwayaj",
+      "image": "/images/testimonial/TestimonialHero.jpg"
+
+  },
+  
   
 
   "appointment": {

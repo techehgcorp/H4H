@@ -2,13 +2,13 @@
 import React from 'react';
 import { FaBusinessTime, FaChartBar, FaTrophy, FaUsers } from 'react-icons/fa';
 import Footer from '../components/Footer';
-import Header from '../components/Header';
+import Header from './Headeroriginal';
 import Image from 'next/image';
 import { IoIosCheckbox } from 'react-icons/io';
 import CTA from '../components/CTA';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import BreadcrumbComp from '@/app/components/BreadcrumbComp';
+import BreadcrumbComp from '@/app/components/BreadcrumbComporiginal';
 import { useTranslation } from 'react-i18next';
 
 const data = [

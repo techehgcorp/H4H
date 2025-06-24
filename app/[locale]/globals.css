@@ -150,3 +150,9 @@ html {
 .ant-breadcrumb a {
   color: black !important;
 }
+
+
+.custom-breadcrumb-testimonials img {
+  transform: scale(0.7);
+  transform-origin: left center;
+}
