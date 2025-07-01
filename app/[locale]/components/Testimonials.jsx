@@ -28,13 +28,14 @@ const Testimonials = ({ options }) => {
   const scrollNext = () => emblaApi?.scrollNext();
 
   return (
-    <section
-      className="relative w-full bg-cover bg-center bg-no-repeat py-16"
-      style={{
-        backgroundImage:
-          "url('http://demo.sparklewpthemes.com/constructionlight/insurance-lite/wp-content/uploads/sites/48/2022/07/landscape-grass-architecture-wood-farm-lawn-792610-pxhere.com-1.jpg')",
-      }}
-    >
+  <section
+    className="relative w-full bg-cover bg-center bg-no-repeat py-16 pt-28 md:pt-16"
+    style={{
+      backgroundImage:
+        "url('http://demo.sparklewpthemes.com/constructionlight/insurance-lite/wp-content/uploads/sites/48/2022/07/landscape-grass-architecture-wood-farm-lawn-792610-pxhere.com-1.jpg')",
+    }}
+  >
+
       <div className="absolute inset-0 bg-black opacity-80" />
       <div className="relative z-10 max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
         {/* Left Section */}

@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "./components/Headeroriginal";
+import Header from "./components/Header";
 import ServicesSection from "./components/ServicesSection";
 import MovingIcons from "./components/MovingIcons";
 import ContactSection from "./components/ContactSection";

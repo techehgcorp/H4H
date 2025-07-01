@@ -840,8 +840,27 @@
       "image": "/images/testimonial/TestimonialHero.jpg"
 
   },
-  
-  
+    "testimonialstext": {
+      "title": "Sa Kliyan Nou Yo Di",
+      "list": [
+        {
+          "name": "Francene Mitial",
+          "text": "Tout bagay te fèt trè byen e pwosesis enskripsyon an te fini byen. Yon eksperyans ekstraòdinè, li te yon bèl echanj ant ajan an ak mwen pou nou reyalize sa; èd sa a te tèlman nesesè. Kounye a, n ap tann swivi pou m ka gen chans al wè doktè a. Mèsi anpil paske ou pataje enfòmasyon sa a avè m. Chapo ba!"
+        },
+        {
+          "name": "Christele Saint Jean",
+          "text": "Mwen kontan anpil paske mwen te chwazi H4H pou ede m ak asirans sante mwen. Se te yon plezi pou m wè kijan ekip la resevwa m ak anpil chalè e te gide m. Yo te rezoud tout bagay rapid, e mwen apresye anpil ke menm si ou sèlman pale kreyòl, yo konprann ou e yo gide ou tout tan. Yo pa janm kite m pou kont mwen, yo toujou verifye si tout bagay ap mache byen, konfime si mwen resevwa kat mwen, e eksplike tout detay mwen pa t konprann. Mwen pa gen okenn plent, sèlman rekonesans pou bèl inisyativ sa a pou ede tout Ayisyen nan kominote nou an jwenn aksè ak sèvis sa yo. Plis moun ta dwe konnen sèvis sa a. Mèsi ekip H4H paske n ap soutni kominote nou an!"
+        },
+        {
+          "name": "Jean Robert",
+          "text": "Ekselan sèvis soti nan kòmansman jiska lafen. Ekip la te atantif epi yo te asire mwen konprann chak pati nan pwosesis la. Mwen vreman apresye kijan yo fè tout bagay fasil pou mwen."
+        },
+        {
+          "name": "Marie Louise",
+          "text": "Mwen trè kontan ak èd mwen te resevwa a. Yo te pasyan, yo te eksplike tout bagay klè, e yo te fè swivi avè m apre. Mwen ta rekòmande yo bay nenpòt moun ki bezwen èd ak asirans sante."
+        }
+      ]
+    },
 
   "appointment": {
     "title": "Planifye Yon Randevou",

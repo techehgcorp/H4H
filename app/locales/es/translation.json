@@ -821,6 +821,29 @@
 
   },
 
+    "testimonialstext": {
+      "title": "Lo Que Dicen Nuestros Clientes",
+      "list": [
+        {
+          "name": "Francene Mitial",
+          "text": "Todo fue hecho de forma hermosa y el proceso de inscripción terminó bien. Una experiencia formidable, fue un intercambio muy agradable entre el agente y yo para lograr esto; esta ayuda era muy necesaria. De todos modos, estamos esperando el seguimiento para que pueda tener la oportunidad de ir al médico. Muchas gracias por compartir la información conmigo. ¡Mis respetos!"
+        },
+        {
+          "name": "Christele Saint Jean",
+          "text": "Estoy encantada de haber elegido a H4H para que me ayudara con mi seguro de salud. Fue un placer ver cómo el equipo me recibió y me guió con tanta calidez. Todo se resolvió rápidamente, y valoro especialmente que incluso si solo hablas criollo, te entienden y te guían en todo momento. Nunca me dejaron sola, siempre revisando que todo fuera bien, confirmando que recibí mi tarjeta y explicando cada detalle que no entendía. No tengo quejas, solo gratitud por esta increíble iniciativa para ayudar a cada haitiano de nuestra comunidad a acceder plenamente a estos servicios. Más personas deberían conocer este servicio excepcional. ¡Gracias, equipo de H4H, por apoyar a nuestra comunidad!"
+        },
+        {
+          "name": "Jean Robert",
+          "text": "Gran servicio de principio a fin. El equipo fue atento y se aseguró de que entendiera cada parte del proceso. Realmente aprecio lo fácil que hicieron todo para mí."
+        },
+        {
+          "name": "Marie Louise",
+          "text": "Estoy muy feliz con la ayuda que recibí. Fueron pacientes, explicaron todo claramente y hicieron seguimiento después. Los recomendaría a cualquiera que busque apoyo con el seguro de salud."
+        }
+      ]
+    },
+
+
   "company": {
     "title": "Compañía",
     "services": [

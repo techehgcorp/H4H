@@ -417,6 +417,15 @@ const Header = () => {
                               {t("navigation.menu_items.community")}
                             </Link>
                           </li>
+                                                    <li>
+                            <Link
+                              href="/testimonials"
+                              onClick={() => handleLinkClick("#testimonials")}
+                              className="hover:text-[#13287B] py-2 px-2"
+                            >
+                              {t("navigation.menu_items.testimonials")}
+                            </Link>
+                          </li>
 
                           {/* <li>
                             <Link
@@ -493,7 +502,7 @@ const Header = () => {
                 </Link>
 
                 {/* Products Dropdown com espaçamento reduzido */}
-                <div className="mx-2">
+                <div className="mx-0">
                   <NavigationMenu>
                     <NavigationMenuList>
                       <NavigationMenuItem>
@@ -530,7 +539,7 @@ const Header = () => {
                 </div>
 
                 {/* Community Dropdown com espaçamento reduzido */}
-                <div className="mx-4">
+                <div className="mx-4 ">
                   <NavigationMenu>
                     <NavigationMenuList>
                       <NavigationMenuItem>
