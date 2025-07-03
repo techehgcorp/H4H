@@ -823,6 +823,7 @@
 
     "testimonialstext": {
       "title": "Lo Que Dicen Nuestros Clientes",
+      "subtitle": "Haz clic abajo para ver lo que dijeron nuestros clientes sobre nuestros servicios.",
       "list": [
         {
           "name": "Francene Mitial",
@@ -874,6 +875,14 @@
       {
         "name": "Contáctanos",
         "href": "/#contact"
+      },
+      {
+        "name": "Communidad",
+        "href": "/community"
+      },
+      {
+        "name": "Testimonios",
+        "href": "/testimonials"
       }
     ],
     "copyright": "© 2024 Health for Haitians. Todos los Derechos Reservados."

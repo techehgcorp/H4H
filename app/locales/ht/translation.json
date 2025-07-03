@@ -137,6 +137,14 @@
       {
         "name": "Kontakte Nou",
         "href": "/#contact"
+      },
+      {
+        "name": "Kominote",
+        "href": "/community"
+      },
+      {
+        "name": "Temwayaj",
+        "href": "/testimonials"
       }
     ],
     "copyright": "© 2024 Sante pou Ayisyen. Tout Dwa Rezève."
@@ -842,6 +850,7 @@
   },
     "testimonialstext": {
       "title": "Sa Kliyan Nou Yo Di",
+      "subtitle": "Klike anba pou w wè sa kliyan yo di sou sèvis nou yo.",
       "list": [
         {
           "name": "Francene Mitial",

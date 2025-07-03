@@ -344,6 +344,16 @@
         "name": "Contact Us",
         "href": "/#contact"
       }
+      ,
+      {
+        "name": "Community",
+        "href": "/community"
+      }
+      ,
+      {
+        "name": "Testimonials",
+        "href": "/testimonials"
+      }
     ],
     "copyright": "© 2024 Health for Haitians. All Rights Reserved."
   },
@@ -752,6 +762,7 @@
   },
   "testimonialstext": {
   "title": "What Our Clients Say",
+  "subtitle": "Click below to see what our customers said about our services.",
   "list": [
     {
       "name": "Francene Mitial",

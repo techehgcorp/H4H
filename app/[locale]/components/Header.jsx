@@ -482,9 +482,9 @@ const Header = () => {
             </Link>
           </div>
 
-          <div className="hidden lg:flex justify-center items-center md:w-[60%]">
+          <div className="hidden lg:flex justify-center items-center md:w-[60%]ml--30">
             <nav className="text-black">
-              <div className="text-[1.35rem] flex items-center">
+              <div className="text-[1.35rem] flex space-x-8">
 
                 {/* Home */}
                 <Link href="/" className="hover:text-primary-darkAqua text-[#8d8d8d] py-2 mr-8">
@@ -502,46 +502,46 @@ const Header = () => {
                 </Link>
 
                 {/* Products Dropdown com espaçamento reduzido */}
-                <div className="mx-0">
-                  <NavigationMenu>
-                    <NavigationMenuList>
-                      <NavigationMenuItem>
-                        <NavigationMenuTrigger className="hover:text-primary-darkAqua text-[1.28rem] text-[#8d8d8d] py-2">
-                          {t("navigation.menu_items.products")}
-                        </NavigationMenuTrigger>
-                        <NavigationMenuContent className="bg-white w-[400px] shadow-lg rounded-md">
-                          <div className="p-4">
-                            <NavigationMenuLink asChild>
-                              <Link href="/health" className="block px-4 py-2 hover:bg-gray-100 text-[#8d8d8d]">
-                                {t("navigation.menu_items.health")}
-                              </Link>
-                            </NavigationMenuLink>
-                            <NavigationMenuLink asChild>
-                              <Link href="/dental" className="block px-4 py-2 hover:bg-gray-100 text-[#8d8d8d]">
-                                {t("navigation.menu_items.dental_vision")}
-                              </Link>
-                            </NavigationMenuLink>
-                            <NavigationMenuLink asChild>
-                              <Link href="/life" className="block px-4 py-2 hover:bg-gray-100 text-[#8d8d8d]">
-                                {t("navigation.menu_items.life")}
-                              </Link>
-                            </NavigationMenuLink>
-                            <NavigationMenuLink asChild>
-                              <Link href="/medicare" className="block px-4 py-2 hover:bg-gray-100 text-[#8d8d8d]">
-                                {t("navigation.menu_items.medicare")}
-                              </Link>
-                            </NavigationMenuLink>
-                          </div>
-                        </NavigationMenuContent>
-                      </NavigationMenuItem>
-                    </NavigationMenuList>
-                  </NavigationMenu>
-                </div>
+
+               <NavigationMenu>
+                  <NavigationMenuList className="flex">
+                    <NavigationMenuItem>
+                      <NavigationMenuTrigger className="hover:text-primary-darkAqua text-[1.28rem] text-[#8d8d8d] py-2">
+                        {t("navigation.menu_items.products")}
+                      </NavigationMenuTrigger>
+                      <NavigationMenuContent className="bg-white w-[400px] shadow-lg rounded-md">
+                        <div className="p-4">
+                          <NavigationMenuLink asChild>
+                            <Link href="/health" className="block px-4 py-2 hover:bg-gray-100 text-[#8d8d8d]">
+                              {t("navigation.menu_items.health")}
+                            </Link>
+                          </NavigationMenuLink>
+                          <NavigationMenuLink asChild>
+                            <Link href="/dental" className="block px-4 py-2 hover:bg-gray-100 text-[#8d8d8d]">
+                              {t("navigation.menu_items.dental_vision")}
+                            </Link>
+                          </NavigationMenuLink>
+                          <NavigationMenuLink asChild>
+                            <Link href="/life" className="block px-4 py-2 hover:bg-gray-100 text-[#8d8d8d]">
+                              {t("navigation.menu_items.life")}
+                            </Link>
+                          </NavigationMenuLink>
+                          <NavigationMenuLink asChild>
+                            <Link href="/medicare" className="block px-4 py-2 hover:bg-gray-100 text-[#8d8d8d]">
+                              {t("navigation.menu_items.medicare")}
+                            </Link>
+                          </NavigationMenuLink>
+                        </div>
+                      </NavigationMenuContent>
+                    </NavigationMenuItem>
+                  </NavigationMenuList>
+                </NavigationMenu>
+
 
                 {/* Community Dropdown com espaçamento reduzido */}
-                <div className="mx-4 ">
-                  <NavigationMenu>
-                    <NavigationMenuList>
+
+                   <NavigationMenu>
+                    <NavigationMenuList className="flex">
                       <NavigationMenuItem>
                         <NavigationMenuTrigger className="hover:text-primary-darkAqua text-[1.28rem] text-[#8d8d8d] py-2">
                           {t("navigation.menu_items.community")}
@@ -562,8 +562,8 @@ const Header = () => {
                         </NavigationMenuContent>
                       </NavigationMenuItem>
                     </NavigationMenuList>
-                  </NavigationMenu>
-                </div>
+                  </NavigationMenu> 
+
 
                 {/* Refer a Friend */}
                 <Link href="/referafriend" className="whitespace-nowrap hover:text-primary-darkAqua text-[#8d8d8d] py-2 ml-8">
@@ -574,7 +574,7 @@ const Header = () => {
             </nav>
           </div>
 
-          <div className="hidden lg:flex lg:flex-col justify-center items-center w-[20%] mr-10">
+          <div className="hidden lg:flex lg:flex-col justify-center items-center w-[20%] mr-30">
             <button onClick={() => handleLinkClick("appointment")}>
               <img src="images/calendar3D.png" className="h-12 w-12" />
             </button>
