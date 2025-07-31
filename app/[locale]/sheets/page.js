@@ -6,7 +6,7 @@ import DashboardGraphs from '@/components/dashboard/DashboardGraphs'; // Importa
 
 const { Header, Footer, Sider, Content } = Layout;
 const { Title } = Typography;
-
+ 
 const SheetsQuickstart = () => {
   const [collapsed, setCollapsed] = useState(false);
   const [selectedMenu, setSelectedMenu] = useState('customers');

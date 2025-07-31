@@ -20,13 +20,13 @@ const Testimonials = ({ options }) => {
       className="relative w-full bg-cover bg-center bg-no-repeat py-16 pt-28 md:pt-16"
       style={{
         backgroundImage:
-          "url('http://demo.sparklewpthemes.com/constructionlight/insurance-lite/wp-content/uploads/sites/48/2022/07/landscape-grass-architecture-wood-farm-lawn-792610-pxhere.com-1.jpg')",
+          "url('https://deedoftrust.co.uk/wp-content/uploads/2017/09/client-testimonials.jpg')",
       }}
     >
-      <div className="absolute inset-0 bg-black opacity-80" />
+      <div className="absolute inset-0 bg-blue-200/60" />
       <div className="relative z-10 max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
         {/* Left Section */}
-        <div className="text-white px-8 w-full md:w-1/2 mb-8 md:mb-0">
+        <div className="text-black px-8 w-full md:w-1/2 mb-8 md:mb-0">
           <h2 className="text-2xl md:text-4xl font-bold">{title}</h2>
           <p className="mt-2 mb-4 text-sm md:text-base">
             {t('testimonialstext.subtitle')}
