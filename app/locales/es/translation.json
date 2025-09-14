@@ -883,6 +883,10 @@
       {
         "name": "Testimonios",
         "href": "/testimonials"
+      },
+      {
+        "name": "Únete al equipo",
+        "href": "/careers"
       }
     ],
     "copyright": "© 2024 Health for Haitians. Todos los Derechos Reservados."
@@ -943,8 +947,87 @@
     "suggestion": "Comentarios adicionales (opcional)",
     "submit_button": "Enviar"
   },
-  
 
+  "careers": {
+    "title": "Únete al equipo",
+    "subtitle": "Completa el siguiente formulario para iniciar tu postulación.",
+    "alerts": {
+      "success": "¡Gracias! Tu postulación se envió correctamente.",
+      "error": "Hubo un error al guardar tu postulación. Inténtalo de nuevo.",
+      "unexpected": "Error inesperado. Inténtalo nuevamente más tarde."
+    },
+    "button": {
+      "submit": "Enviar",
+      "submitting": "Enviando…"
+    },
+    "fields": {
+      "jobOpening": {
+        "label": "Selecciona la vacante",
+        "placeholder": "-- Selecciona una opción --",
+        "options": {
+          "agent": "Agente de seguros",
+          "csr": "Representante de atención al cliente",
+          "sales": "Ventas",
+          "marketing": "Marketing"
+        }
+      },
+      "firstName": { "label": "Nombre" },
+      "lastName": { "label": "Apellido" },
+      "email": { "label": "Correo electrónico", "placeholder": "tu@ejemplo.com" },
+      "phone": { "label": "Teléfono", "placeholder": "(000) 000-0000" },
+      "address1": { "label": "Dirección (línea 1)" },
+      "address2": { "label": "Dirección (línea 2)" },
+      "city": { "label": "Ciudad" },
+      "state": { "label": "Estado", "placeholder": "-- Selecciona el estado --" },
+      "zip": { "label": "Código postal" },
+      "ssn": { "label": "Número de Seguro Social", "placeholder": "###-##-####" },
+      "npn": { "label": "Número Nacional de Productor (NPN)" },
+      "dob": { "label": "Fecha de nacimiento" },
+      "frontPhotoId": { "label": "Documento de identidad (frente)" },
+      "backPhotoId": { "label": "Documento de identidad (reverso)" },
+      "education": {
+        "question": "¿Cuál es el nivel educativo más alto que has completado?",
+        "options": {
+          "hs": "Secundaria o GED",
+          "some": "Algunos estudios universitarios",
+          "cert": "Certificado (Técnico/Vocacional)",
+          "assoc": "Título de asociado",
+          "bach": "Licenciatura",
+          "mast": "Maestría o superior"
+        }
+      },
+      "nipr": { "label": "Subir informe NIPR" },
+      "resume": { "label": "Subir currículo" },
+      "languages": {
+        "label": "Indica todos los idiomas que hablas",
+        "placeholder": "Inglés, español, criollo haitiano, ..."
+      },
+      "recentEmployment": {
+        "label": "Cuéntanos sobre tu empleo más reciente",
+        "placeholder": "Empresa, puesto, fechas, funciones/responsabilidades y motivo de salida (si aplica)."
+      },
+      "employmentStatus": {
+        "label": "¿Cuál es tu situación laboral?",
+        "options": {
+          "full-time": "Tiempo completo",
+          "part-time": "Medio tiempo",
+          "unemployed": "Desempleado",
+          "student": "Estudiante",
+          "other": "Otro"
+        }
+      },
+      "felony": {
+        "question": "¿Has sido condenado por un delito grave en los últimos cinco años?",
+        "yes": "Sí",
+        "no": "No",
+        "note": "* Una condena no te descalifica automáticamente, pero puede afectar la elegibilidad para licencias estatales."
+      },
+      "availableDate": { "label": "¿Cuál es la fecha más temprana en que puedes empezar?" },
+      "referral": { "label": "¿Cómo supiste de nosotros? (si aplica)", "placeholder": "Nombre, sitio web, evento, etc." }
+    },
+    "footerNote": "* Protege los datos sensibles como el SSN. Al integrar con el backend/Google Sheets, asegúrate de cifrado en tránsito y buenas prácticas de seguridad."
+  },
+  
   "email": {
     "subject": "Confirmación de la cita",
     "text": "Hola {{username}},\nGracias por contactarnos. Su cita ha sido confirmada para el {{date}} a las {{time}} vía {{method}}.\nCuídese,\nSu equipo de H4H",

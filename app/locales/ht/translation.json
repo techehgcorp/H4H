@@ -145,6 +145,10 @@
       {
         "name": "Temwayaj",
         "href": "/testimonials"
+      },
+      {
+        "name": "Antre nan ekip la",
+        "href": "/careers"
       }
     ],
     "copyright": "© 2024 Sante pou Ayisyen. Tout Dwa Rezève."
@@ -912,6 +916,86 @@
         "virtual": "Reyinyon Vityèl sou Google Meet"
       }
     }
+  },
+
+  "careers": {
+    "title": "Antre nan ekip la",
+    "subtitle": "Tanpri ranpli fòm ki anba a pou kòmanse demann ou a.",
+    "alerts": {
+      "success": "Mèsi! Demann ou an te voye avèk siksè.",
+      "error": "Te gen yon erè pandan n ap anrejistre demann ou an. Tanpri eseye ankò.",
+      "unexpected": "Erè inatandi. Tanpri eseye ankò pita."
+    },
+    "button": {
+      "submit": "Voye",
+      "submitting": "Y ap voye…"
+    },
+    "fields": {
+      "jobOpening": {
+        "label": "Chwazi pozisyon ki disponib",
+        "placeholder": "-- Chwazi yon opsyon --",
+        "options": {
+          "agent": "Ajan asirans",
+          "csr": "Reprezantan Sèvis Kliyan",
+          "sales": "Vant",
+          "marketing": "Makasinen (Maketing)"
+        }
+      },
+      "firstName": { "label": "Non" },
+      "lastName": { "label": "Siyati" },
+      "email": { "label": "Imèl", "placeholder": "ou@egzanp.com" },
+      "phone": { "label": "Telefòn", "placeholder": "(000) 000-0000" },
+      "address1": { "label": "Adrès (liy 1)" },
+      "address2": { "label": "Adrès (liy 2)" },
+      "city": { "label": "Vil" },
+      "state": { "label": "Eta", "placeholder": "-- Chwazi eta a --" },
+      "zip": { "label": "Kòd postal" },
+      "ssn": { "label": "Nimewo Sekirite Sosyal", "placeholder": "###-##-####" },
+      "npn": { "label": "Nimewo Nasyonal Pwodiktè (NPN)" },
+      "dob": { "label": "Dat nesans" },
+      "frontPhotoId": { "label": "Kat idantite (devan)" },
+      "backPhotoId": { "label": "Kat idantite (dèyè)" },
+      "education": {
+        "question": "Ki nivo edikasyon ki pi wo ou fin fè?",
+        "options": {
+          "hs": "Lekòl segondè oswa GED",
+          "some": "Gen kèk kou inivèsite",
+          "cert": "Sètifika (Mètye/Vokasyonèl)",
+          "assoc": "Diplòm asosye",
+          "bach": "Lisans",
+          "mast": "Mastè oswa pi wo"
+        }
+      },
+      "nipr": { "label": "Telechaje rapò NIPR" },
+      "resume": { "label": "Telechaje Rezime" },
+      "languages": {
+        "label": "Tanpri ekri tout lang ou pale",
+        "placeholder": "Angle, Panyòl, Kreyòl Ayisyen, ..."
+      },
+      "recentEmployment": {
+        "label": "Rakonte nou sou dènye travay ou",
+        "placeholder": "Non konpayi, pozisyon, dat travay, fonksyon/responsablite, ak rezon ou kite (si genyen)."
+      },
+      "employmentStatus": {
+        "label": "Ki estati travay ou?",
+        "options": {
+          "full-time": "Full-time",
+          "part-time": "Part-time",
+          "unemployed": "San travay",
+          "student": "Elèv/Etyan",
+          "other": "Lòt"
+        }
+      },
+      "felony": {
+        "question": "Èske yo te kondane ou pou yon krim grav nan 5 dènye ane yo?",
+        "yes": "Wi",
+        "no": "Non",
+        "note": "* Yon kondanasyon pa diskalifye w otomatikman, men li ka afekte elijiblite pou lisans leta."
+      },
+      "availableDate": { "label": "Ki pi bon dat ou kapab kòmanse?" },
+      "referral": { "label": "Ki jan ou te tande pale de nou? (si genyen)", "placeholder": "Non, sit entènèt, evènman, elatriye" }
+    },
+    "footerNote": "* Pwoteje done sansib tankou SSN. Lè w ap entegre ak backend/Google Sheets, asire gen chifreman pandan transmisyon ak bon pratik sekirite."
   },
 
   "contact": {

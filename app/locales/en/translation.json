@@ -354,6 +354,11 @@
         "name": "Testimonials",
         "href": "/testimonials"
       }
+      ,
+      {
+        "name": "Join the Team",
+        "href": "/careers"
+      }
     ],
     "copyright": "© 2024 Health for Haitians. All Rights Reserved."
   },
@@ -874,6 +879,86 @@
     }
   },
 
+  "careers": {
+    "title": "Join The Team",
+    "subtitle": "Please fill out the form below to start your application.",
+    "alerts": {
+      "success": "Thanks! Your application has been submitted successfully.",
+      "error": "There was an error saving your application. Please try again.",
+      "unexpected": "Unexpected error. Please try again later."
+    },
+    "button": {
+      "submit": "Submit",
+      "submitting": "Submitting…"
+    },
+    "fields": {
+      "jobOpening": {
+        "label": "Select Job Opening",
+        "placeholder": "-- Select Choice --",
+        "options": {
+          "agent": "Insurance Agent",
+          "csr": "Customer Success Representative",
+          "sales": "Sales",
+          "marketing": "Marketing"
+        }
+      },
+      "firstName": { "label": "First Name" },
+      "lastName": { "label": "Last Name" },
+      "email": { "label": "Email", "placeholder": "you@example.com" },
+      "phone": { "label": "Phone", "placeholder": "(000) 000-0000" },
+      "address1": { "label": "Address Line 1" },
+      "address2": { "label": "Address Line 2" },
+      "city": { "label": "City" },
+      "state": { "label": "State", "placeholder": "-- Select state --" },
+      "zip": { "label": "Zip Code" },
+      "ssn": { "label": "Social Security Number", "placeholder": "###-##-####" },
+      "npn": { "label": "National Producer Number (NPN)" },
+      "dob": { "label": "Date of Birth" },
+      "frontPhotoId": { "label": "Front Photo ID" },
+      "backPhotoId": { "label": "Back Photo ID" },
+      "education": {
+        "question": "What is the highest level of education you have completed?",
+        "options": {
+          "hs": "High School or GED",
+          "some": "Some College",
+          "cert": "Certificate (Trade/Vocational)",
+          "assoc": "Associate’s Degree",
+          "bach": "Bachelor’s Degree",
+          "mast": "Master’s Degree or Higher"
+        }
+      },
+      "nipr": { "label": "Upload NIPR Report" },
+      "resume": { "label": "Upload Résumé" },
+      "languages": {
+        "label": "Please list all languages you speak",
+        "placeholder": "English, Spanish, Haitian Creole, ..."
+      },
+      "recentEmployment": {
+        "label": "Tell us about your most recent employment",
+        "placeholder": "Company name, position, employment dates, job functions/responsibilities, and reason for leaving (if applicable)."
+      },
+      "employmentStatus": {
+        "label": "What's your employment status?",
+        "options": {
+          "full-time": "Full-time",
+          "part-time": "Part-time",
+          "unemployed": "Unemployed",
+          "student": "Student",
+          "other": "Other"
+        }
+      },
+      "felony": {
+        "question": "Have you been convicted of a felony in the past five years?",
+        "yes": "Yes",
+        "no": "No",
+        "note": "* A conviction does not automatically disqualify you, but it may affect eligibility for state licensing."
+      },
+      "availableDate": { "label": "What is your earliest available start date?" },
+      "referral": { "label": "Referral source (if applicable)", "placeholder": "Name, website, event, etc." }
+    },
+    "footerNote": "* Protect sensitive data like SSN. When integrating with backend/Google Sheets, ensure encryption in transit and security best practices."
+  },
+
   "email": {
     "subject": "Confirmación de la cita",
     "text": "Hola {{username}},\nGracias por contactarnos. Su cita ha sido confirmada para el {{date}} a las {{time}} vía {{method}}.\nCuídese,\nSu equipo de H4H",
@@ -1016,9 +1101,13 @@
       "agree": "You agree to receive recurring automated promotional text and email messages from H4H Insurance: Consent is not a condition of purchase. Reply HELP for help or STOP to cancel. Message and data rates may apply.",
       "submit": "By submitting this form, you are consenting to receive marketing emails from H4H Insurance. You can revoke your consent to receive emails at any time by unsubscribing to emails at"
     }
+
+    
   }
 
   
   
   
 }
+
+
