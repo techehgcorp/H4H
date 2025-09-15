@@ -967,7 +967,7 @@
         "options": {
           "agent": "Agente de seguros",
           "csr": "Representante de atención al cliente",
-          "sales": "Ventas",
+          "seasonal_agent": "Agente Sazonal",
           "marketing": "Marketing"
         }
       },

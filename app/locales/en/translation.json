@@ -898,7 +898,7 @@
         "options": {
           "agent": "Insurance Agent",
           "csr": "Customer Success Representative",
-          "sales": "Sales",
+          "seasonal_agent": "Seasonal Agent",
           "marketing": "Marketing"
         }
       },

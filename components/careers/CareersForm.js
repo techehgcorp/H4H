@@ -62,7 +62,7 @@ export default function CareersForm() {
           <option value="" disabled>{t("careers.fields.jobOpening.placeholder")}</option>
           <option value="agent">{t("careers.fields.jobOpening.options.agent")}</option>
           <option value="csr">{t("careers.fields.jobOpening.options.csr")}</option>
-          <option value="sales">{t("careers.fields.jobOpening.options.sales")}</option>
+          <option value="Seasonal Agent">{t("careers.fields.jobOpening.options.seasonal_agent")}</option>
           <option value="marketing">{t("careers.fields.jobOpening.options.marketing")}</option>
         </Select>
       </div>
