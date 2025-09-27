@@ -69,7 +69,7 @@ const Health = () => {
             transition={{ duration: 0.5 }}
           >
             <img
-                 src='/images/product/healthH1.jpg'
+                 src='/images/health/new/health1.png'
               alt="Health Plans"
               className="w-full h-auto rounded-md"
             />
@@ -85,7 +85,7 @@ const Health = () => {
             transition={{ duration: 0.5 }}
           >
             <img
-              src="/images/health2.jpg"
+              src="/images/health/new/health2.png"
               alt="Health Plans"
               className="w-full h-auto rounded-md"
             />
@@ -165,7 +165,7 @@ const Health = () => {
             transition={{ duration: 0.5 }}
           >
             <img
-              src="/images/health3.jpg"
+              src="/images//health/new/health3.png"
               alt="Health Image"
               className="w-full h-full rounded-md"
             />
@@ -214,7 +214,7 @@ const Health = () => {
             transition={{ duration: 0.5 }}
           >
             <img
-              src="/images/health4.jpg"
+              src="/images/health/new/health4.png"
               alt="Health Image"
               className="w-full h-full rounded-md"
             />
