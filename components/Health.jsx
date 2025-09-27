@@ -33,7 +33,7 @@ const Health = () => {
 
       <div className="">
         <BreadcrumbComp
-          img={"/images/product/healthheroimage.jpg"}
+          img={"/images/health/new/health_hero.png"}
           pos={"middle"}
           horizontalAlign="left" // horizontal: direita da imagem
           route={t("health.title")}

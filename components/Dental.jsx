@@ -21,10 +21,10 @@ const Dental = () => {
 
       <div className="">
         <BreadcrumbComp
-          videoSrc={
-            "https://video.wixstatic.com/video/ac2815_e69d7b305b0e477c8a7127b5e4a56992/1080p/mp4/file.mp4"
+          img={
+            "/images/dental/new/dental_hero.png"
           }
-          video={true}
+          video={false}
           pos={"center"}
           route={t("dental_vision.title")}
         />
@@ -37,7 +37,7 @@ const Dental = () => {
             transition={{ duration: 0.5 }}
           >
             <img
-              src="/images/product/dentalH1.jpg"
+              src="/images/dental/new/dental1.png"
               alt={t("dental_vision.description")}
               className="w-full h-auto rounded-md"
             />
@@ -103,7 +103,7 @@ const Dental = () => {
             transition={{ duration: 0.5 }}
           >
             <img
-              src="/images/product/DentalH2.jpg"
+              src="/images/dental/new/dental2.png"
               alt={t("dental_vision.title")}
               className="w-full h-full rounded-md"
             />
@@ -118,7 +118,7 @@ const Dental = () => {
             transition={{ duration: 0.5 }}
           >
             <img
-              src="/images/product/dentalH3.jpg"
+              src="/images/dental/new/dental3.png"
               alt={t("dental_vision.title")}
               className="w-full h-auto rounded-md"
             />

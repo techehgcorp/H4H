@@ -68,10 +68,10 @@ const AboutUs = () => {
       <Header />
       <div>
         <BreadcrumbComp
-          videoSrc="/images/product/4k-3d-haiti-fla.mp4"
-          video={true}
-          pos="bottom"
-          route={t('About Us')}
+          img="/images/about/new/aboutus_hero.png"
+          video={false}
+          pos="center"
+          route={t('navigation.menu_items.about_us')}
         />
 
         <div className="relative w-full mt-0 p-0 rounded-md" />
@@ -124,11 +124,12 @@ const AboutUs = () => {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <img
-                src={`/images/about/about${index + 1}.jpg`}
-                alt={`Section ${index + 1}`}
-                className="w-full h-auto rounded-md"
-              />
+
+            <img
+              src={`/images/about/new/about${index + 1}.png`} // <-- ALTERAÇÃO AQUI
+              alt={`Section ${index + 1}`}
+              className="w-full h-auto rounded-md"
+            />
             </motion.div>
           </div>
         ))}

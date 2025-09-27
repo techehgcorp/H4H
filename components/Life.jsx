@@ -22,7 +22,7 @@ const Life = () => {
       <Header />
       <div className="">
         <BreadcrumbComp
-            img={'/images/product/lifeinsuranceHERO.jpg'}
+            img={'/images/life/new/life_hero.png'}
           pos={'start'} 
           horizontalAlign="left" // horizontal: direita da imagem
           route={t('life_insurance.breadcrumb.title')}
@@ -31,7 +31,7 @@ const Life = () => {
         <div className='flex flex-col md:flex-row justify-between items-center mt-14 bg-gray-100'>
           <motion.div className='w-full md:w-1/2 p-4'>
             <img
-              src='/images/product/lifeH1.jpg'
+              src='/images/life/new/life1.png'
               alt={t('life_insurance.breadcrumb.title')}
               className='w-full h-auto rounded-md'
             />
@@ -72,7 +72,7 @@ const Life = () => {
               priority={true}
               width={600}
               height={500}
-                src='/images/product/LifeH2.jpg'
+                src='/images/life/new/life2.png'
               alt={t('life_insurance.breadcrumb.title')}
               className='rounded-md'
             />
@@ -85,7 +85,7 @@ const Life = () => {
               priority={true}
               width={750}
               height={500}
-              src='/images/product/lifeH3.jpg'
+              src='/images/life/new/life3.png'
               alt={t('life_insurance.breadcrumb.title')}
               className='rounded-md'
             />

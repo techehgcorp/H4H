@@ -26,7 +26,7 @@ const Medicare = () => {
             priority={true}
             width={1000}
             height={1000}
-            src="/images/product/medicareheroimage.jpg"
+            src="/images/medi/new/medi_hero.png"
             alt="img"
             className="w-full h-full md:h-[34rem] object-cover"
             />
@@ -80,7 +80,7 @@ const Medicare = () => {
             transition={{ duration: 0.5 }}
           >
             <img
-              src="/images/product/medicareH1.jpg"
+              src="/images/medi/new/medi1.png"
               alt="Health Plans"
               className="w-full h-auto rounded-md"
             />
@@ -95,7 +95,7 @@ const Medicare = () => {
             transition={{ duration: 0.5 }}
           >
             <img
-              src="/images/product/medicareH3.jpeg"
+              src="/images/medi/new/medi2.png"
               alt="Health Plans"
               className="w-full h-auto rounded-md"
             />
@@ -152,7 +152,7 @@ const Medicare = () => {
             transition={{ duration: 0.5 }}
           >
             <img
-              src="/images/product/medicareh4.jpg"
+              src="/images/medi/new/medi3.png"
               alt="Health Image"
               className="w-full h-full rounded-md"
             />
