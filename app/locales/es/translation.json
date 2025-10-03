@@ -686,7 +686,7 @@
       "title": "Cómo Marcamos la Diferencia",
       "description": "Nuestra misión es mejorar la vida de las poblaciones desatendidas de Haití proporcionando acceso a seguros de salud asequibles e integrales. Creemos que todos, independientemente de su situación financiera, merecen atención médica de calidad. Al eliminar las barreras económicas y promover la concienciación sobre los servicios de salud disponibles, estamos trabajando para garantizar que más familias haitianas puedan llevar vidas más saludables y seguras.",
       "button": "Descubre Más",
-      "image": "/images/mission/mission1.jpg"
+      "image": "/images/mission/new/mission1.png"
     },
     "stronger_haiti": {
       "title": "Juntos, Estamos Construyendo un Haití Más Fuerte y Saludable, Una Póliza a la Vez.",
@@ -696,12 +696,12 @@
     "breaking_barriers": {
       "title": "Derribando Barreras para la Equidad y el Crecimiento",
       "description": "La comunidad haitiana a menudo enfrenta barreras sistémicas que limitan el acceso a recursos esenciales, como la educación, la atención médica y las oportunidades económicas. Al dirigir inversiones hacia estas áreas, podemos fomentar la equidad, crear caminos hacia el éxito y fortalecer la economía en general.",
-      "image": "/images/mission/mission2.jpg"
+      "image": "/images/mission/new/mission2.png"
     },
     "unlocking_potential": {
       "title": "Desbloqueando el Potencial para un Futuro Próspero",
       "description": "Empoderar a los haitianos libera todo su potencial, generando innovación, diversidad cultural y una sociedad más inclusiva. Cuando elevamos a los nuestros, construimos un futuro donde todos prosperan",
-      "image": "/images/mission/mission3.jpg"
+      "image": "/images/mission/new/mission3.png"
     }
   },
 
