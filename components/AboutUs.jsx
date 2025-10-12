@@ -68,10 +68,10 @@ const AboutUs = () => {
       <Header />
       <div>
       <BreadcrumbComp
-          video={true} // <-- Ativa a renderização do vídeo
-          videoSrc={"/images/about/new/haitiAB.mp4"} // <-- Fornece o caminho do vídeo
+          video={false} // <-- Ativa a renderização do vídeo
+          img={"/images/about/new/aboutus_hero.png"} // <-- Fornece o caminho do vídeo
           pos={"center"}
-          route={t("dental_vision.title")}
+          route={t("about_us.title")}
         />
 
         <div className="relative w-full mt-0 p-0 rounded-md" />

@@ -26,7 +26,7 @@ const Medicare = () => {
             priority={true}
             width={1000}
             height={1000}
-            src="/images/medi/new/medi_hero.png"
+            src="/images/medi/new/medicare_hero.png"
             alt="img"
             className="w-full h-full md:h-[34rem] object-cover"
             />

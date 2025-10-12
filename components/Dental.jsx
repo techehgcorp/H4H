@@ -20,9 +20,9 @@ const Dental = () => {
       <Header />
 
       <div className="">
-      <BreadcrumbComp
-          video={true} // <-- Ativa a renderização do vídeo
-          videoSrc={"/images/dental/new/DentalH.mp4"} // <-- Fornece o caminho do vídeo
+        <BreadcrumbComp
+          video={false} // <-- Altera para false para desativar a renderização do vídeo
+          img={"/images/dental/new/dental_hero.png"} // <-- Alteramos 'imageSrc' para 'src'
           pos={"center"}
           route={t("dental_vision.title")}
         />
