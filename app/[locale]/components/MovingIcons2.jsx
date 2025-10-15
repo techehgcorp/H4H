@@ -37,7 +37,7 @@ const MovingIcons = () => {
         <div className='flex flex-col items-center space-y-2 sm:space-y-3 md:space-y-4 lg:space-y-5 w-full mt-[20px]'>
           <p className='text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-white font-bold text-center'>
             {t('home.enrollment_section.title')}
-            Open Enrollment Begins November 1st. Finish at january 15th. Time to Enrollment:
+             Open Enrollment Begins November 1st.
           </p>
           <div className='flex space-x-4 sm:space-x-6 md:space-x-8 lg:space-x-10'>
             <div className='flex flex-col text-white font-semibold items-center'>
