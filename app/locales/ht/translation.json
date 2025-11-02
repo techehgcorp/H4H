@@ -759,20 +759,24 @@
       "title": "Rekòmande yon moun ou renmen pou bon kouvèti",
       "description": "Envite zanmi ak fanmi pou dekouvri asirans sante, vi, oswa dantè ou ka fè konfyans ak H4H Insurance..."
     },
-    "form": {
-      "title": "Voye yon rekòmandasyon",
-      "namePlaceholder": "Non ou",
-      "emailPlaceholder": "Imèl ou",
-      "referredNamePlaceholder": "Non moun ou rekòmande a",
-      "referredEmailPlaceholder": "Imèl moun ou rekòmande a",
-      "consent": "Mwen konfime moun ou rekòmande a dakò pou kontakte l.",
-      "button": "Rekòmande kounye a",
-      "loading": "Ap voye...",
-      "fillAllFields": "Tanpri ranpli tout chan yo epi konfime konsantman an.",
-      "successMessage": "✅ Mèsi! Rekòmandasyon ou an voye. Nou pral kontakte {{name}} byento.",
-      "errorMessage": "❌ Echè pandan voye rekòmandasyon an. Tanpri eseye ankò.",
-      "unexpectedError": "❌ Yon erè inatandi fèt."
-    },
+"form": {
+  "title": "Voye yon rekòmandasyon",
+  "namePlaceholder": "Non ou",
+  "emailPlaceholder": "Imèl ou",
+  "phonePlaceholder": "Nimewo telefòn ou",
+  "referredNamePlaceholder": "Non moun ou rekòmande a",
+  "referredEmailPlaceholder": "Imèl moun ou rekòmande a",
+  "referredPhonePlaceholder": "Nimewo telefòn moun ou rekòmande a",
+  "consent": "Mwen konfime moun ou rekòmande a dakò pou kontakte l.",
+  "button": "Rekòmande kounye a",
+  "loading": "Ap voye...",
+  "fillAllFields": "Tanpri ranpli tout chan yo epi konfime konsantman an.",
+  "phoneInvalid": "Tanpri mete nimewo telefòn valab (egzanp: +15551234567).",
+  "successMessage": "✅ Mèsi! Rekòmandasyon ou an voye. Nou pral kontakte {{name}} byento.",
+  "errorMessage": "❌ Echèk pandan voye rekòmandasyon an. Tanpri eseye ankò.",
+  "unexpectedError": "❌ Yon erè inatandi fèt."
+}
+,
     "footer": {
       "tagline": "H4H Insurance | Patnè asirans ou ka fè konfyans",
       "phone": "Kontakte nou: (786) 397-7167",
@@ -1061,6 +1065,7 @@
   "firstname": "Non",
   "lastname": "Siyati",
   "email": "Imèl",
+  "phone": "Nimewo telefòn",
   "preferred_contact": "Metòd kontak ou prefere",
   "face_to_face": "Randevou an pèsòn nan biwo a",
   "phone_appointment": "Randevou pa telefòn",
@@ -1068,6 +1073,7 @@
   "suggestion": "Kòmantè adisyonèl (opsyonèl)",
   "submit_button": "Voye"
 },
+
 
 
   "form": {

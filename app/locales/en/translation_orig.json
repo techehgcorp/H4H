@@ -816,40 +816,36 @@
   },
 
   "referpage": {
-  "nav": {
-    "home": "Home",
-    "services": "Services",
-    "contact": "Contact"
+    "nav": {
+      "home": "Home",
+      "services": "Services",
+      "contact": "Contact"
+    },
+    "refer": {
+      "title": "Refer a Loved One for Quality Coverage",
+      "description": "Invite friends and family to explore trusted health, life, or dental insurance with H4H Insurance..."
+    },
+    "form": {
+      "title": "Submit a Referral",
+      "namePlaceholder": "Your Name",
+      "emailPlaceholder": "Your Email",
+      "referredNamePlaceholder": "Referred Person's Name",
+      "referredEmailPlaceholder": "Referred Person's Email",
+      "consent": "I confirm the referred person has agreed to be contacted.",
+      "button": "Refer Now",
+      "loading": "Submitting...",
+      "fillAllFields": "Please fill out all fields and confirm consent.",
+      "successMessage": "✅ Thank you! Your referral has been submitted. We’ll contact {{name}} soon.",
+      "errorMessage": "❌ Failed to submit referral. Please try again.",
+      "unexpectedError": "❌ An unexpected error occurred."
+    },
+    "footer": {
+      "tagline": "H4H Insurance | Your Trusted Insurance Partner",
+      "phone": "Contact us: (786) 397-7167",
+      "altPhone": "(844) 544-0663",
+      "disclaimer": "H4H Insurance collaborates with multiple carriers to offer ACA Marketplace, commercial health, life, and dental plans. For Marketplace questions, visit http://HealthCare.gov. Your information is used only for enrollment purposes with your consent, per federal guidelines."
+    }
   },
-  "refer": {
-    "title": "Invite friends and family",
-    "description": "Invite friends and family to explore trusted health, life, or dental insurance with H4H Insurance..."
-  },
-  "form": {
-    "title": "Submit a Referral",
-    "namePlaceholder": "Your Name",
-    "emailPlaceholder": "Your Email",
-    "phonePlaceholder": "Your Phone Number",
-    "referredNamePlaceholder": "Referred Person's Name",
-    "referredEmailPlaceholder": "Referred Person's Email",
-    "referredPhonePlaceholder": "Referred Person's Phone Number",
-    "consent": "I confirm the referred person has agreed to be contacted.",
-    "button": "Refer Now",
-    "loading": "Submitting...",
-    "fillAllFields": "Please fill out all fields and confirm consent.",
-    "phoneInvalid": "Please enter valid phone numbers (e.g., +15551234567).",
-    "successMessage": "✅ Thank you! Your referral has been submitted. We’ll contact {{name}} soon.",
-    "errorMessage": "❌ Failed to submit referral. Please try again.",
-    "unexpectedError": "❌ An unexpected error occurred."
-  },
-  "footer": {
-    "tagline": "H4H Insurance | Your Trusted Insurance Partner",
-    "phone": "(786) 397-7167",
-    "altPhone": "(844) 544-0663",
-    "disclaimer": "We respect your privacy. Your information will only be used to contact you about insurance options."
-  }
-}
-,
   
 
   "appointment": {
@@ -983,20 +979,18 @@
     "description": "Please provide your details and preferred contact method for the interview. This information will help us ensure a smooth and efficient interview process.",
     "link_text": "You can review more details about working at H4H by visiting our Home Page Here"
   },
-
-    "schedulestep2right": {
+  "schedulestep2right": {
     "title": "Interview Details",
     "firstname": "First Name",
     "lastname": "Last Name",
     "email": "Email",
-    "phone": "Phone Number",
     "preferred_contact": "Preferred Contact Method",
     "face_to_face": "Face-to-Face Office Meeting",
     "phone_appointment": "Appointment by Phone",
     "virtual_meeting": "Virtual Meeting via Google Meet",
     "suggestion": "Additional Comments (Optional)",
     "submit_button": "Schedule"
-    },
+  },
   
 
   "contact": {

@@ -6,23 +6,16 @@ import { useTranslation } from 'react-i18next';
 
 export default function ReferAFriend() {
   const { t } = useTranslation();
-
   const [referrerName, setReferrerName] = useState('');
   const [referrerEmail, setReferrerEmail] = useState('');
-  const [referrerPhone, setReferrerPhone] = useState('');     // NEW
   const [referredName, setReferredName] = useState('');
   const [referredEmail, setReferredEmail] = useState('');
-  const [referredPhone, setReferredPhone] = useState('');     // NEW
   const [consent, setConsent] = useState(false);
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState('');
 
   const submitReferral = async () => {
-    if (
-      !referrerName || !referrerEmail || !referrerPhone ||
-      !referredName || !referredEmail || !referredPhone ||
-      !consent
-    ) {
+    if (!referrerName || !referrerEmail || !referredName || !referredEmail || !consent) {
       alert(t('referpage.form.fillAllFields'));
       return;
     }
@@ -33,10 +26,8 @@ export default function ReferAFriend() {
     const payload = {
       yourName: referrerName,
       yourEmail: referrerEmail,
-      yourPhone: referrerPhone,        // NEW
       friendName: referredName,
       friendEmail: referredEmail,
-      friendPhone: referredPhone,      // NEW
     };
 
     try {
@@ -50,10 +41,8 @@ export default function ReferAFriend() {
         setMessage(t('referpage.form.successMessage', { name: referredName }));
         setReferrerName('');
         setReferrerEmail('');
-        setReferrerPhone('');          // clear
         setReferredName('');
         setReferredEmail('');
-        setReferredPhone('');          // clear
         setConsent(false);
       } else {
         setMessage(t('referpage.form.errorMessage'));
@@ -70,7 +59,7 @@ export default function ReferAFriend() {
     <div className="bg-gray-100 min-h-screen">
       <header className="bg-primary-darkAqua  text-white py-6">
         <div className="container mx-auto px-4 flex justify-between items-center">
-          <Link href='/'><h1 className="text-2xl font-bold">H4H Insurance</h1></Link>
+          <Link href='/'><h1 className="text-2xl font-bold">H4H Insurance</h1></Link>          
           <nav>
             <a href="/" className="text-white hover:text-gray-200 mx-4">{t('referpage.nav.home')}</a>
             <a href="/#services" className="text-white hover:text-gray-200 mx-4">{t('referpage.nav.services')}</a>
@@ -81,28 +70,26 @@ export default function ReferAFriend() {
 
       <section className="py-12">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-primary-darkAqua  mb-4">{t('referpage.refer.title')}</h2>
+        <h2 className="text-3xl font-bold text-primary-darkAqua  mb-4">{t('referpage.refer.title')}</h2>
 
-          <div className="mb-6 max-w-3xl mx-auto">
-            <div className="relative" style={{ paddingBottom: '56.25%', height: 0 }}>
-              <iframe
-                className="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
-                src="https://www.youtube.com/embed/QyjxGdw_LjM"
-                title="YouTube video"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
+        <div className="mb-6 max-w-3xl mx-auto">
+          <div className="relative" style={{ paddingBottom: '56.25%', height: 0 }}>
+            <iframe
+              className="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
+              src="https://www.youtube.com/embed/QyjxGdw_LjM"
+              title="YouTube video"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
           </div>
+</div>
 
-          <p className="text-lg text-gray-700 mb-8">{t('referpage.refer.description')}</p>
 
-          <div className="bg-white shadow-lg rounded-lg p-8 max-w-lg mx-auto">
+        <p className="text-lg text-gray-700 mb-8">{t('referpage.refer.description')}</p>
+        <div className="bg-white shadow-lg rounded-lg p-8 max-w-lg mx-auto">
             <h3 className="text-xl font-semibold text-primary-darkAqua  mb-6">{t('referpage.form.title')}</h3>
-
             <div className="space-y-4">
-              {/* Your Name */}
               <input
                 type="text"
                 value={referrerName}
@@ -111,7 +98,6 @@ export default function ReferAFriend() {
                 className="w-full p-3 border border-gray-300 rounded-md"
                 required
               />
-              {/* Your Email */}
               <input
                 type="email"
                 value={referrerEmail}
@@ -120,17 +106,6 @@ export default function ReferAFriend() {
                 className="w-full p-3 border border-gray-300 rounded-md"
                 required
               />
-              {/* Your Phone */}
-              <input
-                type="tel"
-                value={referrerPhone}
-                onChange={(e) => setReferrerPhone(e.target.value)}
-                placeholder={t('referpage.form.phonePlaceholder')}
-                className="w-full p-3 border border-gray-300 rounded-md"
-                required
-              />
-
-              {/* Referred Name */}
               <input
                 type="text"
                 value={referredName}
@@ -139,7 +114,6 @@ export default function ReferAFriend() {
                 className="w-full p-3 border border-gray-300 rounded-md"
                 required
               />
-              {/* Referred Email */}
               <input
                 type="email"
                 value={referredEmail}
@@ -148,16 +122,6 @@ export default function ReferAFriend() {
                 className="w-full p-3 border border-gray-300 rounded-md"
                 required
               />
-              {/* Referred Phone */}
-              <input
-                type="tel"
-                value={referredPhone}
-                onChange={(e) => setReferredPhone(e.target.value)}
-                placeholder={t('referpage.form.referredPhonePlaceholder')}
-                className="w-full p-3 border border-gray-300 rounded-md"
-                required
-              />
-
               <div className="flex items-center">
                 <input
                   type="checkbox"
@@ -168,7 +132,6 @@ export default function ReferAFriend() {
                 />
                 <label className="text-sm text-gray-600">{t('referpage.form.consent')}</label>
               </div>
-
               <button
                 onClick={submitReferral}
                 disabled={loading}
@@ -176,7 +139,6 @@ export default function ReferAFriend() {
               >
                 {loading ? t('referpage.form.loading') : t('referpage.form.button')}
               </button>
-
               {message && <p className="text-sm text-center mt-4">{message}</p>}
             </div>
           </div>

@@ -727,20 +727,24 @@
       "title": "Recomienda a un ser querido para una cobertura de calidad",
       "description": "Invita a amigos y familiares a explorar seguros confiables de salud, vida o dental con H4H Insurance..."
     },
-    "form": {
-      "title": "Enviar una recomendación",
-      "namePlaceholder": "Tu nombre",
-      "emailPlaceholder": "Tu correo electrónico",
-      "referredNamePlaceholder": "Nombre de la persona recomendada",
-      "referredEmailPlaceholder": "Correo de la persona recomendada",
-      "consent": "Confirmo que la persona recomendada aceptó ser contactada.",
-      "button": "Recomendar ahora",
-      "loading": "Enviando...",
-      "fillAllFields": "Por favor completa todos los campos y confirma el consentimiento.",
-      "successMessage": "✅ ¡Gracias! Tu recomendación ha sido enviada. Contactaremos a {{name}} pronto.",
-      "errorMessage": "❌ No se pudo enviar la recomendación. Inténtalo de nuevo.",
-      "unexpectedError": "❌ Ocurrió un error inesperado."
-    },
+"form": {
+  "title": "Enviar una recomendación",
+  "namePlaceholder": "Tu nombre",
+  "emailPlaceholder": "Tu correo electrónico",
+  "phonePlaceholder": "Tu número de teléfono",
+  "referredNamePlaceholder": "Nombre de la persona recomendada",
+  "referredEmailPlaceholder": "Correo de la persona recomendada",
+  "referredPhonePlaceholder": "Teléfono de la persona recomendada",
+  "consent": "Confirmo que la persona recomendada aceptó ser contactada.",
+  "button": "Recomendar ahora",
+  "loading": "Enviando...",
+  "fillAllFields": "Por favor completa todos los campos y confirma el consentimiento.",
+  "phoneInvalid": "Introduce números de teléfono válidos (por ejemplo, +15551234567).",
+  "successMessage": "✅ ¡Gracias! Tu recomendación ha sido enviada. Contactaremos a {{name}} pronto.",
+  "errorMessage": "❌ No se pudo enviar la recomendación. Inténtalo de nuevo.",
+  "unexpectedError": "❌ Ocurrió un error inesperado."
+}
+,
     "footer": {
       "tagline": "H4H Insurance | Tu socio confiable de seguros",
       "phone": "Contáctanos: (786) 397-7167",
@@ -935,18 +939,20 @@
     "link_text": "Puede revisar más detalles sobre trabajar en H4H visitando nuestra página de inicio aquí"
   },
 
-  "schedulestep2right": {
-    "title": "Detalles de la entrevista",
-    "firstname": "Nombre",
-    "lastname": "Apellido",
-    "email": "Correo electrónico",
-    "preferred_contact": "Método de contacto preferido",
-    "face_to_face": "Reunión presencial en la oficina",
-    "phone_appointment": "Cita por teléfono",
-    "virtual_meeting": "Reunión virtual por Google Meet",
-    "suggestion": "Comentarios adicionales (opcional)",
-    "submit_button": "Enviar"
-  },
+"schedulestep2right": {
+  "title": "Detalles de la entrevista",
+  "firstname": "Nombre",
+  "lastname": "Apellido",
+  "email": "Correo electrónico",
+  "phone": "Número de teléfono",
+  "preferred_contact": "Método de contacto preferido",
+  "face_to_face": "Reunión presencial en la oficina",
+  "phone_appointment": "Cita por teléfono",
+  "virtual_meeting": "Reunión virtual por Google Meet",
+  "suggestion": "Comentarios adicionales (opcional)",
+  "submit_button": "Enviar"
+},
+
 
   "careers": {
     "title": "Únete al equipo",

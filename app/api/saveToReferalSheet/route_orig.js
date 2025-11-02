@@ -18,18 +18,15 @@ export async function POST(req) {
     const sheets = google.sheets({ version: 'v4', auth });
 
     const spreadsheetId = '1hCCNo_o8bk7IXva1KZt16FfTQX8m54FbQCxevjjNSt0';
-    const range = 'Referal!A:G'; // A:friendName ... G:Date Time (H:Notified fica em branco)
+    const range = 'Referal!A:H'; // Ajuste conforme os dados do seu form
 
-    // Ordem das colunas conforme a sua aba "Referal":
-    // A friendName | B friendEmail | C Friend Phone | D yourName | E yourEmail | F Your Phone | G Date Time | H Notified
+    // Supondo que você recebe: friendName, friendPhone, friendEmail, yourName, yourPhone, yourEmail
     const values = [[
-      body?.friendName || '',
-      body?.friendEmail || '',
-      body?.friendPhone || '', // NEW (C)
-      body?.yourName || '',
-      body?.yourEmail || '',
-      body?.yourPhone || '',   // NEW (F)
-      dateTime,                // (G)
+      body?.friendName,
+      body?.friendEmail,
+      body?.yourName,
+      body?.yourEmail,
+      dateTime
     ]];
 
     await sheets.spreadsheets.values.append({
