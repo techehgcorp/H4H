@@ -1,0 +1,1119 @@
+{
+  "navigation": {
+    "navigate": "Navigate",
+    "choose_page": "Choose a page to navigate to:",
+    "menu_items": {
+      "home": "Home",
+      "about_us": "About Us",
+      "health": "Health",
+      "dental_vision": "Dental & Vision",
+      "life": "Life",
+      "medicare": "Medicare",
+      "mission": "Mission",
+      "referafriend": "Refer a Friend",
+      "contact": "Contact",
+      "products": "Products",
+      "contact_us": "Contact Us",
+      "community": "Community",
+      "testimonials": "Testimonials"
+    },
+    "close": "Close"
+  },
+
+  "slides": [
+    {
+      "imageUrl": "/images/slider/african.jpeg",
+      "title": "Together We are Building a Healthier Haiti, One Family at a Time.",
+      "url": "/health",
+      "buttonText": "Learn More"
+    },
+    {
+      "imageUrl": "/images/slider/african3.jpeg",
+      "title": "Comprehensive Health Plans for Individuals, Family and Medicare Options.",
+      "url": "/health",
+      "buttonText": "Compare Plans"
+    },
+    {
+      "imageUrl": "/images/slider/african2.jpg",
+      "title": "Find an Affordable Dental & Vision Plan for Your Family.",
+      "url": "/dental",
+      "buttonText": "Request Quotes"
+    },
+    {
+      "imageUrl": "/images/slider/african3.jpg",
+      "title": "Protect Your Family's Financial Future with Life Insurance.",
+      "url": "/appointment",
+      "buttonText": "Contact Agent"
+    }
+  ],
+
+  "contact_form": {
+    "insurance_types": {
+      "health": "Health",
+      "dental": "Dental",
+      "vision": "Vision",
+      "medicare": "Medicare",
+      "life": "Life"
+    },
+    "title": "Get Covered Today!",
+    "subtitle": "Choose your Insurance Type",
+    "fields": {
+      "full_name": "Full Name",
+      "first_name": "First Name",
+      "last_name": "Last Name",
+      "date_of_birth": "Date of Birth",
+      "zip_code": "Zip Code",
+      "email": "Email",
+      "mobile_phone": "Mobile phone number (US only)",
+      "text_consent": "Text me with news & offers"
+    },
+    "consent_notice": "By clicking the button below, you consent to receiving marketing emails and text messages. Additionally, you consent to being contacted by phone call, an automatic telephone dialing system, text message at the telephone number you provided above or by email. You understand this is not a condition of purchase and you may also receive a quote by contacting us by phone. You may revoke this consent at any time by contacting us at 844-544-0663 or info@h4hinsurance.com. You understand your carrier's message and data rates may apply.",
+    "links": {
+      "privacy_policy": "Privacy Policy",
+      "terms_and_conditions": "Terms and Conditions"
+    }
+  },
+
+  "terms_and_conditions": {
+    "title": "Terms and Conditions",
+    "welcome": "Welcome to the website of H4HInsurance (“we,” “our,” or “us”). By accessing or using our website (h4hinsurance.com, the “Site”), you agree to these Terms and Conditions. If you do not agree to these Terms, please do not use the Site.",
+    "acceptance_of_terms": {
+      "title": "1. Acceptance of Terms",
+      "content": [
+        "These Terms govern your use of the Site. By accessing or using the Site, you represent that:",
+        "You are at least 18 years old.",
+        "You are a resident of the United States.",
+        "You agree to comply with these Terms."
+      ]
+    },
+    "use_of_the_site": {
+      "title": "2. Use of the Site",
+      "license_to_use": {
+        "title": "a. License to Use the Site:",
+        "content": "H4HInsurance grants you a limited, non-exclusive, non-transferable, revocable license to use the Site solely for personal, non-commercial purposes related to insurance services."
+      },
+      "prohibited_activities": {
+        "title": "b. Prohibited Activities:",
+        "content": [
+          "You agree not to:",
+          "Copy, distribute, or reproduce content from the Site without authorization.",
+          "Use the Site to upload or distribute harmful software.",
+          "Attempt to reverse engineer, decompile, or disassemble the Site.",
+          "Use the Site for unlawful or fraudulent purposes."
+        ]
+      },
+      "site_modifications": {
+        "title": "c. Site Modifications:",
+        "content": "H4HInsurance reserves the right to modify, suspend, or discontinue the Site or any features thereof at any time without prior notice."
+      }
+    },
+    "information_you_provide": {
+      "title": "3. Information You Provide",
+      "content": [
+        "To use certain features of the Site, you may need to provide personal information. By providing this information, you agree that:",
+        "The information is accurate, current, and complete.",
+        "You will update the information as necessary.",
+        "You consent to the use of your information as outlined in our Privacy Policy."
+      ]
+    },
+    "privacy": {
+      "title": "4. Privacy",
+      "content": "Your use of the Site is subject to our Privacy Policy, which explains how we collect, use, and protect your personal information. By using the Site, you consent to the practices described in the Privacy Policy."
+    },
+    "sms_terms_of_service": {
+      "title": "5. SMS Terms of Service",
+      "program_name_and_description": {
+        "title": "a. Program Name and Description:",
+        "content": "H4HInsurance SMS Services may send you marketing and non-marketing messages, including transactional updates, promotions, special offers, and other relevant insurance-related information. Messages may be sent using automated technologies, such as autodialers or automatic telephone dialing systems."
+      },
+      "message_frequency_and_cadence": {
+        "title": "b. Message Frequency and Cadence:",
+        "content": "Message frequency will vary based on your engagement and preferences. For example, you may receive up to 9 messages per month."
+      },
+      "message_and_data_rates": {
+        "title": "c. Message and Data Rates:",
+        "content": "We do not charge for Messages sent through the SMS Services. However, standard message and data rates imposed by your mobile provider may apply."
+      },
+      "eligibility": {
+        "title": "d. Eligibility:",
+        "content": [
+          "To receive SMS Services, you must be:",
+          "A resident of the United States.",
+          "18 years of age or older."
+        ]
+      },
+      "opt_in_agreement": {
+        "title": "e. Opt-In Agreement:",
+        "content": "By providing your mobile number, you voluntarily opt-in to the SMS Services and agree to receive recurring Messages at the mobile number provided. Opting in is not required to purchase any products or services."
+      },
+      "opt_out_instructions": {
+        "title": "f. Opt-Out Instructions:",
+        "content": "To stop receiving Messages, reply STOP, QUIT, CANCEL, OPT-OUT, or UNSUBSCRIBE to any Message. You may continue to receive Messages for a short time while we process your request. To resume receiving Messages, reply START to a previous Message."
+      },
+      "customer_care_contact_information": {
+        "title": "g. Customer Care Contact Information:",
+        "content": "For assistance, reply HELP to any Message or contact us at",
+        "Email": "h4hinsurance.com",
+        "Phone": "(786) 397-7167\n(844) 544-0663"
+      }
+    },
+    "privacy_and_data_sharing": {
+      "title": "h. Privacy and Data Sharing:",
+      "content": "Your personal data, including your SMS opt-in status, will only be shared with third-party service providers or vendors who assist in delivering SMS Services. See our Privacy Policy for more details."
+    },
+    "disclaimer_and_liability": {
+      "title": "i. Disclaimer and Liability:",
+      "content": "The SMS Services are provided 'as-is' and may not always be available. H4HInsurance.com and its service providers are not responsible for failed or delayed Messages."
+    },
+    "intellectual_property": {
+      "title": "6. Intellectual Property",
+      "content": "All content, trademarks, and materials on the Site are the property of H4HInsurance or its licensors. You may not use any of our intellectual property without prior written consent."
+    },
+    "disclaimers": {
+      "title": "7. Disclaimers",
+      "no_professional_advice": {
+        "title": "a. No Professional Advice:",
+        "content": "The content on the Site is provided for informational purposes only and does not constitute professional, financial, or legal advice."
+      },
+      "no_guarantee_of_results": {
+        "title": "b. No Guarantee of Results:",
+        "content": "We do not guarantee that insurance quotes or recommendations provided will meet your requirements. Always consult directly with insurance carriers or agents."
+      }
+    },
+    "limitation_of_liability": {
+      "title": "8. Limitation of Liability",
+      "content": [
+        "To the fullest extent permitted by law:",
+        "H4HInsurance is not responsible for any damages arising from your use of the Site.",
+        "Our liability is limited to the amount you paid us for services accessed through the Site."
+      ]
+    },
+    "arbitration_and_dispute_resolution": {
+      "title": "9. Arbitration and Dispute Resolution",
+      "content": "Any disputes arising from your use of the Site will be resolved through binding arbitration in accordance with the Federal Arbitration Act. You waive the right to participate in class actions."
+    },
+    "termination": {
+      "title": "10. Termination",
+      "content": "H4HInsurance reserves the right to terminate your access to the Site for any violation of these Terms or misuse of the Site."
+    },
+    "changes_to_these_terms": {
+      "title": "11. Changes to These Terms",
+      "content": "We may update these Terms periodically. Changes will be posted on this page with the updated effective date. Continued use of the Site indicates your acceptance of the revised Terms."
+    },
+    "contact_us": {
+      "title": "12. Contact Us",
+      "content": [
+        "If you have questions about these Terms, please contact us:",
+        "H4HInsurance",
+        "1000 NW 65th St, Suite 110",
+        "Fort Lauderdale, FL 33309",
+        "Email: info@h4hinsurance.com"
+      ]
+    }
+  },
+
+  "privacy_policy": {
+    "title": "Privacy Policy",
+    "commitment": "H4HInsurance is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our website (h4hinsurance.com) and interact with our services.",
+    "information_we_collect": {
+      "title": "1. Information We Collect",
+      "pii": {
+        "title": "a. Personally Identifiable Information (PII)",
+        "content": "We collect information such as your name, address, phone number, email, date of birth, and other personal details necessary to provide insurance services. This may also include information about family members if required for the services."
+      },
+      "npii": {
+        "title": "b. Non-Personally Identifiable Information (NPII)",
+        "content": "We may collect non-identifiable information such as demographic data, browser type, device details, and browsing activity on our website."
+      }
+    },
+    "how_we_collect_information": {
+      "title": "2. How We Collect Information",
+      "from_you": {
+        "title": "a. Information Provided by You",
+        "content": "We collect information directly from you when you fill out forms on our website, contact us via phone or email, or provide details during an insurance consultation."
+      },
+      "from_cookies": {
+        "title": "b. Information from Cookies",
+        "content": "We use cookies and similar technologies to improve your browsing experience. These tools may collect data such as IP address, browser type, and pages viewed. Cookies help us personalize content, analyze usage, and improve website functionality."
+      }
+    },
+    "how_we_use_your_information": {
+      "title": "3. How We Use Your Information",
+      "content": [
+        "Provide insurance quotes, policies, and related services.",
+        "Improve customer service and website functionality.",
+        "Communicate with you regarding your inquiries, policies, and updates.",
+        "Personalize your experience on our website.",
+        "Ensure compliance with applicable laws and regulations."
+      ]
+    },
+    "information_sharing": {
+      "title": "4. Information Sharing",
+      "content": [
+        {
+          "title": "a. Insurance Providers and Partners",
+          "content": "To deliver the services you request, we may share your information with insurance carriers, agents, and other service providers necessary for processing quotes or claims."
+        },
+        {
+          "title": "b. Third-Party Service Providers",
+          "content": "We may share your information with vendors who assist with business operations such as IT support, analytics, or marketing. These parties are required to safeguard your information in compliance with this policy."
+        },
+        {
+          "title": "c. Text Messaging Opt-In Data",
+          "content": "All the above categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties for purposes unrelated to the services of the SMS campaign. We may share your Personal Data, including your SMS opt-in or consent status, with third parties that help us provide our messaging services. This includes, but is not limited to, platform providers, phone companies, and vendors assisting in the delivery of text messages."
+        },
+        {
+          "title": "d. Legal Requirements",
+          "content": "We may disclose your information if required by law, such as in response to a subpoena or government request."
+        }
+      ]
+    },
+    "cookies_and_tracking_technologies": {
+      "title": "5. Cookies and Tracking Technologies",
+      "content": [
+        "Essential Cookies: Required for the website to function properly.",
+        "Analytics Cookies: Help us understand user behavior to improve the website.",
+        "Functional Cookies: Remember your preferences, such as language or location settings.",
+        "You can manage cookie preferences in your browser settings, but this may affect website functionality."
+      ]
+    },
+    "how_we_protect_your_information": {
+      "title": "6. How We Protect Your Information",
+      "content": [
+        "Encryption for data transmitted between your device and our systems.",
+        "Firewalls and secure servers to protect stored data.",
+        "Regular audits and staff training to ensure compliance with privacy regulations.",
+        "While we strive to protect your information, no system is completely secure. Please contact us immediately if you suspect unauthorized access to your information."
+      ]
+    },
+    "your_privacy_rights": {
+      "title": "7. Your Privacy Rights",
+      "content": [
+        "Access, correct, or delete your personal information.",
+        "Opt out of marketing communications.",
+        "Limit data sharing with third parties.",
+        "To exercise these rights, please contact us using the details below."
+      ]
+    },
+    "childrens_privacy": {
+      "title": "8. Children's Privacy",
+      "content": "H4HInsurance does not knowingly collect information from individuals under 13 years of age. If we become aware that we have inadvertently collected such information, we will delete it promptly."
+    },
+    "changes_to_this_policy": {
+      "title": "9. Changes to This Policy",
+      "content": "We may update this Privacy Policy periodically. Changes will be posted on this page with the updated effective date. We encourage you to review this policy regularly."
+    },
+    "contact_us": {
+      "title": "10. Contact Us",
+      "content": {
+        "address": "H4HInsurance, 1000 NW 65th St, Suite 110, Fort Lauderdale, FL 33309",
+        "email": "info@h4hinsurance.com",
+        "phone": "(786) 397-7167\n(844) 544-0663"
+      }
+    }
+  },
+
+  "company": {
+    "title": "Company",
+    "services": ["Privacy Policy", "Terms of Service", "SMS Terms & Condition"],
+    "useful_links": {
+      "title": "Useful Links"
+    },
+    "useful_links_data": [
+      {
+        "name": "Home",
+        "href": "/"
+      },
+      {
+        "name": "About Us",
+        "href": "/about-us"
+      },
+      {
+        "name": "Products",
+        "href": "/#products"
+      },
+      {
+        "name": "Mission",
+        "href": "/mission"
+      },
+      {
+        "name": "ReferaFriend",
+        "href": "/referafriend"
+      },
+      {
+        "name": "Contact Us",
+        "href": "/#contact"
+      }
+      ,
+      {
+        "name": "Community",
+        "href": "/community"
+      }
+      ,
+      {
+        "name": "Testimonials",
+        "href": "/testimonials"
+      }
+      ,
+      {
+        "name": "Join the Team",
+        "href": "/careers"
+      }
+    ],
+    "copyright": "© 2024 Health for Haitians. All Rights Reserved."
+  },
+
+  "home": {
+    "hero": {
+      "title": "Health 4 Haitians",
+      "subtitle": "Meet with a Licensed Agent",
+      "cta_button": "Contact Us"
+    },
+    "main_section": {
+      "title": "We Are Here to Service Your Insurance Needs",
+      "description": "Insurance can leave you with a lot of questions, let us help you make the best informed decision.",
+      "cta_button": "Get Started"
+    },
+    "services": [
+      {
+        "title": "Health Insurance",
+        "description": "The Affordable Care Act offers resources to help reduce obstacles and provide healthcare access for those in need.",
+        "imageUrl": "/images/health.jpeg",
+        "url": "/health",
+        "icon": "💉"
+      },
+      {
+        "title": "Life Insurance",
+        "description": "Let us help you navigate the key to financial security.",
+        "imageUrl": "/images/life.jpeg",
+        "url": "/life",
+        "icon": "👨‍👩‍👧"
+      },
+      {
+        "title": "Dental & Vision",
+        "description": "We provide affordable dental and vision policies for your overall health.",
+        "imageUrl": "/images/dental.jpeg",
+        "url": "/dental",
+        "icon": "🦷"
+      },
+      {
+        "title": "Medicare",
+        "description": "Finding the right medicare supplement can be challenging, we are here to help.",
+        "imageUrl": "/images/medicare.jpeg",
+        "url": "/medicare",
+        "icon": "⚕️"
+      }
+    ],
+    "enrollment_section": {
+      "title": "Find Out if You Qualify for a Open Enrollment Period! ",
+      "time_labels": {
+        "days": "Days",
+        "hours": "Hours",
+        "minutes": "Minutes",
+        "seconds": "Seconds"
+      }
+    },
+    "partner_section": {
+      "text": "Proud Partner of",
+      "logo_alt": "Company Logo"
+    }
+  },
+
+  "growBusiness": {
+    "title": "Get Your Family Covered Today!",
+    "button": "Speak to an Agent"
+  },
+
+  "about_us": {
+    "title": "About Us",
+    "description": "Discover our mission, vision, and the journey that drives our passion for healthcare access.",
+    "sections": [
+      {
+        "heading": "A Personal Mission: From Immigrant Experience to Empowerment",
+        "paragraph": "Founded by a Haitian immigrant with first-hand experience of the unique challenges Haitians face when trying to access the American Dream, our mission is deeply personal.",
+        "button": "Get a Quote"
+      },
+      {
+        "heading": "A Vision for Holistic Empowerment",
+        "paragraph": "Our vision goes beyond healthcare. It is inspired by a broader dream to uplift the Haitian and other underserved communities through access, development, and solidarity.",
+        "bullets": [
+          {
+            "text": "H4H’s vision is to see the Haitian community gain access to all essential opportunities."
+          },
+          {
+            "text": "The visionaries are a husband and wife duo, both of Caribbean descent, who share a common dream of expanding these efforts to all Caribbean islands."
+          },
+          {
+            "text": "Our priorities are rooted in these areas: healthcare, education, employment, networking, housing, nutrition, investment, and personal development."
+          },
+          {
+            "text": "Our key objective is to support all underserved communities, with a particular focus on Haitians who are among the most disadvantaged."
+          },
+          {
+            "text": "Health is the foundation of life, which is why we begin our mission here."
+          }
+        ]
+      },
+      {
+        "heading": "Bridging the Healthcare Gap for Haitians",
+        "paragraph": "Access to quality healthcare is essential for the well-being of all individuals and their families, but many in the Haitian community face significant barriers to obtaining the health coverage they need.",
+        "bullets": [
+          {
+            "text": "Some of the challenges the Haitian community faces, preventing access to care, include:",
+            "subBullets": [
+              "Language barriers, lack of information, and financial limitations"
+            ]
+          },
+          {
+            "text": "Our Mission:",
+            "subBullets": [
+              "Help the Haitian community access or connect with available resources and offer Creole-language training classes",
+              "Guide the Haitian community through the complex healthcare system",
+              "Ensure Haitians obtain the necessary coverage for a healthier future"
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Expanding Access to Quality Healthcare Services",
+        "paragraph": "Whether the community needs Medicaid, health insurance, Medicare, or life insurance, we believe that everyone deserves access to quality services and support. In the future, we aim to expand our programs to ensure that every member of the Haitian community has the knowledge and resources to protect their health and well-being."
+      }
+    ]
+  },
+  
+  "dental_vision": {
+    "title": "Dental & Vision",
+    "description": "Affordable Dental & Vision Insurance Plans for Your Family",
+    "main_sections": {
+      "first_section": {
+        "title": "Affordable Dental & Vision Insurance Plans for Your Family",
+        "description": "Finding the right dental insurance doesn't have to be complicated—or expensive. We offer a range of affordable plans that make it easy to get the Dental care you need. Plus, you can even bundle your plan with Vision and Hearing coverage for complete care, all in one package."
+      },
+      "benefits_section": {
+        "title": "Benefits of Dental Insurance:",
+        "benefits": [
+          {
+            "title": "Enroll Anytime",
+            "description": "There is no need to wait for open enrollment—you can sign up for coverage year-round!"
+          },
+          {
+            "title": "Fast Activation",
+            "description": "Enroll today, and your coverage could begin as soon as next month."
+          },
+          {
+            "title": "Coverage Anywhere",
+            "description": "Our plans are available across the country, making it easy for nearly anyone to get covered."
+          }
+        ]
+      },
+      "need_insurance_section": {
+        "title": "Why Do You Need Dental Insurance?",
+        "description": "Regular dental check-ups help catch issues before they become costly, ensuring you maintain a healthy smile. From routine cleanings to more serious procedures, dental insurance makes care more affordable, giving you peace of mind and protecting your wallet.",
+        "call_to_action": "Get Started Today! Explore our plans and see how easy it is to protect your smile."
+      }
+    },
+    "images": {
+      "main_images": [
+        "/images/dental/dental1.jpg",
+        "/images/dental/dental2.jpg",
+        "/images/dental/dental3.jpg"
+      ]
+    },
+    "cta_button": "Explore Plans"
+  },
+
+  "health": {
+    "title": "Health Insurance",
+    "sections": [
+      {
+        "title": "Health Insurance",
+        "button_text": "Find Out More",
+        "button_link": "/appointment"
+      },
+      {
+        "title": "Plans for Your Family's Needs",
+        "description": "Finding the right health plan for your family is easier than ever! Our Health Insurance options offer a wide variety of plans tailored to fit your needs and budget. From comprehensive coverage to affordable options, we've got you covered.",
+        "button_text": "Get a Quote",
+        "button_link": "/appointment"
+      },
+      {
+        "title": "Health Insurance Helps You Save",
+        "description": "Without coverage, even a single hospital visit can result in thousands of dollars in medical bills. Health insurance helps you manage these costs by sharing the burden and ensuring you pay a fraction of what you would otherwise.",
+        "call_to_action": "Ready to protect what matters most? ",
+        "link_text": "Talk to an agent",
+        "link": "/appointment"
+      },
+      {
+        "title": "What Does Health Coverage Include?",
+        "description": "Here are some of the Essential Benefits the ACA plan includes:",
+        "list": [
+          {
+            "text": "Doctor Visits and Specialist Care"
+          },
+          {
+            "text": "Emergency and Hospital Services"
+          },
+          {
+            "text": "Prescription Drugs"
+          },
+          {
+            "text": "Preventive Services (e.g. annual check-ups)"
+          },
+          {
+            "text": "Maternity and Newborn Care"
+          },
+          {
+            "text": "Mental Health Services"
+          }
+        ]
+      },
+      {
+        "title": "What are Out-of-Pocket Expenses?",
+        "description": "Out-of-pocket expenses are the costs you pay directly for healthcare services that aren't covered by your health insurance plan. Understanding these costs is crucial to budgeting for your healthcare needs and preventing unexpected financial strain."
+      },
+      {
+        "title": "Out-of-Pocket Costs includes:",
+        "list": [
+          {
+            "item": "Premium",
+            "description": "The fixed monthly payment you make to keep your health insurance active."
+          },
+          {
+            "item": "Deductibles",
+            "description": "The amount you must pay for covered healthcare services before your insurance starts to pay."
+          },
+          {
+            "item": "Copayments",
+            "description": "A fixed amount you pay for specific services like doctor visits or prescriptions."
+          },
+          {
+            "item": "Coinsurance",
+            "description": "A percentage of the costs you share with your insurance company after meeting your deductible."
+          },
+          {
+            "item": "Comparing Insurance Plans",
+            "description": "When comparing insurance plans, it's crucial to review all costs. Explore the best plan to fit your healthcare needs and budget. Connect with our licensed agent today!"
+          }
+        ]
+      }
+    ]
+  },
+
+  "life_insurance": {
+    "breadcrumb": {
+      "title": "Life Insurance",
+      "image": "/images/life/life.jpg"
+    },
+    "main_section": {
+      "title": "Protect Your Loved Ones with Life Insurance",
+      "description": "Life is unpredictable, but your family's future doesn't have to be. Life insurance provides peace of mind, knowing that your family or dependents will be financially protected if the unexpected happens. It can be especially crucial if you:",
+      "key_points": [
+        "Have dependents, like children or a spouse, who rely on your income.",
+        "Carry significant debt, such as a mortgage, loans, or credit card debt.",
+        "Want to ensure your family has financial support for education, daily expenses, or long-term financial stability."
+      ],
+      "image": "/images/life/Life1.jpg"
+    },
+    "types_section": {
+      "title": "Types of Life Insurance",
+      "types": [
+        {
+          "title": "Term Life Insurance",
+          "description": "Affordable coverage for a set period (10, 20, 30 years). Great for short-term needs like income replacement or mortgage protection."
+        },
+        {
+          "title": "Whole Life Insurance",
+          "description": "Lifelong coverage that includes a cash value component, building savings over time."
+        },
+        {
+          "title": "Universal Life Insurance",
+          "description": "Flexible policy with the potential for cash value growth, allowing you to adjust premiums and coverage as your needs change."
+        }
+      ],
+      "image": "/images/life/Life2.jpg"
+    },
+    "quote_section": {
+      "title": "Get a Personalized Quote... Take the First Step Today!",
+      "description": "Your family's future is too important to leave to chance. Start securing your financial legacy today by exploring our life insurance options. Get your free quote and take the first step towards peace of mind.",
+      "button_text": "Get Your Free Quote Today",
+      "image": "/images/life/Life3.jpg"
+    }
+  },
+
+  "medicare": {
+    "breadcrumb": {
+      "title": "Medicare",
+      "image": "/images/medi/medi5.jpg"
+    },
+    "hero_section": {
+      "title": "Medicare",
+      "home": "Home"
+    },
+    "main_section": {
+      "title": "Medicare Coverage Made Simple, Affordable, and Tailored to Your Needs.",
+      "description": "Turning 65 and navigating Medicare can be overwhelming, but we're here to help. Whether you're enrolling for the first time, exploring additional coverage options, or switching plans, we'll guide you every step of the way.",
+      "button": "Get a Quote",
+      "image": "/images/medi/medi2.jpg"
+    },
+    "plans_section": {
+      "title": "What Medicare Plan Is Right for You?",
+      "image": "/images/medi/medi3.jpg",
+      "plans": [
+        {
+          "title": "Medicare Advantage (Part C)",
+          "description": "Medicare Advantage plans combine hospital insurance (Part A) and medical insurance (Part B) into one plan. Many of these plans also offer prescription drug coverage (Part D), along with extra benefits like vision, dental, and hearing."
+        },
+        {
+          "title": "Medicare Supplement (Medigap)",
+          "description": "Medicare Supplement plans help cover out-of-pocket costs that traditional Medicare doesn't, such as copayments, coinsurance, and deductibles. Choose from a variety of plans designed to save you money and protect you from high medical bills"
+        },
+        {
+          "title": "Prescription Drug Plans (Part D)",
+          "description": "Get coverage for prescription medications with a Part D plan. You'll have access to a broad network of pharmacies and coverage for the drugs you need."
+        }
+      ]
+    },
+    "compare_section": {
+      "title": "Compare Medicare Plans Now!",
+      "description": "Don't leave your healthcare to chance. Explore our Medicare plans today and find coverage that keeps you healthy, protected, and worry-free. With our expert guidance and simple tools, you can confidently choose the best plan for your needs.",
+      "call_text": "Call to speak",
+      "expert_text": "with a licensed Medicare expert today!",
+      "image": "/images/medi/medi4.jpg"
+    }
+  },
+
+  "mission": {
+    "breadcrumb": {
+      "title": "Mission",
+      "image": "/images/mission/missionnew.jpg"
+    },
+    "make_difference": {
+      "title": "How We Make a Difference",
+      "description": "Our mission is to improve the lives of Haiti's underserved populations by providing access to affordable and comprehensive health insurance. We believe that everyone, regardless of their financial situation, deserves quality healthcare. By breaking down financial barriers and promoting awareness of available health services, we are working to ensure that more Haitian families can lead healthier, more secure lives.",
+      "button": "Discover More",
+      "image": "/images/mission/new/mission1.png"
+    },
+    "stronger_haiti": {
+      "title": "Together, We are Building a Stronger, Healthier Haiti, One Policy at a Time.",
+      "description": "Investing in Haitian communities is not just a moral imperative; it's a catalyst for sustainable growth and positive change.",
+      "image": "/images/mission/missionPic.png"
+   },
+    "breaking_barriers": {
+      "title": "Breaking Down Barriers for Equity and Growth",
+      "description": "The Haitian community often faces systemic barriers that limit access to essential resources, such as education, healthcare, and economic opportunities. By directing investments into these areas, we can foster equity, create pathways for success, and strengthen the broader economy.",
+      "image": "/images/mission/new/mission2.png"
+    },
+    "unlocking_potential": {
+      "title": "Unlocking Potential for a Thriving Future",
+      "description": "Empowering Haitians unlocks their full potential, generating innovation, cultural diversity, and a more inclusive society. When we uplift our own, we build a future where everyone thrives",
+      "image": "/images/mission/new/mission3.png"
+    }
+  },
+
+"accordion": {
+  "title1": "Community Health",
+  "description1": "We provide support for underserved areas by delivering essential healthcare services. Our focus is on improving access and promoting well-being among vulnerable populations. We collaborate with local health workers to ensure sustainable care. Together, we build healthier communities.",
+  
+  "title2": "Education Access",
+  "description2": "Our programs are designed to enable learning opportunities for people of all ages and backgrounds. We remove barriers to education by providing resources and support. With a focus on inclusion and empowerment, we foster lifelong learning. Education is a key to unlocking potential and growth.",
+  
+  "title3": "Local Partnerships",
+  "description3": "We collaborate closely with local organizations to amplify our impact and reach. These partnerships foster trust, resource sharing, and cultural understanding. Together, we develop projects that address community needs effectively. Building strong networks is essential for sustainable progress."
+},
+
+"community": {
+  "title": "Community",
+  "description": "Supporting Haitian families with accessible insurance solutions.",
+  "cta_button": "Get a Free Quote",
+  "events_section": {
+    "title": "Our Presence in the Community",
+    "description": "At H4H Insurance, we are committed to building stronger, healthier communities by staying present where it matters most — among the people. We actively take part in local events that focus on health awareness, dental education, life insurance, and Medicare. Our efforts especially support the Haitian community, helping them access vital resources and clear information to make informed health and financial decisions. From health fairs to enrollment workshops, we aim to educate, empower, and guide individuals in their own language and cultural context. For us, it’s not just about offering insurance — it’s about being a reliable partner and advocate for community well-being."  
+  },
+  "main_sections": {
+    "resources_section": {
+      "title": "Community Engagement",
+      "resources": [
+        {
+          "title": "Local Health Fairs",
+          "description": "We actively participate in health fairs across the community to provide information, answer questions, and help individuals navigate their insurance options."
+        },
+        {
+          "title": "Cultural and Community Events",
+          "description": "From Haitian cultural celebrations to neighborhood gatherings, we attend a wide variety of events to connect with the community and share valuable resources."
+        },
+        {
+          "title": "Medicare Enrollment Workshops",
+          "description": "During key enrollment periods, we host workshops to assist seniors in understanding Medicare plans and making informed decisions about their healthcare."
+        },
+        {
+          "title": "One-on-One Consultations",
+          "description": "At our booths and pop-up events, we offer personalized, in-language consultations to ensure everyone receives the guidance they need in a comfortable setting."
+        }
+      ]
+    },
+    
+    "support_section": {
+      "title": "Stay Tuned",
+      "description": "Follow us on our social Networks to stay updated on the events we participated.",
+      "call_to_action": "Contact us"
+    }
+  }
+}
+,
+  "testimonials" : {
+    "title": "Testimonials",
+    "image": "/images/testimonial/TestimonialHero.jpg"
+
+  },
+  "testimonialstext": {
+  "title": "What Our Clients Say",
+  "subtitle": "Click below to see what our customers said about our services.",
+  "list": [
+    {
+      "name": "Francene Mitial",
+      "text": "Everything was beautifully done and the enrollment process ended well. Formidable experience, it was a very nice exchange between the agent and I to achieve this, this help was so needed; I must say necessary. Anyway, we're waiting for the follow‑up so I can have the chance to go see the doctor. Thank you very much for sharing the information with me. Hats off!"
+    },
+    {
+      "name": "Christele Saint Jean",
+      "text": "I’m thrilled I chose H4H to assist with my health insurance process. It was a joy to see how warmly the team welcomed and guided me. Everything was resolved quickly, and I especially value that even if you only speak Creole, they understand and guide you throughout. They never left me alone, always checking to ensure everything goes smoothly, confirming I received my card, and explained every detail I didn’t understand. I have no complaints, only gratitude for the amazing initiative to help every Haitian in our community access these services fully. More people should know about this exceptional service. Thank you, H4H team, for supporting our community!"
+    },
+    {
+      "name": "Jean Robert",
+      "text": "Great service from start to finish. The team was attentive and made sure I understood every part of the process. I really appreciate how easy they made everything for me."
+    },
+    {
+      "name": "Marie Louise",
+      "text": "I'm very happy with the help I received. They were patient, explained everything clearly, and followed up with me after. I would recommend them to anyone looking for support with health insurance."
+    }
+  ]
+},
+  "referafriend": {
+    "breadcrumb": {
+      "title": "Refer a Friend",
+      "image": "/images/mission/mission.jpg"
+    },
+    "make_difference": {
+      "title": "Invite Friends, Make a Difference",
+      "description": "Help your community gain access to quality healthcare by inviting your friends to join our health plan. Every referral strengthens our mission to create a healthier, more connected Haiti.",
+      "button": "Invite Now",
+      "image": "/images/mission/mission1.jpg"
+    },
+    "stronger_haiti": {
+      "title": "Stronger Together: One Referral at a Time",
+      "description": "Each friend you refer is a step toward a healthier Haiti. Your voice matters—use it to spread access and care.",
+      "image": "/images/mission/missionPic.jpg"
+    },
+    "breaking_barriers": {
+      "title": "Remove Barriers Through Community",
+      "description": "Referrals empower friends and family to overcome obstacles to affordable healthcare. Your recommendation can change lives.",
+      "image": "/images/mission/mission2.jpg"
+    },
+    "unlocking_potential": {
+      "title": "Unlock New Opportunities Through Referrals",
+      "description": "By referring others, you open doors to better health and a brighter future. Together, we can uplift entire communities.",
+      "image": "/images/mission/mission3.jpg"
+    }
+  },
+
+  "referpage": {
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "refer": {
+    "title": "Invite friends and family",
+    "description": "Invite friends and family to explore trusted health, life, or dental insurance with H4H Insurance..."
+  },
+  "form": {
+    "title": "Submit a Referral",
+    "namePlaceholder": "Your Name",
+    "emailPlaceholder": "Your Email",
+    "phonePlaceholder": "Your Phone Number",
+    "referredNamePlaceholder": "Referred Person's Name",
+    "referredEmailPlaceholder": "Referred Person's Email",
+    "referredPhonePlaceholder": "Referred Person's Phone Number",
+    "consent": "I confirm the referred person has agreed to be contacted.",
+    "button": "Refer Now",
+    "loading": "Submitting...",
+    "fillAllFields": "Please fill out all fields and confirm consent.",
+    "phoneInvalid": "Please enter valid phone numbers (e.g., +15551234567).",
+    "successMessage": "✅ Thank you! Your referral has been submitted. We’ll contact {{name}} soon.",
+    "errorMessage": "❌ Failed to submit referral. Please try again.",
+    "unexpectedError": "❌ An unexpected error occurred."
+  },
+  "footer": {
+    "tagline": "H4H Insurance | Your Trusted Insurance Partner",
+    "phone": "(786) 397-7167",
+    "altPhone": "(844) 544-0663",
+    "disclaimer": "We respect your privacy. Your information will only be used to contact you about insurance options."
+  }
+}
+,
+  
+
+  "appointment": {
+    "title": "Appointment Scheduling",
+    "subtitle": "Effortlessly schedule your appointment with flexible options and receive instant confirmation via email.",
+    "services": [
+      {
+        "id": 1,
+        "title": "Call us now",
+        "description": "Speak to an agent by calling us at (786) 397-7167 or (844) 544-0663. Conveniently book your appointment over the phone"
+      },
+      {
+        "id": 2,
+        "title": "Schedule for a Phone Appointment",
+        "description": "Conveniently book your appointment for a meeting by phone at a preferred date and time."
+      },
+      {
+        "id": 3,
+        "title": "Face-to-Face Meeting",
+        "description": "Meet with our experts in person for a comprehensive consultation. We ensure a personalized experience."
+      },
+      {
+        "id": 4,
+        "title": "Virtual Consultation",
+        "description": "Connect with us online through a virtual meeting. Get the same expert advice from the comfort of your home."
+      }
+    ],
+    "form": {
+      "date_select": "Please select both date and time",
+      "success_message": "Appointment scheduled for {{date}} at {{time}}"
+    }
+  },
+
+  "careers": {
+    "title": "Join The Team",
+    "subtitle": "Please fill out the form below to start your application.",
+    "alerts": {
+      "success": "Thanks! Your application has been submitted successfully.",
+      "error": "There was an error saving your application. Please try again.",
+      "unexpected": "Unexpected error. Please try again later."
+    },
+    "button": {
+      "submit": "Submit",
+      "submitting": "Submitting…"
+    },
+    "fields": {
+      "jobOpening": {
+        "label": "Select Job Opening",
+        "placeholder": "-- Select Choice --",
+        "options": {
+          "agent": "Insurance Agent",
+          "csr": "Customer Success Representative",
+          "seasonal_agent": "Seasonal Agent",
+          "marketing": "Marketing"
+        }
+      },
+      "firstName": { "label": "First Name" },
+      "lastName": { "label": "Last Name" },
+      "email": { "label": "Email", "placeholder": "you@example.com" },
+      "phone": { "label": "Phone", "placeholder": "(000) 000-0000" },
+      "address1": { "label": "Address Line 1" },
+      "address2": { "label": "Address Line 2" },
+      "city": { "label": "City" },
+      "state": { "label": "State", "placeholder": "-- Select state --" },
+      "zip": { "label": "Zip Code" },
+      "ssn": { "label": "Social Security Number", "placeholder": "###-##-####" },
+      "npn": { "label": "National Producer Number (NPN)" },
+      "dob": { "label": "Date of Birth" },
+      "frontPhotoId": { "label": "Front Photo ID" },
+      "backPhotoId": { "label": "Back Photo ID" },
+      "education": {
+        "question": "What is the highest level of education you have completed?",
+        "options": {
+          "hs": "High School or GED",
+          "some": "Some College",
+          "cert": "Certificate (Trade/Vocational)",
+          "assoc": "Associate’s Degree",
+          "bach": "Bachelor’s Degree",
+          "mast": "Master’s Degree or Higher"
+        }
+      },
+      "nipr": { "label": "Upload NIPR Report" },
+      "resume": { "label": "Upload Résumé" },
+      "languages": {
+        "label": "Please list all languages you speak",
+        "placeholder": "English, Spanish, Haitian Creole, ..."
+      },
+      "recentEmployment": {
+        "label": "Tell us about your most recent employment",
+        "placeholder": "Company name, position, employment dates, job functions/responsibilities, and reason for leaving (if applicable)."
+      },
+      "employmentStatus": {
+        "label": "What's your employment status?",
+        "options": {
+          "full-time": "Full-time",
+          "part-time": "Part-time",
+          "unemployed": "Unemployed",
+          "student": "Student",
+          "other": "Other"
+        }
+      },
+      "felony": {
+        "question": "Have you been convicted of a felony in the past five years?",
+        "yes": "Yes",
+        "no": "No",
+        "note": "* A conviction does not automatically disqualify you, but it may affect eligibility for state licensing."
+      },
+      "availableDate": { "label": "What is your earliest available start date?" },
+      "referral": { "label": "Referral source (if applicable)", "placeholder": "Name, website, event, etc." }
+    },
+    "footerNote": "* Protect sensitive data like SSN. When integrating with backend/Google Sheets, ensure encryption in transit and security best practices."
+  },
+
+  "email": {
+    "subject": "Confirmación de la cita",
+    "text": "Hola {{username}},\nGracias por contactarnos. Su cita ha sido confirmada para el {{date}} a las {{time}} vía {{method}}.\nCuídese,\nSu equipo de H4H",
+    "html": "<p>Hola {{username}},<br/>Gracias por contactarnos. Su cita ha sido confirmada para el <strong>{{date}}</strong> a las <strong>{{time}}</strong> vía <strong>{{method}}</strong>.<br/>Es un placer servirle...<br/>Cuídese,<br/>Su equipo de H4H</p>",
+    "methods": {
+      "face-to-face": "Reunión presencial en la oficina",
+      "phone": "Llamada telefónica",
+      "virtual": "Reunión virtual por Google Meet",
+      "unknown": "Desconocido"
+    }
+  },
+
+  "schedulestep2": {
+    "backbutton": "back",
+    "title": "Personal detail",
+    "Date": "Date",
+    "Time": "Time",
+    "description": "Please provide your details and preferred contact method for the interview. This information will help us ensure a smooth and efficient interview process.",
+    "link_text": "You can review more details about working at H4H by visiting our Home Page Here"
+  },
+
+    "schedulestep2right": {
+    "title": "Interview Details",
+    "firstname": "First Name",
+    "lastname": "Last Name",
+    "email": "Email",
+    "phone": "Phone Number",
+    "preferred_contact": "Preferred Contact Method",
+    "face_to_face": "Face-to-Face Office Meeting",
+    "phone_appointment": "Appointment by Phone",
+    "virtual_meeting": "Virtual Meeting via Google Meet",
+    "suggestion": "Additional Comments (Optional)",
+    "submit_button": "Schedule"
+    },
+  
+
+  "contact": {
+    "call": "Call",
+    "phone_number": "(786) 397-7167\n(844) 544-0663",
+    "email": "Email",
+    "email_address": "info@h4hinsurance.com",
+    "chat": "Chat",
+    "chat_hours": "Mon to Fri (9am-6pm EST)"
+  },
+
+  "misc": {
+    "schedule": "Schedule your appointment",
+    "submit": "Submit",
+    "afford": " Affordable Health Insurance Plans for You and Your Family",
+    "protect": "Protect your loved ones with a plan that fits your life. Get your free quote now!",
+    "quote": "GET A QUOTE",
+    "free_quote": "Get a Free Quote",
+    "book": "Book Your Appointment Today"
+  },
+
+  "calendar": {
+    "back": "Back",
+    "title": "Interview Schedule",
+    "duration": "30 min",
+    "description": "Please select a time slot for your initial interview with our recruiting team. This meeting can be conducted via phone, video call, or in person, based on your preference.",
+    "homeLink": "You can review more details about working at H4H by visiting our Home Page Here",
+    "select": "Select a Date & Time",
+    "submit": "Submit",
+    "timePlaceholder": "Select Time",
+    "errors": {
+      "selectDate": "Please select a date.",
+      "selectTime": "Please select a time."
+    },
+    "success": "Date & Time added successfully!"
+  },
+
+  "form": {
+    "completed": "Completed",
+    "label": {
+      "enterZipCode": "Enter the Zip Code",
+      "householdIncome": "What's your household income?",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "dateOfBirth": "What's your date of birth?",
+      "homeAddress": "What is your home address?",
+      "addressOptional": "Address ",
+      "cityOptional": "City ",
+      "stateOptional": "State ",
+      "email": "Email",
+      "phoneOptional": "Phone ",
+      "optional": "(Optional)"
+    },
+    "inputField": {
+      "enterZipCode": "Enter Zip Code",
+      "selectHouseholdIncome": "Select Household Income",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "dateOfBirth": "mm/dd/yyyy",
+      "addressOptional": "Address ",
+      "cityOptional": "City ",
+      "stateOptional": "State ",
+      "email": "Enter your email",
+      "phoneOptional": "Enter your 10-digit phone number"
+    },
+    "button": {
+      "continue": "Continue",
+      "back": "Back",
+      "ok": "Ok",
+      "submit": "Submit Quote Request"
+    },
+    "questions": {
+      "individualOrFamilyCoverage": "Are you looking for individual or family coverage?",
+      "typeOfCoverage": "What type of coverage are you looking for?",
+      "householdIncome": "What's your household income?",
+      "fullName": "What's your full name?",
+      "dateOfBirth": "What's your date of birth?",
+      "homeAddress": "What is your home address?",
+      "secure": "Secure Your Free Quote Now!",
+      "stayConnected": "Stay Connected"
+    },
+    "options": {
+      "individual": "Individual",
+      "family": "Family",
+      "life": "Life",
+      "health": "Health",
+      "dental": "Dental",
+      "vision": "Vision"
+    },
+    "finalPopUpBox": {
+      "formSubmitted": "Form Submitted",
+      "successMessage1": "Your Form has been successfully submitted.",
+      "successMessage2": "An agent will reach out to you in 24 hours."
+    },
+
+    "errors": {
+      "zipRequired": "ZIP code is required",
+      "firstNameRequired": "First name is required",
+      "lastNameRequired": "Last name is required",
+      "dobRequired": "Date of Birth is required",
+      "addressRequired": "Address is required",
+      "cityRequired": "City is required",
+      "stateRequired": "State is required",
+      "emailRequired": "Email is required"
+    },
+
+    "footer": {
+      "agree": "You agree to receive recurring automated promotional text and email messages from H4H Insurance: Consent is not a condition of purchase. Reply HELP for help or STOP to cancel. Message and data rates may apply.",
+      "submit": "By submitting this form, you are consenting to receive marketing emails from H4H Insurance. You can revoke your consent to receive emails at any time by unsubscribing to emails at"
+    }
+
+    
+  }
+
+  
+  
+  
+}
+
+

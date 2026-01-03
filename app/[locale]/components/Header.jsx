@@ -217,35 +217,6 @@ const Header = () => {
       pageTitle = "Page";
   }
 
-  // const slides = [
-  //   {
-  //     imageUrl: "/images/slider/african.jpeg",
-  //     title:
-  //       "Together We are Building a Healthier Haiti, One Family at a Time.",
-  //     url: "/about-us",
-  //     buttonText: "Learn More",
-  //   },
-  //   {
-  //     imageUrl: "/images/slider/african3.jpeg",
-  //     title:
-  //       "Comprehensive Health Plans for Individuals, Family and Medicare Options.",
-  //     url: "/health",
-  //     buttonText: "Compare Plans",
-  //   },
-  //   {
-  //     imageUrl: "/images/slider/african2.jpg",
-  //     title: "Find an Affordable Dental & Vision Plan for Your Family.",
-  //     url: "/dental",
-  //     buttonText: "Discover More",
-  //   },
-  //   {
-  //     imageUrl: "/images/slider/african3.jpg",
-  //     title: "Protect Your Family's Financial Future with Life Insurance.",
-  //     url: "/appointment",
-  //     buttonText: "Contact Agent",
-  //   },
-  // ];
-
   const slides = t("slides", { returnObjects: true });
 
   const insuranceTypes = [
@@ -271,263 +242,263 @@ const Header = () => {
     setIsDropdownOpen(false); // Close the dropdown
   };
 
-  // const prefLangCookie = getPrefLangCookie();
-
   return (
     <>
-        <header className="bg-white fixed top-0 left-0 w-full z-50 shadow-md">
+      <header className="bg-white fixed top-0 left-0 w-full z-50 shadow-md">
         {/* Top Bar */}
-        <div className="bg-primary-darkAqua ">
-          <div className="container mx-auto text-white py-4 px-0 lg:px-6 md:px-4 flex justify-end items-center text-sm">
-            <div className="flex flex-col sm:flex-row w-full justify-between items-center">
-              <div className="flex flex-col sm:flex-row justify-between space-y-4 sm:space-y-0 sm:space-x-10">
-                <div className="flex items-center ">
-                  <FaPhoneVolume className="w-8 h-8 text-[#B92031]" />
-                  <span className="text-white font-bold  px-2 text-[1.2rem]">
-                  <Link href='http://wa.me/17863977167'>
-                    (786) 397-7167
-                    </Link> 
-                    <br/>
-                    <span className="block mt-2">(844) 544-0663</span>
-                  </span>                  
+        <div className="bg-white border-b border-gray-100 shadow-sm">
+          <div className="container mx-auto text-[#3685b4] py-4 px-4 lg:px-8 flex justify-between items-center text-base">
+            {/* Logo Section - Moved to Top Bar */}
+            <div className="flex items-center mr-6 lg:mr-8">
+              <Link href='/'>
+                <Image
+                  alt="logo"
+                  src="/images/HHlogo.png"
+                  width={110}
+                  height={45}
+                  className="w-[110px] h-auto object-contain"
+                />
+              </Link>
+            </div>
 
+            {/* Desktop Contact & Socials */}
+            <div className="hidden lg:flex w-full justify-between items-center flex-1">
+              <div className="flex items-center space-x-8">
+                <div className="flex items-center space-x-3">
+                  <div className="p-2 border-2 border-[#3685b4] rounded-full flex items-center justify-center">
+                    <FaPhoneVolume className="w-6 h-6 text-red-600" />
+                  </div>
+                  <div className="flex flex-col text-[#3685b4] font-bold leading-tight">
+                    <Link href='http://wa.me/17863977167' className="hover:text-blue-700 transition text-base">
+                      (786) 397-7167
+                    </Link>
+                    <span className="text-base">(844) 544-0663</span>
+                  </div>
                 </div>
-                <div className="flex items-center">
-                  <MdOutlineMailOutline className="w-8 h-8 text-[#B92031]" />
-                  <Link href="mailto:info@h4hinsurance.com">
-                    <span className="text-white font-bold px-2 text-xl">
-                    info@h4hinsurance.com
-                    </span>                  
-                  </Link>
 
+                <div className="flex items-center space-x-3">
+                  <div className="p-2 border-2 border-[#3685b4] rounded-full flex items-center justify-center">
+                    <MdOutlineMailOutline className="w-7 h-7 text-red-600" />
+                  </div>
+                  <Link href="mailto:info@h4hinsurance.com">
+                    <span className="text-[#3685b4] font-bold text-lg hover:text-blue-700 transition">
+                      info@h4hinsurance.com
+                    </span>
+                  </Link>
                 </div>
               </div>
-              <div className=" flex space-x-4 mt-4 sm:mt-0">
-              <a href="https://www.tiktok.com/@h4h.insurance" className="lg:flex hover:text-gray-400">
-                  <FaTiktok className="w-6 h-6 text-white hover:text-blue-800" />
+
+              <div className="flex space-x-6 items-center">
+                <a href="https://www.tiktok.com/@h4h.insurance" className="flex hover:text-gray-600 transition">
+                  <FaTiktok className="w-8 h-8 text-[#3685b4] hover:text-black" />
                 </a>
-                <a href="https://www.facebook.com/people/Health-4-Haitians/61567682720657/#" className="lg:flex hover:text-gray-400">
-                  <FaFacebook className="w-6 h-6 text-white hover:text-blue-800" />
+                <a href="https://www.facebook.com/people/Health-4-Haitians/61567682720657/#" className="flex hover:text-gray-600 transition">
+                  <FaFacebook className="w-8 h-8 text-[#3685b4] hover:text-blue-800" />
                 </a>
-                <a href="https://www.instagram.com/health4haitians/" className="lg:flex hover:text-gray-400">
-                  <FaInstagram className="w-6 h-6 text-white hover:text-pink-800" />
+                <a href="https://www.instagram.com/health4haitians/" className="flex hover:text-gray-600 transition">
+                  <FaInstagram className="w-8 h-8 text-[#3685b4] hover:text-pink-600" />
                 </a>
-                <a href="http://wa.me/17863977167" className="lg:flex hover:text-gray-400">
-                  <FaWhatsapp className="w-6 h-6 text-white hover:text-green-800" />
+                <a href="http://wa.me/17863977167" className="flex hover:text-gray-600 transition">
+                  <FaWhatsapp className="w-8 h-8 text-[#3685b4] hover:text-green-600" />
                 </a>
-                <div className="text-black">
+                <div className="text-black ml-4">
                   <LanguageChanger />
                 </div>
               </div>
-              <div className="lg:hidden block lg:mt-0 mt-4">
-                <Sheet>
-                  <SheetTrigger asChild>
-                    <button className="hover:text-gray-400">
-                      <FaBars className="w-6 h-6 text-white" />
-                    </button>
-                  </SheetTrigger>
-                  <SheetContent>
-                    <SheetHeader>
-                      <SheetTitle> {t("navigation.navigate")}</SheetTitle>
-                      <SheetDescription>
-                        {t("navigation.choose_page")}
-                      </SheetDescription>
-                    </SheetHeader>
-                    <div className="grid gap-4 py-4 text-lg">
-                      <nav className="py-4">
-                        <ul className="flex flex-col space-y-4">
-                          <li>
-                            <Link
-                              href="/"
-                              onClick={() => handleLinkClick("#home")}
-                              className="hover:text-[#13287B] py-2 px-2"
-                            >
-                              {t("navigation.menu_items.home")}
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              href="/about-us"
-                              onClick={() => handleLinkClick("/about-us")}
-                              className="hover:text-[#13287B] py-2 px-2"
-                            >
-                              {t("navigation.menu_items.about_us")}
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              href="/health"
-                              onClick={() => handleLinkClick("/health")}
-                              className="hover:text-[#13287B] py-2 px-2"
-                            >
-                              {t("navigation.menu_items.health")}
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              href="/dental"
-                              onClick={() => handleLinkClick("/dental")}
-                              className="hover:text-[#13287B] py-2 px-2"
-                            >
-                              {t("navigation.menu_items.dental_vision")}
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              href="/life"
-                              onClick={() => handleLinkClick("/life")}
-                              className="hover:text-[#13287B] py-2 px-2"
-                            >
-                              {t("navigation.menu_items.life")}
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              href="/medicare"
-                              onClick={() => handleLinkClick("/medicare")}
-                              className="hover:text-[#13287B] py-2 px-2"
-                            >
-                              {t("navigation.menu_items.medicare")}
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              href="/mission"
-                              onClick={() => handleLinkClick("/mission")}
-                              className="hover:text-[#13287B] py-2 px-2"
-                            >
-                              {t("navigation.menu_items.mission")}
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              href="/referafriend"
-                              onClick={() => handleLinkClick("#referafriend")}
-                              className="hover:text-[#13287B] py-2 px-2"
-                            >
-                              {t("navigation.menu_items.referafriend")}
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              href="/community"
-                              onClick={() => handleLinkClick("#community")}
-                              className="hover:text-[#13287B] py-2 px-2"
-                            >
-                              {t("navigation.menu_items.community")}
-                            </Link>
-                          </li>
-                                                    <li>
-                            <Link
-                              href="/testimonials"
-                              onClick={() => handleLinkClick("#testimonials")}
-                              className="hover:text-[#13287B] py-2 px-2"
-                            >
-                              {t("navigation.menu_items.testimonials")}
-                            </Link>
-                          </li>
+            </div>
 
-                          {/* <li>
-                            <Link
-                              href="/contact"
-                              onClick={() => handleLinkClick("contact")}
-                              className="hover:text-[#13287B] py-2 px-2"
+            {/* Mobile Menu Trigger */}
+            <div className="lg:hidden block ml-auto">
+              <Sheet>
+                <SheetTrigger asChild>
+                  <button className="hover:text-gray-600 p-2">
+                    <FaBars className="w-8 h-8 text-[#3685b4]" />
+                  </button>
+                </SheetTrigger>
+                <SheetContent>
+                  <SheetHeader>
+                    {/* ... content checks out ... */}
+                    <SheetTitle> {t("navigation.navigate")}</SheetTitle>
+                    <SheetDescription>
+                      {t("navigation.choose_page")}
+                    </SheetDescription>
+                  </SheetHeader>
+                  <div className="grid gap-4 py-4 text-lg">
+                    <nav className="py-4">
+                      <ul className="flex flex-col space-y-4">
+                        <li>
+                          <Link
+                            href="/"
+                            onClick={() => handleLinkClick("#home")}
+                            className="hover:text-[#13287B] py-2 px-2"
+                          >
+                            {t("navigation.menu_items.home")}
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            href="/about-us"
+                            onClick={() => handleLinkClick("/about-us")}
+                            className="hover:text-[#13287B] py-2 px-2"
+                          >
+                            {t("navigation.menu_items.about_us")}
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            href="/health"
+                            onClick={() => handleLinkClick("/health")}
+                            className="hover:text-[#13287B] py-2 px-2"
+                          >
+                            {t("navigation.menu_items.health")}
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            href="/dental"
+                            onClick={() => handleLinkClick("/dental")}
+                            className="hover:text-[#13287B] py-2 px-2"
+                          >
+                            {t("navigation.menu_items.dental_vision")}
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            href="/life"
+                            onClick={() => handleLinkClick("/life")}
+                            className="hover:text-[#13287B] py-2 px-2"
+                          >
+                            {t("navigation.menu_items.life")}
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            href="/medicare"
+                            onClick={() => handleLinkClick("/medicare")}
+                            className="hover:text-[#13287B] py-2 px-2"
+                          >
+                            {t("navigation.menu_items.medicare")}
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            href="/mission"
+                            onClick={() => handleLinkClick("/mission")}
+                            className="hover:text-[#13287B] py-2 px-2"
+                          >
+                            {t("navigation.menu_items.mission")}
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            href="/referafriend"
+                            onClick={() => handleLinkClick("#referafriend")}
+                            className="hover:text-[#13287B] py-2 px-2"
+                          >
+                            {t("navigation.menu_items.referafriend")}
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            href="/community"
+                            onClick={() => handleLinkClick("#community")}
+                            className="hover:text-[#13287B] py-2 px-2"
+                          >
+                            {t("navigation.menu_items.community")}
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            href="/testimonials"
+                            onClick={() => handleLinkClick("#testimonials")}
+                            className="hover:text-[#13287B] py-2 px-2"
+                          >
+                            {t("navigation.menu_items.testimonials")}
+                          </Link>
+                        </li>
+                        <li className="">
+                          <div className="flex justify-center items-center w-[80%]">
+                            <button
+                              onClick={() => handleLinkClick("appointment")}
+                              className="flex items-center justify-center"
                             >
-                              {t("navigation.menu_items.contact")}
-                            </Link>
-                          </li> */}
-                          <li className="">
-                            <div className="flex justify-center items-center w-[80%]">
-                              <button
-                                onClick={() => handleLinkClick("appointment")}
-                                className="flex items-center justify-center"
-                                // className="bg-primary-darkAqua p-4 rounded-full hover:bg-[#0A4958] text-white hover:text-white animate-shadow-pulse"
-                              >
-                                <img
-                                  src="images/calendar3D.png"
-                                  className="h-12 w-12"
-                                />
-                                <span className="hover:text-primary-darkAqua text-xs text-gray-800 py-1">
-                                  {t("misc.schedule")}
-                                </span>
-                              </button>
-                            </div>
-                          </li>
-                        </ul>
-                      </nav>
-                    </div>
-                    <SheetFooter>
-                      <SheetClose asChild>
-                        <Button type="submit">{t("navigation.close")}</Button>
-                      </SheetClose>
-                    </SheetFooter>
-                  </SheetContent>
-                </Sheet>
-              </div>
+                              <img
+                                src="images/calendar3D.png"
+                                className="h-12 w-12"
+                              />
+                              <span className="hover:text-primary-darkAqua text-xs text-gray-800 py-1">
+                                {t("misc.schedule")}
+                              </span>
+                            </button>
+                          </div>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                  <SheetFooter>
+                    <SheetClose asChild>
+                      <Button type="submit">{t("navigation.close")}</Button>
+                    </SheetClose>
+                  </SheetFooter>
+                </SheetContent>
+              </Sheet>
             </div>
           </div>
         </div>
         {/* Main Navigation */}
       </header>
-      <header className="bg-white sticky top-0 z-40 shadow-md">
-        <div className="bg-white shadow-md flex justify-center lg:justify-start items-center w-full mx-auto pt-[60px] pb-[2px]">
-          <div className="flex lg:pl-[5rem] justify-center items-center text-[#0A4958] my-5 xl:w-5/12 w-[20%] mt-8 mr-20">
-            <Link href='/'>
-              <Image
-                alt="logo"
-                src="/images/HHlogo.png"
-                width={130}
-                height={50}
-              />
-            </Link>
-          </div>
 
-          <div className="hidden lg:flex justify-center items-center md:w-[60%]ml--30">
-            <nav className="text-black">
-              <div className="text-[1.35rem] flex space-x-8">
+      {/* Spacer to push content down because of fixed top bar and floating nav */}
+      <header className="sticky top-[120px] z-40 w-full flex justify-center mt-[120px] pointer-events-none">
+        <div className="bg-[#3685b4] shadow-xl flex justify-between items-center w-[95%] max-w-[1400px] mx-auto rounded-full px-10 py-3 pointer-events-auto">
+          {/* Logo removed from here */}
+
+          <div className="hidden lg:flex justify-start items-center flex-1">
+            <nav className="text-white w-full">
+              <div className="text-[1.1rem] font-medium flex space-x-8 items-center">
 
                 {/* Home */}
-                <Link href="/" className="hover:text-primary-darkAqua text-[#8d8d8d] py-2 mr-8">
+                <Link href="/" className="hover:text-gray-200 text-white py-2 mr-4 transition-colors">
                   {t("navigation.menu_items.home")}
                 </Link>
 
                 {/* About Us */}
-                <Link href="/about-us" className="whitespace-nowrap hover:text-primary-darkAqua text-[#8d8d8d] py-2 mr-8">
+                <Link href="/about-us" className="whitespace-nowrap hover:text-gray-200 text-white py-2 mr-4 transition-colors">
                   {t("navigation.menu_items.about_us")}
                 </Link>
 
                 {/* Mission */}
-                <Link href="/mission" className="hover:text-primary-darkAqua text-[#8d8d8d] py-2 mr-8">
+                <Link href="/mission" className="hover:text-gray-200 text-white py-2 mr-4 transition-colors">
                   {t("navigation.menu_items.mission")}
                 </Link>
 
                 {/* Products Dropdown com espaçamento reduzido */}
 
-               <NavigationMenu>
+                <NavigationMenu>
                   <NavigationMenuList className="flex">
                     <NavigationMenuItem>
-                      <NavigationMenuTrigger className="hover:text-primary-darkAqua text-[1.28rem] text-[#8d8d8d] py-2">
+                      <NavigationMenuTrigger className="bg-transparent hover:bg-transparent focus:bg-transparent data-[active]:bg-transparent data-[state=open]:bg-transparent hover:text-gray-200 text-white text-[1.1rem] py-2">
                         {t("navigation.menu_items.products")}
                       </NavigationMenuTrigger>
-                      <NavigationMenuContent className="bg-white w-[400px] shadow-lg rounded-md">
+                      <NavigationMenuContent className="bg-white w-[400px] shadow-lg rounded-md border-0">
                         <div className="p-4">
                           <NavigationMenuLink asChild>
-                            <Link href="/health" className="block px-4 py-2 hover:bg-gray-100 text-[#8d8d8d]">
+                            <Link href="/health" className="block px-4 py-2 hover:bg-gray-100 text-[#3685b4]">
                               {t("navigation.menu_items.health")}
                             </Link>
                           </NavigationMenuLink>
                           <NavigationMenuLink asChild>
-                            <Link href="/dental" className="block px-4 py-2 hover:bg-gray-100 text-[#8d8d8d]">
+                            <Link href="/dental" className="block px-4 py-2 hover:bg-gray-100 text-[#3685b4]">
                               {t("navigation.menu_items.dental_vision")}
                             </Link>
                           </NavigationMenuLink>
                           <NavigationMenuLink asChild>
-                            <Link href="/life" className="block px-4 py-2 hover:bg-gray-100 text-[#8d8d8d]">
+                            <Link href="/life" className="block px-4 py-2 hover:bg-gray-100 text-[#3685b4]">
                               {t("navigation.menu_items.life")}
                             </Link>
                           </NavigationMenuLink>
                           <NavigationMenuLink asChild>
-                            <Link href="/medicare" className="block px-4 py-2 hover:bg-gray-100 text-[#8d8d8d]">
+                            <Link href="/medicare" className="block px-4 py-2 hover:bg-gray-100 text-[#3685b4]">
                               {t("navigation.menu_items.medicare")}
                             </Link>
                           </NavigationMenuLink>
@@ -540,33 +511,33 @@ const Header = () => {
 
                 {/* Community Dropdown com espaçamento reduzido */}
 
-                   <NavigationMenu>
-                    <NavigationMenuList className="flex">
-                      <NavigationMenuItem>
-                        <NavigationMenuTrigger className="hover:text-primary-darkAqua text-[1.28rem] text-[#8d8d8d] py-2">
-                          {t("navigation.menu_items.community")}
-                        </NavigationMenuTrigger>
-                        <NavigationMenuContent className="bg-white w-[400px] shadow-lg rounded-md">
-                          <div className="p-4">
-                            <NavigationMenuLink asChild>
-                              <Link href="/community" className="block px-4 py-2 hover:bg-gray-100 text-[#8d8d8d]">
-                                {t("navigation.menu_items.community")}
-                              </Link>
-                            </NavigationMenuLink>
-                            <NavigationMenuLink asChild>
-                              <Link href="/testimonials" className="block px-4 py-2 hover:bg-gray-100 text-[#8d8d8d]">
-                                {t("navigation.menu_items.testimonials")}
-                              </Link>
-                            </NavigationMenuLink>
-                          </div>
-                        </NavigationMenuContent>
-                      </NavigationMenuItem>
-                    </NavigationMenuList>
-                  </NavigationMenu> 
+                <NavigationMenu>
+                  <NavigationMenuList className="flex">
+                    <NavigationMenuItem>
+                      <NavigationMenuTrigger className="bg-transparent hover:bg-transparent focus:bg-transparent data-[active]:bg-transparent data-[state=open]:bg-transparent hover:text-gray-200 text-white text-[1.1rem] py-2">
+                        {t("navigation.menu_items.community")}
+                      </NavigationMenuTrigger>
+                      <NavigationMenuContent className="bg-white w-[400px] shadow-lg rounded-md border-0">
+                        <div className="p-4">
+                          <NavigationMenuLink asChild>
+                            <Link href="/community" className="block px-4 py-2 hover:bg-gray-100 text-[#3685b4]">
+                              {t("navigation.menu_items.community")}
+                            </Link>
+                          </NavigationMenuLink>
+                          <NavigationMenuLink asChild>
+                            <Link href="/testimonials" className="block px-4 py-2 hover:bg-gray-100 text-[#3685b4]">
+                              {t("navigation.menu_items.testimonials")}
+                            </Link>
+                          </NavigationMenuLink>
+                        </div>
+                      </NavigationMenuContent>
+                    </NavigationMenuItem>
+                  </NavigationMenuList>
+                </NavigationMenu>
 
 
                 {/* Refer a Friend */}
-                <Link href="/referafriend" className="whitespace-nowrap hover:text-primary-darkAqua text-[#8d8d8d] py-2 ml-8">
+                <Link href="/referafriend" className="whitespace-nowrap hover:text-gray-200 text-white py-2 ml-4 transition-colors">
                   {t("navigation.menu_items.referafriend")}
                 </Link>
 
@@ -574,16 +545,17 @@ const Header = () => {
             </nav>
           </div>
 
-          <div className="hidden lg:flex lg:flex-col justify-center items-center w-[20%] mr-30">
-            <button onClick={() => handleLinkClick("appointment")}>
-              <img src="images/calendar3D.png" className="h-12 w-12" />
+          <div className="hidden lg:flex justify-end items-center">
+            <button
+              onClick={() => handleLinkClick("appointment")}
+              className="bg-white text-[#3685b4] hover:bg-gray-100 font-bold py-3 px-6 rounded-full shadow-md transition transform hover:scale-105"
+            >
+              Schedule your Appointment
             </button>
-            <span className="hover:text-primary-darkAqua text-xs text-gray-800 py-1">
-              {t("misc.schedule")}
-            </span>
           </div>
         </div>
       </header>
+
 
       <header>
         {/* Hero Section */}
@@ -599,19 +571,19 @@ const Header = () => {
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="text-center max-w-3xl text-white space-y-4 animate-slideIn">
                 <h1 className="text-lg md:text-4xl mb-6 font-bold leading-normal">
-                {t("misc.afford")}
+                  {t("misc.afford")}
                 </h1>
                 <h2 className="text-base ml-0 sm:ml-10 md:text-2xl max-w-2xl py-5 font-bold leading-normal">
-                {t("misc.protect")}
+                  {t("misc.protect")}
                 </h2>
-                <div className="inline-block bg-black bg-opacity-50 p-3 rounded">
+                <div className="inline-block">
                   <button
                     onClick={() => {
                       router.push("/quote");
                     }}
-                    className="bg-primary-darkAqua hover:bg-[#0A4958] text-white font-bold py-2 px-8 rounded"
+                    className="bg-primary-darkAqua hover:bg-[#0A4958] text-white font-bold py-2 px-8 rounded-full transition-colors duration-300"
                   >
-               {t("misc.quote")}
+                    {t("misc.quote")}
                   </button>
                 </div>
               </div>
@@ -624,6 +596,3 @@ const Header = () => {
 };
 
 export default Header;
-
-
-

@@ -26,18 +26,18 @@ const Footer = () => {
     t("company.useful_links_data", { returnObjects: true }) || [];
 
   return (
-    <footer className="bg-footer text-white pt-5">
+    <footer className="bg-black text-white pt-5">
       <div className="max-w-7xl mx-auto px-4 mb-6 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Logo and Description */}
-          <div className="flex flex-col items-center md:items-start mb-6 md:mb-0">
+          <div className="flex flex-col items-center md:items-start mb-6 md:mb-0 h-full justify-center">
             <Link href='/'>
-            <Image
-              src="/images/H4HLogo.svg"
-              width={175}
-              height={150}
-              alt="Health for Haitians Logo"
-            />
+              <Image
+                src="/images/H4HLogo.svg"
+                width={175}
+                height={150}
+                alt="Health for Haitians Logo"
+              />
             </Link>
           </div>
 
@@ -56,8 +56,8 @@ const Footer = () => {
                     <IoIosArrowDroprightCircle />
                   </span>
                   {service === "Privacy Policy" ||
-                  "Règleman Konfidansyalite" ||
-                  "Política de Privacidad" ? (
+                    "Règleman Konfidansyalite" ||
+                    "Política de Privacidad" ? (
                     <Dialog>
                       <DialogTrigger asChild>
                         <button className="hover:text-blue-600 cursor-pointer">
@@ -596,18 +596,18 @@ const Footer = () => {
             {t("company.copyright")}
           </p>
           <div className="flex space-x-4">
-          <a href="https://www.tiktok.com/@h4h.insurance"> 
-            <FaTiktok className="text-white hover:text-blue-500 cursor-pointer" />
-          </a>
-          <a href="https://www.facebook.com/people/Health-4-Haitians/61567682720657/#"> 
-            <FaFacebookF className="text-white hover:text-blue-500 cursor-pointer" />
-          </a>
-          <a href="https://www.instagram.com/health4haitians/">
-            <FaWhatsapp className="text-white hover:text-green-500 cursor-pointer" />
-          </a>  
-          <a href="http://wa.me/17863977167">
-            <FaInstagram className="text-white hover:text-red-500 cursor-pointer" />
-          </a>
+            <a href="https://www.tiktok.com/@h4h.insurance">
+              <FaTiktok className="text-white hover:text-blue-500 cursor-pointer" />
+            </a>
+            <a href="https://www.facebook.com/people/Health-4-Haitians/61567682720657/#">
+              <FaFacebookF className="text-white hover:text-blue-500 cursor-pointer" />
+            </a>
+            <a href="https://www.instagram.com/health4haitians/">
+              <FaWhatsapp className="text-white hover:text-green-500 cursor-pointer" />
+            </a>
+            <a href="http://wa.me/17863977167">
+              <FaInstagram className="text-white hover:text-red-500 cursor-pointer" />
+            </a>
           </div>
         </div>
       </div>

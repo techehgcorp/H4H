@@ -11,13 +11,12 @@ import Achievements from "./components/Achievements";
 import BlogSection from "./components/BlogSection";
 import Team from "./components/Team";
 import Footer from "./components/Footer";
-import Testimonials from "./components/Testimonials";
+import Testimonials from "./components/Testimonialsoriginal";
 import initTranslations from "./i18n";
 import TranslationsProvider from "@/lib/TranslationProvider";
 import GetQuoteRibbon from "@/components/GetQuoteRibbon";
 import ResponsiveFooter from "@/components/MobileFooter";
 import HomeVideo from "./components/HomeVideo";
-import StatsSection from "./components/StatsSection";
 
 const i18nNamespaces = ["translation"];
 
@@ -40,8 +39,7 @@ async function page({ params: { locale } }) {
         </section>
         <MovingIcons />
         <GrowBusiness /><br/><br/>
-        <StatsSection />
-        <Testimonials /> 
+        {/* <Testimonials /> */}
         <section id="contact">
           <ContactSection />
         </section>
