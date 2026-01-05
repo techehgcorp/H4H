@@ -1,5 +1,5 @@
 import dynamic from "next/dynamic"
-const MetaPixel = dynamic(() => import("./MetaPyxel"), { ssr: false });
+const MetaPyxel = dynamic(() => import("./MetaPixel"), { ssr: false });
 
 
 export const metadata = {
@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <MetaPixel />
+        <MetaPyxel />
         {children}
       </body>
     </html>
