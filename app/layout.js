@@ -1,6 +1,5 @@
 import dynamic from "next/dynamic"
-import MetaPixel from "./MetaPixel";
-const MetaPyxel = dynamic(() => import("./MetaPixel"), { ssr: false });
+const MetaPixel = dynamic(() => import("./metaPixel"), { ssr: false });
 
 
 export const metadata = {
