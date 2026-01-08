@@ -19,6 +19,7 @@
     },
     "close": "Close"
   },
+
   "slides": [
     {
       "imageUrl": "/images/slider/african.jpeg",
@@ -45,6 +46,7 @@
       "buttonText": "Contact Agent"
     }
   ],
+
   "contact_form": {
     "insurance_types": {
       "health": "Health",
@@ -71,6 +73,7 @@
       "terms_and_conditions": "Terms and Conditions"
     }
   },
+
   "terms_and_conditions": {
     "title": "Terms and Conditions",
     "welcome": "Welcome to the website of H4HInsurance (“we,” “our,” or “us”). By accessing or using our website (h4hinsurance.com, the “Site”), you agree to these Terms and Conditions. If you do not agree to these Terms, please do not use the Site.",
@@ -208,6 +211,7 @@
       ]
     }
   },
+
   "privacy_policy": {
     "title": "Privacy Policy",
     "commitment": "H4HInsurance is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our website (h4hinsurance.com) and interact with our services.",
@@ -308,13 +312,10 @@
       }
     }
   },
+
   "company": {
     "title": "Company",
-    "services": [
-      "Privacy Policy",
-      "Terms of Service",
-      "SMS Terms & Condition"
-    ],
+    "services": ["Privacy Policy", "Terms of Service", "SMS Terms & Condition"],
     "useful_links": {
       "title": "Useful Links"
     },
@@ -342,26 +343,26 @@
       {
         "name": "Contact Us",
         "href": "/#contact"
-      },
+      }
+      ,
       {
         "name": "Community",
         "href": "/community"
-      },
+      }
+      ,
       {
         "name": "Testimonials",
         "href": "/testimonials"
-      },
+      }
+      ,
       {
         "name": "Join the Team",
         "href": "/careers"
-      },
-      {
-        "name": "Privacy Policy",
-        "href": "/privacypolicy"
       }
     ],
     "copyright": "© 2024 Health for Haitians. All Rights Reserved."
   },
+
   "home": {
     "hero": {
       "title": "Health 4 Haitians",
@@ -417,10 +418,12 @@
       "logo_alt": "Company Logo"
     }
   },
+
   "growBusiness": {
     "title": "Get Your Family Covered Today!",
     "button": "Speak to an Agent"
   },
+
   "about_us": {
     "title": "About Us",
     "description": "Discover our mission, vision, and the journey that drives our passion for healthcare access.",
@@ -477,6 +480,7 @@
       }
     ]
   },
+  
   "dental_vision": {
     "title": "Dental & Vision",
     "description": "Affordable Dental & Vision Insurance Plans for Your Family",
@@ -517,6 +521,7 @@
     },
     "cta_button": "Explore Plans"
   },
+
   "health": {
     "title": "Health Insurance",
     "sections": [
@@ -593,6 +598,7 @@
       }
     ]
   },
+
   "life_insurance": {
     "breadcrumb": {
       "title": "Life Insurance",
@@ -633,6 +639,7 @@
       "image": "/images/life/Life3.jpg"
     }
   },
+
   "medicare": {
     "breadcrumb": {
       "title": "Medicare",
@@ -674,6 +681,7 @@
       "image": "/images/medi/medi4.jpg"
     }
   },
+
   "mission": {
     "breadcrumb": {
       "title": "Mission",
@@ -689,7 +697,7 @@
       "title": "Together, We are Building a Stronger, Healthier Haiti, One Policy at a Time.",
       "description": "Investing in Haitian communities is not just a moral imperative; it's a catalyst for sustainable growth and positive change.",
       "image": "/images/mission/missionPic.png"
-    },
+   },
     "breaking_barriers": {
       "title": "Breaking Down Barriers for Equity and Growth",
       "description": "The Haitian community often faces systemic barriers that limit access to essential resources, such as education, healthcare, and economic opportunities. By directing investments into these areas, we can foster equity, create pathways for success, and strengthen the broader economy.",
@@ -701,77 +709,84 @@
       "image": "/images/mission/new/mission3.png"
     }
   },
-  "accordion": {
-    "title1": "Community Health",
-    "description1": "We provide support for underserved areas by delivering essential healthcare services. Our focus is on improving access and promoting well-being among vulnerable populations. We collaborate with local health workers to ensure sustainable care. Together, we build healthier communities.",
-    "title2": "Education Access",
-    "description2": "Our programs are designed to enable learning opportunities for people of all ages and backgrounds. We remove barriers to education by providing resources and support. With a focus on inclusion and empowerment, we foster lifelong learning. Education is a key to unlocking potential and growth.",
-    "title3": "Local Partnerships",
-    "description3": "We collaborate closely with local organizations to amplify our impact and reach. These partnerships foster trust, resource sharing, and cultural understanding. Together, we develop projects that address community needs effectively. Building strong networks is essential for sustainable progress."
+
+"accordion": {
+  "title1": "Community Health",
+  "description1": "We provide support for underserved areas by delivering essential healthcare services. Our focus is on improving access and promoting well-being among vulnerable populations. We collaborate with local health workers to ensure sustainable care. Together, we build healthier communities.",
+  
+  "title2": "Education Access",
+  "description2": "Our programs are designed to enable learning opportunities for people of all ages and backgrounds. We remove barriers to education by providing resources and support. With a focus on inclusion and empowerment, we foster lifelong learning. Education is a key to unlocking potential and growth.",
+  
+  "title3": "Local Partnerships",
+  "description3": "We collaborate closely with local organizations to amplify our impact and reach. These partnerships foster trust, resource sharing, and cultural understanding. Together, we develop projects that address community needs effectively. Building strong networks is essential for sustainable progress."
+},
+
+"community": {
+  "title": "Community",
+  "description": "Supporting Haitian families with accessible insurance solutions.",
+  "cta_button": "Get a Free Quote",
+  "events_section": {
+    "title": "Our Presence in the Community",
+    "description": "At H4H Insurance, we are committed to building stronger, healthier communities by staying present where it matters most — among the people. We actively take part in local events that focus on health awareness, dental education, life insurance, and Medicare. Our efforts especially support the Haitian community, helping them access vital resources and clear information to make informed health and financial decisions. From health fairs to enrollment workshops, we aim to educate, empower, and guide individuals in their own language and cultural context. For us, it’s not just about offering insurance — it’s about being a reliable partner and advocate for community well-being."  
   },
-  "community": {
-    "title": "Community",
-    "description": "Supporting Haitian families with accessible insurance solutions.",
-    "cta_button": "Get a Free Quote",
-    "events_section": {
-      "title": "Our Presence in the Community",
-      "description": "At H4H Insurance, we are committed to building stronger, healthier communities by staying present where it matters most — among the people. We actively take part in local events that focus on health awareness, dental education, life insurance, and Medicare. Our efforts especially support the Haitian community, helping them access vital resources and clear information to make informed health and financial decisions. From health fairs to enrollment workshops, we aim to educate, empower, and guide individuals in their own language and cultural context. For us, it’s not just about offering insurance — it’s about being a reliable partner and advocate for community well-being."
+  "main_sections": {
+    "resources_section": {
+      "title": "Community Engagement",
+      "resources": [
+        {
+          "title": "Local Health Fairs",
+          "description": "We actively participate in health fairs across the community to provide information, answer questions, and help individuals navigate their insurance options."
+        },
+        {
+          "title": "Cultural and Community Events",
+          "description": "From Haitian cultural celebrations to neighborhood gatherings, we attend a wide variety of events to connect with the community and share valuable resources."
+        },
+        {
+          "title": "Medicare Enrollment Workshops",
+          "description": "During key enrollment periods, we host workshops to assist seniors in understanding Medicare plans and making informed decisions about their healthcare."
+        },
+        {
+          "title": "One-on-One Consultations",
+          "description": "At our booths and pop-up events, we offer personalized, in-language consultations to ensure everyone receives the guidance they need in a comfortable setting."
+        }
+      ]
     },
-    "main_sections": {
-      "resources_section": {
-        "title": "Community Engagement",
-        "resources": [
-          {
-            "title": "Local Health Fairs",
-            "description": "We actively participate in health fairs across the community to provide information, answer questions, and help individuals navigate their insurance options."
-          },
-          {
-            "title": "Cultural and Community Events",
-            "description": "From Haitian cultural celebrations to neighborhood gatherings, we attend a wide variety of events to connect with the community and share valuable resources."
-          },
-          {
-            "title": "Medicare Enrollment Workshops",
-            "description": "During key enrollment periods, we host workshops to assist seniors in understanding Medicare plans and making informed decisions about their healthcare."
-          },
-          {
-            "title": "One-on-One Consultations",
-            "description": "At our booths and pop-up events, we offer personalized, in-language consultations to ensure everyone receives the guidance they need in a comfortable setting."
-          }
-        ]
-      },
-      "support_section": {
-        "title": "Stay Tuned",
-        "description": "Follow us on our social Networks to stay updated on the events we participated.",
-        "call_to_action": "Contact us"
-      }
+    
+    "support_section": {
+      "title": "Stay Tuned",
+      "description": "Follow us on our social Networks to stay updated on the events we participated.",
+      "call_to_action": "Contact us"
     }
-  },
-  "testimonials": {
+  }
+}
+,
+  "testimonials" : {
     "title": "Testimonials",
     "image": "/images/testimonial/TestimonialHero.jpg"
+
   },
   "testimonialstext": {
-    "title": "What Our Clients Say",
-    "subtitle": "Click below to see what our customers said about our services.",
-    "list": [
-      {
-        "name": "Francene Mitial",
-        "text": "Everything was beautifully done and the enrollment process ended well. Formidable experience, it was a very nice exchange between the agent and I to achieve this, this help was so needed; I must say necessary. Anyway, we're waiting for the follow‑up so I can have the chance to go see the doctor. Thank you very much for sharing the information with me. Hats off!"
-      },
-      {
-        "name": "Christele Saint Jean",
-        "text": "I’m thrilled I chose H4H to assist with my health insurance process. It was a joy to see how warmly the team welcomed and guided me. Everything was resolved quickly, and I especially value that even if you only speak Creole, they understand and guide you throughout. They never left me alone, always checking to ensure everything goes smoothly, confirming I received my card, and explained every detail I didn’t understand. I have no complaints, only gratitude for the amazing initiative to help every Haitian in our community access these services fully. More people should know about this exceptional service. Thank you, H4H team, for supporting our community!"
-      },
-      {
-        "name": "Jean Robert",
-        "text": "Great service from start to finish. The team was attentive and made sure I understood every part of the process. I really appreciate how easy they made everything for me."
-      },
-      {
-        "name": "Marie Louise",
-        "text": "I'm very happy with the help I received. They were patient, explained everything clearly, and followed up with me after. I would recommend them to anyone looking for support with health insurance."
-      }
-    ]
-  },
+  "title": "What Our Clients Say",
+  "subtitle": "Click below to see what our customers said about our services.",
+  "list": [
+    {
+      "name": "Francene Mitial",
+      "text": "Everything was beautifully done and the enrollment process ended well. Formidable experience, it was a very nice exchange between the agent and I to achieve this, this help was so needed; I must say necessary. Anyway, we're waiting for the follow‑up so I can have the chance to go see the doctor. Thank you very much for sharing the information with me. Hats off!"
+    },
+    {
+      "name": "Christele Saint Jean",
+      "text": "I’m thrilled I chose H4H to assist with my health insurance process. It was a joy to see how warmly the team welcomed and guided me. Everything was resolved quickly, and I especially value that even if you only speak Creole, they understand and guide you throughout. They never left me alone, always checking to ensure everything goes smoothly, confirming I received my card, and explained every detail I didn’t understand. I have no complaints, only gratitude for the amazing initiative to help every Haitian in our community access these services fully. More people should know about this exceptional service. Thank you, H4H team, for supporting our community!"
+    },
+    {
+      "name": "Jean Robert",
+      "text": "Great service from start to finish. The team was attentive and made sure I understood every part of the process. I really appreciate how easy they made everything for me."
+    },
+    {
+      "name": "Marie Louise",
+      "text": "I'm very happy with the help I received. They were patient, explained everything clearly, and followed up with me after. I would recommend them to anyone looking for support with health insurance."
+    }
+  ]
+},
   "referafriend": {
     "breadcrumb": {
       "title": "Refer a Friend",
@@ -799,40 +814,44 @@
       "image": "/images/mission/mission3.jpg"
     }
   },
+
   "referpage": {
-    "nav": {
-      "home": "Home",
-      "services": "Services",
-      "contact": "Contact"
-    },
-    "refer": {
-      "title": "Invite friends and family",
-      "description": "Invite friends and family to explore trusted health, life, or dental insurance with H4H Insurance..."
-    },
-    "form": {
-      "title": "Submit a Referral",
-      "namePlaceholder": "Your Name",
-      "emailPlaceholder": "Your Email",
-      "phonePlaceholder": "Your Phone Number",
-      "referredNamePlaceholder": "Referred Person's Name",
-      "referredEmailPlaceholder": "Referred Person's Email",
-      "referredPhonePlaceholder": "Referred Person's Phone Number",
-      "consent": "I confirm the referred person has agreed to be contacted.",
-      "button": "Refer Now",
-      "loading": "Submitting...",
-      "fillAllFields": "Please fill out all fields and confirm consent.",
-      "phoneInvalid": "Please enter valid phone numbers (e.g., +15551234567).",
-      "successMessage": "✅ Thank you! Your referral has been submitted. We’ll contact {{name}} soon.",
-      "errorMessage": "❌ Failed to submit referral. Please try again.",
-      "unexpectedError": "❌ An unexpected error occurred."
-    },
-    "footer": {
-      "tagline": "H4H Insurance | Your Trusted Insurance Partner",
-      "phone": "(786) 397-7167",
-      "altPhone": "(844) 544-0663",
-      "disclaimer": "We respect your privacy. Your information will only be used to contact you about insurance options."
-    }
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "contact": "Contact"
   },
+  "refer": {
+    "title": "Invite friends and family",
+    "description": "Invite friends and family to explore trusted health, life, or dental insurance with H4H Insurance..."
+  },
+  "form": {
+    "title": "Submit a Referral",
+    "namePlaceholder": "Your Name",
+    "emailPlaceholder": "Your Email",
+    "phonePlaceholder": "Your Phone Number",
+    "referredNamePlaceholder": "Referred Person's Name",
+    "referredEmailPlaceholder": "Referred Person's Email",
+    "referredPhonePlaceholder": "Referred Person's Phone Number",
+    "consent": "I confirm the referred person has agreed to be contacted.",
+    "button": "Refer Now",
+    "loading": "Submitting...",
+    "fillAllFields": "Please fill out all fields and confirm consent.",
+    "phoneInvalid": "Please enter valid phone numbers (e.g., +15551234567).",
+    "successMessage": "✅ Thank you! Your referral has been submitted. We’ll contact {{name}} soon.",
+    "errorMessage": "❌ Failed to submit referral. Please try again.",
+    "unexpectedError": "❌ An unexpected error occurred."
+  },
+  "footer": {
+    "tagline": "H4H Insurance | Your Trusted Insurance Partner",
+    "phone": "(786) 397-7167",
+    "altPhone": "(844) 544-0663",
+    "disclaimer": "We respect your privacy. Your information will only be used to contact you about insurance options."
+  }
+}
+,
+  
+
   "appointment": {
     "title": "Appointment Scheduling",
     "subtitle": "Effortlessly schedule your appointment with flexible options and receive instant confirmation via email.",
@@ -863,6 +882,7 @@
       "success_message": "Appointment scheduled for {{date}} at {{time}}"
     }
   },
+
   "careers": {
     "title": "Join The Team",
     "subtitle": "Please fill out the form below to start your application.",
@@ -886,52 +906,20 @@
           "marketing": "Marketing"
         }
       },
-      "firstName": {
-        "label": "First Name"
-      },
-      "lastName": {
-        "label": "Last Name"
-      },
-      "email": {
-        "label": "Email",
-        "placeholder": "you@example.com"
-      },
-      "phone": {
-        "label": "Phone",
-        "placeholder": "(000) 000-0000"
-      },
-      "address1": {
-        "label": "Address Line 1"
-      },
-      "address2": {
-        "label": "Address Line 2"
-      },
-      "city": {
-        "label": "City"
-      },
-      "state": {
-        "label": "State",
-        "placeholder": "-- Select state --"
-      },
-      "zip": {
-        "label": "Zip Code"
-      },
-      "ssn": {
-        "label": "Social Security Number",
-        "placeholder": "###-##-####"
-      },
-      "npn": {
-        "label": "National Producer Number (NPN)"
-      },
-      "dob": {
-        "label": "Date of Birth"
-      },
-      "frontPhotoId": {
-        "label": "Front Photo ID"
-      },
-      "backPhotoId": {
-        "label": "Back Photo ID"
-      },
+      "firstName": { "label": "First Name" },
+      "lastName": { "label": "Last Name" },
+      "email": { "label": "Email", "placeholder": "you@example.com" },
+      "phone": { "label": "Phone", "placeholder": "(000) 000-0000" },
+      "address1": { "label": "Address Line 1" },
+      "address2": { "label": "Address Line 2" },
+      "city": { "label": "City" },
+      "state": { "label": "State", "placeholder": "-- Select state --" },
+      "zip": { "label": "Zip Code" },
+      "ssn": { "label": "Social Security Number", "placeholder": "###-##-####" },
+      "npn": { "label": "National Producer Number (NPN)" },
+      "dob": { "label": "Date of Birth" },
+      "frontPhotoId": { "label": "Front Photo ID" },
+      "backPhotoId": { "label": "Back Photo ID" },
       "education": {
         "question": "What is the highest level of education you have completed?",
         "options": {
@@ -943,12 +931,8 @@
           "mast": "Master’s Degree or Higher"
         }
       },
-      "nipr": {
-        "label": "Upload NIPR Report"
-      },
-      "resume": {
-        "label": "Upload Résumé"
-      },
+      "nipr": { "label": "Upload NIPR Report" },
+      "resume": { "label": "Upload Résumé" },
       "languages": {
         "label": "Please list all languages you speak",
         "placeholder": "English, Spanish, Haitian Creole, ..."
@@ -973,16 +957,12 @@
         "no": "No",
         "note": "* A conviction does not automatically disqualify you, but it may affect eligibility for state licensing."
       },
-      "availableDate": {
-        "label": "What is your earliest available start date?"
-      },
-      "referral": {
-        "label": "Referral source (if applicable)",
-        "placeholder": "Name, website, event, etc."
-      }
+      "availableDate": { "label": "What is your earliest available start date?" },
+      "referral": { "label": "Referral source (if applicable)", "placeholder": "Name, website, event, etc." }
     },
     "footerNote": "* Protect sensitive data like SSN. When integrating with backend/Google Sheets, ensure encryption in transit and security best practices."
   },
+
   "email": {
     "subject": "Confirmación de la cita",
     "text": "Hola {{username}},\nGracias por contactarnos. Su cita ha sido confirmada para el {{date}} a las {{time}} vía {{method}}.\nCuídese,\nSu equipo de H4H",
@@ -994,6 +974,7 @@
       "unknown": "Desconocido"
     }
   },
+
   "schedulestep2": {
     "backbutton": "back",
     "title": "Personal detail",
@@ -1002,7 +983,8 @@
     "description": "Please provide your details and preferred contact method for the interview. This information will help us ensure a smooth and efficient interview process.",
     "link_text": "You can review more details about working at H4H by visiting our Home Page Here"
   },
-  "schedulestep2right": {
+
+    "schedulestep2right": {
     "title": "Interview Details",
     "firstname": "First Name",
     "lastname": "Last Name",
@@ -1014,7 +996,9 @@
     "virtual_meeting": "Virtual Meeting via Google Meet",
     "suggestion": "Additional Comments (Optional)",
     "submit_button": "Schedule"
-  },
+    },
+  
+
   "contact": {
     "call": "Call",
     "phone_number": "(786) 397-7167\n(844) 544-0663",
@@ -1023,6 +1007,7 @@
     "chat": "Chat",
     "chat_hours": "Mon to Fri (9am-6pm EST)"
   },
+
   "misc": {
     "schedule": "Schedule your appointment",
     "submit": "Submit",
@@ -1032,6 +1017,7 @@
     "free_quote": "Get a Free Quote",
     "book": "Book Your Appointment Today"
   },
+
   "calendar": {
     "back": "Back",
     "title": "Interview Schedule",
@@ -1047,6 +1033,7 @@
     },
     "success": "Date & Time added successfully!"
   },
+
   "form": {
     "completed": "Completed",
     "label": {
@@ -1104,6 +1091,7 @@
       "successMessage1": "Your Form has been successfully submitted.",
       "successMessage2": "An agent will reach out to you in 24 hours."
     },
+
     "errors": {
       "zipRequired": "ZIP code is required",
       "firstNameRequired": "First name is required",
@@ -1114,9 +1102,18 @@
       "stateRequired": "State is required",
       "emailRequired": "Email is required"
     },
+
     "footer": {
       "agree": "You agree to receive recurring automated promotional text and email messages from H4H Insurance: Consent is not a condition of purchase. Reply HELP for help or STOP to cancel. Message and data rates may apply.",
       "submit": "By submitting this form, you are consenting to receive marketing emails from H4H Insurance. You can revoke your consent to receive emails at any time by unsubscribing to emails at"
     }
+
+    
   }
+
+  
+  
+  
 }
+
+

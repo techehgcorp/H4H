@@ -11,16 +11,17 @@ import Achievements from "./components/Achievements";
 import BlogSection from "./components/BlogSection";
 import Team from "./components/Team";
 import Footer from "./components/Footer";
-import Testimonials from "./components/Testimonialsoriginal";
 import initTranslations from "./i18n";
 import TranslationsProvider from "@/lib/TranslationProvider";
 import GetQuoteRibbon from "@/components/GetQuoteRibbon";
 import ResponsiveFooter from "@/components/MobileFooter";
 import HomeVideo from "./components/HomeVideo";
+import StatsSection from "./components/StatsSection";
+import Testimonials from "./components/Testimonialsoriginal";
 
 const i18nNamespaces = ["translation"];
 
-async function page({ params: { locale } }) {
+async function Page({ params: { locale } }) {
   const { t, resources } = await initTranslations(locale, i18nNamespaces);
 
   // console.log({ locale });
@@ -39,7 +40,8 @@ async function page({ params: { locale } }) {
         </section>
         <MovingIcons />
         <GrowBusiness /><br/><br/>
-        {/* <Testimonials /> */}
+        <StatsSection />
+        <Testimonials /> 
         <section id="contact">
           <ContactSection />
         </section>
@@ -52,4 +54,4 @@ async function page({ params: { locale } }) {
   );
 }
 
-export default page;
+export default Page;

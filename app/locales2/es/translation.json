@@ -19,6 +19,7 @@
     },
     "close": "Cerrar"
   },
+
   "slides": [
     {
       "imageUrl": "/images/slider/african.jpeg",
@@ -45,6 +46,7 @@
       "buttonText": "Contacta a un Agente"
     }
   ],
+
   "contact_form": {
     "insurance_types": {
       "health": "Salud",
@@ -71,6 +73,7 @@
       "terms_and_conditions": "Términos y Condiciones"
     }
   },
+
   "terms_and_conditions": {
     "title": "Términos y Condiciones",
     "welcome": "Bienvenido al sitio web de H4HInsurance (“nosotros,” “nuestro” o “nos”). Al acceder o usar nuestro sitio web (h4hinsurance.com, el “Sitio”), aceptas estos Términos y Condiciones. Si no estás de acuerdo con estos Términos, por favor no uses el Sitio.",
@@ -208,6 +211,7 @@
       ]
     }
   },
+
   "privacy_policy": {
     "title": "Política de Privacidad",
     "commitment": "H4HInsurance se compromete a proteger tu privacidad. Esta Política de Privacidad explica cómo recopilamos, utilizamos y protegemos tu información cuando usas nuestro sitio web (h4hinsurance.com) e interactúas con nuestros servicios.",
@@ -256,7 +260,7 @@
         },
         {
           "title": "c. Datos de Consentimiento Opt-In para SMS",
-          "content": "Todas las categorías anteriores excluyen los datos de suscripción (opt-in) del remitente de mensajes de texto y su consentimiento; esta información no se compartirá con terceros para fines no relacionados con los servicios de la campaña de SMS. Podemos compartir sus Datos Personales, incluyendo su estado de suscripción o consentimiento de SMS, con terceros que nos ayudan a proporcionar nuestros servicios de mensajería. Esto incluye, entre otros, proveedores de plataformas, compañías telefónicas y proveedores que asisten en la entrega de mensajes de texto."
+          "content": "La información de consentimiento opt-in para SMS no se compartirá con terceros para fines no relacionados con la campaña de SMS."
         },
         {
           "title": "d. Requisitos Legales",
@@ -304,10 +308,11 @@
       "content": {
         "address": "H4HInsurance, 1000 NW 65th St, Suite 110, Fort Lauderdale, FL 33309",
         "email": "info@h4hinsurance.com",
-        "phone": "(786) 397-7167\n(844) 544-0663"
+        "phone": "(786) 397-7167"
       }
     }
   },
+
   "home": {
     "hero": {
       "title": "Health 4 Haitians",
@@ -363,10 +368,12 @@
       "logo_alt": "Logo de la Empresa"
     }
   },
+
   "growBusiness": {
     "title": "¡Obtén Cobertura para Tu Familia Hoy!",
     "button": "Habla con un Agente"
   },
+
   "about_us": {
     "title": "Sobre Nosotros",
     "description": "Descubra nuestra misión, visión y el viaje que impulsa nuestra pasión por el acceso a la atención médica.",
@@ -426,6 +433,7 @@
       }
     ]
   },
+  
   "appointment": {
     "title": "Programación de Citas",
     "subtitle": "Programa tu cita fácilmente con opciones flexibles y recibe confirmación instantánea por correo electrónico.",
@@ -467,6 +475,7 @@
       }
     }
   },
+
   "medicare": {
     "breadcrumb": {
       "title": "Medicare",
@@ -508,6 +517,7 @@
       "image": "/images/medi/medi4.jpg"
     }
   },
+
   "life_insurance": {
     "breadcrumb": {
       "title": "Seguro de Vida",
@@ -548,6 +558,7 @@
       "image": "/images/life/Life3.jpg"
     }
   },
+
   "health": {
     "title": "Seguro de Salud",
     "sections": [
@@ -624,6 +635,7 @@
       }
     ]
   },
+
   "dental_vision": {
     "title": "Dental y Visión",
     "description": "Planes Asequibles de Seguro Dental y de Visión para Tu Familia",
@@ -664,6 +676,7 @@
     },
     "cta_button": "Explora Planes"
   },
+
   "mission": {
     "breadcrumb": {
       "title": "Misión",
@@ -691,14 +704,19 @@
       "image": "/images/mission/new/mission3.png"
     }
   },
+
   "accordion": {
     "title1": "Salud Comunitaria",
     "description1": "Ofrecemos apoyo a áreas desatendidas proporcionando servicios esenciales de salud. Nuestro enfoque es mejorar el acceso y promover el bienestar entre las poblaciones vulnerables. Colaboramos con trabajadores locales para garantizar un cuidado sostenible. Juntos, construimos comunidades más saludables.",
+    
     "title2": "Acceso a la Educación",
     "description2": "Nuestros programas están diseñados para brindar oportunidades de aprendizaje a personas de todas las edades y orígenes. Eliminamos barreras educativas proporcionando recursos y apoyo. Con un enfoque en inclusión y empoderamiento, fomentamos el aprendizaje permanente. La educación es clave para desbloquear el potencial y el crecimiento.",
+    
     "title3": "Alianzas Locales",
     "description3": "Colaboramos estrechamente con organizaciones locales para amplificar nuestro impacto y alcance. Estas alianzas fomentan la confianza, el intercambio de recursos y el entendimiento cultural. Juntos, desarrollamos proyectos que abordan efectivamente las necesidades comunitarias. Construir redes fuertes es esencial para el progreso sostenible."
   },
+  
+
   "referpage": {
     "nav": {
       "home": "Inicio",
@@ -709,23 +727,24 @@
       "title": "Recomienda a un ser querido para una cobertura de calidad",
       "description": "Invita a amigos y familiares a explorar seguros confiables de salud, vida o dental con H4H Insurance..."
     },
-    "form": {
-      "title": "Enviar una recomendación",
-      "namePlaceholder": "Tu nombre",
-      "emailPlaceholder": "Tu correo electrónico",
-      "phonePlaceholder": "Tu número de teléfono",
-      "referredNamePlaceholder": "Nombre de la persona recomendada",
-      "referredEmailPlaceholder": "Correo de la persona recomendada",
-      "referredPhonePlaceholder": "Teléfono de la persona recomendada",
-      "consent": "Confirmo que la persona recomendada aceptó ser contactada.",
-      "button": "Recomendar ahora",
-      "loading": "Enviando...",
-      "fillAllFields": "Por favor completa todos los campos y confirma el consentimiento.",
-      "phoneInvalid": "Introduce números de teléfono válidos (por ejemplo, +15551234567).",
-      "successMessage": "✅ ¡Gracias! Tu recomendación ha sido enviada. Contactaremos a {{name}} pronto.",
-      "errorMessage": "❌ No se pudo enviar la recomendación. Inténtalo de nuevo.",
-      "unexpectedError": "❌ Ocurrió un error inesperado."
-    },
+"form": {
+  "title": "Enviar una recomendación",
+  "namePlaceholder": "Tu nombre",
+  "emailPlaceholder": "Tu correo electrónico",
+  "phonePlaceholder": "Tu número de teléfono",
+  "referredNamePlaceholder": "Nombre de la persona recomendada",
+  "referredEmailPlaceholder": "Correo de la persona recomendada",
+  "referredPhonePlaceholder": "Teléfono de la persona recomendada",
+  "consent": "Confirmo que la persona recomendada aceptó ser contactada.",
+  "button": "Recomendar ahora",
+  "loading": "Enviando...",
+  "fillAllFields": "Por favor completa todos los campos y confirma el consentimiento.",
+  "phoneInvalid": "Introduce números de teléfono válidos (por ejemplo, +15551234567).",
+  "successMessage": "✅ ¡Gracias! Tu recomendación ha sido enviada. Contactaremos a {{name}} pronto.",
+  "errorMessage": "❌ No se pudo enviar la recomendación. Inténtalo de nuevo.",
+  "unexpectedError": "❌ Ocurrió un error inesperado."
+}
+,
     "footer": {
       "tagline": "H4H Insurance | Tu socio confiable de seguros",
       "phone": "Contáctanos: (786) 397-7167",
@@ -733,6 +752,7 @@
       "disclaimer": "H4H Insurance colabora con múltiples aseguradoras para ofrecer planes del mercado ACA, salud comercial, vida y dental. Para preguntas del mercado, visita http://HealthCare.gov. Tu información se usa solo para inscripciones con tu consentimiento, según las normas federales."
     }
   },
+
   "referafriend": {
     "breadcrumb": {
       "title": "Recomienda a un Amigo",
@@ -760,6 +780,7 @@
       "image": "/images/mission/mission3.jpg"
     }
   },
+
   "community": {
     "title": "Comunidad",
     "description": "Apoyando a las familias haitianas con soluciones de seguros accesibles.",
@@ -797,32 +818,37 @@
       }
     }
   },
-  "testimonials": {
-    "title": "Testimonios",
-    "image": "/images/testimonial/TestimonialHero.jpg"
+
+    "testimonials" : {
+      "title": "Testimonios",
+      "image": "/images/testimonial/TestimonialHero.jpg"
+
   },
-  "testimonialstext": {
-    "title": "Lo Que Dicen Nuestros Clientes",
-    "subtitle": "Haz clic abajo para ver lo que dijeron nuestros clientes sobre nuestros servicios.",
-    "list": [
-      {
-        "name": "Francene Mitial",
-        "text": "Todo fue hecho de forma hermosa y el proceso de inscripción terminó bien. Una experiencia formidable, fue un intercambio muy agradable entre el agente y yo para lograr esto; esta ayuda era muy necesaria. De todos modos, estamos esperando el seguimiento para que pueda tener la oportunidad de ir al médico. Muchas gracias por compartir la información conmigo. ¡Mis respetos!"
-      },
-      {
-        "name": "Christele Saint Jean",
-        "text": "Estoy encantada de haber elegido a H4H para que me ayudara con mi seguro de salud. Fue un placer ver cómo el equipo me recibió y me guió con tanta calidez. Todo se resolvió rápidamente, y valoro especialmente que incluso si solo hablas criollo, te entienden y te guían en todo momento. Nunca me dejaron sola, siempre revisando que todo fuera bien, confirmando que recibí mi tarjeta y explicando cada detalle que no entendía. No tengo quejas, solo gratitud por esta increíble iniciativa para ayudar a cada haitiano de nuestra comunidad a acceder plenamente a estos servicios. Más personas deberían conocer este servicio excepcional. ¡Gracias, equipo de H4H, por apoyar a nuestra comunidad!"
-      },
-      {
-        "name": "Jean Robert",
-        "text": "Gran servicio de principio a fin. El equipo fue atento y se aseguró de que entendiera cada parte del proceso. Realmente aprecio lo fácil que hicieron todo para mí."
-      },
-      {
-        "name": "Marie Louise",
-        "text": "Estoy muy feliz con la ayuda que recibí. Fueron pacientes, explicaron todo claramente y hicieron seguimiento después. Los recomendaría a cualquiera que busque apoyo con el seguro de salud."
-      }
-    ]
-  },
+
+    "testimonialstext": {
+      "title": "Lo Que Dicen Nuestros Clientes",
+      "subtitle": "Haz clic abajo para ver lo que dijeron nuestros clientes sobre nuestros servicios.",
+      "list": [
+        {
+          "name": "Francene Mitial",
+          "text": "Todo fue hecho de forma hermosa y el proceso de inscripción terminó bien. Una experiencia formidable, fue un intercambio muy agradable entre el agente y yo para lograr esto; esta ayuda era muy necesaria. De todos modos, estamos esperando el seguimiento para que pueda tener la oportunidad de ir al médico. Muchas gracias por compartir la información conmigo. ¡Mis respetos!"
+        },
+        {
+          "name": "Christele Saint Jean",
+          "text": "Estoy encantada de haber elegido a H4H para que me ayudara con mi seguro de salud. Fue un placer ver cómo el equipo me recibió y me guió con tanta calidez. Todo se resolvió rápidamente, y valoro especialmente que incluso si solo hablas criollo, te entienden y te guían en todo momento. Nunca me dejaron sola, siempre revisando que todo fuera bien, confirmando que recibí mi tarjeta y explicando cada detalle que no entendía. No tengo quejas, solo gratitud por esta increíble iniciativa para ayudar a cada haitiano de nuestra comunidad a acceder plenamente a estos servicios. Más personas deberían conocer este servicio excepcional. ¡Gracias, equipo de H4H, por apoyar a nuestra comunidad!"
+        },
+        {
+          "name": "Jean Robert",
+          "text": "Gran servicio de principio a fin. El equipo fue atento y se aseguró de que entendiera cada parte del proceso. Realmente aprecio lo fácil que hicieron todo para mí."
+        },
+        {
+          "name": "Marie Louise",
+          "text": "Estoy muy feliz con la ayuda que recibí. Fueron pacientes, explicaron todo claramente y hicieron seguimiento después. Los recomendaría a cualquiera que busque apoyo con el seguro de salud."
+        }
+      ]
+    },
+
+
   "company": {
     "title": "Compañía",
     "services": [
@@ -865,23 +891,20 @@
       {
         "name": "Únete al equipo",
         "href": "/careers"
-      },
-      {
-        "name": "Política de Privacidad",
-        "href": "/privacypolicy"
       }
     ],
     "copyright": "© 2024 Health for Haitians. Todos los Derechos Reservados."
   },
+
   "contact": {
     "title": "¡Contáctanos!",
     "call": "Llama",
-    "phone_number": "(786) 397-7167\n(844) 544-0663",
-    "email": "Correo Electrónico",
+    "phone_number": "(786) 397-7167\n(844) 544-0663",    "email": "Correo Electrónico",
     "email_address": "info@h4hinsurance.com",
     "chat": "Charlar",
     "chat_hours": "Lunes a Viernes (9am-6pm EST)"
   },
+
   "misc": {
     "schedule": "Programa tu cita",
     "submit": "entregar",
@@ -891,6 +914,7 @@
     "free_quote": "Obtén una Cotización Gratis",
     "book": "Programa tu Cita Hoy"
   },
+
   "calendar": {
     "back": "Atrás",
     "title": "Programar Entrevista",
@@ -906,6 +930,7 @@
     },
     "success": "¡Fecha y hora agregadas con éxito!"
   },
+
   "schedulestep2": {
     "title": "Detalle personal",
     "date": "Fecha",
@@ -913,19 +938,22 @@
     "description": "Por favor, proporcione sus datos y el método de contacto preferido para la entrevista. Esta información nos ayudará a garantizar un proceso de entrevista fluido y eficiente.",
     "link_text": "Puede revisar más detalles sobre trabajar en H4H visitando nuestra página de inicio aquí"
   },
-  "schedulestep2right": {
-    "title": "Detalles de la entrevista",
-    "firstname": "Nombre",
-    "lastname": "Apellido",
-    "email": "Correo electrónico",
-    "phone": "Número de teléfono",
-    "preferred_contact": "Método de contacto preferido",
-    "face_to_face": "Reunión presencial en la oficina",
-    "phone_appointment": "Cita por teléfono",
-    "virtual_meeting": "Reunión virtual por Google Meet",
-    "suggestion": "Comentarios adicionales (opcional)",
-    "submit_button": "Enviar"
-  },
+
+"schedulestep2right": {
+  "title": "Detalles de la entrevista",
+  "firstname": "Nombre",
+  "lastname": "Apellido",
+  "email": "Correo electrónico",
+  "phone": "Número de teléfono",
+  "preferred_contact": "Método de contacto preferido",
+  "face_to_face": "Reunión presencial en la oficina",
+  "phone_appointment": "Cita por teléfono",
+  "virtual_meeting": "Reunión virtual por Google Meet",
+  "suggestion": "Comentarios adicionales (opcional)",
+  "submit_button": "Enviar"
+},
+
+
   "careers": {
     "title": "Únete al equipo",
     "subtitle": "Completa el siguiente formulario para iniciar tu postulación.",
@@ -949,52 +977,20 @@
           "marketing": "Marketing"
         }
       },
-      "firstName": {
-        "label": "Nombre"
-      },
-      "lastName": {
-        "label": "Apellido"
-      },
-      "email": {
-        "label": "Correo electrónico",
-        "placeholder": "tu@ejemplo.com"
-      },
-      "phone": {
-        "label": "Teléfono",
-        "placeholder": "(000) 000-0000"
-      },
-      "address1": {
-        "label": "Dirección (línea 1)"
-      },
-      "address2": {
-        "label": "Dirección (línea 2)"
-      },
-      "city": {
-        "label": "Ciudad"
-      },
-      "state": {
-        "label": "Estado",
-        "placeholder": "-- Selecciona el estado --"
-      },
-      "zip": {
-        "label": "Código postal"
-      },
-      "ssn": {
-        "label": "Número de Seguro Social",
-        "placeholder": "###-##-####"
-      },
-      "npn": {
-        "label": "Número Nacional de Productor (NPN)"
-      },
-      "dob": {
-        "label": "Fecha de nacimiento"
-      },
-      "frontPhotoId": {
-        "label": "Documento de identidad (frente)"
-      },
-      "backPhotoId": {
-        "label": "Documento de identidad (reverso)"
-      },
+      "firstName": { "label": "Nombre" },
+      "lastName": { "label": "Apellido" },
+      "email": { "label": "Correo electrónico", "placeholder": "tu@ejemplo.com" },
+      "phone": { "label": "Teléfono", "placeholder": "(000) 000-0000" },
+      "address1": { "label": "Dirección (línea 1)" },
+      "address2": { "label": "Dirección (línea 2)" },
+      "city": { "label": "Ciudad" },
+      "state": { "label": "Estado", "placeholder": "-- Selecciona el estado --" },
+      "zip": { "label": "Código postal" },
+      "ssn": { "label": "Número de Seguro Social", "placeholder": "###-##-####" },
+      "npn": { "label": "Número Nacional de Productor (NPN)" },
+      "dob": { "label": "Fecha de nacimiento" },
+      "frontPhotoId": { "label": "Documento de identidad (frente)" },
+      "backPhotoId": { "label": "Documento de identidad (reverso)" },
       "education": {
         "question": "¿Cuál es el nivel educativo más alto que has completado?",
         "options": {
@@ -1006,12 +1002,8 @@
           "mast": "Maestría o superior"
         }
       },
-      "nipr": {
-        "label": "Subir informe NIPR"
-      },
-      "resume": {
-        "label": "Subir currículo"
-      },
+      "nipr": { "label": "Subir informe NIPR" },
+      "resume": { "label": "Subir currículo" },
       "languages": {
         "label": "Indica todos los idiomas que hablas",
         "placeholder": "Inglés, español, criollo haitiano, ..."
@@ -1036,16 +1028,12 @@
         "no": "No",
         "note": "* Una condena no te descalifica automáticamente, pero puede afectar la elegibilidad para licencias estatales."
       },
-      "availableDate": {
-        "label": "¿Cuál es la fecha más temprana en que puedes empezar?"
-      },
-      "referral": {
-        "label": "¿Cómo supiste de nosotros? (si aplica)",
-        "placeholder": "Nombre, sitio web, evento, etc."
-      }
+      "availableDate": { "label": "¿Cuál es la fecha más temprana en que puedes empezar?" },
+      "referral": { "label": "¿Cómo supiste de nosotros? (si aplica)", "placeholder": "Nombre, sitio web, evento, etc." }
     },
     "footerNote": "* Protege los datos sensibles como el SSN. Al integrar con el backend/Google Sheets, asegúrate de cifrado en tránsito y buenas prácticas de seguridad."
   },
+  
   "email": {
     "subject": "Confirmación de la cita",
     "text": "Hola {{username}},\nGracias por contactarnos. Su cita ha sido confirmada para el {{date}} a las {{time}} vía {{method}}.\nCuídese,\nSu equipo de H4H",
@@ -1057,6 +1045,7 @@
       "unknown": "Desconocido"
     }
   },
+
   "form": {
     "completed": "Completado",
     "label": {
@@ -1114,6 +1103,7 @@
       "successMessage": "Tu formulario ha sido enviado exitosamente.",
       "successMessage2": " Un agente se pondrá en contacto contigo en las próximas 24 horas."
     },
+
     "errors": {
       "zipRequired": "Se requiere código postal",
       "firstNameRequired": "El nombre es obligatorio",
@@ -1124,6 +1114,7 @@
       "stateRequired": "Se requiere estado",
       "emailRequired": "Se requiere correo electrónico"
     },
+
     "footer": {
       "agree": "Aceptas recibir mensajes automatizados promocionales recurrentes por texto y correo electrónico de H4H Insurance: El consentimiento no es una condición de compra. Responde HELP para obtener ayuda o STOP para cancelar. Pueden aplicarse tarifas de mensajes y datos.",
       "submit": "Al enviar este formulario, aceptas recibir correos electrónicos de marketing de H4H Insurance. Puedes revocar tu consentimiento en cualquier momento cancelando la suscripción enviando un correo a"

@@ -16,9 +16,11 @@
       "contact_us": "Kontakte nou",
       "community": "Kominote",
       "testimonials": "Temwayaj"
+
     },
     "close": "Fèmen"
   },
+
   "slides": [
     {
       "imageUrl": "/images/slider/african.jpeg",
@@ -45,6 +47,7 @@
       "buttonText": "Kontakte yon Ajan"
     }
   ],
+
   "contact_form": {
     "insurance_types": {
       "health": "Sante",
@@ -71,6 +74,7 @@
       "terms_and_conditions": "Tèm ak Kondisyon yo"
     }
   },
+
   "sms_terms": {
     "please_read": "Tanpri li epi revize tèm sèvis SMS nou yo anba a.",
     "description": {
@@ -102,6 +106,7 @@
       "content": "Si ou gen nenpòt kesyon sou tèm sèvis sa a, kontakte nou nan: Health For Haitians, 1000 NW 65th St. Suite 103, Fort Lauderdale, FL 33309. email: info@H4Hinsurance.com. Telefòn: 1-844-544-0663"
     }
   },
+
   "company": {
     "title": "Konpayi",
     "useful_links": {
@@ -144,14 +149,11 @@
       {
         "name": "Antre nan ekip la",
         "href": "/careers"
-      },
-      {
-        "name": "Règleman Konfidansyalite",
-        "href": "/privacypolicy"
       }
     ],
     "copyright": "© 2024 Sante pou Ayisyen. Tout Dwa Rezève."
   },
+
   "terms_and_conditions": {
     "title": "Tèm ak Kondisyon yo",
     "welcome": "Byenveni sou sit entènèt H4HInsurance (“nou,” “nou an,” oswa “nou”). Lè w gen aksè ak itilize sit entènèt nou an (h4hinsurance.com, “Sit la”), ou dakò ak Tèm ak Kondisyon sa yo. Si w pa dakò ak tèm sa yo, tanpri pa itilize Sit la.",
@@ -287,6 +289,7 @@
       ]
     }
   },
+
   "privacy_policy": {
     "title": "Règleman sou Konfidansyalite",
     "commitment": "H4HInsurance angaje nan pwoteje vi prive ou. Règleman sou Konfidansyalite sa a eksplike kijan nou kolekte, itilize, ak pwoteje enfòmasyon ou lè w itilize sit entènèt nou an (h4hinsurance.com) epi entèaji ak sèvis nou yo.",
@@ -383,10 +386,11 @@
       "content": {
         "address": "H4HInsurance, 1000 NW 65th St, Suite 110, Fort Lauderdale, FL 33309",
         "email": "info@h4hinsurance.com",
-        "phone": "(786) 397-7167\n(844) 544-0663"
+        "phone": "(786) 397-7167"
       }
     }
   },
+
   "home": {
     "hero": {
       "title": "Sante pou Ayisyen",
@@ -446,6 +450,7 @@
     "title": "Kouvri fanmi’w jodi a",
     "button": "Pale ak yon Ajan"
   },
+
   "about_us": {
     "title": "Sou nou",
     "description": "Dekouvri misyon nou, vizyon nou, ak vwayaj ki kondwi pasyon nou pou aksè a swen sante.",
@@ -475,7 +480,7 @@
             "text": "Lasante se fondasyon lavi a, se poutèt sa nou kòmanse travay nou isit la."
           }
         ]
-      },
+      },      
       {
         "heading": "Kreye yon Pon pou rann Asirans Sante disponib pou tout Ayisyen",
         "paragraph": "Genyen aksè a swen sante de kalite esansyèl anpil pou byennèt tout moun ak fanmi yo, men anpil moun nan kominote Ayisyen an ap fè fas ak gwo baryè ki anpeche yo jwenn kouvèti sante ki nesesè.",
@@ -501,7 +506,8 @@
         "paragraph": "Kit kominote a bezwen Medicaid, asirans sante, Medicare, oswa asirans lavi, nou kwè ke tout moun merite gen aksè ak sèvis e ak sipò ki gen kalite. Nan lavni, nou planifye elaji pwojè nou yo, pou asire ke chak manm kominote ayisyen an gen konesans ak resous pou pwoteje sante ak byennèt yo."
       }
     ]
-  },
+  },  
+
   "dental_vision": {
     "title": "Kouvèti Dantè & Vizyon",
     "description": "Asirans Dantè & Vizyon Abòdab pou Fanmi Ou",
@@ -542,6 +548,7 @@
     },
     "cta_button": "Eksplore plan yo"
   },
+
   "health": {
     "title": "Asirans Sante",
     "sections": [
@@ -618,6 +625,7 @@
       }
     ]
   },
+
   "life_insurance": {
     "breadcrumb": {
       "title": "Asirans Lavi",
@@ -658,6 +666,7 @@
       "image": "/images/life/Life3.jpg"
     }
   },
+
   "medicare": {
     "breadcrumb": {
       "title": "Medicare",
@@ -699,6 +708,7 @@
       "image": "/images/medi/medi4.jpg"
     }
   },
+
   "mission": {
     "breadcrumb": {
       "title": "Misyon",
@@ -726,14 +736,19 @@
       "image": "/images/mission/new/mission3.png"
     }
   },
+
   "accordion": {
     "title1": "Sante Kominotè",
     "description1": "Nou bay sipò pou zòn ki pa jwenn ase sèvis sante, ofri sèvis esansyèl. Nou vize amelyore aksè ak ankouraje byennèt pou moun ki plis vilnerab yo. Nou travay ak travayè sante lokal yo pou garanti swen ki dire lontan. Ansanm, nou konstwi kominote ki pi an sante.",
+    
     "title2": "Aksè Edikasyon",
     "description2": "Pwogram nou yo fèt pou bay opòtinite aprantisaj pou moun tout laj ak orijin. Nou retire baryè nan edikasyon atravè resous ak sipò. Ak yon konsantre sou enklizyon ak anpouvwèman, nou ankouraje aprantisaj pou tout lavi. Edikasyon se kle pou libere potansyèl ak kwasans.",
+    
     "title3": "Patènarya Lokal",
     "description3": "Nou kolabore sere sere ak òganizasyon lokal yo pou ogmante enpak ak rive. Patènarya sa yo bati konfyans, pataje resous, ak konprann kilti. Ansanm, nou devlope pwojè ki adrese bezwen kominote yo efektivman. Kreye rezo fò se esansyèl pou pwogrè dirab."
   },
+  
+
   "referpage": {
     "nav": {
       "home": "Akèy",
@@ -744,23 +759,24 @@
       "title": "Rekòmande yon moun ou renmen pou bon kouvèti",
       "description": "Envite zanmi ak fanmi pou dekouvri asirans sante, vi, oswa dantè ou ka fè konfyans ak H4H Insurance..."
     },
-    "form": {
-      "title": "Voye yon rekòmandasyon",
-      "namePlaceholder": "Non ou",
-      "emailPlaceholder": "Imèl ou",
-      "phonePlaceholder": "Nimewo telefòn ou",
-      "referredNamePlaceholder": "Non moun ou rekòmande a",
-      "referredEmailPlaceholder": "Imèl moun ou rekòmande a",
-      "referredPhonePlaceholder": "Nimewo telefòn moun ou rekòmande a",
-      "consent": "Mwen konfime moun ou rekòmande a dakò pou kontakte l.",
-      "button": "Rekòmande kounye a",
-      "loading": "Ap voye...",
-      "fillAllFields": "Tanpri ranpli tout chan yo epi konfime konsantman an.",
-      "phoneInvalid": "Tanpri mete nimewo telefòn valab (egzanp: +15551234567).",
-      "successMessage": "✅ Mèsi! Rekòmandasyon ou an voye. Nou pral kontakte {{name}} byento.",
-      "errorMessage": "❌ Echèk pandan voye rekòmandasyon an. Tanpri eseye ankò.",
-      "unexpectedError": "❌ Yon erè inatandi fèt."
-    },
+"form": {
+  "title": "Voye yon rekòmandasyon",
+  "namePlaceholder": "Non ou",
+  "emailPlaceholder": "Imèl ou",
+  "phonePlaceholder": "Nimewo telefòn ou",
+  "referredNamePlaceholder": "Non moun ou rekòmande a",
+  "referredEmailPlaceholder": "Imèl moun ou rekòmande a",
+  "referredPhonePlaceholder": "Nimewo telefòn moun ou rekòmande a",
+  "consent": "Mwen konfime moun ou rekòmande a dakò pou kontakte l.",
+  "button": "Rekòmande kounye a",
+  "loading": "Ap voye...",
+  "fillAllFields": "Tanpri ranpli tout chan yo epi konfime konsantman an.",
+  "phoneInvalid": "Tanpri mete nimewo telefòn valab (egzanp: +15551234567).",
+  "successMessage": "✅ Mèsi! Rekòmandasyon ou an voye. Nou pral kontakte {{name}} byento.",
+  "errorMessage": "❌ Echèk pandan voye rekòmandasyon an. Tanpri eseye ankò.",
+  "unexpectedError": "❌ Yon erè inatandi fèt."
+}
+,
     "footer": {
       "tagline": "H4H Insurance | Patnè asirans ou ka fè konfyans",
       "phone": "Kontakte nou: (786) 397-7167",
@@ -768,6 +784,7 @@
       "disclaimer": "H4H Insurance kolabore ak plizyè konpayi asirans pou ofri plan ACA Marketplace, sante, lavi, ak dantè. Pou kesyon sou Marketplace, vizite http://HealthCare.gov. Nou itilize enfòmasyon ou sèlman pou enskripsyon ak konsantman ou, selon direktiv federal yo."
     }
   },
+
   "referafriend": {
     "breadcrumb": {
       "title": "Rekomande yon Zanmi",
@@ -794,7 +811,8 @@
       "description": "Lè ou rekòmande lòt moun, ou louvri pòt pou pi bon sante ak yon avni ki pi klere. Ansanm, nou ka leve tout kominote yo.",
       "image": "/images/mission/mission3.jpg"
     }
-  },
+  },  
+
   "community": {
     "title": "Kominite a",
     "description": "Nou sipòte fanmi ayisyen yo ak solisyon asirans ki fasil pou jwenn.",
@@ -832,32 +850,35 @@
       }
     }
   },
-  "testimonials": {
-    "title": "Temwayaj",
-    "image": "/images/testimonial/TestimonialHero.jpg"
+
+    "testimonials" : {
+      "title": "Temwayaj",
+      "image": "/images/testimonial/TestimonialHero.jpg"
+
   },
-  "testimonialstext": {
-    "title": "Sa Kliyan Nou Yo Di",
-    "subtitle": "Klike anba pou w wè sa kliyan yo di sou sèvis nou yo.",
-    "list": [
-      {
-        "name": "Francene Mitial",
-        "text": "Tout bagay te fèt trè byen e pwosesis enskripsyon an te fini byen. Yon eksperyans ekstraòdinè, li te yon bèl echanj ant ajan an ak mwen pou nou reyalize sa; èd sa a te tèlman nesesè. Kounye a, n ap tann swivi pou m ka gen chans al wè doktè a. Mèsi anpil paske ou pataje enfòmasyon sa a avè m. Chapo ba!"
-      },
-      {
-        "name": "Christele Saint Jean",
-        "text": "Mwen kontan anpil paske mwen te chwazi H4H pou ede m ak asirans sante mwen. Se te yon plezi pou m wè kijan ekip la resevwa m ak anpil chalè e te gide m. Yo te rezoud tout bagay rapid, e mwen apresye anpil ke menm si ou sèlman pale kreyòl, yo konprann ou e yo gide ou tout tan. Yo pa janm kite m pou kont mwen, yo toujou verifye si tout bagay ap mache byen, konfime si mwen resevwa kat mwen, e eksplike tout detay mwen pa t konprann. Mwen pa gen okenn plent, sèlman rekonesans pou bèl inisyativ sa a pou ede tout Ayisyen nan kominote nou an jwenn aksè ak sèvis sa yo. Plis moun ta dwe konnen sèvis sa a. Mèsi ekip H4H paske n ap soutni kominote nou an!"
-      },
-      {
-        "name": "Jean Robert",
-        "text": "Ekselan sèvis soti nan kòmansman jiska lafen. Ekip la te atantif epi yo te asire mwen konprann chak pati nan pwosesis la. Mwen vreman apresye kijan yo fè tout bagay fasil pou mwen."
-      },
-      {
-        "name": "Marie Louise",
-        "text": "Mwen trè kontan ak èd mwen te resevwa a. Yo te pasyan, yo te eksplike tout bagay klè, e yo te fè swivi avè m apre. Mwen ta rekòmande yo bay nenpòt moun ki bezwen èd ak asirans sante."
-      }
-    ]
-  },
+    "testimonialstext": {
+      "title": "Sa Kliyan Nou Yo Di",
+      "subtitle": "Klike anba pou w wè sa kliyan yo di sou sèvis nou yo.",
+      "list": [
+        {
+          "name": "Francene Mitial",
+          "text": "Tout bagay te fèt trè byen e pwosesis enskripsyon an te fini byen. Yon eksperyans ekstraòdinè, li te yon bèl echanj ant ajan an ak mwen pou nou reyalize sa; èd sa a te tèlman nesesè. Kounye a, n ap tann swivi pou m ka gen chans al wè doktè a. Mèsi anpil paske ou pataje enfòmasyon sa a avè m. Chapo ba!"
+        },
+        {
+          "name": "Christele Saint Jean",
+          "text": "Mwen kontan anpil paske mwen te chwazi H4H pou ede m ak asirans sante mwen. Se te yon plezi pou m wè kijan ekip la resevwa m ak anpil chalè e te gide m. Yo te rezoud tout bagay rapid, e mwen apresye anpil ke menm si ou sèlman pale kreyòl, yo konprann ou e yo gide ou tout tan. Yo pa janm kite m pou kont mwen, yo toujou verifye si tout bagay ap mache byen, konfime si mwen resevwa kat mwen, e eksplike tout detay mwen pa t konprann. Mwen pa gen okenn plent, sèlman rekonesans pou bèl inisyativ sa a pou ede tout Ayisyen nan kominote nou an jwenn aksè ak sèvis sa yo. Plis moun ta dwe konnen sèvis sa a. Mèsi ekip H4H paske n ap soutni kominote nou an!"
+        },
+        {
+          "name": "Jean Robert",
+          "text": "Ekselan sèvis soti nan kòmansman jiska lafen. Ekip la te atantif epi yo te asire mwen konprann chak pati nan pwosesis la. Mwen vreman apresye kijan yo fè tout bagay fasil pou mwen."
+        },
+        {
+          "name": "Marie Louise",
+          "text": "Mwen trè kontan ak èd mwen te resevwa a. Yo te pasyan, yo te eksplike tout bagay klè, e yo te fè swivi avè m apre. Mwen ta rekòmande yo bay nenpòt moun ki bezwen èd ak asirans sante."
+        }
+      ]
+    },
+
   "appointment": {
     "title": "Planifye Yon Randevou",
     "subtitle": "Pran youn randevou facilman avèk opsyon fleksib epi resevwa yon konfimasyon pa email imedyatman.",
@@ -887,6 +908,7 @@
       "date_select": "Tanpri chwazi dat ak lè",
       "success_message": "Randevou pwograme pou {{date}} a {{time}}"
     },
+
     "email_confirmation": {
       "subject": "Konfimasyon Randevou",
       "greeting": "Bonjou {{username}},",
@@ -899,6 +921,7 @@
       }
     }
   },
+
   "careers": {
     "title": "Antre nan ekip la",
     "subtitle": "Tanpri ranpli fòm ki anba a pou kòmanse demann ou a.",
@@ -922,52 +945,20 @@
           "marketing": "Makasinen (Maketing)"
         }
       },
-      "firstName": {
-        "label": "Non"
-      },
-      "lastName": {
-        "label": "Siyati"
-      },
-      "email": {
-        "label": "Imèl",
-        "placeholder": "ou@egzanp.com"
-      },
-      "phone": {
-        "label": "Telefòn",
-        "placeholder": "(000) 000-0000"
-      },
-      "address1": {
-        "label": "Adrès (liy 1)"
-      },
-      "address2": {
-        "label": "Adrès (liy 2)"
-      },
-      "city": {
-        "label": "Vil"
-      },
-      "state": {
-        "label": "Eta",
-        "placeholder": "-- Chwazi eta a --"
-      },
-      "zip": {
-        "label": "Kòd postal"
-      },
-      "ssn": {
-        "label": "Nimewo Sekirite Sosyal",
-        "placeholder": "###-##-####"
-      },
-      "npn": {
-        "label": "Nimewo Nasyonal Pwodiktè (NPN)"
-      },
-      "dob": {
-        "label": "Dat nesans"
-      },
-      "frontPhotoId": {
-        "label": "Kat idantite (devan)"
-      },
-      "backPhotoId": {
-        "label": "Kat idantite (dèyè)"
-      },
+      "firstName": { "label": "Non" },
+      "lastName": { "label": "Siyati" },
+      "email": { "label": "Imèl", "placeholder": "ou@egzanp.com" },
+      "phone": { "label": "Telefòn", "placeholder": "(000) 000-0000" },
+      "address1": { "label": "Adrès (liy 1)" },
+      "address2": { "label": "Adrès (liy 2)" },
+      "city": { "label": "Vil" },
+      "state": { "label": "Eta", "placeholder": "-- Chwazi eta a --" },
+      "zip": { "label": "Kòd postal" },
+      "ssn": { "label": "Nimewo Sekirite Sosyal", "placeholder": "###-##-####" },
+      "npn": { "label": "Nimewo Nasyonal Pwodiktè (NPN)" },
+      "dob": { "label": "Dat nesans" },
+      "frontPhotoId": { "label": "Kat idantite (devan)" },
+      "backPhotoId": { "label": "Kat idantite (dèyè)" },
       "education": {
         "question": "Ki nivo edikasyon ki pi wo ou fin fè?",
         "options": {
@@ -979,12 +970,8 @@
           "mast": "Mastè oswa pi wo"
         }
       },
-      "nipr": {
-        "label": "Telechaje rapò NIPR"
-      },
-      "resume": {
-        "label": "Telechaje Rezime"
-      },
+      "nipr": { "label": "Telechaje rapò NIPR" },
+      "resume": { "label": "Telechaje Rezime" },
       "languages": {
         "label": "Tanpri ekri tout lang ou pale",
         "placeholder": "Angle, Panyòl, Kreyòl Ayisyen, ..."
@@ -1009,16 +996,12 @@
         "no": "Non",
         "note": "* Yon kondanasyon pa diskalifye w otomatikman, men li ka afekte elijiblite pou lisans leta."
       },
-      "availableDate": {
-        "label": "Ki pi bon dat ou kapab kòmanse?"
-      },
-      "referral": {
-        "label": "Ki jan ou te tande pale de nou? (si genyen)",
-        "placeholder": "Non, sit entènèt, evènman, elatriye"
-      }
+      "availableDate": { "label": "Ki pi bon dat ou kapab kòmanse?" },
+      "referral": { "label": "Ki jan ou te tande pale de nou? (si genyen)", "placeholder": "Non, sit entènèt, evènman, elatriye" }
     },
     "footerNote": "* Pwoteje done sansib tankou SSN. Lè w ap entegre ak backend/Google Sheets, asire gen chifreman pandan transmisyon ak bon pratik sekirite."
   },
+
   "contact": {
     "title": "Kontakte nou !",
     "call": "Rele nou nan",
@@ -1028,6 +1011,7 @@
     "chat": "Ekri nou",
     "chat_hours": "Lundi Au Vendredi (9am – 6pm EST)"
   },
+
   "misc": {
     "schedule": "Pwograme randevou ou",
     "submit": "soumèt",
@@ -1037,6 +1021,8 @@
     "free_quote": "Pran YON ESTIMASYON Gratis",
     "book": "Rezève yon Randevou Jodi a"
   },
+
+
   "calendar": {
     "back": "Retounen",
     "title": "Orè Entèvyou",
@@ -1052,38 +1038,44 @@
     },
     "success": "Dat ak Lè te ajoute avèk siksè!"
   },
-  "email": {
-    "subject": "Konfimasyon Randevou",
-    "text": "Bonjou {{username}},\nMèsi paske ou kontakte nou. Randevou ou konfime pou {{date}} a {{time}} atravè {{method}}.\nPran swen tèt ou,\nEkip H4H ou",
-    "html": "<p>Bonjou {{username}},<br/>Mèsi paske ou kontakte nou. Randevou ou konfime pou <strong>{{date}}</strong> a <strong>{{time}}</strong> atravè <strong>{{method}}</strong>.<br/>Li se yon privilèj pou nou sèvi ou...<br/>Pran swen tèt ou,<br/>Ekip H4H ou</p>",
-    "methods": {
-      "face-to-face": "Randevou fas-a-fas nan biwo",
-      "phone": "Apèl telefòn",
-      "virtual": "Randevou vityèl atravè Google Meet",
-      "unknown": "Enkoni"
-    }
-  },
-  "schedulestep2": {
-    "backbutton": "pou retounen",
-    "title": "Enfòmasyon pèsonèl",
-    "date": "Dat",
-    "time": "Lè",
-    "description": "Tanpri bay detay ou yo ak metòd kontak ou prefere pou entèvyou a. Enfòmasyon sa yo ap ede nou asire yon pwosesis entèvyou ki fèt san pwoblèm epi efikas.",
-    "link_text": "Ou ka revize plis detay sou travay ak H4H lè ou vizite paj dakèy nou an isit la"
-  },
-  "schedulestep2right": {
-    "title": "Detay Entèvyou a",
-    "firstname": "Non",
-    "lastname": "Siyati",
-    "email": "Imèl",
-    "phone": "Nimewo telefòn",
-    "preferred_contact": "Metòd kontak ou prefere",
-    "face_to_face": "Randevou an pèsòn nan biwo a",
-    "phone_appointment": "Randevou pa telefòn",
-    "virtual_meeting": "Reyinyon vityèl atravè Google Meet",
-    "suggestion": "Kòmantè adisyonèl (opsyonèl)",
-    "submit_button": "Voye"
-  },
+ 
+"email": {
+  "subject": "Konfimasyon Randevou",
+  "text": "Bonjou {{username}},\nMèsi paske ou kontakte nou. Randevou ou konfime pou {{date}} a {{time}} atravè {{method}}.\nPran swen tèt ou,\nEkip H4H ou",
+  "html": "<p>Bonjou {{username}},<br/>Mèsi paske ou kontakte nou. Randevou ou konfime pou <strong>{{date}}</strong> a <strong>{{time}}</strong> atravè <strong>{{method}}</strong>.<br/>Li se yon privilèj pou nou sèvi ou...<br/>Pran swen tèt ou,<br/>Ekip H4H ou</p>",
+  "methods": {
+    "face-to-face": "Randevou fas-a-fas nan biwo",
+    "phone": "Apèl telefòn",
+    "virtual": "Randevou vityèl atravè Google Meet",
+    "unknown": "Enkoni"
+  }
+},
+
+"schedulestep2": {
+  "backbutton": "pou retounen",
+  "title": "Enfòmasyon pèsonèl",
+  "date": "Dat",
+  "time": "Lè",
+  "description": "Tanpri bay detay ou yo ak metòd kontak ou prefere pou entèvyou a. Enfòmasyon sa yo ap ede nou asire yon pwosesis entèvyou ki fèt san pwoblèm epi efikas.",
+  "link_text": "Ou ka revize plis detay sou travay ak H4H lè ou vizite paj dakèy nou an isit la"
+},
+
+"schedulestep2right": {
+  "title": "Detay Entèvyou a",
+  "firstname": "Non",
+  "lastname": "Siyati",
+  "email": "Imèl",
+  "phone": "Nimewo telefòn",
+  "preferred_contact": "Metòd kontak ou prefere",
+  "face_to_face": "Randevou an pèsòn nan biwo a",
+  "phone_appointment": "Randevou pa telefòn",
+  "virtual_meeting": "Reyinyon vityèl atravè Google Meet",
+  "suggestion": "Kòmantè adisyonèl (opsyonèl)",
+  "submit_button": "Voye"
+},
+
+
+
   "form": {
     "completed": "Fòm nan Voye",
     "label": {
@@ -1141,6 +1133,7 @@
       "successMessage": "Nou resevwa Fòm ou an avèk siksè.",
       "successMessage2": "Yon ajan ap kontakte ou 24 èdtan."
     },
+
     "errors": {
       "zipRequired": "Kòd Postal la obligatwa",
       "firstNameRequired": "Prenon ou obligatwa",
@@ -1151,6 +1144,7 @@
       "stateRequired": "Eta kote ou abite a obligatwa",
       "emailRequired": "Email ou obligatwa"
     },
+
     "footer": {
       "agree": "Ou dakò pou resevwa mesaj tèks ak imèl pwomosyonèl otomatik repete ki sòti nan H4H Insurance: Konsantman pa yon kondisyon pou achte. Reponn HELP pou èd oswa STOP pou anile. Frè mesaj ak done yo ka aplike.",
       "submit": "Lè w soumèt fòm sa a, ou ap bay konsantman pou resevwa imèl maketing nan men H4HInsurance. Ou ka revoke konsantman sa a nenpòt ki lè lè w koupe abònman nan imèl pou"
