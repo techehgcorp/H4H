@@ -38,7 +38,7 @@ async function Page({ params: { locale } }) {
           <HomeVideo />
 
         </section>
-        <MovingIcons />
+        {/* <MovingIcons /> */}
         <GrowBusiness /><br/><br/>
         <StatsSection />
         <Testimonials /> 
