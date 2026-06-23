@@ -59,8 +59,18 @@ export default async function IndexPage({ params }) {
   return (
     <main className="main">
       <section id="hero" className="hero section">
-        <video className="hero-video" autoPlay muted loop playsInline>
+        <video
+          className="hero-video"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          poster="/assets/hero/Herovideoh4h-poster.jpg"
+          aria-hidden="true"
+        >
           <source src="/assets/hero/Herovideoh4h.mp4" type="video/mp4" />
+          Your browser does not support background video.
         </video>
         <div className="hero-overlay"></div>
         <div className="container hero-content-wrapper">
