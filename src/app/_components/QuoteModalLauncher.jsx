@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import TcpaDisclaimer from "./TcpaDisclaimer";
 
 const initialFormData = {
   firstName: "",
@@ -501,6 +502,7 @@ export default function QuoteModalLauncher({
                       </button>
                     )}
                   </div>
+                  <TcpaDisclaimer locale={locale} />
                 </div>
               </form>
             )}

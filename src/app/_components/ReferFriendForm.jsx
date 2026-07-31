@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import TcpaDisclaimer from './TcpaDisclaimer'
 
 const initialFormData = {
   referrerName: '',
@@ -159,6 +160,7 @@ export default function ReferFriendForm({ form }) {
           <button type="submit" className="btn btn-appointment w-100" disabled={status.loading}>
             {status.loading ? form.submitting : form.submit}
           </button>
+          <TcpaDisclaimer />
         </div>
       </div>
     </form>

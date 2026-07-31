@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import TcpaDisclaimer from "./TcpaDisclaimer";
 
 const initialFormData = {
   date: "",
@@ -381,6 +382,7 @@ export default function AppointmentForm({ form, locale = "en" }) {
             <button type="submit" className="btn btn-appointment w-100" disabled={!canSubmit || status.loading}>
               {status.loading ? copy.submitting : copy.submit}
             </button>
+            <TcpaDisclaimer locale={locale} />
           </form>
         )}
       </div>
