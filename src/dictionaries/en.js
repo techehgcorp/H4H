@@ -1694,6 +1694,30 @@ const en = {
       },
     },
   },
+  tcpa: {
+    standard: {
+      paragraph1:
+        "By clicking the button and submitting this form, I agree that I am 18+ years old and agree to the {privacyPolicy} and {termsAndConditions}. By clicking the button and submitting this form, I provide my signature giving express consent to receive marketing communications via automated telephone dialing systems, artificial or pre-recorded voices, emails, live phone calls, pre-recorded calls, postal mail, text messages via SMS or MMS and other forms of communication regarding offers Life Insurance, Final Expense, Medicare, Health Insurance, Home/Auto Insurance or other products from QOL Insurance LLC or from our marketing partners and agents to the number(s) and/or email I provided, including a mobile phone, even if I am on a state or federal Do Not Call and/or Do Not Email registry.",
+      paragraph2:
+        "Message frequency varies and represents our good faith effort to reach you regarding your insurance inquiry. Message and data rates may apply. Text HELP for help or text STOP to cancel. I understand that my consent to receive communications is not a condition of purchase and I may revoke my consent at any time.",
+      privacyPolicy: "Privacy Policy",
+      termsAndConditions: "Terms and Conditions",
+    },
+    quoteModal: {
+      title: "Consent to calls and text messages",
+      checkbox: "I agree to receive calls and text messages.",
+      paragraph1:
+        "By checking this box and clicking “Get Started Today,” I provide my electronic signature and expressly authorize QOL Insurance LLC d/b/a QOL Insurance, including its licensed insurance agents acting on its behalf, to contact me at the telephone number I provided regarding insurance products, services, and my consultation request.",
+      paragraph2:
+        "I understand that calls or text messages may be made using automated dialing technology, artificial or prerecorded voice messages, or other automated systems, even if my number is listed on a federal or state Do Not Call registry.",
+      paragraph3:
+        "Consent is not a condition of purchasing any product or service. Message frequency varies. Message and data rates may apply. Reply STOP to stop text messages or HELP for assistance. I may revoke my consent at any time.",
+      privacyPolicy: "Privacy Policy",
+      termsOfUse: "Terms of Use",
+      doNotAgree: "Do not agree",
+      getStarted: "Get Started Today",
+    },
+  },
 };
 
 export default en;

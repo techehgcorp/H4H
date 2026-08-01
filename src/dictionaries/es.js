@@ -1664,6 +1664,30 @@ const es = {
       },
     },
   },
+  tcpa: {
+    standard: {
+      paragraph1:
+        "Al hacer clic en el botón y enviar este formulario, acepto que tengo 18+ años y acepto la {privacyPolicy} y los {termsAndConditions}. Al hacer clic en el botón y enviar este formulario, proporciono mi firma dando mi consentimiento expreso para recibir comunicaciones de marketing a través de sistemas de marcado telefónico automatizado, voces artificiales o pregrabadas, correos electrónicos, llamadas telefónicas en vivo, llamadas pregrabadas, correo postal, mensajes de texto a través de SMS o MMS y otras formas de comunicación con respecto a ofertas de Seguro de Vida, Gastos Finales, Medicare, Seguro de Salud, Seguro de Hogar/Auto u otros productos de QOL Insurance LLC o de nuestros socios de marketing y agentes al número(s) y/o correo electrónico que proporcioné, incluyendo un teléfono móvil, incluso si estoy en un registro estatal o federal de No Llamar y/o No Enviar Correo Electrónico.",
+      paragraph2:
+        "La frecuencia de los mensajes varía y representa nuestro esfuerzo de buena fe para comunicarnos con usted sobre su consulta de seguro. Pueden aplicarse tarifas de mensajes y datos. Envíe HELP para obtener ayuda o STOP para cancelar. Entiendo que mi consentimiento para recibir comunicaciones no es una condición de compra y puedo revocar mi consentimiento en cualquier momento.",
+      privacyPolicy: "Política de Privacidad",
+      termsAndConditions: "Términos y Condiciones",
+    },
+    quoteModal: {
+      title: "Consentimiento para llamadas y mensajes de texto",
+      checkbox: "Acepto recibir llamadas y mensajes de texto.",
+      paragraph1:
+        "Al marcar esta casilla y hacer clic en “Comenzar hoy”, proporciono mi firma electrónica y autorizo expresamente a QOL Insurance LLC d/b/a QOL Insurance, incluidos sus agentes de seguros autorizados que actúan en su nombre, a comunicarse conmigo al número de teléfono que proporcioné sobre productos de seguros, servicios y mi solicitud de consulta.",
+      paragraph2:
+        "Entiendo que las llamadas o mensajes de texto se pueden realizar mediante tecnología de marcado automatizado, mensajes de voz artificiales o pregrabados u otros sistemas automatizados, incluso si mi número figura en un registro federal o estatal de No llamar.",
+      paragraph3:
+        "El consentimiento no es una condición para comprar ningún producto o servicio. La frecuencia de los mensajes varía. Se pueden aplicar tarifas por mensajes y datos. Responda STOP para cancelar los mensajes de texto o HELP para obtener asistencia. Puedo revocar mi consentimiento en cualquier momento.",
+      privacyPolicy: "Política de Privacidad",
+      termsOfUse: "Términos de Uso",
+      doNotAgree: "No estoy de acuerdo",
+      getStarted: "Comenzar hoy",
+    },
+  },
 };
 
 export default es;

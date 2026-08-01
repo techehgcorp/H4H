@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
-import { localizePath } from "@/lib/i18n";
+import { localizePath, getTcpaDictionary } from "@/lib/i18n";
 
 const initialFormData = {
   firstName: "",
@@ -169,6 +169,7 @@ export default function QuoteModalLauncher({
 
   const privacyUrl = useMemo(() => localizePath("/privacy", locale), [locale]);
   const termsUrl = useMemo(() => localizePath("/terms", locale), [locale]);
+  const tcpaCopy = useMemo(() => getTcpaDictionary(locale).quoteModal, [locale]);
 
   const coverageTypeOptions = useMemo(
     () => form.coverageTypeOptions.filter((option) => ["individual", "family"].includes(option.value)),
@@ -470,7 +471,7 @@ export default function QuoteModalLauncher({
             {!consentAccepted ? (
               <div className="quote-modal__content">
                 <h3 id="quote-modal-title" className="fw-bold mb-3" style={{ fontSize: "1.35rem", color: "var(--heading-color)" }}>
-                  Consent to calls and text messages
+                  {tcpaCopy.title}
                 </h3>
 
                 <div className="d-flex align-items-start gap-2 mb-3">
@@ -486,27 +487,21 @@ export default function QuoteModalLauncher({
                     className="fw-bold text-dark m-0"
                     style={{ cursor: "pointer", fontSize: "0.95rem", lineHeight: "1.4" }}
                   >
-                    I agree to receive calls and text messages.
+                    {tcpaCopy.checkbox}
                   </label>
                 </div>
 
                 <div className="consent-text text-secondary mb-4" style={{ fontSize: "0.85rem", lineHeight: "1.5" }}>
-                  <p className="mb-3">
-                    By checking this box and clicking “Get Started Today,” I provide my electronic signature and expressly authorize QOL Insurance LLC d/b/a QOL Insurance, including its licensed insurance agents acting on its behalf, to contact me at the telephone number I provided regarding insurance products, services, and my consultation request.
-                  </p>
-                  <p className="mb-3">
-                    I understand that calls or text messages may be made using automated dialing technology, artificial or prerecorded voice messages, or other automated systems, even if my number is listed on a federal or state Do Not Call registry.
-                  </p>
-                  <p className="mb-3">
-                    Consent is not a condition of purchasing any product or service. Message frequency varies. Message and data rates may apply. Reply STOP to stop text messages or HELP for assistance. I may revoke my consent at any time.
-                  </p>
+                  <p className="mb-3">{tcpaCopy.paragraph1}</p>
+                  <p className="mb-3">{tcpaCopy.paragraph2}</p>
+                  <p className="mb-3">{tcpaCopy.paragraph3}</p>
                   <div>
                     <Link href={privacyUrl} target="_blank" className="fw-semibold text-decoration-none me-1" style={{ color: "#d9534f" }}>
-                      Privacy Policy
+                      {tcpaCopy.privacyPolicy}
                     </Link>
                     <span className="text-muted me-1">•</span>
                     <Link href={termsUrl} target="_blank" className="fw-semibold text-decoration-none" style={{ color: "#d9534f" }}>
-                      Terms of Use
+                      {tcpaCopy.termsOfUse}
                     </Link>
                   </div>
                 </div>
@@ -518,7 +513,7 @@ export default function QuoteModalLauncher({
                     onClick={closeModal}
                     style={{ borderRadius: "6px", fontSize: "0.9rem", fontWeight: 500 }}
                   >
-                    Do not agree
+                    {tcpaCopy.doNotAgree}
                   </button>
                   <button
                     type="button"
@@ -536,7 +531,7 @@ export default function QuoteModalLauncher({
                       transition: "all 0.2s ease",
                     }}
                   >
-                    Get Started Today
+                    {tcpaCopy.getStarted}
                   </button>
                 </div>
               </div>

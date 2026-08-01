@@ -102,6 +102,10 @@ export function getPrivacyDictionary(locale = defaultLocale) {
   return getDictionary(locale).privacy;
 }
 
+export function getTcpaDictionary(locale = defaultLocale) {
+  return getDictionary(locale).tcpa;
+}
+
 export function getStarterPageDictionary(locale = defaultLocale) {
   return getDictionary(locale).starterPage;
 }

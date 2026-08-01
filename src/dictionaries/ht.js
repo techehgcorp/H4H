@@ -1663,6 +1663,30 @@ const ht = {
       },
     },
   },
+  tcpa: {
+    standard: {
+      paragraph1:
+        "Lè ou klike sou bouton an epi ou soumèt fòm sa a, ou konsanti ke ou gen 18 an oswa plis epi ou aksepte {privacyPolicy} ak {termsAndConditions}. Lè ou klike sou bouton an epi ou soumèt fòm sa a, ou bay siyati ou pou bay konsantman eksprès ou pou resevwa komunikasyon maketing atravè sistèm telefòn otomatik, vwa artifisyèl oswa anrejistre, imèl, apèl telefòn an dirèk, apèl anrejistre, lapòs, mesaj tèks SMS oswa MMS ak lòt fòm komunikasyon konsènan ofri Asirans Lavi, Depans Final, Medicare, Asirans Sante, Asirans Kay/Auto oswa lòt pwodwi ki soti nan QOL Insurance LLC oswa nan patnè maketing ak ajan nou yo nan nimewo ak/oswa imèl ou te bay la, tankou yon telefòn mobil, menm si ou sou yon rejis leta oswa federal Pa Rele ak/oswa Pa Voye Imèl.",
+      paragraph2:
+        "Frekans mesaj yo varye epi li reprezante efò nou de bonne foi pou kontakte ou konsènan demann asirans ou an. Tarifyab mesaj ak done ka ganny aplike. Tape HELP pou jwenn èd oswa STOP pou anile. Mwen konprann ke konsantman mwen pou resevwa komunikasyon pa yon kondisyon pou achte epi mwen ka revoke konsantman mwen nenpòt ki lè.",
+      privacyPolicy: "Règleman Konfidansyalite",
+      termsAndConditions: "Kondisyon Jeneral",
+    },
+    quoteModal: {
+      title: "Konsantman pou apèl ak mesaj tèks",
+      checkbox: "Mwen aksepte resevwa apèl ak mesaj tèks.",
+      paragraph1:
+        "Lè mwen koche kaz sa a epi mwen klike sou “Kòmanse Jodi a”, mwen bay siyati elektwonik mwen epi mwen otorize eksprèman QOL Insurance LLC d/b/a QOL Insurance, tankou ajan asirans lisansye li yo ki aji nan non li, pou kontakte mwen nan nimewo telefòn mwen te bay la konsènan pwodwi asirans, sèvis, ak demann konsiltasyon mwen an.",
+      paragraph2:
+        "Mwen konprann ke apèl oswa mesaj tèks yo ka fèt lè l sèvi avèk teknoloji konpoze otomatik, mesaj vwa artifisyèl oswa anrejistre, oswa lòt sistèm otomatik, menm si nimewo mwen an nan yon rejis federal oswa leta Pa Rele.",
+      paragraph3:
+        "Konsantman pa yon kondisyon pou achte okenn pwodwi oswa sèvis. Frekans mesaj yo varye. Tarifyab mesaj ak done ka ganny aplike. Reponn STOP pou anile mesaj tèks oswa HELP pou jwenn èd. Mwen ka revoke konsantman mwen nenpòt ki lè.",
+      privacyPolicy: "Règleman Konfidansyalite",
+      termsOfUse: "Kondisyon Utilizasyon",
+      doNotAgree: "Mwen pa dakò",
+      getStarted: "Kòmanse Jodi a",
+    },
+  },
 };
 
 export default ht;
