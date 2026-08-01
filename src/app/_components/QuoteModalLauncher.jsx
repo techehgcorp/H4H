@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import TcpaDisclaimer from "./TcpaDisclaimer";
+import Link from "next/link";
+import { localizePath } from "@/lib/i18n";
 
 const initialFormData = {
   firstName: "",
@@ -158,11 +159,17 @@ export default function QuoteModalLauncher({
   style,
 }) {
   const [isOpen, setIsOpen] = useState(false);
+  const [consentAccepted, setConsentAccepted] = useState(false);
+  const [isConsentChecked, setIsConsentChecked] = useState(false);
   const [step, setStep] = useState(0);
   const [formData, setFormData] = useState(initialFormData);
   const [status, setStatus] = useState({ loading: false, error: "", success: "" });
   const copy = useMemo(() => getCopy(locale), [locale]);
   const stepLabels = useMemo(() => getStepLabels(form, copy), [form, copy]);
+
+  const privacyUrl = useMemo(() => localizePath("/privacy", locale), [locale]);
+  const termsUrl = useMemo(() => localizePath("/terms", locale), [locale]);
+
   const coverageTypeOptions = useMemo(
     () => form.coverageTypeOptions.filter((option) => ["individual", "family"].includes(option.value)),
     [form]
@@ -195,7 +202,8 @@ export default function QuoteModalLauncher({
     if (status.success) {
       resetForm();
     }
-
+    setConsentAccepted(false);
+    setIsConsentChecked(false);
     setIsOpen(true);
   }
 
@@ -228,6 +236,8 @@ export default function QuoteModalLauncher({
   function resetForm() {
     setFormData(initialFormData);
     setStep(0);
+    setConsentAccepted(false);
+    setIsConsentChecked(false);
     setStatus({ loading: false, error: "", success: "" });
   }
 
@@ -457,7 +467,80 @@ export default function QuoteModalLauncher({
               <i className="bi bi-x-lg" aria-hidden="true"></i>
             </button>
 
-            {step === stepLabels.length ? (
+            {!consentAccepted ? (
+              <div className="quote-modal__content">
+                <h3 id="quote-modal-title" className="fw-bold mb-3" style={{ fontSize: "1.35rem", color: "var(--heading-color)" }}>
+                  Consent to calls and text messages
+                </h3>
+
+                <div className="d-flex align-items-start gap-2 mb-3">
+                  <input
+                    type="checkbox"
+                    id="tcpaConsentCheck"
+                    checked={isConsentChecked}
+                    onChange={(e) => setIsConsentChecked(e.target.checked)}
+                    style={{ width: "1.25rem", height: "1.25rem", marginTop: "0.15rem", cursor: "pointer", accentColor: "#d9534f" }}
+                  />
+                  <label
+                    htmlFor="tcpaConsentCheck"
+                    className="fw-bold text-dark m-0"
+                    style={{ cursor: "pointer", fontSize: "0.95rem", lineHeight: "1.4" }}
+                  >
+                    I agree to receive calls and text messages.
+                  </label>
+                </div>
+
+                <div className="consent-text text-secondary mb-4" style={{ fontSize: "0.85rem", lineHeight: "1.5" }}>
+                  <p className="mb-3">
+                    By checking this box and clicking “Get Started Today,” I provide my electronic signature and expressly authorize QOL Insurance LLC d/b/a QOL Insurance, including its licensed insurance agents acting on its behalf, to contact me at the telephone number I provided regarding insurance products, services, and my consultation request.
+                  </p>
+                  <p className="mb-3">
+                    I understand that calls or text messages may be made using automated dialing technology, artificial or prerecorded voice messages, or other automated systems, even if my number is listed on a federal or state Do Not Call registry.
+                  </p>
+                  <p className="mb-3">
+                    Consent is not a condition of purchasing any product or service. Message frequency varies. Message and data rates may apply. Reply STOP to stop text messages or HELP for assistance. I may revoke my consent at any time.
+                  </p>
+                  <div>
+                    <Link href={privacyUrl} target="_blank" className="fw-semibold text-decoration-none me-1" style={{ color: "#d9534f" }}>
+                      Privacy Policy
+                    </Link>
+                    <span className="text-muted me-1">•</span>
+                    <Link href={termsUrl} target="_blank" className="fw-semibold text-decoration-none" style={{ color: "#d9534f" }}>
+                      Terms of Use
+                    </Link>
+                  </div>
+                </div>
+
+                <div className="d-flex justify-content-end align-items-center gap-2 pt-2">
+                  <button
+                    type="button"
+                    className="btn btn-outline-secondary px-4 py-2"
+                    onClick={closeModal}
+                    style={{ borderRadius: "6px", fontSize: "0.9rem", fontWeight: 500 }}
+                  >
+                    Do not agree
+                  </button>
+                  <button
+                    type="button"
+                    className="btn px-4 py-2"
+                    disabled={!isConsentChecked}
+                    onClick={() => setConsentAccepted(true)}
+                    style={{
+                      backgroundColor: isConsentChecked ? "#d9534f" : "#e59895",
+                      color: "#ffffff",
+                      borderRadius: "6px",
+                      fontSize: "0.9rem",
+                      fontWeight: 600,
+                      cursor: isConsentChecked ? "pointer" : "not-allowed",
+                      border: "none",
+                      transition: "all 0.2s ease",
+                    }}
+                  >
+                    Get Started Today
+                  </button>
+                </div>
+              </div>
+            ) : step === stepLabels.length ? (
               <div className="quote-success">
                 <img src="/assets/img/health/staff-7.png" alt="" />
                 <i className="bi bi-check-circle-fill" aria-hidden="true"></i>
@@ -502,7 +585,6 @@ export default function QuoteModalLauncher({
                       </button>
                     )}
                   </div>
-                  <TcpaDisclaimer locale={locale} />
                 </div>
               </form>
             )}
