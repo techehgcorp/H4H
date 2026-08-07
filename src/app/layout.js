@@ -50,6 +50,12 @@ export default function RootLayout({ children }) {
         <Script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js" />
         <Script src="/assets/vendor/swiper/swiper-bundle.min.js" />
         <Script src="/assets/js/main.js" strategy="afterInteractive" />
+        <Script
+          src="https://widgets.leadconnectorhq.com/loader.js"
+          data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
+          data-widget-id="6a763a9be425d99b06f23d60"
+          data-source="WEB_USER"
+        />
       </body>
     </html>
   );

@@ -1554,7 +1554,7 @@ const es = {
         text:
           "Si tienes preguntas sobre esta Politica de Privacidad o sobre como se maneja tu informacion, por favor contacta a nuestro equipo.",
         info: [
-          "privacy@health4haitians.com",
+          "info@health4haitians.com",
           "Health4Haitians, Florida, Estados Unidos",
           "(786) 397-7167",
         ],

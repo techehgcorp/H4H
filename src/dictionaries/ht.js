@@ -1553,7 +1553,7 @@ const ht = {
         text:
           "Si ou gen kestyon sou Règleman Konfidansyalite sa a oswa sou kijan yo jere enfòmasyon ou, tanpri kontakte ekip nou an.",
         info: [
-          "privacy@health4haitians.com",
+          "info@health4haitians.com",
           "Health4Haitians, Florida, Etazini",
           "(786) 397-7167",
         ],

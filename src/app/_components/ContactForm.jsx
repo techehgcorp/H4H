@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import TcpaDisclaimer from './TcpaDisclaimer'
 
 const initialFormData = {
   name: '',
@@ -117,7 +116,6 @@ export default function ContactForm({ form }) {
           {status.error ? <div className="error-message d-block">{status.error}</div> : null}
           {status.success ? <div className="sent-message d-block">{status.success}</div> : null}
           <button type="submit" disabled={status.loading}>{form.submit}</button>
-          <TcpaDisclaimer />
         </div>
       </div>
     </form>
