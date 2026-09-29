@@ -1,7 +1,7 @@
+// src/lib/localeProxy.js
 import { NextResponse } from "next/server";
+import { defaultLocale, locales } from "./locales";
 
-const locales = ["en", "es", "ht"];
-const defaultLocale = "en";
 const localeCookie = "h4h-language";
 
 function hasLocale(pathname) {

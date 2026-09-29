@@ -1,0 +1,369 @@
+/* src/app/[lang]/agents/agents.css
+   Styles for the Find an Agent pages. Everything is scoped under .h4h-agents
+   and uses the template's own color variables, so it matches the rest of the
+   site and can't affect other pages. */
+
+.h4h-agents {
+  --h4h-accent: var(--accent-color, #1977cc);
+  --h4h-heading: var(--heading-color, #2c4964);
+  --h4h-text: var(--default-color, #444444);
+  --h4h-surface: var(--surface-color, #ffffff);
+  --h4h-contrast: var(--contrast-color, #ffffff);
+  --h4h-muted: color-mix(in srgb, var(--h4h-text), transparent 35%);
+  --h4h-line: color-mix(in srgb, var(--h4h-accent), transparent 85%);
+}
+
+/* ── Buttons ─────────────────────────────────────────────────────────── */
+.h4h-agents .h4h-btn-primary,
+.h4h-agents .h4h-btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 44px; /* comfortable tap target on phones */
+  padding: 8px 20px;
+  border-radius: 50px;
+  border: 2px solid var(--h4h-accent);
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.2;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.h4h-agents .h4h-btn-primary {
+  background: var(--h4h-accent);
+  color: var(--h4h-contrast);
+}
+
+.h4h-agents .h4h-btn-primary:hover {
+  background: color-mix(in srgb, var(--h4h-accent), #000000 15%);
+  border-color: color-mix(in srgb, var(--h4h-accent), #000000 15%);
+  color: var(--h4h-contrast);
+}
+
+.h4h-agents .h4h-btn-outline {
+  background: transparent;
+  color: var(--h4h-accent);
+}
+
+.h4h-agents .h4h-btn-outline:hover {
+  background: var(--h4h-accent);
+  color: var(--h4h-contrast);
+}
+
+.h4h-agents a:focus-visible,
+.h4h-agents button:focus-visible,
+.h4h-agents input:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--h4h-accent), transparent 40%);
+  outline-offset: 2px;
+}
+
+/* ── Search + language filter ────────────────────────────────────────── */
+.h4h-agents-toolbar {
+  background: var(--h4h-surface);
+  border: 1px solid var(--h4h-line);
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 32px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.h4h-agents-toolbar .form-label {
+  font-weight: 600;
+  color: var(--h4h-heading);
+}
+
+.h4h-search {
+  position: relative;
+  max-width: 480px;
+}
+
+.h4h-search .bi {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--h4h-muted);
+  pointer-events: none;
+}
+
+.h4h-search input {
+  min-height: 48px;
+  padding-left: 40px;
+  border-radius: 12px;
+  font-size: 16px; /* 16px stops iPhones from zooming in on focus */
+}
+
+.h4h-lang-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.h4h-chip {
+  min-height: 40px;
+  padding: 8px 16px;
+  border: 1px solid var(--h4h-line);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--h4h-heading);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.h4h-chip:hover {
+  border-color: var(--h4h-accent);
+}
+
+.h4h-chip[aria-pressed="true"] {
+  background: var(--h4h-accent);
+  border-color: var(--h4h-accent);
+  color: var(--h4h-contrast);
+}
+
+.h4h-results {
+  margin: 14px 0 0;
+  font-size: 14px;
+  color: var(--h4h-muted);
+}
+
+/* ── Agent cards ─────────────────────────────────────────────────────── */
+.h4h-agent-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: var(--h4h-surface);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+@media (hover: hover) {
+  .h4h-agent-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.h4h-agent-photo {
+  position: relative;
+  display: block;
+  aspect-ratio: 4 / 5;
+  background: linear-gradient(
+    160deg,
+    color-mix(in srgb, var(--h4h-accent), transparent 78%),
+    color-mix(in srgb, var(--h4h-accent), transparent 95%)
+  );
+}
+
+.h4h-agent-photo img {
+  object-fit: cover;
+  object-position: top center;
+}
+
+.h4h-agent-initials {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--h4h-accent);
+}
+
+.h4h-agent-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 20px;
+}
+
+.h4h-agent-name {
+  margin: 0 0 4px;
+  font-size: 1.2rem;
+}
+
+.h4h-agent-name a {
+  color: var(--h4h-heading);
+  text-decoration: none;
+}
+
+.h4h-agent-name a:hover {
+  color: var(--h4h-accent);
+}
+
+.h4h-agent-title {
+  margin: 0 0 8px;
+  color: var(--h4h-accent);
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.h4h-agent-meta {
+  margin: 0 0 8px;
+  color: var(--h4h-muted);
+  font-size: 0.9rem;
+}
+
+.h4h-lang-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 4px 0 18px;
+  padding: 0;
+  list-style: none;
+}
+
+.h4h-lang-badge {
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--h4h-accent), transparent 90%);
+  color: var(--h4h-heading);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.h4h-agent-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.h4h-agent-actions .btn {
+  flex: 1;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+/* ── Empty / no-results message ──────────────────────────────────────── */
+.h4h-agents-empty {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.h4h-agents-empty .bi {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 2.5rem;
+  color: var(--h4h-accent);
+}
+
+.h4h-agents-empty p {
+  margin-bottom: 20px;
+}
+
+/* ── "Not sure who to talk to?" band ─────────────────────────────────── */
+.h4h-agents-cta {
+  padding-top: 0;
+}
+
+.h4h-cta-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 32px;
+  border-radius: 20px;
+  background: linear-gradient(
+    135deg,
+    var(--h4h-accent),
+    color-mix(in srgb, var(--h4h-accent), #000000 28%)
+  );
+  color: var(--h4h-contrast);
+}
+
+.h4h-cta-box h2 {
+  margin: 0 0 6px;
+  font-size: 1.5rem;
+  color: var(--h4h-contrast);
+}
+
+.h4h-cta-box p {
+  margin: 0;
+  opacity: 0.9;
+}
+
+.h4h-cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.h4h-agents .h4h-cta-actions .h4h-btn-outline {
+  border-color: var(--h4h-contrast);
+  color: var(--h4h-contrast);
+}
+
+.h4h-agents .h4h-cta-actions .h4h-btn-outline:hover {
+  background: var(--h4h-contrast);
+  color: var(--h4h-accent);
+}
+
+.h4h-agents .h4h-cta-actions .h4h-btn-primary {
+  background: var(--h4h-contrast);
+  border-color: var(--h4h-contrast);
+  color: var(--h4h-accent);
+}
+
+/* ── Phones ──────────────────────────────────────────────────────────── */
+@media (max-width: 575px) {
+  .h4h-agents-toolbar {
+    padding: 16px;
+    margin-bottom: 24px;
+  }
+
+  .h4h-search {
+    max-width: none;
+  }
+
+  .h4h-lang-filter {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 4px;
+    scrollbar-width: none;
+  }
+
+  .h4h-lang-filter::-webkit-scrollbar {
+    display: none;
+  }
+
+  .h4h-chip {
+    flex-shrink: 0;
+  }
+
+  .h4h-agent-photo {
+    aspect-ratio: 1 / 1;
+  }
+
+  .h4h-cta-box {
+    padding: 24px;
+  }
+
+  .h4h-cta-actions,
+  .h4h-cta-actions .btn {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .h4h-agent-card,
+  .h4h-chip,
+  .h4h-agents .h4h-btn-primary,
+  .h4h-agents .h4h-btn-outline {
+    transition: none;
+  }
+
+  .h4h-agent-card:hover {
+    transform: none;
+  }
+}
