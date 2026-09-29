@@ -1,19 +1,19 @@
+// src/lib/i18n.js
 import en from "@/dictionaries/en";
 import es from "@/dictionaries/es";
 import ht from "@/dictionaries/ht";
+import fr from "@/dictionaries/fr";
+import agentsDictionary from "@/dictionaries/agents";
+import { defaultLocale, hasLocale, locales } from "./locales";
 
-export const locales = ["en", "es", "ht"];
-export const defaultLocale = "en";
+export { defaultLocale, hasLocale, locales };
 
 const dictionaries = {
   en,
   es,
   ht,
+  fr,
 };
-
-export function hasLocale(locale) {
-  return locales.includes(locale);
-}
 
 export function getDictionary(locale = defaultLocale) {
   return dictionaries[locale] || dictionaries[defaultLocale];
@@ -108,6 +108,12 @@ export function getTcpaDictionary(locale = defaultLocale) {
 
 export function getStarterPageDictionary(locale = defaultLocale) {
   return getDictionary(locale).starterPage;
+}
+
+// Agent pages keep their text in their own file (dictionaries/agents.js)
+// so the big per-language dictionaries don't have to change.
+export function getAgentsDictionary(locale = defaultLocale) {
+  return agentsDictionary[locale] || agentsDictionary[defaultLocale];
 }
 
 export function removeLocaleFromPathname(pathname = "/") {

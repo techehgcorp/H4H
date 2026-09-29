@@ -1,5 +1,8 @@
+// src/app/[lang]/page.js
+import Link from "next/link";
 import QuoteModalLauncher from "@/app/_components/QuoteModalLauncher";
 import {
+  getAgentsDictionary,
   getAppointmentDictionary,
   getHomeDictionary,
   getSelfEnrollmentDictionary,
@@ -54,6 +57,7 @@ export default async function IndexPage({ params }) {
   const selfEnrollment = getSelfEnrollmentDictionary(lang);
   const appointment = getAppointmentDictionary(lang);
   const testimonials = getTestimonialsDictionary(lang);
+  const findAgentLabel = getAgentsDictionary(lang).directory.title;
   const visibleTestimonials = testimonials.items.filter((item) => item.name !== "Jason Larson");
 
   return (
@@ -87,10 +91,10 @@ export default async function IndexPage({ params }) {
                       label={home.hero.primaryCta}
                       locale={lang}
                     />
-                    <a href="#home-about" className="btn btn-outline-light">
-                      <i className="bi bi-arrow-down-circle"></i>
-                      {home.hero.secondaryCta}
-                    </a>
+                    <Link href={localizePath("/agents", lang)} className="btn btn-outline-light">
+                      <i className="bi bi-people"></i>
+                      {findAgentLabel}
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -476,7 +480,7 @@ export default async function IndexPage({ params }) {
                 </div>
               </div>
               <div className="contact-actions">
-                <a href="tel:+15551234567" className="call-btn">
+                <a href="tel:+17863977167" className="call-btn">
                   <i className="fas fa-phone"></i>
                   (786) 397-7167
                 </a>

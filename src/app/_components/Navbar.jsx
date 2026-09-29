@@ -1,3 +1,4 @@
+// src/app/_components/Navbar.jsx
 "use client";
 
 import { useEffect, useState } from "react";
@@ -5,7 +6,12 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import LanguageSelector from "./LanguageSelector";
 import { socialLinks } from "./socialLinks";
-import { getShellDictionary, localizePath, removeLocaleFromPathname } from "@/lib/i18n";
+import {
+  getAgentsDictionary,
+  getShellDictionary,
+  localizePath,
+  removeLocaleFromPathname,
+} from "@/lib/i18n";
 
 const selfEnrollmentPages = [
   { href: "/self-enrollment/one-share", label: "One Share" },
@@ -24,6 +30,8 @@ export default function Navbar({ locale = "en" }) {
   const [isResourcesOpen, setIsResourcesOpen] = useState(false);
   const [isSelfEnrollmentOpen, setIsSelfEnrollmentOpen] = useState(false);
   const t = getShellDictionary(locale);
+  const findAgentLabel = getAgentsDictionary(locale).directory.title;
+  const agentsActive = pathname === "/agents" || pathname.startsWith("/agents/");
   const selfEnrollmentActive = selfEnrollmentPages.some((item) => pathname === item.href);
 
   useEffect(() => {
@@ -137,6 +145,15 @@ export default function Navbar({ locale = "en" }) {
                 onClick={closeMobileNav}
               >
                 {t.nav.coverageOptions}
+              </Link>
+            </li>
+            <li>
+              <Link
+                href={localizePath("/agents", locale)}
+                className={agentsActive ? "active" : undefined}
+                onClick={closeMobileNav}
+              >
+                {findAgentLabel}
               </Link>
             </li>
             {/* <li className="dropdown">
