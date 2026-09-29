@@ -89,6 +89,14 @@ function httpsUrl(value) {
   }
 }
 
+// Social profile links must point at an actual profile, not just a
+// homepage like "https://facebook.com/" left in as a placeholder.
+function socialUrl(value) {
+  const url = httpsUrl(value);
+  if (!url) return "";
+  return new URL(url).pathname.replace(/\/+$/, "") ? url : "";
+}
+
 // A path on this site, like "/brochures/h4h-insurance-guide.pdf".
 function sitePath(value) {
   const v = clean(value);
@@ -175,11 +183,11 @@ function toAgentRecord(row) {
     languages: languagesFrom(row.languages),
     products: productsFrom(row.products),
     social: {
-      facebook: httpsUrl(row.facebook),
-      instagram: httpsUrl(row.instagram),
-      youtube: httpsUrl(row.youtube),
-      tiktok: httpsUrl(row.tiktok),
-      linkedin: httpsUrl(row.linkedin),
+      facebook: socialUrl(row.facebook),
+      instagram: socialUrl(row.instagram),
+      youtube: socialUrl(row.youtube),
+      tiktok: socialUrl(row.tiktok),
+      linkedin: socialUrl(row.linkedin),
     },
     carriers: {
       ameritasDental: httpsUrl(row.ameritasDentalUrl),

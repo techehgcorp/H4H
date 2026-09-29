@@ -6,27 +6,15 @@
 import { useMemo, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { formatPhone, telHref } from "@/lib/site";
+import { LANGUAGE_NAMES, fill, formatPhone, telHref } from "@/lib/site";
 
-// Language names shown in their own language, so every visitor recognizes theirs.
-const LANGUAGE_NAMES = {
-  en: "English",
-  ht: "Kreyòl",
-  es: "Español",
-  fr: "Français",
-  pt: "Português",
-};
 const LANGUAGE_ORDER = ["ht", "en", "fr", "es", "pt"];
-
-function fill(template, values) {
-  return template.replace(/\{(\w+)\}/g, (match, key) => values[key] ?? match);
-}
 
 // "Réne" and "rene" should match each other.
 function normalize(text) {
   return String(text ?? "")
     .normalize("NFD")
-    .replace(/[̀-ͯ]/g, "")
+    .replace(/[\u0300-\u036f]/g, "")
     .toLowerCase()
     .trim();
 }
