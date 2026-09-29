@@ -101,9 +101,11 @@ export function validateLead(body, agent) {
 
 // ── Request details ───────────────────────────────────────────────────
 export function clientIp(request) {
+  // nginx sets X-Real-IP from the actual connection, so visitors can't fake it.
+  // Fallback: the LAST X-Forwarded-For entry is the one nginx added itself.
   return (
-    request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ||
     request.headers.get("x-real-ip") ||
+    request.headers.get("x-forwarded-for")?.split(",").pop()?.trim() ||
     "unknown"
   );
 }
