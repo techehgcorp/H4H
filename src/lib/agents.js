@@ -298,10 +298,20 @@ export async function getAgentSlugs() {
   return records.map((record) => record.slug);
 }
 
-// For the lead API route only: who should be emailed about this agent's leads.
+// For the lead API route only: who should be emailed about this agent's
+// leads, plus what the forms are allowed to ask for.
 export async function getAgentLeadContact(slug) {
   if (!isValidSlug(slug)) return null;
   const records = await loadRecords();
   const record = records.find((item) => item.slug === slug);
-  return record ? { slug: record.slug, name: record.name, leadEmail: record.leadEmail } : null;
+  if (!record) return null;
+
+  return {
+    slug: record.slug,
+    name: record.name,
+    phone: record.phone,
+    leadEmail: record.leadEmail,
+    products: record.products,
+    brochureFile: record.brochureFile,
+  };
 }

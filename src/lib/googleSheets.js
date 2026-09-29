@@ -57,3 +57,37 @@ export async function readSheetRange(range) {
 
   return response.data.values || [];
 }
+
+// Adds one row under the last filled row of a tab, e.g. "AgentLeads!A:S".
+// RAW means values are stored exactly as text: a name like "=SUM(A1)" can
+// never turn into a formula.
+// Returns the A1 range that was written, e.g. "AgentLeads!A12:S12".
+export async function appendSheetRow(range, row) {
+  const sheets = getSheetsClient("write");
+  const response = await sheets.spreadsheets.values.append(
+    {
+      spreadsheetId: getSpreadsheetId(),
+      range,
+      valueInputOption: "RAW",
+      insertDataOption: "INSERT_ROWS",
+      requestBody: { values: [row] },
+    },
+    { timeout: REQUEST_TIMEOUT_MS }
+  );
+
+  return response.data.updates?.updatedRange || "";
+}
+
+// Overwrites the given cells, e.g. updateSheetRange("AgentLeads!S12", [["..."]]).
+export async function updateSheetRange(range, values) {
+  const sheets = getSheetsClient("write");
+  await sheets.spreadsheets.values.update(
+    {
+      spreadsheetId: getSpreadsheetId(),
+      range,
+      valueInputOption: "RAW",
+      requestBody: { values },
+    },
+    { timeout: REQUEST_TIMEOUT_MS }
+  );
+}

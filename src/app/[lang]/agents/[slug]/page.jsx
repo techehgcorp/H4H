@@ -23,6 +23,7 @@ import {
   formatPhone,
   telHref,
 } from "@/lib/site";
+import { LeadButton, LeadFormProvider } from "./AgentLeadForms";
 import "../agents.css";
 
 // Rebuild in the background at most every 5 minutes (Google Sheet edits).
@@ -181,304 +182,345 @@ export default async function AgentProfilePage({ params }) {
   const carriers = getAgentCarriers(agent);
   const socials = SOCIAL_LINKS.filter((item) => agent.social[item.key]);
   const location = [agent.city, agent.state].filter(Boolean).join(", ");
+  const lf = dictionary.leadForms;
+  const productNames = Object.fromEntries(
+    agent.products.map((product) => [product, dictionary.productInfo[product].name])
+  );
+  // Only public details go to the browser for the forms.
+  const formAgent = { slug: agent.slug, name: agent.name, phone: agent.phone, products: agent.products };
 
   return (
     <main className="main h4h-agents h4h-agent-profile">
-      {/* ── Hero ─────────────────────────────────────────────────────── */}
-      <div className="page-title h4h-profile-title">
-        <div className="heading">
-          <div className="container">
-            <div className="row align-items-center g-4 h4h-profile-hero">
-              <div className="col-md-4 col-lg-3">
-                <div className="h4h-profile-photo">
-                  {agent.photo ? (
-                    <Image
-                      src={agent.photo}
-                      alt={fill(t.photoAlt, values)}
-                      fill
-                      priority
-                      sizes="(max-width: 767px) 220px, 260px"
-                    />
-                  ) : (
-                    <span className="h4h-agent-initials" aria-hidden="true">
-                      {agent.name.charAt(0)}
-                    </span>
-                  )}
-                </div>
-              </div>
-
-              <div className="col-md-8 col-lg-9 text-center text-md-start">
-                <h1 className="heading-title">{agent.name}</h1>
-                {agent.title && <p className="h4h-profile-role">{agent.title}</p>}
-                {location && (
-                  <p className="h4h-profile-meta">
-                    <i className="bi bi-geo-alt" aria-hidden="true" /> {location}
-                  </p>
-                )}
-                {agent.tagline && <p className="h4h-profile-tagline">{agent.tagline}</p>}
-
-                {agent.languages.length > 0 && (
-                  <ul className="h4h-lang-badges" aria-label={t.languages}>
-                    {agent.languages.map((item) => (
-                      <li key={item.code || item.label} className="h4h-lang-badge" lang={item.code || undefined}>
-                        {LANGUAGE_NAMES[item.code] || item.label}
-                      </li>
-                    ))}
-                  </ul>
-                )}
-
-                <div className="h4h-profile-actions">
-                  {tel && (
-                    <a className="btn h4h-btn-primary" href={tel}>
-                      <i className="bi bi-telephone" aria-hidden="true" /> {fill(t.call, values)}
-                      <span className="h4h-btn-sub">{formatPhone(agent.phone)}</span>
-                    </a>
-                  )}
-                  {agent.email && (
-                    <a
-                      className="btn h4h-btn-outline"
-                      href={`mailto:${agent.email}`}
-                      aria-label={fill(t.emailAria, values)}
-                    >
-                      <i className="bi bi-envelope" aria-hidden="true" /> {t.email}
-                    </a>
-                  )}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <nav className="breadcrumbs" aria-label="Breadcrumb">
-          <div className="container">
-            <ol>
-              <li>
-                <Link href={localizePath("/", lang)}>{shell.nav.home}</Link>
-              </li>
-              <li>
-                <Link href={localizePath("/agents", lang)}>{dictionary.directory.breadcrumb}</Link>
-              </li>
-              <li className="current" aria-current="page">
-                {agent.name}
-              </li>
-            </ol>
-          </div>
-        </nav>
-      </div>
-
-      {/* ── Coverage options ─────────────────────────────────────────── */}
-      {agent.products.length > 0 && (
-        <section id="coverage" className="section h4h-coverage" aria-labelledby="h4h-coverage-title">
-          <div className="container">
-            <div className="h4h-section-head">
-              <span className="h4h-eyebrow">{t.coverageEyebrow}</span>
-              <h2 id="h4h-coverage-title">{fill(t.coverageTitle, values)}</h2>
-              <p>{fill(t.coverageIntro, values)}</p>
-            </div>
-
-            <ul className="row g-4 list-unstyled">
-              {agent.products.map((product) => {
-                const info = dictionary.productInfo[product];
-                return (
-                  <li className="col-12 col-sm-6 col-lg-4" key={product}>
-                    <article className="h4h-product-card">
-                      <span className="h4h-product-icon" aria-hidden="true">
-                        <i className={PRODUCT_ICONS[product]} />
+      <LeadFormProvider agent={formAgent} lang={lang} t={lf} productNames={productNames}>
+        {/* ── Hero ─────────────────────────────────────────────────────── */}
+        <div className="page-title h4h-profile-title">
+          <div className="heading">
+            <div className="container">
+              <div className="row align-items-center g-4 h4h-profile-hero">
+                <div className="col-md-4 col-lg-3">
+                  <div className="h4h-profile-photo">
+                    {agent.photo ? (
+                      <Image
+                        src={agent.photo}
+                        alt={fill(t.photoAlt, values)}
+                        fill
+                        priority
+                        sizes="(max-width: 767px) 220px, 260px"
+                      />
+                    ) : (
+                      <span className="h4h-agent-initials" aria-hidden="true">
+                        {agent.name.charAt(0)}
                       </span>
-                      <h3>{info.name}</h3>
-                      <p>{info.text}</p>
-                      <p className="h4h-product-best">
-                        <strong>{t.bestFor}</strong> {info.bestFor}
-                      </p>
-                    </article>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
-        </section>
-      )}
-
-      {/* ── Self-enrollment links ────────────────────────────────────── */}
-      {carriers.length > 0 && (
-        <section id="enroll" className="section light-background h4h-enroll" aria-labelledby="h4h-enroll-title">
-          <div className="container">
-            <div className="h4h-section-head">
-              <span className="h4h-eyebrow">{t.enrollEyebrow}</span>
-              <h2 id="h4h-enroll-title">{t.enrollTitle}</h2>
-              <p>{fill(t.enrollIntro, values)}</p>
-            </div>
-
-            <ul className="row g-4 justify-content-center list-unstyled">
-              {carriers.map((carrier) => (
-                <li className="col-12 col-sm-6 col-lg-4" key={carrier.id}>
-                  <a
-                    className="h4h-carrier-card"
-                    href={carrier.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img src={carrier.logo} alt="" loading="lazy" decoding="async" />
-                    <span className="h4h-carrier-name">{carrier.name}</span>
-                    <span className="h4h-carrier-note">{dictionary.carriers[carrier.id]}</span>
-                    <span className="h4h-carrier-go">
-                      <i className="bi bi-box-arrow-up-right" aria-hidden="true" />
-                      <span className="visually-hidden"> {t.opensNewTab}</span>
-                    </span>
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </section>
-      )}
-
-      {/* ── About ────────────────────────────────────────────────────── */}
-      <section id="about" className="section h4h-about" aria-labelledby="h4h-about-title">
-        <div className="container">
-          <div className="h4h-section-head">
-            <span className="h4h-eyebrow">{t.aboutEyebrow}</span>
-            <h2 id="h4h-about-title">{fill(t.aboutTitle, values)}</h2>
-          </div>
-
-          <div className="row g-4">
-            <div className="col-lg-7">
-              {agent.bio && <p className="h4h-about-lead">{agent.bio}</p>}
-
-              {agent.professionalBackground && (
-                <div className="h4h-about-block">
-                  <h3>
-                    <i className="bi bi-briefcase" aria-hidden="true" /> {t.background}
-                  </h3>
-                  <p>{agent.professionalBackground}</p>
+                    )}
+                  </div>
                 </div>
-              )}
 
-              {agent.mission && (
-                <div className="h4h-about-block">
-                  <h3>
-                    <i className="bi bi-compass" aria-hidden="true" /> {t.mission}
-                  </h3>
-                  <p>{agent.mission}</p>
-                </div>
-              )}
-
-              {agent.honorsAndAwards && (
-                <div className="h4h-about-block">
-                  <h3>
-                    <i className="bi bi-award" aria-hidden="true" /> {t.awards}
-                  </h3>
-                  <p>{agent.honorsAndAwards}</p>
-                </div>
-              )}
-            </div>
-
-            <div className="col-lg-5">
-              <aside className="h4h-glance" aria-labelledby="h4h-glance-title">
-                <h3 id="h4h-glance-title">{t.atAGlance}</h3>
-                <dl>
+                <div className="col-md-8 col-lg-9 text-center text-md-start">
+                  <h1 className="heading-title">{agent.name}</h1>
+                  {agent.title && <p className="h4h-profile-role">{agent.title}</p>}
                   {location && (
-                    <div>
-                      <dt>{t.location}</dt>
-                      <dd>{location}</dd>
-                    </div>
+                    <p className="h4h-profile-meta">
+                      <i className="bi bi-geo-alt" aria-hidden="true" /> {location}
+                    </p>
                   )}
-                  {agent.licenses.length > 0 && (
-                    <div>
-                      <dt>{t.licensedIn}</dt>
-                      <dd>{agent.licenses.join(", ")}</dd>
-                    </div>
-                  )}
-                  {agent.languages.length > 0 && (
-                    <div>
-                      <dt>{t.languages}</dt>
-                      <dd>
-                        {agent.languages
-                          .map((item) => LANGUAGE_NAMES[item.code] || item.label)
-                          .join(", ")}
-                      </dd>
-                    </div>
-                  )}
-                </dl>
+                  {agent.tagline && <p className="h4h-profile-tagline">{agent.tagline}</p>}
 
-                {socials.length > 0 && (
-                  <>
-                    <p className="h4h-glance-follow">{fill(t.follow, values)}</p>
-                    <ul className="h4h-socials">
-                      {socials.map((item) => (
-                        <li key={item.key}>
-                          <a
-                            href={agent.social[item.key]}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label={`${item.label} ${t.opensNewTab}`}
-                          >
-                            <i className={`bi ${item.icon}`} aria-hidden="true" />
-                          </a>
+                  {agent.languages.length > 0 && (
+                    <ul className="h4h-lang-badges" aria-label={t.languages}>
+                      {agent.languages.map((item) => (
+                        <li key={item.code || item.label} className="h4h-lang-badge" lang={item.code || undefined}>
+                          {LANGUAGE_NAMES[item.code] || item.label}
                         </li>
                       ))}
                     </ul>
-                  </>
-                )}
-              </aside>
+                  )}
+
+                  <div className="h4h-profile-actions">
+                    <LeadButton source="quote" className="btn h4h-btn-primary">
+                      <i className="bi bi-clipboard-check" aria-hidden="true" /> {lf.quoteButton}
+                    </LeadButton>
+                    <LeadButton source="contact" className="btn h4h-btn-outline">
+                      <i className="bi bi-chat-dots" aria-hidden="true" /> {lf.messageButton}
+                    </LeadButton>
+                    {tel && (
+                      <a className="btn h4h-btn-outline" href={tel}>
+                        <i className="bi bi-telephone" aria-hidden="true" /> {fill(t.call, values)}
+                        <span className="visually-hidden">, {formatPhone(agent.phone)}</span>
+                      </a>
+                    )}
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
 
-      {/* ── FAQ ──────────────────────────────────────────────────────── */}
-      {agent.products.length > 0 && (
-        <section id="faq" className="section light-background h4h-faq" aria-labelledby="h4h-faq-title">
+          <nav className="breadcrumbs" aria-label="Breadcrumb">
+            <div className="container">
+              <ol>
+                <li>
+                  <Link href={localizePath("/", lang)}>{shell.nav.home}</Link>
+                </li>
+                <li>
+                  <Link href={localizePath("/agents", lang)}>{dictionary.directory.breadcrumb}</Link>
+                </li>
+                <li className="current" aria-current="page">
+                  {agent.name}
+                </li>
+              </ol>
+            </div>
+          </nav>
+        </div>
+
+        {/* ── Coverage options ─────────────────────────────────────────── */}
+        {agent.products.length > 0 && (
+          <section id="coverage" className="section h4h-coverage" aria-labelledby="h4h-coverage-title">
+            <div className="container">
+              <div className="h4h-section-head">
+                <span className="h4h-eyebrow">{t.coverageEyebrow}</span>
+                <h2 id="h4h-coverage-title">{fill(t.coverageTitle, values)}</h2>
+                <p>{fill(t.coverageIntro, values)}</p>
+              </div>
+
+              <ul className="row g-4 list-unstyled">
+                {agent.products.map((product) => {
+                  const info = dictionary.productInfo[product];
+                  return (
+                    <li className="col-12 col-sm-6 col-lg-4" key={product}>
+                      <article className="h4h-product-card">
+                        <span className="h4h-product-icon" aria-hidden="true">
+                          <i className={PRODUCT_ICONS[product]} />
+                        </span>
+                        <h3>{info.name}</h3>
+                        <p>{info.text}</p>
+                        <p className="h4h-product-best">
+                          <strong>{t.bestFor}</strong> {info.bestFor}
+                        </p>
+                        <LeadButton source="quote" product={product} className="h4h-product-cta">
+                          {lf.productQuote} <span className="visually-hidden">: {info.name}</span>
+                          <i className="bi bi-arrow-right" aria-hidden="true" />
+                        </LeadButton>
+                      </article>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          </section>
+        )}
+
+        {/* ── Self-enrollment links ────────────────────────────────────── */}
+        {carriers.length > 0 && (
+          <section id="enroll" className="section light-background h4h-enroll" aria-labelledby="h4h-enroll-title">
+            <div className="container">
+              <div className="h4h-section-head">
+                <span className="h4h-eyebrow">{t.enrollEyebrow}</span>
+                <h2 id="h4h-enroll-title">{t.enrollTitle}</h2>
+                <p>{fill(t.enrollIntro, values)}</p>
+              </div>
+
+              <ul className="row g-4 justify-content-center list-unstyled">
+                {carriers.map((carrier) => (
+                  <li className="col-12 col-sm-6 col-lg-4" key={carrier.id}>
+                    <a
+                      className="h4h-carrier-card"
+                      href={carrier.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src={carrier.logo} alt="" loading="lazy" decoding="async" />
+                      <span className="h4h-carrier-name">{carrier.name}</span>
+                      <span className="h4h-carrier-note">{dictionary.carriers[carrier.id]}</span>
+                      <span className="h4h-carrier-go">
+                        <i className="bi bi-box-arrow-up-right" aria-hidden="true" />
+                        <span className="visually-hidden"> {t.opensNewTab}</span>
+                      </span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </section>
+        )}
+
+        {/* ── About ────────────────────────────────────────────────────── */}
+        <section id="about" className="section h4h-about" aria-labelledby="h4h-about-title">
           <div className="container">
             <div className="h4h-section-head">
-              <span className="h4h-eyebrow">{t.faqEyebrow}</span>
-              <h2 id="h4h-faq-title">{t.faqTitle}</h2>
+              <span className="h4h-eyebrow">{t.aboutEyebrow}</span>
+              <h2 id="h4h-about-title">{fill(t.aboutTitle, values)}</h2>
             </div>
 
-            <div className="h4h-faq-list">
-              {agent.products.map((product, index) => {
-                const item = dictionary.faq[product];
-                return (
-                  <details key={product} open={index === 0}>
-                    <summary>{item.q}</summary>
-                    <p>{item.a}</p>
-                  </details>
-                );
-              })}
+            <div className="row g-4">
+              <div className="col-lg-7">
+                {agent.bio && <p className="h4h-about-lead">{agent.bio}</p>}
+
+                {agent.professionalBackground && (
+                  <div className="h4h-about-block">
+                    <h3>
+                      <i className="bi bi-briefcase" aria-hidden="true" /> {t.background}
+                    </h3>
+                    <p>{agent.professionalBackground}</p>
+                  </div>
+                )}
+
+                {agent.mission && (
+                  <div className="h4h-about-block">
+                    <h3>
+                      <i className="bi bi-compass" aria-hidden="true" /> {t.mission}
+                    </h3>
+                    <p>{agent.mission}</p>
+                  </div>
+                )}
+
+                {agent.honorsAndAwards && (
+                  <div className="h4h-about-block">
+                    <h3>
+                      <i className="bi bi-award" aria-hidden="true" /> {t.awards}
+                    </h3>
+                    <p>{agent.honorsAndAwards}</p>
+                  </div>
+                )}
+              </div>
+
+              <div className="col-lg-5">
+                <aside className="h4h-glance" aria-labelledby="h4h-glance-title">
+                  <h3 id="h4h-glance-title">{t.atAGlance}</h3>
+                  <dl>
+                    {location && (
+                      <div>
+                        <dt>{t.location}</dt>
+                        <dd>{location}</dd>
+                      </div>
+                    )}
+                    {agent.licenses.length > 0 && (
+                      <div>
+                        <dt>{t.licensedIn}</dt>
+                        <dd>{agent.licenses.join(", ")}</dd>
+                      </div>
+                    )}
+                    {agent.languages.length > 0 && (
+                      <div>
+                        <dt>{t.languages}</dt>
+                        <dd>
+                          {agent.languages
+                            .map((item) => LANGUAGE_NAMES[item.code] || item.label)
+                            .join(", ")}
+                        </dd>
+                      </div>
+                    )}
+                  </dl>
+
+                  {socials.length > 0 && (
+                    <>
+                      <p className="h4h-glance-follow">{fill(t.follow, values)}</p>
+                      <ul className="h4h-socials">
+                        {socials.map((item) => (
+                          <li key={item.key}>
+                            <a
+                              href={agent.social[item.key]}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              aria-label={`${item.label} ${t.opensNewTab}`}
+                            >
+                              <i className={`bi ${item.icon}`} aria-hidden="true" />
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
+                    </>
+                  )}
+                </aside>
+              </div>
             </div>
           </div>
         </section>
-      )}
 
-      {/* ── Contact band ─────────────────────────────────────────────── */}
-      <section id="contact" className="section h4h-agents-cta">
-        <div className="container">
-          <div className="h4h-cta-box">
-            <div>
-              <h2>{fill(t.contactTitle, values)}</h2>
-              <p>{t.contactText}</p>
+        {/* ── Free guide ───────────────────────────────────────────────── */}
+        {agent.brochureFile && (
+          <section id="guide" className="section h4h-guide" aria-labelledby="h4h-guide-title">
+            <div className="container">
+              <div className="h4h-guide-box">
+                <div className="h4h-guide-icon" aria-hidden="true">
+                  <i className="bi bi-journal-medical" />
+                </div>
+                <div className="h4h-guide-body">
+                  <span className="h4h-eyebrow">{lf.guideEyebrow}</span>
+                  <h2 id="h4h-guide-title">{lf.guideTitle}</h2>
+                  <p>{lf.guideText}</p>
+                  <ul className="h4h-guide-points">
+                    {lf.guidePoints.map((point) => (
+                      <li key={point}>
+                        <i className="bi bi-check-circle-fill" aria-hidden="true" /> {point}
+                      </li>
+                    ))}
+                  </ul>
+                  <LeadButton source="guide" className="btn h4h-btn-primary">
+                    <i className="bi bi-download" aria-hidden="true" /> {lf.guideButton}
+                  </LeadButton>
+                </div>
+              </div>
             </div>
-            <div className="h4h-cta-actions">
-              {tel && (
-                <a className="btn h4h-btn-primary" href={tel}>
-                  <i className="bi bi-telephone" aria-hidden="true" /> {formatPhone(agent.phone)}
-                </a>
-              )}
-              {agent.email && (
-                <a className="btn h4h-btn-outline" href={`mailto:${agent.email}`} aria-label={fill(t.emailAria, values)}>
-                  <i className="bi bi-envelope" aria-hidden="true" /> {t.email}
-                </a>
-              )}
+          </section>
+        )}
+
+        {/* ── FAQ ──────────────────────────────────────────────────────── */}
+        {agent.products.length > 0 && (
+          <section id="faq" className="section light-background h4h-faq" aria-labelledby="h4h-faq-title">
+            <div className="container">
+              <div className="h4h-section-head">
+                <span className="h4h-eyebrow">{t.faqEyebrow}</span>
+                <h2 id="h4h-faq-title">{t.faqTitle}</h2>
+              </div>
+
+              <div className="h4h-faq-list">
+                {agent.products.map((product, index) => {
+                  const item = dictionary.faq[product];
+                  return (
+                    <details key={product} open={index === 0}>
+                      <summary>{item.q}</summary>
+                      <p>{item.a}</p>
+                    </details>
+                  );
+                })}
+              </div>
             </div>
+          </section>
+        )}
+
+        {/* ── Contact band ─────────────────────────────────────────────── */}
+        <section id="contact" className="section h4h-agents-cta">
+          <div className="container">
+            <div className="h4h-cta-box">
+              <div>
+                <h2>{fill(t.contactTitle, values)}</h2>
+                <p>{t.contactText}</p>
+              </div>
+              <div className="h4h-cta-actions">
+                <LeadButton source="quote" className="btn h4h-btn-primary">
+                  {lf.quoteButton}
+                </LeadButton>
+                {tel && (
+                  <a className="btn h4h-btn-outline" href={tel}>
+                    <i className="bi bi-telephone" aria-hidden="true" /> {formatPhone(agent.phone)}
+                  </a>
+                )}
+                {agent.email && (
+                  <a className="btn h4h-btn-outline" href={`mailto:${agent.email}`} aria-label={fill(t.emailAria, values)}>
+                    <i className="bi bi-envelope" aria-hidden="true" /> {t.email}
+                  </a>
+                )}
+              </div>
+            </div>
+
+            <p className="h4h-back-link">
+              <Link href={localizePath("/agents", lang)}>
+                <i className="bi bi-arrow-left" aria-hidden="true" /> {t.allAgents}
+              </Link>
+            </p>
           </div>
+        </section>
 
-          <p className="h4h-back-link">
-            <Link href={localizePath("/agents", lang)}>
-              <i className="bi bi-arrow-left" aria-hidden="true" /> {t.allAgents}
-            </Link>
-          </p>
-        </div>
-      </section>
+      </LeadFormProvider>
 
       <script
         type="application/ld+json"
