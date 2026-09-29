@@ -1,3 +1,4 @@
+// src/app/components/LanguagePreferenceSync.jsx
 "use client";
 
 import { useEffect } from "react";

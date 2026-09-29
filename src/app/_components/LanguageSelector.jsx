@@ -1,13 +1,16 @@
+// src/app/_components/LanguageSelector.jsx
 "use client";
 
 import { startTransition, useEffect, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import { localizePath } from "@/lib/i18n";
 
+// Each language is shown in its own language, so every visitor recognizes theirs.
 const LANGUAGE_OPTIONS = [
   { value: "en", label: "English" },
-  { value: "es", label: "Spanish" },
-  { value: "ht", label: "Creole" },
+  { value: "es", label: "Español" },
+  { value: "ht", label: "Kreyòl" },
+  { value: "fr", label: "Français" },
 ];
 
 const STORAGE_KEY = "h4h-language";
@@ -50,7 +53,7 @@ export default function LanguageSelector({ locale = "en" }) {
           onChange={handleLanguageChange}
         >
           {LANGUAGE_OPTIONS.map((option) => (
-            <option key={option.value} value={option.value}>
+            <option key={option.value} value={option.value} lang={option.value}>
               {option.label}
             </option>
           ))}

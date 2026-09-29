@@ -1,9 +1,11 @@
+// src/app/_components/Footer.jsx
 import Link from "next/link";
 import { socialLinks } from "./socialLinks";
-import { getShellDictionary, localizePath } from "@/lib/i18n";
+import { getAgentsDictionary, getShellDictionary, localizePath } from "@/lib/i18n";
 
 export default function Footer({ locale = "en" }) {
   const t = getShellDictionary(locale);
+  const findAgentLabel = getAgentsDictionary(locale).directory.title;
 
   return (
     <footer id="footer" className="footer footer-bg position-relative">
@@ -48,6 +50,9 @@ export default function Footer({ locale = "en" }) {
               </li>
               <li>
                 <Link href={localizePath("/about", locale)}>{t.nav.about}</Link>
+              </li>
+              <li>
+                <Link href={localizePath("/agents", locale)}>{findAgentLabel}</Link>
               </li>
               <li>
                 <Link href={localizePath("/services", locale)}>{t.footer.services}</Link>

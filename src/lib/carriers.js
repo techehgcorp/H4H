@@ -28,7 +28,7 @@ export const CARRIERS = [
     id: "ameritasDental",
     column: "ameritasDentalUrl",
     name: "Ameritas Dental",
-    logo: "/assets/img/partners/ameritas-logo.svg",
+    logo: "/assets/img/partners/ameritas-logo.png",
   },
 ];
 

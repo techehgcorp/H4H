@@ -1,8 +1,10 @@
+// src/app/_components/FloatingQuoteTab.jsx
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { usePathname } from "next/navigation";
 import QuoteModalLauncher from "./QuoteModalLauncher";
-import { getAppointmentDictionary, getShellDictionary } from "@/lib/i18n";
+import { getAppointmentDictionary, getShellDictionary, removeLocaleFromPathname } from "@/lib/i18n";
 
 export default function FloatingQuoteTab({ locale = "en" }) {
   const [isVisible, setIsVisible] = useState(false);
@@ -12,6 +14,10 @@ export default function FloatingQuoteTab({ locale = "en" }) {
   const suppressClick = useRef(false);
   const appointment = getAppointmentDictionary(locale);
   const shell = getShellDictionary(locale);
+  const pathname = removeLocaleFromPathname(usePathname() || "/");
+  // Agent profiles have their own quote form that credits the agent,
+  // so the site-wide tab stays out of the way there.
+  const isAgentProfile = pathname.startsWith("/agents/");
 
   useEffect(() => {
     function updateVisibility() {
@@ -90,6 +96,8 @@ export default function FloatingQuoteTab({ locale = "en" }) {
     suppressClick.current = false;
     return false;
   }
+
+  if (isAgentProfile) return null;
 
   return (
     <QuoteModalLauncher
