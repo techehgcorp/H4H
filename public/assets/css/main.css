@@ -211,7 +211,7 @@ h6 {
 }
 
 /* The "4" always shows a vibrant gradient — even when surrounding text is white */
-.header .logo h1 .logo-four {
+.header .logo .sitename .logo-four {
   background: linear-gradient(135deg, #00b4ff, #ff2d55);
   -webkit-background-clip: text;
   background-clip: text;
@@ -228,14 +228,16 @@ h6 {
   margin-left: 5px;
 }
 
-.header .logo h1 {
+.header .logo .sitename {
+  font-family: var(--heading-font);
   font-size: 30px;
+  line-height: 1.2;
   margin: 0;
   font-weight: 700;
   color: var(--secondary-color);
 }
 
-.header .logo h1 span {
+.header .logo .sitename span {
   /* color: var(--accent-color); */
   background: linear-gradient(235deg, var(--heading-color), var(--accent-color));
   background-clip: text;
@@ -435,13 +437,13 @@ h6 {
     flex-shrink: 0;
   }
 
-  .header .logo h1 {
+  .header .logo .sitename {
     font-size: 26px;
     min-width: 0;
     overflow: hidden;
   }
 
-  .header .logo h1 span {
+  .header .logo .sitename span {
     display: block;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -517,7 +519,7 @@ body:not(.scrolled) .header.video-hero-page .branding-bar .branding {
 }
 
 /* Logo: white text on hero glass */
-body:not(.scrolled) .header.video-hero-page .logo h1 span {
+body:not(.scrolled) .header.video-hero-page .logo .sitename span {
   background: none;
   -webkit-background-clip: unset;
   background-clip: unset;
@@ -525,7 +527,7 @@ body:not(.scrolled) .header.video-hero-page .logo h1 span {
 }
 
 /* "4" keeps its vibrant gradient even on the hero page */
-body:not(.scrolled) .header.video-hero-page .logo h1 .logo-four {
+body:not(.scrolled) .header.video-hero-page .logo .sitename .logo-four {
   background: linear-gradient(135deg, #00b4ff, #ff2d55) !important;
   -webkit-background-clip: text !important;
   background-clip: text !important;
@@ -733,7 +735,7 @@ body:not(.scrolled) .header.video-hero-page .btn-getstarted:hover {
 }
 
 @media (min-width: 1200px) and (max-width: 1365px) {
-  .header .logo h1 {
+  .header .logo .sitename {
     font-size: 28px;
   }
 

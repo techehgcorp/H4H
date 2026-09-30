@@ -1,0 +1,546 @@
+/*--------------------------------------------------------------
+# H4H mobile & header fixes
+# Loaded right after main.css (see src/app/layout.js), so these rules win.
+# Breakpoints match Bootstrap: phones < 576px, tablets < 768px,
+# collapsed menu < 1200px.
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Header: logo, language selector, theme toggle
+--------------------------------------------------------------*/
+/* The logo <img> now has width/height attributes (stops layout shift while
+   it loads); these keep it sized by max-height like before. */
+.header .logo img {
+  width: auto;
+  height: auto;
+}
+
+/* Language menu: the options inherited the white text of the dark pill,
+   so on desktop they were white-on-white until hovered. */
+.language-selector__control select option {
+  color: #1f2a30;
+  background-color: #ffffff;
+}
+
+.language-selector__control select:focus-visible {
+  outline: none;
+}
+
+.language-selector__control:focus-within {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
+/* Sun/moon button in the top bar (desktop). The header row is already full
+   at laptop widths, so it lives next to the social icons instead. */
+.theme-toggle--icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  margin-left: 18px;
+  padding: 0;
+  border: 1px solid color-mix(in srgb, var(--contrast-color), transparent 55%);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--contrast-color);
+  font-size: 15px;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.theme-toggle--icon:hover {
+  border-color: var(--contrast-color);
+  background: color-mix(in srgb, var(--contrast-color), transparent 85%);
+}
+
+.theme-toggle--icon:focus-visible {
+  outline: 2px solid var(--contrast-color);
+  outline-offset: 2px;
+}
+
+.theme-toggle--menu:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: -2px;
+}
+
+.theme-toggle__sun {
+  display: none;
+}
+
+html[data-theme="dark"] .theme-toggle__moon {
+  display: none;
+}
+
+html[data-theme="dark"] .theme-toggle__sun {
+  display: inline-block;
+}
+
+/* main.css reorders the header "max-width: 1200px", which also hits a
+   window exactly 1200px wide, where the full desktop menu is showing. */
+@media (min-width: 1200px) {
+  .header .logo,
+  .header .navmenu,
+  .header .header-actions {
+    order: 0;
+  }
+
+  .header .navmenu {
+    margin: 0 12px 0 auto;
+  }
+}
+
+/* Laptops (1200-1439px): a little tighter so the whole menu fits on one
+   row in every language. */
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .header .logo .sitename {
+    font-size: 25px;
+  }
+
+  .header .logo img {
+    max-height: 54px;
+  }
+
+  .navmenu a,
+  .navmenu a:focus {
+    padding: 18px 7px;
+    font-size: 14px;
+  }
+
+  .header .header-actions {
+    gap: 10px;
+  }
+
+  .language-selector__control {
+    min-width: 0;
+    padding: 6px 10px;
+  }
+}
+
+/* Tablets and phones: logo on the left; language, Appointment and the menu
+   button grouped on the right (they used to float in the middle). */
+@media (max-width: 1199px) {
+  .header .header-actions {
+    margin-left: auto;
+  }
+
+  .header .navmenu {
+    margin-left: 10px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Mobile menu extras: dark mode switch + Appointment button
+--------------------------------------------------------------*/
+.mobile-menu-cta {
+  display: none;
+}
+
+@media (max-width: 1199px) {
+  /* Solid card: the see-through one let the hero title show behind the links */
+  .navmenu > ul {
+    background: var(--nav-mobile-background-color);
+  }
+
+  .navmenu .mobile-menu-theme {
+    margin-top: 6px;
+    padding-top: 6px;
+    border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 88%);
+  }
+
+  .theme-toggle--menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    width: 100%;
+    min-height: 48px;
+    padding: 10px 20px;
+    border: 0;
+    background: transparent;
+    color: var(--nav-dropdown-color);
+    font-family: var(--nav-font);
+    font-size: 17px;
+    font-weight: 500;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  .theme-toggle__label {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .theme-toggle__label i {
+    color: var(--accent-color);
+    font-size: 18px;
+  }
+
+  /* The switch track + knob */
+  .theme-toggle__switch {
+    position: relative;
+    flex-shrink: 0;
+    width: 44px;
+    height: 24px;
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--default-color), transparent 75%);
+    transition: background-color 0.2s ease;
+  }
+
+  .theme-toggle__switch::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+  }
+
+  .theme-toggle--menu[aria-checked="true"] .theme-toggle__switch {
+    background: var(--accent-color);
+  }
+
+  .theme-toggle--menu[aria-checked="true"] .theme-toggle__switch::after {
+    transform: translateX(20px);
+  }
+}
+
+/* Phones: Appointment moves from the header into the menu */
+@media (max-width: 767px) {
+  .navmenu .mobile-menu-cta {
+    display: block;
+    padding: 8px 16px 6px;
+  }
+
+  .navmenu .mobile-menu-cta .mobile-menu-appointment,
+  .navmenu .mobile-menu-cta .mobile-menu-appointment:focus {
+    justify-content: center;
+    gap: 8px;
+    min-height: 48px;
+    padding: 12px 20px;
+    border-radius: 999px;
+    background: var(--accent-color);
+    color: var(--contrast-color);
+    font-weight: 600;
+  }
+
+  .navmenu .mobile-menu-cta .mobile-menu-appointment i {
+    width: auto;
+    height: auto;
+    margin: 0;
+    background: none;
+    color: inherit;
+    font-size: 18px;
+  }
+
+  .header .btn-getstarted {
+    display: none;
+  }
+}
+
+/*--------------------------------------------------------------
+# Top bar: one line on phones
+--------------------------------------------------------------*/
+@media (max-width: 575px) {
+  .header .topbar {
+    padding: 0;
+    min-height: 36px;
+  }
+
+  .header .topbar .contact-info {
+    flex-wrap: nowrap;
+    gap: 6px;
+  }
+
+  /* Email and toll-free become icons (their aria-label keeps them clear for
+     screen readers); the main number stays readable. */
+  .header .topbar .topbar-label {
+    display: none;
+  }
+
+  .header .topbar .topbar-contact,
+  .header .topbar .topbar-phone {
+    justify-content: center;
+    min-width: 36px;
+    min-height: 36px;
+    padding: 0 6px;
+  }
+
+  .header .topbar .topbar-email i,
+  .header .topbar .topbar-tollfree i {
+    margin-right: 0;
+  }
+}
+
+/*--------------------------------------------------------------
+# Branding row on phones: logo + name + language + menu
+--------------------------------------------------------------*/
+@media (max-width: 767px) {
+  .header .branding {
+    gap: 8px;
+  }
+
+  .header .header-actions {
+    gap: 8px;
+  }
+
+  .header .logo {
+    min-width: 0;
+  }
+
+  .header .logo img {
+    max-height: 46px;
+    margin: 0 8px 0 0;
+  }
+
+  .header .logo .sitename {
+    font-size: clamp(16px, 5vw, 26px);
+  }
+
+  /* main.css turns every span in the name into a block (for the "..."
+     cut-off), which pushed the "4" onto its own line. */
+  .header .logo .sitename .logo-four {
+    display: inline;
+  }
+
+  /* Language selector becomes a round globe button, same size as the menu
+     button. The real <select> sits on top, invisible, so tapping it opens
+     the phone's own language picker. */
+  .language-selector__control {
+    width: 44px;
+    min-width: 0;
+    min-height: 44px;
+    padding: 0;
+  }
+
+  .language-selector__control i {
+    font-size: 17px;
+  }
+
+  /* 16px stops iPhones zooming the page when the picker opens */
+  .language-selector__control select {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 575px) {
+  .header .logo img {
+    max-height: 40px;
+    margin-right: 6px;
+  }
+
+  /* Thinner glass bar over the hero video = more room for the name */
+  body:not(.scrolled) .header.video-hero-page .branding-bar {
+    padding: 6px 8px;
+  }
+
+  body:not(.scrolled) .header.video-hero-page .branding-bar .branding,
+  .header .branding {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Hero
+--------------------------------------------------------------*/
+/* Stronger shade behind the text so white words stay readable over bright
+   parts of the video (WCAG contrast). */
+.hero .hero-overlay {
+  background:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 32%),
+    linear-gradient(to right, rgba(0, 0, 0, 0.62) 0%, rgba(0, 0, 0, 0.45) 45%, rgba(0, 0, 0, 0.12) 100%);
+}
+
+.hero .hero-content .hero-description {
+  color: rgba(255, 255, 255, 0.94);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.55);
+}
+
+.hero .hero-content .hero-title {
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.45);
+}
+
+/* Tablets and desktops: the hero is at least one screen tall but can grow,
+   so the buttons are never cut off on short screens (laptops with Windows
+   display scaling at 125-150%, or zoomed in). The text starts just below
+   the real header (--header-height is measured by Navbar.jsx; the number
+   after the comma is the fallback), plus a gap that shrinks on short
+   screens. */
+@media (min-width: 768px) {
+  .hero {
+    height: auto;
+    min-height: 100vh;
+    min-height: 100svh;
+    padding-top: calc(var(--header-height, 133px) + clamp(28px, 11vh, 107px));
+    padding-bottom: clamp(48px, 8vh, 80px);
+  }
+}
+
+/* Short desktop screens: slightly smaller hero text so the whole message,
+   buttons included, fits in the first screen. */
+@media (min-width: 768px) and (max-height: 820px) {
+  .hero .hero-content .hero-title {
+    font-size: clamp(2rem, 5.4vh, 2.8rem);
+    margin-bottom: 1rem;
+  }
+
+  .hero .hero-content .hero-description {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 991px) {
+  /* Text spans the full width here, so shade the whole video evenly */
+  .hero .hero-overlay {
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.55) 0%,
+      rgba(0, 0, 0, 0.5) 55%,
+      rgba(0, 0, 0, 0.62) 100%
+    );
+  }
+}
+
+@media (max-width: 767px) {
+  /* Grow with the content instead of a fixed 100vh, which cut off the
+     second button on short phones. svh = height with the browser bars shown. */
+  .hero {
+    height: auto;
+    min-height: 100vh;
+    min-height: 100svh;
+    padding: calc(var(--header-height, 110px) + 28px) 0 56px;
+  }
+}
+
+@media (max-width: 575px) {
+  .hero .cta-section .cta-buttons {
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .hero .cta-section .cta-buttons .btn {
+    justify-content: center;
+    width: 100%;
+    padding: 14px 20px;
+    white-space: normal;
+  }
+}
+
+/*--------------------------------------------------------------
+# Inner pages: title starts below the header too
+--------------------------------------------------------------*/
+.page-title {
+  padding-top: calc(var(--header-height, 133px) + 5px);
+}
+
+@media (max-width: 767px) {
+  .page-title .heading {
+    padding: 48px 0;
+  }
+
+  .page-title .heading h1 {
+    font-size: 30px;
+  }
+}
+
+/*--------------------------------------------------------------
+# LeadConnector chat bubble
+# The bubble is drawn by LeadConnector's script inside its own element, so
+# only the outside can be styled from here.
+--------------------------------------------------------------*/
+/* Hide it while the quote form or the phone menu is open: it sat right on
+   top of the form's Next button. */
+body.quote-modal-open chat-widget,
+body.quote-modal-open #lc_text-widget,
+body.mobile-nav-active chat-widget,
+body.mobile-nav-active #lc_text-widget {
+  display: none !important;
+}
+
+/* Leave room at the very bottom of the page so the bubble never covers the
+   last lines of the footer. */
+@media (max-width: 767px) {
+  .footer .copyright {
+    padding-bottom: 96px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Quote modal on phones
+--------------------------------------------------------------*/
+@media (max-width: 767px) {
+  /* dvh follows the browser bar showing/hiding, so the Next button never
+     slides under it */
+  .quote-modal__panel {
+    max-height: calc(100vh - 24px);
+    max-height: calc(100dvh - 24px);
+  }
+
+  .quote-actions {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+}
+
+/*--------------------------------------------------------------
+# Footer: phone and email are tappable links
+--------------------------------------------------------------*/
+.footer .footer-contact a {
+  color: inherit;
+}
+
+.footer .footer-contact a:hover {
+  color: var(--accent-color);
+}
+
+/*--------------------------------------------------------------
+# Small fixes
+--------------------------------------------------------------*/
+/* Keep the phone number and "Contact Us" on one line in the blue/red banner */
+.call-to-action .contact-banner .call-btn,
+.call-to-action .contact-banner .contact-link {
+  white-space: nowrap;
+}
+
+/* Refer a Friend: its section is "appointment" but main.css styles the
+   template's misspelled "appointmnet", so the submit button had no style. */
+.appointment .appointment-form .btn-appointment {
+  min-height: 48px;
+  padding: 0.875rem 2rem;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.appointment .appointment-form .btn-appointment:hover {
+  background-color: color-mix(in srgb, var(--accent-color), black 10%);
+  color: var(--contrast-color);
+}
+
+/* Quote form: the step counter's "8" sat under the close button */
+.quote-progress {
+  padding-right: 44px;
+}
+
+/* Floating "Get A Quote" tab: a bit smaller on phones so it covers less */
+@media (max-width: 575px) {
+  .floating-quote-tab {
+    min-height: 38px;
+    padding: 9px 20px 9px 10px;
+    font-size: 0.8rem;
+  }
+}

@@ -283,6 +283,7 @@ export default function QuoteModalLauncher({
           <input
             type="text"
             name="firstName"
+            autoComplete="given-name"
             className="form-control"
             placeholder={form.firstName}
             value={formData.firstName}
@@ -292,6 +293,7 @@ export default function QuoteModalLauncher({
           <input
             type="text"
             name="lastName"
+            autoComplete="family-name"
             className="form-control"
             placeholder={form.lastName}
             value={formData.lastName}
@@ -343,6 +345,7 @@ export default function QuoteModalLauncher({
         <input
           type="date"
           name="dob"
+          autoComplete="bday"
           className="form-control quote-single-input"
           value={formData.dob}
           onChange={handleChange}
@@ -359,6 +362,7 @@ export default function QuoteModalLauncher({
           pattern="[0-9]{5}"
           maxLength="5"
           name="zipCode"
+          autoComplete="postal-code"
           className="form-control quote-single-input"
           placeholder={form.zipCode}
           value={formData.zipCode}
@@ -374,6 +378,7 @@ export default function QuoteModalLauncher({
           <input
             type="text"
             name="address"
+            autoComplete="street-address"
             className="form-control"
             placeholder={`${form.address} ${optionalText}`}
             value={formData.address}
@@ -383,6 +388,7 @@ export default function QuoteModalLauncher({
             <input
               type="text"
               name="city"
+              autoComplete="address-level2"
               className="form-control"
               placeholder={`${form.city} ${optionalText}`}
               value={formData.city}
@@ -390,6 +396,7 @@ export default function QuoteModalLauncher({
             />
             <select
               name="state"
+              autoComplete="address-level1"
               className="form-select"
               value={formData.state}
               onChange={handleChange}
@@ -411,6 +418,8 @@ export default function QuoteModalLauncher({
         <input
           type="email"
           name="email"
+          autoComplete="email"
+          inputMode="email"
           className="form-control"
           placeholder={form.email}
           value={formData.email}
@@ -420,6 +429,7 @@ export default function QuoteModalLauncher({
         <input
           type="tel"
           name="phone"
+          autoComplete="tel"
           className="form-control"
           placeholder={`${form.phone} ${optionalText}`}
           value={formData.phone}

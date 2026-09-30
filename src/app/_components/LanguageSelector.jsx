@@ -15,7 +15,7 @@ const LANGUAGE_OPTIONS = [
 
 const STORAGE_KEY = "h4h-language";
 
-export default function LanguageSelector({ locale = "en" }) {
+export default function LanguageSelector({ locale = "en", label = "Language" }) {
   const pathname = usePathname();
   const router = useRouter();
   const [language, setLanguage] = useState(locale);
@@ -41,7 +41,7 @@ export default function LanguageSelector({ locale = "en" }) {
   return (
     <div className="language-selector">
       <label className="language-selector__label" htmlFor="site-language">
-        Language
+        {label}
       </label>
       <div className="language-selector__control">
         <i className="bi bi-globe2" aria-hidden="true" />
@@ -49,7 +49,6 @@ export default function LanguageSelector({ locale = "en" }) {
           id="site-language"
           name="site-language"
           value={language}
-          aria-label="Select site language"
           onChange={handleLanguageChange}
         >
           {LANGUAGE_OPTIONS.map((option) => (

@@ -18,6 +18,9 @@ export default function FloatingQuoteTab({ locale = "en" }) {
   // Agent profiles have their own quote form that credits the agent,
   // so the site-wide tab stays out of the way there.
   const isAgentProfile = pathname.startsWith("/agents/");
+  // Pages that are already a form: the tab would only sit on top of their
+  // fields on a phone.
+  const isFormPage = ["/contact", "/appointment", "/refer-a-friend"].includes(pathname);
 
   useEffect(() => {
     function updateVisibility() {
@@ -97,7 +100,7 @@ export default function FloatingQuoteTab({ locale = "en" }) {
     return false;
   }
 
-  if (isAgentProfile) return null;
+  if (isAgentProfile || isFormPage) return null;
 
   return (
     <QuoteModalLauncher

@@ -19,6 +19,14 @@ const en = {
       referFriend: "Refer a Friend",
       quote: "Get A Quote",
     },
+    ui: {
+      darkMode: "Dark mode",
+      emailUs: "Email us",
+      callTollFree: "Call toll-free",
+      openMenu: "Open navigation menu",
+      closeMenu: "Close navigation menu",
+      language: "Language",
+    },
     footer: {
       usefulLinks: "Useful Links",
       ourServices: "Our Services",

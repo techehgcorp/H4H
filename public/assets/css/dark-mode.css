@@ -1,0 +1,295 @@
+/*--------------------------------------------------------------
+# H4H dark mode
+# Active when <html data-theme="dark"> (set by the head script in
+# src/app/layout.js and by ThemeToggle.jsx). Light mode is untouched.
+#
+# How it works: the template colors almost everything through CSS
+# variables (--background-color, --default-color, --accent-color...), so
+# most of the site switches by redefining those variables below. The rest
+# of this file handles spots that hard-code white.
+#
+# Two blues: --accent-color is a lighter blue that reads well as text and
+# icons on dark backgrounds. Buttons and badges with white text use the
+# deeper --accent-fill blue instead, so the white text keeps enough contrast.
+--------------------------------------------------------------*/
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+
+  --accent-fill: #2f7cb0;
+
+  --background-color: #0f161c;
+  --default-color: #d4dbe1;
+  --heading-color: #ff6b6b;
+  --secondary-color: #ff6b6b;
+  --accent-color: #5aaedf;
+  --surface-color: #17222b;
+  --contrast-color: #ffffff;
+
+  --nav-color: #dfe6ea;
+  --nav-hover-color: #5aaedf;
+  --nav-mobile-background-color: #17222b;
+  --nav-dropdown-background-color: #17222b;
+  --nav-dropdown-color: #dfe6ea;
+  --nav-dropdown-hover-color: #5fc6d0;
+}
+
+/* Sections that set their own colors in main.css */
+html[data-theme="dark"] .light-background {
+  --background-color: #131c24;
+  --surface-color: #1b2731;
+}
+
+/* Soft shadows in the template are tinted with the text color, which turns
+   them into a light haze on dark pages. Plain dark shadows instead. */
+html[data-theme="dark"] :is(
+  .home-about .image-grid .primary-image,
+  .home-about .image-grid .secondary-images .small-image,
+  .home-about .content-wrapper .highlight-box,
+  .featured-departments .department-card:hover,
+  .call-to-action .hero-content .hero-image img,
+  .call-to-action .services-grid .service-card:hover,
+  .call-to-action .florida-blue-section,
+  .departments .department-item,
+  .departments .department-item:hover,
+  .department-details .visual-section .main-visual,
+  .services .service-card:hover,
+  .services .services-stats,
+  .appointmnet .appointment-form-wrapper,
+  .contact .info-box,
+  .contact .php-email-form,
+  .testimonials .testimonial-item,
+  .about .accreditation-section .accreditation-grid .accreditation-item:hover
+) {
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+}
+
+/*--------------------------------------------------------------
+# Buttons, badges and bars with white text: deeper blue fill
+--------------------------------------------------------------*/
+html[data-theme="dark"] :is(
+  .header .topbar,
+  .header .btn-getstarted,
+  .navmenu a i:hover,
+  .navmenu .active i,
+  .navmenu .mobile-menu-cta .mobile-menu-appointment,
+  .home-about .content-wrapper .action-buttons .btn-explore,
+  .featured-departments .btn-primary,
+  .featured-services .service-icon,
+  .call-to-action .hero-content .primary-btn,
+  .call-to-action .services-grid .service-card:hover .service-icon,
+  .about .mission-section .mission-item .mission-icon,
+  .departments .department-item:hover .department-icon,
+  .department-details .department-content .department-header .specialty-tag,
+  .department-details .department-content .service-highlights .highlights-grid .highlight-card .highlight-icon,
+  .department-details .department-content .cta-section .btn-appointment,
+  .services .service-card:hover .service-btn,
+  .services .service-header .featured-badge,
+  .services .service-icon,
+  .services .appointment-banner,
+  .service-details-2 .service-image .service-tag,
+  .service-details-2 .service-content .service-actions .btn-primary,
+  .service-details-2 .booking-section .availability-info .info-item i,
+  .service-details-2 .appointment-card .btn-appointment,
+  .appointmnet .appointment-form .btn-appointment,
+  .appointment .appointment-form .btn-appointment,
+  .appointment-scheduler__panel .btn-appointment,
+  .appointmnet .process-steps .step-item .step-number,
+  .quote-primary-action,
+  .quote-option-card__badge,
+  .gallery .isotope-filters li.filter-active,
+  .gallery .gallery-overlay .gallery-actions a,
+  .contact .php-email-form button[type=submit],
+  .contact .social-links a:hover,
+  .terms-of-service .tos-contact .contact-box .contact-icon,
+  .terms-of-service .tos-contact .contact-box .contact-content .contact-link,
+  .privacy .privacy-content .privacy-section .highlight-box,
+  .error-404 .error-actions .btn-home,
+  .btn-enrollment-primary,
+  .self-enrollment-feature .feature-icon,
+  .theme-toggle--menu[aria-checked="true"] .theme-toggle__switch
+) {
+  --accent-color: var(--accent-fill);
+}
+
+/* Agent pages read the blue through their own --h4h-accent variable */
+html[data-theme="dark"] :is(
+  .h4h-agents .h4h-btn-primary,
+  .h4h-agents .h4h-btn-outline:hover,
+  .h4h-chip[aria-pressed="true"],
+  .h4h-cta-box,
+  .h4h-socials a:hover,
+  .h4h-guide-icon
+) {
+  --h4h-accent: var(--accent-fill);
+}
+
+html[data-theme="dark"] .h4h-lead-dialog .h4h-btn-primary {
+  --accent-color: var(--accent-fill);
+}
+
+/* Blue-to-red gradients with white text keep the original deeper red */
+html[data-theme="dark"] .floating-quote-tab {
+  --accent-color: var(--accent-fill);
+  --heading-color: #c81e1e;
+}
+
+html[data-theme="dark"] .call-to-action .contact-banner {
+  --accent-color: var(--accent-fill);
+  --secondary-color: #d42a2a;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+html[data-theme="dark"] .scrolled .header {
+  --background-color: rgba(15, 22, 28, 0.82);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+}
+
+/* Glass bar over the hero video */
+html[data-theme="dark"] body:not(.scrolled) .header.video-hero-page .branding-bar .branding {
+  background: rgba(12, 18, 24, 0.5);
+}
+
+html[data-theme="dark"] body:not(.scrolled) .header.video-hero-page .topbar {
+  background: rgba(24, 70, 100, 0.7);
+}
+
+/* Name in the header: the light-mode gradient used the page's red/blue */
+html[data-theme="dark"] .header .logo .sitename span {
+  background: linear-gradient(235deg, #ff7a7a, #6cb8e6);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+html[data-theme="dark"] .language-selector__control,
+html[data-theme="dark"] .mobile-nav-toggle {
+  border-color: rgba(255, 255, 255, 0.14);
+  background: #1b2731;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+html[data-theme="dark"] .language-selector__control select option {
+  color: #dfe6ea;
+  background-color: #1b2731;
+}
+
+html[data-theme="dark"] .mobile-nav-active .mobile-nav-toggle,
+html[data-theme="dark"] .navmenu.is-mobile-open .mobile-nav-toggle {
+  color: #dfe6ea;
+}
+
+/* Desktop dropdown (Resources) */
+@media (min-width: 1200px) {
+  html[data-theme="dark"] .navmenu .dropdown ul {
+    background: var(--nav-dropdown-background-color);
+    border-color: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  }
+
+  html[data-theme="dark"] .navmenu .dropdown ul li.dropdown-divider-item {
+    border-top-color: rgba(255, 255, 255, 0.08);
+  }
+}
+
+/* Phone/tablet menu card */
+@media (max-width: 1199px) {
+  html[data-theme="dark"] .navmenu > ul {
+    background: var(--nav-mobile-background-color);
+    border-color: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.55);
+  }
+
+  html[data-theme="dark"] .navmenu .dropdown > .dropdown-active {
+    background-color: rgba(255, 255, 255, 0.03);
+  }
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+html[data-theme="dark"] .footer.footer-bg {
+  background-image: linear-gradient(rgba(15, 22, 28, 0.94), rgba(15, 22, 28, 0.94)), url("/assets/img/bg/footerbg.webp");
+}
+
+/*--------------------------------------------------------------
+# Logos: company logos are drawn for white backgrounds, so they sit on a
+# white tile in dark mode (the usual approach for partner logos).
+--------------------------------------------------------------*/
+html[data-theme="dark"] .call-to-action .florida-blue-section,
+html[data-theme="dark"] .about .accreditation-section .accreditation-grid .accreditation-item {
+  background: #f4f7f9;
+  border-color: transparent;
+}
+
+html[data-theme="dark"] .h4h-carrier-card img {
+  box-sizing: content-box;
+  padding: 8px 14px;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+/* The plans picture has a white background; round it so it reads as a card */
+html[data-theme="dark"] .featured-departments .department-visual img {
+  border-radius: 12px;
+}
+
+/*--------------------------------------------------------------
+# Forms and quote modal
+--------------------------------------------------------------*/
+html[data-theme="dark"] .appointment-scheduler__summary a {
+  color: var(--accent-color);
+}
+
+html[data-theme="dark"] .quote-modal__close {
+  background: #22303b;
+  color: var(--default-color);
+}
+
+html[data-theme="dark"] .contact .php-email-form .form-control {
+  border-color: #33434f;
+}
+
+html[data-theme="dark"] .contact .php-email-form .form-control::placeholder {
+  color: #8a98a3;
+}
+
+html[data-theme="dark"] .contact .php-email-form .loading {
+  background: var(--surface-color);
+}
+
+/* Bootstrap form fields: match the site's surface color */
+html[data-theme="dark"] .form-control,
+html[data-theme="dark"] .form-select {
+  border-color: #33434f;
+  background-color: var(--surface-color);
+  color: var(--default-color);
+}
+
+html[data-theme="dark"] .form-control::placeholder {
+  color: #8a98a3;
+}
+
+/*--------------------------------------------------------------
+# Self-enrollment pages (styles live in globals.css)
+--------------------------------------------------------------*/
+html[data-theme="dark"] .home-self-enrollment {
+  background: linear-gradient(180deg, var(--background-color) 0%, rgba(51, 171, 187, 0.08) 100%);
+}
+
+html[data-theme="dark"] .self-enrollment {
+  background:
+    linear-gradient(180deg, rgba(51, 171, 187, 0.08), rgba(0, 0, 0, 0) 46%),
+    var(--background-color);
+}
+
+html[data-theme="dark"] .self-enrollment-partner,
+html[data-theme="dark"] .self-enrollment-feature {
+  background: var(--surface-color);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.35);
+}
+
+html[data-theme="dark"] .btn-enrollment-secondary {
+  background: transparent;
+}

@@ -3,13 +3,6 @@
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 html {
   height: 100%;
 }
@@ -49,11 +42,9 @@ html:not(.aos-ready) [data-aos] {
   visibility: visible !important;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}
+/* Dark mode is now an on-site switch (public/assets/css/dark-mode.css).
+   The starter "follow the device" block that used to be here only turned
+   form controls dark on an otherwise light page, so it was removed. */
 
 .self-enrollment-logo {
   display: inline-block;

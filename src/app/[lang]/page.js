@@ -69,7 +69,7 @@ export default async function IndexPage({ params }) {
           muted
           loop
           playsInline
-          preload="auto"
+          preload="metadata"
           poster="/assets/hero/Herovideoh4h-poster.jpg"
           aria-hidden="true"
         >

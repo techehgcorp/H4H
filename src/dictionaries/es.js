@@ -19,6 +19,14 @@ const es = {
       referFriend: "Referir a un Amigo",
       quote: "Cotizar",
     },
+    ui: {
+      darkMode: "Modo oscuro",
+      emailUs: "Envíenos un correo",
+      callTollFree: "Llamada gratuita",
+      openMenu: "Abrir el menú de navegación",
+      closeMenu: "Cerrar el menú de navegación",
+      language: "Idioma",
+    },
     footer: {
       usefulLinks: "Enlaces Utiles",
       ourServices: "Nuestros Servicios",

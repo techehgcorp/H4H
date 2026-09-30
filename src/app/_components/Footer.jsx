@@ -21,10 +21,10 @@ export default function Footer({ locale = "en" }) {
               <p>1000 NW 65th St #103</p>
               <p>Fort Lauderdale, FL 33309, EUA</p>
               <p className="mt-3">
-                <strong>Phone:</strong> <span>(786) 397-7167</span>
+                <strong>Phone:</strong> <a href="tel:+17863977167">(786) 397-7167</a>
               </p>
               <p>
-                <strong>Email:</strong> <span>info@h4hinsurance.com</span>
+                <strong>Email:</strong> <a href="mailto:info@h4hinsurance.com">info@h4hinsurance.com</a>
               </p>
             </div>
             <div className="social-links d-flex mt-4">

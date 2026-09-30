@@ -1,5 +1,6 @@
 import Script from "next/script";
 import TemplateRuntime from "./_components/TemplateRuntime";
+import { themeScript } from "@/lib/themeScript";
 import "./globals.css";
 
 export const metadata = {
@@ -19,6 +20,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" data-scroll-behavior="smooth" suppressHydrationWarning>
       <head>
+        {/* Must stay first: applies the saved light/dark choice before paint. */}
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
         <link href="https://fonts.googleapis.com" rel="preconnect" />
         <link href="https://fonts.gstatic.com" rel="preconnect" crossOrigin="" />
         <link
@@ -38,6 +41,9 @@ export default function RootLayout({ children }) {
         />
         <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
         <link href="/assets/css/main.css" rel="stylesheet" />
+        {/* Load after main.css so these rules win. */}
+        <link href="/assets/css/mobile.css" rel="stylesheet" />
+        <link href="/assets/css/dark-mode.css" rel="stylesheet" />
       </head>
       <body className="index-page">
         <TemplateRuntime />
@@ -50,7 +56,10 @@ export default function RootLayout({ children }) {
         <Script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js" />
         <Script src="/assets/vendor/swiper/swiper-bundle.min.js" />
         <Script src="/assets/js/main.js" strategy="afterInteractive" />
+        {/* lazyOnload: the chat loads once the page is idle, so it never
+            slows down the first screen on phones. */}
         <Script
+          strategy="lazyOnload"
           src="https://widgets.leadconnectorhq.com/loader.js"
           data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
           data-widget-id="6a763a9be425d99b06f23d60"

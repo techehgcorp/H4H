@@ -40,6 +40,14 @@ const overrides = {
       contact: "Contact",
       appointment: "Rendez-vous",
     },
+    ui: {
+      darkMode: "Mode sombre",
+      emailUs: "Écrivez-nous",
+      callTollFree: "Appel gratuit",
+      openMenu: "Ouvrir le menu de navigation",
+      closeMenu: "Fermer le menu de navigation",
+      language: "Langue",
+    },
   },
 };
 

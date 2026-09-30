@@ -19,6 +19,14 @@ const ht = {
       referFriend: "Rekòmande yon Zanmi",
       quote: "Mande Pri",
     },
+    ui: {
+      darkMode: "Mòd fènwa",
+      emailUs: "Voye yon imèl ban nou",
+      callTollFree: "Rele gratis",
+      openMenu: "Louvri meni an",
+      closeMenu: "Fèmen meni an",
+      language: "Lang",
+    },
     footer: {
       usefulLinks: "Lyen Itil",
       ourServices: "Svis Nou Yo",
